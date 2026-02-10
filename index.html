@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medication Reference Guide</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --accent: #059669;
+      --warning: #d97706;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.75rem; font-weight: 700; }
+    header p { font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem; }
+    .disclaimer {
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      color: #92400e;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .controls {
+      max-width: 1100px;
+      margin: 1.5rem auto 1rem;
+      padding: 0 1rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    #search {
+      flex: 1 1 300px;
+      padding: 0.65rem 1rem;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    #search:focus { border-color: var(--primary); }
+    .count {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    #med-list {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .med-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .med-header {
+      background: var(--primary-light);
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .med-header:hover { background: #bfdbfe; }
+    .med-header h2 { font-size: 1.15rem; color: var(--primary); }
+    .med-header .brands {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 400;
+      margin-top: 0.15rem;
+    }
+    .med-header .toggle {
+      font-size: 1.3rem;
+      color: var(--primary);
+      transition: transform 0.25s;
+    }
+    .med-header .toggle.open { transform: rotate(180deg); }
+    .med-body {
+      display: none;
+      padding: 1.25rem;
+    }
+    .med-body.open { display: block; }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1rem;
+    }
+    .info-item { margin-bottom: 0.5rem; }
+    .info-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .info-value { font-size: 0.95rem; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.25rem; }
+    .tag {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+    }
+    .tag.off-label {
+      background: #fef3c7;
+      color: var(--warning);
+    }
+    .section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 1.25rem 0 0.5rem;
+      padding-bottom: 0.3rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .interaction-list { list-style: none; }
+    .interaction-list li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .interaction-list li:last-child { border-bottom: none; }
+    .interaction-drug {
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .no-results {
+      text-align: center;
+      color: var(--text-secondary);
+      padding: 3rem 1rem;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      .info-grid { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.3rem; }
+      .controls { flex-direction: column; }
+      #search { flex: 1 1 auto; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Medication Reference Guide</h1>
+    <p id="source-info"></p>
+  </header>
+  <div class="disclaimer" id="disclaimer"></div>
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search by medication name, brand, or keyword…" aria-label="Search medications">
+    <span class="count" id="count"></span>
+  </div>
+  <div id="med-list"></div>
+  <div class="no-results" id="no-results" style="display:none;">No medications match your search.</div>
+  <footer id="footer"></footer>
+
+  <script>
+    let medications = [];
+
+    async function loadData() {
+      try {
+        const response = await fetch('medlist.json');
+        if (!response.ok) throw new Error('Failed to load medication data');
+        const data = await response.json();
+
+        document.getElementById('source-info').textContent =
+          'Source: ' + data.source + ' — Compiled: ' + data.date_compiled;
+        document.getElementById('disclaimer').textContent = data.disclaimer;
+        document.getElementById('footer').textContent =
+          data.disclaimer + ' | Data compiled: ' + data.date_compiled;
+
+        medications = data.medications;
+        renderCards(medications);
+      } catch (err) {
+        document.getElementById('med-list').innerHTML =
+          '<p class="no-results">Error loading medication data. Make sure medlist.json is served from the same origin.</p>';
+      }
+    }
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    }
+
+    function renderCards(meds) {
+      const container = document.getElementById('med-list');
+      const noResults = document.getElementById('no-results');
+      const countEl = document.getElementById('count');
+
+      countEl.textContent = meds.length + ' medication' + (meds.length !== 1 ? 's' : '');
+
+      if (meds.length === 0) {
+        container.innerHTML = '';
+        noResults.style.display = 'block';
+        return;
+      }
+      noResults.style.display = 'none';
+
+      container.innerHTML = meds.map(function(med, i) {
+        const brands = med.brand_names.map(escapeHtml).join(', ');
+        const doses = med.doses.map(function(d) { return d + ' ' + escapeHtml(med.dose_unit); }).join(', ');
+
+        const onLabel = med.indication.on_label.map(function(t) {
+          return '<span class="tag">' + escapeHtml(t) + '</span>';
+        }).join('');
+
+        const offLabel = med.indication.off_label.map(function(t) {
+          return '<span class="tag off-label">' + escapeHtml(t) + '</span>';
+        }).join('');
+
+        const interactions = med.interactions_with_other_drugs_on_this_list.map(function(ix) {
+          return '<li><span class="interaction-drug">' + escapeHtml(ix.drug) + ':</span> ' + escapeHtml(ix.interaction) + '</li>';
+        }).join('');
+
+        return '<div class="med-card" data-index="' + i + '">' +
+          '<div class="med-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + i + '" onclick="toggleCard(' + i + ')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();toggleCard(' + i + ')}">' +
+            '<div>' +
+              '<h2>' + escapeHtml(med.generic_name) + '</h2>' +
+              '<div class="brands">' + brands + '</div>' +
+            '</div>' +
+            '<span class="toggle" id="toggle-' + i + '">&#9660;</span>' +
+          '</div>' +
+          '<div class="med-body" id="body-' + i + '">' +
+            '<div class="info-grid">' +
+              '<div class="info-item">' +
+                '<div class="info-label">Available Doses</div>' +
+                '<div class="info-value">' + doses + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Maximum Daily Dosage</div>' +
+                '<div class="info-value">' + escapeHtml(med.maximum_daily_dosage) + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Time Between Doses</div>' +
+                '<div class="info-value">' + escapeHtml(med.time_required_between_doses) + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Time to Peak Concentration</div>' +
+                '<div class="info-value">' + escapeHtml(med.time_to_max_concentration) + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Half-Life</div>' +
+                '<div class="info-value">' + escapeHtml(med.half_life) + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Active Metabolites</div>' +
+                '<div class="info-value">' + escapeHtml(med.active_metabolites) + '</div>' +
+              '</div>' +
+              '<div class="info-item">' +
+                '<div class="info-label">Half-Life of Active Metabolites</div>' +
+                '<div class="info-value">' + escapeHtml(med.half_life_of_active_metabolites) + '</div>' +
+              '</div>' +
+            '</div>' +
+            '<div class="section-title">Mechanism of Action</div>' +
+            '<p class="info-value">' + escapeHtml(med.mechanism_of_action) + '</p>' +
+            '<div class="section-title">On-Label Indications</div>' +
+            '<div class="tag-list">' + onLabel + '</div>' +
+            '<div class="section-title">Off-Label Uses</div>' +
+            '<div class="tag-list">' + offLabel + '</div>' +
+            '<div class="section-title">Drug Interactions</div>' +
+            '<ul class="interaction-list">' + interactions + '</ul>' +
+          '</div>' +
+        '</div>';
+      }).join('');
+    }
+
+    function toggleCard(index) {
+      const body = document.getElementById('body-' + index);
+      const toggle = document.getElementById('toggle-' + index);
+      const header = toggle.closest('.med-header');
+      body.classList.toggle('open');
+      toggle.classList.toggle('open');
+      header.setAttribute('aria-expanded', body.classList.contains('open'));
+    }
+
+    document.getElementById('search').addEventListener('input', function(e) {
+      const query = e.target.value.toLowerCase().trim();
+      if (!query) {
+        renderCards(medications);
+        return;
+      }
+      const filtered = medications.filter(function(med) {
+        const searchable = [
+          med.generic_name,
+          med.brand_names.join(' '),
+          med.indication.on_label.join(' '),
+          med.indication.off_label.join(' '),
+          med.mechanism_of_action,
+          med.maximum_daily_dosage,
+          med.half_life,
+          med.active_metabolites
+        ].join(' ').toLowerCase();
+        return searchable.indexOf(query) !== -1;
+      });
+      renderCards(filtered);
+    });
+
+    loadData();
+  </script>
+</body>
+</html>
