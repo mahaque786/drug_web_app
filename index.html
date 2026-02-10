@@ -152,6 +152,22 @@
       font-weight: 600;
       color: var(--accent);
     }
+    .citation-list { list-style: none; }
+    .citation-list li {
+      padding: 0.35rem 0;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    .citation-type {
+      display: inline-block;
+      background: #f1f5f9;
+      color: var(--text);
+      padding: 0.1rem 0.45rem;
+      border-radius: 3px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.4rem;
+    }
     .no-results {
       text-align: center;
       color: var(--text-secondary);
@@ -247,6 +263,13 @@
           return '<li><span class="interaction-drug">' + escapeHtml(ix.drug) + ':</span> ' + escapeHtml(ix.interaction) + '</li>';
         }).join('');
 
+        var citations = '';
+        if (med.citations && med.citations.length > 0) {
+          citations = med.citations.map(function(c) {
+            return '<li><span class="citation-type">' + escapeHtml(c.type) + '</span>' + escapeHtml(c.title) + '</li>';
+          }).join('');
+        }
+
         return '<div class="med-card" data-index="' + i + '">' +
           '<div class="med-header" role="button" tabindex="0" aria-expanded="false" aria-controls="body-' + i + '" onclick="toggleCard(' + i + ')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();toggleCard(' + i + ')}">' +
             '<div>' +
@@ -294,6 +317,8 @@
             '<div class="tag-list">' + offLabel + '</div>' +
             '<div class="section-title">Drug Interactions</div>' +
             '<ul class="interaction-list">' + interactions + '</ul>' +
+            '<div class="section-title">Citations</div>' +
+            '<ul class="citation-list">' + citations + '</ul>' +
           '</div>' +
         '</div>';
       }).join('');

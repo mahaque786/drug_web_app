@@ -1,16 +1,38 @@
 {
-  "source": "DailyMed (dailymed.nlm.nih.gov)",
+  "source": "DailyMed Drug Labels, StatPearls (NCBI Bookshelf)",
   "disclaimer": "This information is compiled from DailyMed drug labeling and is for informational purposes only. It is not a substitute for professional medical advice. Always consult a healthcare provider or pharmacist for clinical decisions.",
   "date_compiled": "2026-02-05",
   "medications": [
     {
       "generic_name": "Methylphenidate HCl (Extended-Release)",
-      "brand_names": ["Concerta", "Ritalin LA", "Metadate CD", "Metadate ER", "Jornay PM", "Aptensio XR", "QuilliChew ER", "Quillivant XR"],
+      "brand_names": [
+        "Concerta",
+        "Ritalin LA",
+        "Metadate CD",
+        "Metadate ER",
+        "Jornay PM",
+        "Aptensio XR",
+        "QuilliChew ER",
+        "Quillivant XR"
+      ],
       "indication": {
-        "on_label": ["Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older", "Narcolepsy"],
-        "off_label": ["Treatment-resistant depression (augmentation)", "Fatigue in cancer or palliative care", "Cognitive enhancement in traumatic brain injury"]
+        "on_label": [
+          "Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older",
+          "Narcolepsy"
+        ],
+        "off_label": [
+          "Treatment-resistant depression (augmentation)",
+          "Fatigue in cancer or palliative care",
+          "Cognitive enhancement in traumatic brain injury"
+        ]
       },
-      "doses": [18, 27, 36, 54, 72],
+      "doses": [
+        18,
+        27,
+        36,
+        54,
+        72
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "72 mg/day (adults); 54 mg/day (children 6-12)",
       "time_required_between_doses": "24 hours (once daily dosing)",
@@ -20,21 +42,64 @@
       "active_metabolites": "None clinically significant. Ritalinic acid (alpha-phenyl-piperidine acetic acid/PPA) is the primary metabolite but has little or no pharmacologic activity.",
       "half_life_of_active_metabolites": "3-4 hours (ritalinic acid, but not pharmacologically active)",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Amphetamine Salts (IR and ER)", "interaction": "Additive CNS stimulant effects; concurrent use of two stimulants increases risk of cardiovascular effects (hypertension, tachycardia), insomnia, and CNS overstimulation. Generally not prescribed together at full doses."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion lowers the seizure threshold; combined use with stimulants may further increase seizure risk. Additive dopaminergic and noradrenergic effects."},
-        {"drug": "Sertraline 50mg", "interaction": "Methylphenidate may inhibit the metabolism of SSRIs. Rare risk of serotonin syndrome with combined serotonergic activity. Monitor for increased sertraline side effects."},
-        {"drug": "Esomeprazole 40mg", "interaction": "Proton pump inhibitors may alter absorption characteristics of some extended-release methylphenidate formulations by changing gastric pH, though clinical significance is generally low for OROS formulations."},
-        {"drug": "Propranolol", "interaction": "Opposing cardiovascular effects; propranolol may mitigate stimulant-induced tachycardia/hypertension. This combination is sometimes used therapeutically but requires monitoring."}
+        {
+          "drug": "Amphetamine Salts (IR and ER)",
+          "interaction": "Additive CNS stimulant effects; concurrent use of two stimulants increases risk of cardiovascular effects (hypertension, tachycardia), insomnia, and CNS overstimulation. Generally not prescribed together at full doses."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion lowers the seizure threshold; combined use with stimulants may further increase seizure risk. Additive dopaminergic and noradrenergic effects."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Methylphenidate may inhibit the metabolism of SSRIs. Rare risk of serotonin syndrome with combined serotonergic activity. Monitor for increased sertraline side effects."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Proton pump inhibitors may alter absorption characteristics of some extended-release methylphenidate formulations by changing gastric pH, though clinical significance is generally low for OROS formulations."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Opposing cardiovascular effects; propranolol may mitigate stimulant-induced tachycardia/hypertension. This combination is sometimes used therapeutically but requires monitoring."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Concerta (methylphenidate HCl) Extended-Release Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Methylphenidate Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Methylphenidate HCl (Immediate-Release)",
-      "brand_names": ["Ritalin", "Methylin"],
+      "brand_names": [
+        "Ritalin",
+        "Methylin"
+      ],
       "indication": {
-        "on_label": ["Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older", "Narcolepsy"],
-        "off_label": ["Treatment-resistant depression (augmentation)", "Fatigue in cancer or palliative care", "Apathy in dementia"]
+        "on_label": [
+          "Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older",
+          "Narcolepsy"
+        ],
+        "off_label": [
+          "Treatment-resistant depression (augmentation)",
+          "Fatigue in cancer or palliative care",
+          "Apathy in dementia"
+        ]
       },
-      "doses": [5, 10, 20],
+      "doses": [
+        5,
+        10,
+        20
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "60 mg/day in divided doses",
       "time_required_between_doses": "4-6 hours (given 2-3 times daily)",
@@ -44,20 +109,63 @@
       "active_metabolites": "None clinically significant. Ritalinic acid is the primary metabolite but has little or no pharmacologic activity.",
       "half_life_of_active_metabolites": "3-4 hours (ritalinic acid, not pharmacologically active)",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Amphetamine Salts (IR and ER)", "interaction": "Additive CNS stimulant effects; increased cardiovascular risk and CNS overstimulation."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion lowers seizure threshold; additive dopaminergic effects. Monitor for seizures and cardiovascular effects."},
-        {"drug": "Sertraline 50mg", "interaction": "Methylphenidate may inhibit SSRIs metabolism. Monitor for serotonergic effects."},
-        {"drug": "Propranolol", "interaction": "Opposing cardiovascular effects; may counteract stimulant-induced tachycardia."}
+        {
+          "drug": "Amphetamine Salts (IR and ER)",
+          "interaction": "Additive CNS stimulant effects; increased cardiovascular risk and CNS overstimulation."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion lowers seizure threshold; additive dopaminergic effects. Monitor for seizures and cardiovascular effects."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Methylphenidate may inhibit SSRIs metabolism. Monitor for serotonergic effects."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Opposing cardiovascular effects; may counteract stimulant-induced tachycardia."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Ritalin (methylphenidate HCl) Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Methylphenidate Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Extended-Release)",
-      "brand_names": ["Adderall XR", "Mydayis"],
+      "brand_names": [
+        "Adderall XR",
+        "Mydayis"
+      ],
       "indication": {
-        "on_label": ["Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older"],
-        "off_label": ["Narcolepsy", "Treatment-resistant depression (augmentation)", "Obesity/weight management", "Binge eating disorder"]
+        "on_label": [
+          "Attention Deficit Hyperactivity Disorder (ADHD) in patients aged 6 years and older"
+        ],
+        "off_label": [
+          "Narcolepsy",
+          "Treatment-resistant depression (augmentation)",
+          "Obesity/weight management",
+          "Binge eating disorder"
+        ]
       },
-      "doses": [5, 10, 15, 20, 25, 30],
+      "doses": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "40 mg/day (children 6-12); 60 mg/day (adolescents and adults)",
       "time_required_between_doses": "24 hours (once daily dosing)",
@@ -67,23 +175,74 @@
       "active_metabolites": "4-hydroxyamphetamine, alpha-hydroxyamphetamine, norephedrine. These metabolites have some pharmacologic activity but contribute minimally to overall clinical effect at therapeutic doses.",
       "half_life_of_active_metabolites": "Not well characterized independently; urinary elimination is pH-dependent",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Methylphenidate (IR and XR)", "interaction": "Additive CNS stimulant effects; increased risk of cardiovascular adverse events and CNS overstimulation."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Additive dopaminergic/noradrenergic effects. Bupropion lowers seizure threshold. Increased risk of seizures and cardiovascular effects."},
-        {"drug": "Sertraline 50mg", "interaction": "Increased serotonergic activity; theoretical risk of serotonin syndrome. Monitor for symptoms."},
-        {"drug": "Esomeprazole 40mg", "interaction": "Proton pump inhibitors reduce gastric acidity, which may shorten Tmax of amphetamine ER capsules (median Tmax shortened from 5 hours to 2.75 hours). May lead to earlier and higher peak concentrations."},
-        {"drug": "Propranolol", "interaction": "Opposing cardiovascular effects. Propranolol may attenuate amphetamine-induced tachycardia and hypertension."},
-        {"drug": "Trazodone 50mg", "interaction": "Trazodone may cause false-positive amphetamine screens. Additive effects on monoamine systems."},
-        {"drug": "Famotidine 20mg", "interaction": "H2 blockers may raise gastric pH, potentially altering amphetamine absorption (though less effect than PPIs)."}
+        {
+          "drug": "Methylphenidate (IR and XR)",
+          "interaction": "Additive CNS stimulant effects; increased risk of cardiovascular adverse events and CNS overstimulation."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Additive dopaminergic/noradrenergic effects. Bupropion lowers seizure threshold. Increased risk of seizures and cardiovascular effects."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Increased serotonergic activity; theoretical risk of serotonin syndrome. Monitor for symptoms."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Proton pump inhibitors reduce gastric acidity, which may shorten Tmax of amphetamine ER capsules (median Tmax shortened from 5 hours to 2.75 hours). May lead to earlier and higher peak concentrations."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Opposing cardiovascular effects. Propranolol may attenuate amphetamine-induced tachycardia and hypertension."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Trazodone may cause false-positive amphetamine screens. Additive effects on monoamine systems."
+        },
+        {
+          "drug": "Famotidine 20mg",
+          "interaction": "H2 blockers may raise gastric pH, potentially altering amphetamine absorption (though less effect than PPIs)."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Adderall XR (mixed salts of a single-entity amphetamine product) Extended-Release Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Amphetamine-Dextroamphetamine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Immediate-Release)",
-      "brand_names": ["Adderall"],
+      "brand_names": [
+        "Adderall"
+      ],
       "indication": {
-        "on_label": ["Attention Deficit Hyperactivity Disorder (ADHD)", "Narcolepsy"],
-        "off_label": ["Treatment-resistant depression (augmentation)", "Obesity/weight management"]
+        "on_label": [
+          "Attention Deficit Hyperactivity Disorder (ADHD)",
+          "Narcolepsy"
+        ],
+        "off_label": [
+          "Treatment-resistant depression (augmentation)",
+          "Obesity/weight management"
+        ]
       },
-      "doses": [5, 7.5, 10, 12.5, 15, 20, 30],
+      "doses": [
+        5,
+        7.5,
+        10,
+        12.5,
+        15,
+        20,
+        30
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "40 mg/day (children); 60 mg/day (adults)",
       "time_required_between_doses": "4-6 hours (given 1-3 times daily)",
@@ -93,46 +252,144 @@
       "active_metabolites": "4-hydroxyamphetamine, alpha-hydroxyamphetamine, norephedrine",
       "half_life_of_active_metabolites": "Not well characterized independently; urinary elimination is pH-dependent",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Methylphenidate (IR and XR)", "interaction": "Additive CNS stimulant effects."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Additive dopaminergic effects; increased seizure risk."},
-        {"drug": "Sertraline 50mg", "interaction": "Increased serotonergic activity; monitor for serotonin syndrome symptoms."},
-        {"drug": "Esomeprazole 40mg", "interaction": "May alter amphetamine absorption by reducing gastric acidity."},
-        {"drug": "Propranolol", "interaction": "Opposing cardiovascular effects."}
+        {
+          "drug": "Methylphenidate (IR and XR)",
+          "interaction": "Additive CNS stimulant effects."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Additive dopaminergic effects; increased seizure risk."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Increased serotonergic activity; monitor for serotonin syndrome symptoms."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "May alter amphetamine absorption by reducing gastric acidity."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Opposing cardiovascular effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Adderall (mixed salts of a single-entity amphetamine product) Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Amphetamine-Dextroamphetamine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Buspirone HCl",
-      "brand_names": ["BuSpar"],
+      "brand_names": [
+        "BuSpar"
+      ],
       "indication": {
-        "on_label": ["Generalized Anxiety Disorder (GAD)", "Short-term relief of anxiety symptoms"],
-        "off_label": ["Augmentation of antidepressants (SSRI/SNRI) for depression", "SSRI-induced sexual dysfunction", "Social anxiety disorder", "Bruxism (antidepressant-induced)", "Smoking cessation (adjunct)", "Aggression in developmental disabilities"]
+        "on_label": [
+          "Generalized Anxiety Disorder (GAD)",
+          "Short-term relief of anxiety symptoms"
+        ],
+        "off_label": [
+          "Augmentation of antidepressants (SSRI/SNRI) for depression",
+          "SSRI-induced sexual dysfunction",
+          "Social anxiety disorder",
+          "Bruxism (antidepressant-induced)",
+          "Smoking cessation (adjunct)",
+          "Aggression in developmental disabilities"
+        ]
       },
-      "doses": [5, 7.5, 10, 15, 30],
+      "doses": [
+        5,
+        7.5,
+        10,
+        15,
+        30
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "60 mg/day",
       "time_required_between_doses": "8-12 hours (given 2-3 times daily)",
       "mechanism_of_action": "Partial agonist at serotonin 5-HT1A receptors (both presynaptic autoreceptors and postsynaptic receptors). Moderate affinity for brain D2 dopamine receptors. Does not bind to benzodiazepine receptors or affect GABA binding. Metabolized by CYP3A4.",
       "time_to_max_concentration": "0.7-1.5 hours (40-90 minutes)",
       "half_life": "2-3 hours",
-      "active_metabolites": "1-pyrimidinylpiperazine (1-PP) — potent alpha-2 adrenergic antagonist which may contribute to pharmacological effects. 6-hydroxybuspirone is also an active metabolite (5-HT1A partial agonist) with plasma levels 40-fold higher than parent.",
+      "active_metabolites": "1-pyrimidinylpiperazine (1-PP) \u2014 potent alpha-2 adrenergic antagonist which may contribute to pharmacological effects. 6-hydroxybuspirone is also an active metabolite (5-HT1A partial agonist) with plasma levels 40-fold higher than parent.",
       "half_life_of_active_metabolites": "1-PP: approximately 6 hours; 6-hydroxybuspirone: data limited but longer than parent compound",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "Additive serotonergic effects; theoretical risk of serotonin syndrome, though this combination is commonly used clinically for augmentation. Monitor for serotonin syndrome symptoms."},
-        {"drug": "Trazodone 50mg", "interaction": "One report of concomitant use causing 3- to 6-fold elevations in SGPT (ALT). Additive serotonergic effects and theoretical serotonin syndrome risk. Monitor liver function."},
-        {"drug": "Propranolol", "interaction": "In vitro studies show buspirone does not displace propranolol from plasma proteins. No significant pharmacokinetic interaction expected at therapeutic levels, but both may have additive CNS effects."},
-        {"drug": "Esomeprazole 40mg", "interaction": "No significant known interaction."},
-        {"drug": "Bupropion 300mg XR", "interaction": "No well-documented pharmacokinetic interaction. Both affect monoamine systems through different mechanisms."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Additive serotonergic effects; monitor for serotonin syndrome."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive serotonergic effects; theoretical risk of serotonin syndrome, though this combination is commonly used clinically for augmentation. Monitor for serotonin syndrome symptoms."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "One report of concomitant use causing 3- to 6-fold elevations in SGPT (ALT). Additive serotonergic effects and theoretical serotonin syndrome risk. Monitor liver function."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "In vitro studies show buspirone does not displace propranolol from plasma proteins. No significant pharmacokinetic interaction expected at therapeutic levels, but both may have additive CNS effects."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "No significant known interaction."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "No well-documented pharmacokinetic interaction. Both affect monoamine systems through different mechanisms."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Additive serotonergic effects; monitor for serotonin syndrome."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "BuSpar (buspirone HCl) Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Buspirone Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Buspirone - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Bupropion HCl (Extended-Release)",
-      "brand_names": ["Wellbutrin XL", "Wellbutrin SR", "Forfivo XL", "Aplenzin", "Zyban (smoking cessation)"],
+      "brand_names": [
+        "Wellbutrin XL",
+        "Wellbutrin SR",
+        "Forfivo XL",
+        "Aplenzin",
+        "Zyban (smoking cessation)"
+      ],
       "indication": {
-        "on_label": ["Major Depressive Disorder (MDD)", "Seasonal Affective Disorder (SAD)", "Smoking cessation aid (as Zyban)"],
-        "off_label": ["ADHD (adjunct or alternative)", "Weight loss", "Sexual dysfunction (SSRI-induced)", "Bipolar depression (with mood stabilizer)"]
+        "on_label": [
+          "Major Depressive Disorder (MDD)",
+          "Seasonal Affective Disorder (SAD)",
+          "Smoking cessation aid (as Zyban)"
+        ],
+        "off_label": [
+          "ADHD (adjunct or alternative)",
+          "Weight loss",
+          "Sexual dysfunction (SSRI-induced)",
+          "Bipolar depression (with mood stabilizer)"
+        ]
       },
-      "doses": [150, 300, 450],
+      "doses": [
+        150,
+        300,
+        450
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "450 mg/day",
       "time_required_between_doses": "24 hours (XL formulation); 12 hours (SR formulation)",
@@ -142,51 +399,153 @@
       "active_metabolites": "Hydroxybupropion (primary, via CYP2B6), threohydrobupropion, erythrohydrobupropion. Hydroxybupropion has approximately half the potency of bupropion as an antidepressant.",
       "half_life_of_active_metabolites": "Hydroxybupropion: ~20 hours; Threohydrobupropion: ~37 hours; Erythrohydrobupropion: ~33 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Methylphenidate (IR and XR)", "interaction": "Additive dopaminergic and noradrenergic effects. Bupropion lowers seizure threshold; use caution."},
-        {"drug": "Amphetamine Salts (IR and ER)", "interaction": "Additive dopaminergic effects. Increased seizure risk. Monitor cardiovascular parameters."},
-        {"drug": "Sertraline 50mg", "interaction": "Bupropion is a potent CYP2D6 inhibitor and may increase sertraline levels. Monitor for increased SSRI side effects."},
-        {"drug": "Propranolol", "interaction": "Bupropion (CYP2D6 inhibitor) may increase propranolol levels, as propranolol is partially metabolized by CYP2D6. Monitor for bradycardia and hypotension."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Bupropion is a potent CYP2D6 inhibitor and significantly increases dextromethorphan levels. Risk of DXM toxicity and serotonin syndrome. Avoid or use with extreme caution."},
-        {"drug": "Trazodone 50mg", "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of trazodone (though trazodone is primarily CYP3A4-metabolized). Additive seizure risk."},
-        {"drug": "Ondansetron 4mg", "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of ondansetron. Clinical significance is uncertain."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Bupropion may lower seizure threshold; hydroxyzine at high doses may also lower seizure threshold. Additive risk."}
+        {
+          "drug": "Methylphenidate (IR and XR)",
+          "interaction": "Additive dopaminergic and noradrenergic effects. Bupropion lowers seizure threshold; use caution."
+        },
+        {
+          "drug": "Amphetamine Salts (IR and ER)",
+          "interaction": "Additive dopaminergic effects. Increased seizure risk. Monitor cardiovascular parameters."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor and may increase sertraline levels. Monitor for increased SSRI side effects."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Bupropion (CYP2D6 inhibitor) may increase propranolol levels, as propranolol is partially metabolized by CYP2D6. Monitor for bradycardia and hypotension."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor and significantly increases dextromethorphan levels. Risk of DXM toxicity and serotonin syndrome. Avoid or use with extreme caution."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of trazodone (though trazodone is primarily CYP3A4-metabolized). Additive seizure risk."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of ondansetron. Clinical significance is uncertain."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Bupropion may lower seizure threshold; hydroxyzine at high doses may also lower seizure threshold. Additive risk."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Wellbutrin XL (bupropion HCl) Extended-Release Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Bupropion Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Bupropion - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Colestipol HCl",
-      "brand_names": ["Colestid"],
+      "brand_names": [
+        "Colestid"
+      ],
       "indication": {
-        "on_label": ["Primary hypercholesterolemia (elevated LDL cholesterol) as adjunct to diet"],
-        "off_label": ["Bile acid diarrhea", "Pruritus associated with cholestasis", "Diarrhea associated with Crohn's disease or ileal resection", "Clostridium difficile-associated diarrhea (adjunct)"]
+        "on_label": [
+          "Primary hypercholesterolemia (elevated LDL cholesterol) as adjunct to diet"
+        ],
+        "off_label": [
+          "Bile acid diarrhea",
+          "Pruritus associated with cholestasis",
+          "Diarrhea associated with Crohn's disease or ileal resection",
+          "Clostridium difficile-associated diarrhea (adjunct)"
+        ]
       },
-      "doses": [1, 2, 4, 5],
+      "doses": [
+        1,
+        2,
+        4,
+        5
+      ],
       "dose_unit": "g",
       "maximum_daily_dosage": "16 g/day (tablets); 30 g/day (granules)",
       "time_required_between_doses": "12 hours (given 1-2 times daily) or as a single daily dose",
       "mechanism_of_action": "Bile acid sequestrant. Binds bile acids in the intestine to form an insoluble complex that is excreted in feces. This removes bile acids from the enterohepatic circulation, promoting hepatic conversion of cholesterol to bile acids, ultimately lowering LDL cholesterol levels. Not absorbed systemically.",
-      "time_to_max_concentration": "Not applicable — colestipol is not absorbed systemically",
-      "half_life": "Not applicable — not absorbed systemically",
-      "active_metabolites": "None — not absorbed or metabolized systemically",
+      "time_to_max_concentration": "Not applicable \u2014 colestipol is not absorbed systemically",
+      "half_life": "Not applicable \u2014 not absorbed systemically",
+      "active_metabolites": "None \u2014 not absorbed or metabolized systemically",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "ALL other oral medications on this list", "interaction": "Colestipol can bind to and reduce absorption of virtually any co-administered oral medication. Other medications should be taken at least 1 hour before or 4 hours after colestipol to minimize this interaction. Specific concerns include:"},
-        {"drug": "Sertraline 50mg", "interaction": "May reduce sertraline absorption. Separate administration by at least 1 hour before or 4 hours after colestipol."},
-        {"drug": "Propranolol", "interaction": "Colestipol may reduce propranolol absorption. Separate administration times."},
-        {"drug": "Levothyroxine (if applicable)", "interaction": "Classic interaction — significantly reduces thyroid hormone absorption."},
-        {"drug": "Esomeprazole 40mg", "interaction": "May reduce absorption. Separate dosing."},
-        {"drug": "Famotidine 20mg", "interaction": "May reduce absorption. Separate dosing."},
-        {"drug": "NSAIDs (Celecoxib, Meloxicam, Ibuprofen, Naproxen)", "interaction": "May reduce NSAID absorption. Separate dosing."},
-        {"drug": "Finasteride 1mg", "interaction": "May reduce absorption. Separate dosing."}
+        {
+          "drug": "ALL other oral medications on this list",
+          "interaction": "Colestipol can bind to and reduce absorption of virtually any co-administered oral medication. Other medications should be taken at least 1 hour before or 4 hours after colestipol to minimize this interaction. Specific concerns include:"
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "May reduce sertraline absorption. Separate administration by at least 1 hour before or 4 hours after colestipol."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Colestipol may reduce propranolol absorption. Separate administration times."
+        },
+        {
+          "drug": "Levothyroxine (if applicable)",
+          "interaction": "Classic interaction \u2014 significantly reduces thyroid hormone absorption."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "May reduce absorption. Separate dosing."
+        },
+        {
+          "drug": "Famotidine 20mg",
+          "interaction": "May reduce absorption. Separate dosing."
+        },
+        {
+          "drug": "NSAIDs (Celecoxib, Meloxicam, Ibuprofen, Naproxen)",
+          "interaction": "May reduce NSAID absorption. Separate dosing."
+        },
+        {
+          "drug": "Finasteride 1mg",
+          "interaction": "May reduce absorption. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Colestid (colestipol HCl) Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Colestipol Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Colestipol - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Finasteride",
-      "brand_names": ["Proscar (5mg)", "Propecia (1mg)"],
+      "brand_names": [
+        "Proscar (5mg)",
+        "Propecia (1mg)"
+      ],
       "indication": {
-        "on_label": ["Benign Prostatic Hyperplasia (BPH) (5mg dose)", "Male pattern hair loss/androgenetic alopecia (1mg dose)"],
-        "off_label": ["Hirsutism in women", "Transgender hormone therapy (adjunct)"]
+        "on_label": [
+          "Benign Prostatic Hyperplasia (BPH) (5mg dose)",
+          "Male pattern hair loss/androgenetic alopecia (1mg dose)"
+        ],
+        "off_label": [
+          "Hirsutism in women",
+          "Transgender hormone therapy (adjunct)"
+        ]
       },
-      "doses": [1, 5],
+      "doses": [
+        1,
+        5
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "5 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
@@ -196,285 +555,882 @@
       "active_metabolites": "Two metabolites have been identified (monohydroxylated and omega-carboxylic acid metabolites) with approximately 20% of finasteride's activity for 5-alpha reductase inhibition.",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Colestipol 1g", "interaction": "Colestipol may reduce finasteride absorption. Separate dosing times."}
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "Colestipol may reduce finasteride absorption. Separate dosing times."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Propecia (finasteride) Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Finasteride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Finasteride - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Propranolol HCl",
-      "brand_names": ["Inderal", "Inderal LA", "InnoPran XL", "Hemangeol"],
+      "brand_names": [
+        "Inderal",
+        "Inderal LA",
+        "InnoPran XL",
+        "Hemangeol"
+      ],
       "indication": {
-        "on_label": ["Hypertension", "Angina pectoris", "Atrial fibrillation (rate control)", "Myocardial infarction (secondary prevention)", "Essential tremor", "Pheochromocytoma (adjunct)", "Migraine prophylaxis", "Hypertrophic subaortic stenosis"],
-        "off_label": ["Performance anxiety/stage fright", "Anxiety (somatic symptoms)", "Akathisia", "Thyroid storm/thyrotoxicosis", "Variceal bleeding prophylaxis (portal hypertension)", "PTSD-related nightmares", "Aggressive behavior"]
+        "on_label": [
+          "Hypertension",
+          "Angina pectoris",
+          "Atrial fibrillation (rate control)",
+          "Myocardial infarction (secondary prevention)",
+          "Essential tremor",
+          "Pheochromocytoma (adjunct)",
+          "Migraine prophylaxis",
+          "Hypertrophic subaortic stenosis"
+        ],
+        "off_label": [
+          "Performance anxiety/stage fright",
+          "Anxiety (somatic symptoms)",
+          "Akathisia",
+          "Thyroid storm/thyrotoxicosis",
+          "Variceal bleeding prophylaxis (portal hypertension)",
+          "PTSD-related nightmares",
+          "Aggressive behavior"
+        ]
       },
-      "doses": [5, 10, 20, 40, 60, 80, 120, 160],
+      "doses": [
+        5,
+        10,
+        20,
+        40,
+        60,
+        80,
+        120,
+        160
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "640 mg/day (hypertension); varies by indication. Typical max for most indications: 320 mg/day",
       "time_required_between_doses": "6-12 hours (IR given 2-4 times daily); 24 hours (LA/ER formulations)",
       "mechanism_of_action": "Non-selective beta-adrenergic receptor blocker (blocks both beta-1 and beta-2 receptors). Reduces heart rate, myocardial contractility, blood pressure, and myocardial oxygen demand. Also has membrane-stabilizing activity. Metabolized primarily by CYP2D6 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (IR); 6 hours (LA formulation)",
       "half_life": "3-6 hours (IR formulation); 8-11 hours (LA formulation)",
-      "active_metabolites": "4-hydroxypropranolol — has beta-blocking activity comparable to propranolol. Formed via CYP2D6.",
+      "active_metabolites": "4-hydroxypropranolol \u2014 has beta-blocking activity comparable to propranolol. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "4-hydroxypropranolol: approximately 5-6 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Methylphenidate (IR and XR)", "interaction": "Opposing cardiovascular effects. Propranolol may mitigate stimulant-induced tachycardia/hypertension. Sometimes used deliberately."},
-        {"drug": "Amphetamine Salts (IR and ER)", "interaction": "Opposing cardiovascular effects. May counteract amphetamine-induced tachycardia."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion inhibits CYP2D6, potentially increasing propranolol levels. Monitor for excessive bradycardia and hypotension."},
-        {"drug": "Sertraline 50mg", "interaction": "Sertraline is a moderate CYP2D6 inhibitor and may increase propranolol levels. Monitor heart rate and blood pressure."},
-        {"drug": "Pseudoephedrine", "interaction": "Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive effects. Risk of unopposed alpha-adrenergic stimulation leading to hypertension."},
-        {"drug": "Diphenhydramine", "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive hypotensive effects possible."},
-        {"drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam", "interaction": "NSAIDs may reduce the antihypertensive effect of propranolol by inhibiting renal prostaglandin synthesis."},
-        {"drug": "Colestipol 1g", "interaction": "Colestipol may reduce propranolol absorption. Separate dosing."},
-        {"drug": "Buspirone 7.5mg", "interaction": "No significant pharmacokinetic interaction documented. Propranolol is not significantly displaced by buspirone."}
+        {
+          "drug": "Methylphenidate (IR and XR)",
+          "interaction": "Opposing cardiovascular effects. Propranolol may mitigate stimulant-induced tachycardia/hypertension. Sometimes used deliberately."
+        },
+        {
+          "drug": "Amphetamine Salts (IR and ER)",
+          "interaction": "Opposing cardiovascular effects. May counteract amphetamine-induced tachycardia."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion inhibits CYP2D6, potentially increasing propranolol levels. Monitor for excessive bradycardia and hypotension."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Sertraline is a moderate CYP2D6 inhibitor and may increase propranolol levels. Monitor heart rate and blood pressure."
+        },
+        {
+          "drug": "Pseudoephedrine",
+          "interaction": "Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive effects. Risk of unopposed alpha-adrenergic stimulation leading to hypertension."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive hypotensive effects possible."
+        },
+        {
+          "drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam",
+          "interaction": "NSAIDs may reduce the antihypertensive effect of propranolol by inhibiting renal prostaglandin synthesis."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "Colestipol may reduce propranolol absorption. Separate dosing."
+        },
+        {
+          "drug": "Buspirone 7.5mg",
+          "interaction": "No significant pharmacokinetic interaction documented. Propranolol is not significantly displaced by buspirone."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Propranolol Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Propranolol Hydrochloride Extended-Release"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Propranolol - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Sertraline HCl",
-      "brand_names": ["Zoloft"],
+      "brand_names": [
+        "Zoloft"
+      ],
       "indication": {
-        "on_label": ["Major Depressive Disorder (MDD)", "Obsessive-Compulsive Disorder (OCD)", "Panic Disorder", "Post-Traumatic Stress Disorder (PTSD)", "Social Anxiety Disorder (Social Phobia)", "Premenstrual Dysphoric Disorder (PMDD)"],
-        "off_label": ["Generalized Anxiety Disorder (GAD)", "Premature ejaculation", "Body dysmorphic disorder", "Binge eating disorder", "Bulimia nervosa"]
+        "on_label": [
+          "Major Depressive Disorder (MDD)",
+          "Obsessive-Compulsive Disorder (OCD)",
+          "Panic Disorder",
+          "Post-Traumatic Stress Disorder (PTSD)",
+          "Social Anxiety Disorder (Social Phobia)",
+          "Premenstrual Dysphoric Disorder (PMDD)"
+        ],
+        "off_label": [
+          "Generalized Anxiety Disorder (GAD)",
+          "Premature ejaculation",
+          "Body dysmorphic disorder",
+          "Binge eating disorder",
+          "Bulimia nervosa"
+        ]
       },
-      "doses": [25, 50, 100, 150, 200],
+      "doses": [
+        25,
+        50,
+        100,
+        150,
+        200
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "200 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
       "mechanism_of_action": "Selective serotonin reuptake inhibitor (SSRI). Potently and selectively inhibits neuronal reuptake of serotonin (5-HT) with minimal effects on norepinephrine and dopamine reuptake. Also moderate inhibitor of CYP2D6.",
       "time_to_max_concentration": "4.5-8.4 hours",
       "half_life": "26 hours (approximately; range 22-36 hours)",
-      "active_metabolites": "N-desmethylsertraline — approximately 1/8 as potent as sertraline for serotonin reuptake inhibition.",
+      "active_metabolites": "N-desmethylsertraline \u2014 approximately 1/8 as potent as sertraline for serotonin reuptake inhibition.",
       "half_life_of_active_metabolites": "N-desmethylsertraline: 62-104 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Trazodone 50mg", "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Monitor for symptoms (agitation, hyperthermia, clonus, tremor)."},
-        {"drug": "Buspirone 7.5mg", "interaction": "Additive serotonergic effects; commonly used together for augmentation, but monitor for serotonin syndrome."},
-        {"drug": "Tramadol (if applicable)", "interaction": "Serotonin syndrome risk."},
-        {"drug": "Ondansetron 4mg", "interaction": "Ondansetron is a 5-HT3 antagonist. Sertraline (CYP2D6 inhibitor) may increase ondansetron levels. Generally considered safe."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Sertraline inhibits CYP2D6, significantly increasing DXM levels. Increased risk of serotonin syndrome. Avoid or use with caution."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion (CYP2D6 inhibitor) may increase sertraline levels. Both affect monoamine systems."},
-        {"drug": "Propranolol", "interaction": "Sertraline (moderate CYP2D6 inhibitor) may increase propranolol levels. Monitor heart rate and blood pressure."},
-        {"drug": "Amphetamine Salts / Methylphenidate", "interaction": "Additive serotonergic effects. Commonly used together but monitor."},
-        {"drug": "Celecoxib / Meloxicam / Ibuprofen / Naproxen", "interaction": "NSAIDs combined with SSRIs significantly increase risk of GI bleeding (3-6 fold increased risk). Use lowest effective NSAID dose and consider gastroprotection."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce sertraline absorption. Separate dosing."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive sedation possible. Both may prolong QTc at higher doses."},
-        {"drug": "Diphenhydramine", "interaction": "Diphenhydramine inhibits CYP2D6 and may modestly increase sertraline levels. Additive sedation."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation and serotonergic effects."}
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Monitor for symptoms (agitation, hyperthermia, clonus, tremor)."
+        },
+        {
+          "drug": "Buspirone 7.5mg",
+          "interaction": "Additive serotonergic effects; commonly used together for augmentation, but monitor for serotonin syndrome."
+        },
+        {
+          "drug": "Tramadol (if applicable)",
+          "interaction": "Serotonin syndrome risk."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Ondansetron is a 5-HT3 antagonist. Sertraline (CYP2D6 inhibitor) may increase ondansetron levels. Generally considered safe."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Sertraline inhibits CYP2D6, significantly increasing DXM levels. Increased risk of serotonin syndrome. Avoid or use with caution."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion (CYP2D6 inhibitor) may increase sertraline levels. Both affect monoamine systems."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Sertraline (moderate CYP2D6 inhibitor) may increase propranolol levels. Monitor heart rate and blood pressure."
+        },
+        {
+          "drug": "Amphetamine Salts / Methylphenidate",
+          "interaction": "Additive serotonergic effects. Commonly used together but monitor."
+        },
+        {
+          "drug": "Celecoxib / Meloxicam / Ibuprofen / Naproxen",
+          "interaction": "NSAIDs combined with SSRIs significantly increase risk of GI bleeding (3-6 fold increased risk). Use lowest effective NSAID dose and consider gastroprotection."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce sertraline absorption. Separate dosing."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive sedation possible. Both may prolong QTc at higher doses."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may modestly increase sertraline levels. Additive sedation."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation and serotonergic effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Sertraline Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Sertraline Hydrochloride Oral Solution"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Sertraline - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Trazodone HCl",
-      "brand_names": ["Desyrel", "Oleptro (ER)"],
+      "brand_names": [
+        "Desyrel",
+        "Oleptro (ER)"
+      ],
       "indication": {
-        "on_label": ["Major Depressive Disorder (MDD)"],
-        "off_label": ["Insomnia (most common off-label use)", "Anxiety", "Agitation in dementia", "Fibromyalgia"]
+        "on_label": [
+          "Major Depressive Disorder (MDD)"
+        ],
+        "off_label": [
+          "Insomnia (most common off-label use)",
+          "Anxiety",
+          "Agitation in dementia",
+          "Fibromyalgia"
+        ]
       },
-      "doses": [25, 50, 100, 150, 300],
+      "doses": [
+        25,
+        50,
+        100,
+        150,
+        300
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "400 mg/day (outpatient); 600 mg/day (inpatient) for depression. Typical insomnia dose: 25-100mg",
       "time_required_between_doses": "For insomnia: once at bedtime. For depression: 8-12 hours (divided doses)",
       "mechanism_of_action": "Serotonin antagonist and reuptake inhibitor (SARI). Inhibits serotonin reuptake and blocks 5-HT2A and 5-HT2C receptors. Also blocks alpha-1 adrenergic receptors (causes orthostatic hypotension) and H1 histamine receptors (causes sedation). Metabolized primarily by CYP3A4.",
       "time_to_max_concentration": "1-2 hours (IR, fasting); delayed with food",
       "half_life": "5-9 hours (biphasic elimination: initial phase 3-6 hours, terminal phase 5-9 hours)",
-      "active_metabolites": "m-chlorophenylpiperazine (mCPP) — a serotonin agonist with anxiogenic and some serotonergic properties.",
+      "active_metabolites": "m-chlorophenylpiperazine (mCPP) \u2014 a serotonin agonist with anxiogenic and some serotonergic properties.",
       "half_life_of_active_metabolites": "mCPP: 4-14 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Commonly co-prescribed (sertraline AM, trazodone for sleep) but monitor."},
-        {"drug": "Buspirone 7.5mg", "interaction": "One report of 3-6 fold ALT elevations with concurrent use. Additive serotonergic effects."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion may inhibit CYP2D6 metabolism of trazodone. Additive seizure risk at high doses."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Additive serotonergic effects; risk of serotonin syndrome."},
-        {"drug": "Ondansetron 4mg", "interaction": "Ondansetron is a 5-HT3 antagonist; theoretical interaction with serotonergic agents. Generally safe."},
-        {"drug": "Ramelteon 8mg", "interaction": "Additive sedation when combined."},
-        {"drug": "Zaleplon 5mg", "interaction": "Additive CNS depression and sedation. Use caution."},
-        {"drug": "Diphenhydramine", "interaction": "Additive sedation and CNS depression."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive sedation and CNS depression."},
-        {"drug": "Propranolol", "interaction": "Additive hypotensive effects (trazodone blocks alpha-1 receptors)."},
-        {"drug": "Amphetamine Salts", "interaction": "Trazodone may cause false-positive amphetamine urine screens."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Commonly co-prescribed (sertraline AM, trazodone for sleep) but monitor."
+        },
+        {
+          "drug": "Buspirone 7.5mg",
+          "interaction": "One report of 3-6 fold ALT elevations with concurrent use. Additive serotonergic effects."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion may inhibit CYP2D6 metabolism of trazodone. Additive seizure risk at high doses."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Additive serotonergic effects; risk of serotonin syndrome."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Ondansetron is a 5-HT3 antagonist; theoretical interaction with serotonergic agents. Generally safe."
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation when combined."
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive CNS depression and sedation. Use caution."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive sedation and CNS depression."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive sedation and CNS depression."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Additive hypotensive effects (trazodone blocks alpha-1 receptors)."
+        },
+        {
+          "drug": "Amphetamine Salts",
+          "interaction": "Trazodone may cause false-positive amphetamine urine screens."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Trazodone Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Trazodone Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Trazodone - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Esomeprazole Magnesium",
-      "brand_names": ["Nexium", "Nexium 24HR (OTC)"],
+      "brand_names": [
+        "Nexium",
+        "Nexium 24HR (OTC)"
+      ],
       "indication": {
-        "on_label": ["Gastroesophageal Reflux Disease (GERD)", "Erosive esophagitis", "Helicobacter pylori eradication (with antibiotics)", "NSAID-associated gastric ulcer (risk reduction)", "Zollinger-Ellison syndrome", "Pathological hypersecretory conditions"],
-        "off_label": ["Functional dyspepsia", "Stress ulcer prophylaxis (ICU)", "Barrett's esophagus management"]
+        "on_label": [
+          "Gastroesophageal Reflux Disease (GERD)",
+          "Erosive esophagitis",
+          "Helicobacter pylori eradication (with antibiotics)",
+          "NSAID-associated gastric ulcer (risk reduction)",
+          "Zollinger-Ellison syndrome",
+          "Pathological hypersecretory conditions"
+        ],
+        "off_label": [
+          "Functional dyspepsia",
+          "Stress ulcer prophylaxis (ICU)",
+          "Barrett's esophagus management"
+        ]
       },
-      "doses": [20, 40],
+      "doses": [
+        20,
+        40
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "40 mg/day (standard); up to 240 mg/day for Zollinger-Ellison syndrome",
       "time_required_between_doses": "24 hours (once daily, taken 30-60 minutes before a meal); 12 hours if twice daily dosing needed",
       "mechanism_of_action": "Proton pump inhibitor (PPI). Suppresses gastric acid secretion by specific inhibition of the H+/K+ ATPase enzyme system (proton pump) at the secretory surface of the gastric parietal cell. Esomeprazole is the S-isomer of omeprazole. Blocks the final step of acid production. Metabolized by CYP2C19 and CYP3A4.",
       "time_to_max_concentration": "1-2 hours (delayed-release capsule); 1.5 hours",
       "half_life": "1-1.5 hours (but duration of antisecretory effect lasts up to 24 hours due to irreversible binding to proton pump)",
-      "active_metabolites": "None — metabolites (hydroxy and desmethyl metabolites) have no significant antisecretory activity",
+      "active_metabolites": "None \u2014 metabolites (hydroxy and desmethyl metabolites) have no significant antisecretory activity",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Amphetamine Salts ER 30mg", "interaction": "PPIs reduce gastric acidity, which may shorten Tmax of extended-release amphetamine capsules (median Tmax shortened from ~5 hours to ~2.75 hours), leading to earlier peak effect."},
-        {"drug": "Famotidine 20mg", "interaction": "Dual acid suppression — generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression."},
-        {"drug": "Colestipol 1g", "interaction": "Colestipol may bind esomeprazole and reduce absorption. Separate dosing."}
+        {
+          "drug": "Amphetamine Salts ER 30mg",
+          "interaction": "PPIs reduce gastric acidity, which may shorten Tmax of extended-release amphetamine capsules (median Tmax shortened from ~5 hours to ~2.75 hours), leading to earlier peak effect."
+        },
+        {
+          "drug": "Famotidine 20mg",
+          "interaction": "Dual acid suppression \u2014 generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "Colestipol may bind esomeprazole and reduce absorption. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Esomeprazole Magnesium Delayed-Release Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Esomeprazole Magnesium"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Proton Pump Inhibitors (PPI) - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Glycopyrrolate",
-      "brand_names": ["Robinul", "Robinul Forte", "Cuvposa (oral solution)", "Glyrx-PF (injection)"],
+      "brand_names": [
+        "Robinul",
+        "Robinul Forte",
+        "Cuvposa (oral solution)",
+        "Glyrx-PF (injection)"
+      ],
       "indication": {
-        "on_label": ["Adjunct therapy for peptic ulcer disease (reduce symptoms)", "Preoperative reduction of secretions", "Reversal of muscarinic effects of cholinergic agents (with neostigmine)", "Chronic severe drooling in children with neurologic conditions (oral solution)"],
-        "off_label": ["Hyperhidrosis (excessive sweating)", "Sialorrhea (excessive drooling in adults)", "Reduction of oral/respiratory secretions in palliative care"]
+        "on_label": [
+          "Adjunct therapy for peptic ulcer disease (reduce symptoms)",
+          "Preoperative reduction of secretions",
+          "Reversal of muscarinic effects of cholinergic agents (with neostigmine)",
+          "Chronic severe drooling in children with neurologic conditions (oral solution)"
+        ],
+        "off_label": [
+          "Hyperhidrosis (excessive sweating)",
+          "Sialorrhea (excessive drooling in adults)",
+          "Reduction of oral/respiratory secretions in palliative care"
+        ]
       },
-      "doses": [1, 2],
+      "doses": [
+        1,
+        2
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "8 mg/day (oral)",
       "time_required_between_doses": "6-8 hours (given 2-3 times daily)",
       "mechanism_of_action": "Quaternary ammonium anticholinergic (muscarinic receptor antagonist). Blocks the action of acetylcholine at parasympathetic sites in smooth muscle, secretory glands, and the CNS (though poor CNS penetration due to quaternary structure). Reduces gastrointestinal motility, gastric acid secretion, salivation, and other secretions. Does not cross the blood-brain barrier.",
       "time_to_max_concentration": "3 hours (oral solution in fasted state)",
       "half_life": "Approximately 3 hours (oral); 0.6-1.2 hours (IV)",
-      "active_metabolites": "None significant — >80% excreted as unchanged drug in urine",
+      "active_metabolites": "None significant \u2014 >80% excreted as unchanged drug in urine",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, blurred vision, tachycardia, cognitive impairment)."},
-        {"drug": "Diphenhydramine", "interaction": "Additive anticholinergic effects. Increased risk of anticholinergic toxicity."},
-        {"drug": "Hyoscyamine 0.125mg", "interaction": "Strongly additive anticholinergic effects — both are anticholinergic agents. High risk of anticholinergic toxicity."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Propranolol", "interaction": "Glycopyrrolate may cause tachycardia (vagolytic effect) which opposes propranolol's bradycardic effect."},
-        {"drug": "Ondansetron 4mg", "interaction": "Both may cause constipation. Additive GI slowing effects."}
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, blurred vision, tachycardia, cognitive impairment)."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive anticholinergic effects. Increased risk of anticholinergic toxicity."
+        },
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Strongly additive anticholinergic effects \u2014 both are anticholinergic agents. High risk of anticholinergic toxicity."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Glycopyrrolate may cause tachycardia (vagolytic effect) which opposes propranolol's bradycardic effect."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Both may cause constipation. Additive GI slowing effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Glycopyrrolate Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Glycopyrrolate"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Glycopyrrolate - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Celecoxib",
-      "brand_names": ["Celebrex"],
+      "brand_names": [
+        "Celebrex"
+      ],
       "indication": {
-        "on_label": ["Osteoarthritis", "Rheumatoid arthritis", "Juvenile rheumatoid arthritis (≥2 years)", "Ankylosing spondylitis", "Acute pain", "Primary dysmenorrhea", "Familial adenomatous polyposis (adjunct)"],
-        "off_label": ["Gout flares", "Migraine", "Cancer prevention (colorectal adenoma)"]
+        "on_label": [
+          "Osteoarthritis",
+          "Rheumatoid arthritis",
+          "Juvenile rheumatoid arthritis (\u22652 years)",
+          "Ankylosing spondylitis",
+          "Acute pain",
+          "Primary dysmenorrhea",
+          "Familial adenomatous polyposis (adjunct)"
+        ],
+        "off_label": [
+          "Gout flares",
+          "Migraine",
+          "Cancer prevention (colorectal adenoma)"
+        ]
       },
-      "doses": [50, 100, 200, 400],
+      "doses": [
+        50,
+        100,
+        200,
+        400
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "400 mg/day (200mg BID); 800 mg/day for familial adenomatous polyposis",
       "time_required_between_doses": "12-24 hours (once or twice daily depending on indication)",
       "mechanism_of_action": "Selective cyclooxygenase-2 (COX-2) inhibitor. Inhibits prostaglandin synthesis primarily by inhibiting COX-2. Has minimal COX-1 inhibition at therapeutic doses, which theoretically reduces GI toxicity compared to non-selective NSAIDs. Metabolized primarily by CYP2C9.",
       "time_to_max_concentration": "3 hours",
       "half_life": "11 hours (range 8-12 hours)",
-      "active_metabolites": "None — metabolites (carboxylic acid, glucuronide conjugates) are inactive",
+      "active_metabolites": "None \u2014 metabolites (carboxylic acid, glucuronide conjugates) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold). Consider gastroprotection with PPI."},
-        {"drug": "Ibuprofen / Naproxen / Meloxicam", "interaction": "Avoid concurrent use of multiple NSAIDs — additive GI, renal, and cardiovascular risk with no added efficacy."},
-        {"drug": "Propranolol", "interaction": "NSAIDs may reduce antihypertensive effect of beta-blockers by inhibiting renal prostaglandin synthesis."},
-        {"drug": "Esomeprazole 40mg", "interaction": "Esomeprazole provides gastroprotection — beneficial combination if NSAID use is necessary."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce celecoxib absorption. Separate dosing."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold). Consider gastroprotection with PPI."
+        },
+        {
+          "drug": "Ibuprofen / Naproxen / Meloxicam",
+          "interaction": "Avoid concurrent use of multiple NSAIDs \u2014 additive GI, renal, and cardiovascular risk with no added efficacy."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "NSAIDs may reduce antihypertensive effect of beta-blockers by inhibiting renal prostaglandin synthesis."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Esomeprazole provides gastroprotection \u2014 beneficial combination if NSAID use is necessary."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce celecoxib absorption. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Celecoxib Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Celecoxib"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Celecoxib - StatPearls, NCBI Bookshelf"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Desloratadine",
-      "brand_names": ["Clarinex"],
+      "brand_names": [
+        "Clarinex"
+      ],
       "indication": {
-        "on_label": ["Seasonal allergic rhinitis", "Perennial allergic rhinitis", "Chronic idiopathic urticaria"],
-        "off_label": ["Allergic conjunctivitis"]
+        "on_label": [
+          "Seasonal allergic rhinitis",
+          "Perennial allergic rhinitis",
+          "Chronic idiopathic urticaria"
+        ],
+        "off_label": [
+          "Allergic conjunctivitis"
+        ]
       },
-      "doses": [2.5, 5],
+      "doses": [
+        2.5,
+        5
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "5 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
-      "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Active metabolite of loratadine. Has anti-inflammatory and antiallergic properties beyond histamine blockade. Non-sedating at recommended doses. Metabolized by CYP3A4 and CYP2D6 (though poorly metabolized — most is eliminated unchanged).",
+      "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Active metabolite of loratadine. Has anti-inflammatory and antiallergic properties beyond histamine blockade. Non-sedating at recommended doses. Metabolized by CYP3A4 and CYP2D6 (though poorly metabolized \u2014 most is eliminated unchanged).",
       "time_to_max_concentration": "3 hours",
       "half_life": "27 hours",
-      "active_metabolites": "3-hydroxydesloratadine — has antihistaminic activity",
+      "active_metabolites": "3-hydroxydesloratadine \u2014 has antihistaminic activity",
       "half_life_of_active_metabolites": "Not well characterized (formation-rate limited)",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Loratadine 10mg", "interaction": "Desloratadine is the active metabolite of loratadine. Using both is redundant and increases total antihistamine load. Avoid concurrent use."},
-        {"drug": "Cetirizine / Levocetirizine / Fexofenadine", "interaction": "Taking multiple antihistamines is generally not recommended as it increases sedation risk without proportional efficacy benefit. However, some allergists combine different classes."},
-        {"drug": "Diphenhydramine", "interaction": "Additive antihistamine effects. First-generation antihistamines add significant sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive antihistamine effects and sedation."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive antihistamine and sedative effects."}
+        {
+          "drug": "Loratadine 10mg",
+          "interaction": "Desloratadine is the active metabolite of loratadine. Using both is redundant and increases total antihistamine load. Avoid concurrent use."
+        },
+        {
+          "drug": "Cetirizine / Levocetirizine / Fexofenadine",
+          "interaction": "Taking multiple antihistamines is generally not recommended as it increases sedation risk without proportional efficacy benefit. However, some allergists combine different classes."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive antihistamine effects. First-generation antihistamines add significant sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive antihistamine effects and sedation."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive antihistamine and sedative effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Desloratadine Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Desloratadine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Hydroxyzine HCl",
-      "brand_names": ["Atarax (HCl)", "Vistaril (pamoate)"],
+      "brand_names": [
+        "Atarax (HCl)",
+        "Vistaril (pamoate)"
+      ],
       "indication": {
-        "on_label": ["Anxiety", "Pruritus (allergic conditions)", "Sedation (preoperative/premedication)", "Nausea and vomiting (adjunct)"],
-        "off_label": ["Insomnia", "Generalized anxiety disorder", "Urticaria", "Alcohol withdrawal (adjunct)"]
+        "on_label": [
+          "Anxiety",
+          "Pruritus (allergic conditions)",
+          "Sedation (preoperative/premedication)",
+          "Nausea and vomiting (adjunct)"
+        ],
+        "off_label": [
+          "Insomnia",
+          "Generalized anxiety disorder",
+          "Urticaria",
+          "Alcohol withdrawal (adjunct)"
+        ]
       },
-      "doses": [10, 25, 50, 100],
+      "doses": [
+        10,
+        25,
+        50,
+        100
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "100 mg/dose; 400 mg/day (adults, though lower doses typically used)",
       "time_required_between_doses": "6-8 hours",
       "mechanism_of_action": "First-generation antihistamine (H1 receptor antagonist) with anticholinergic, anxiolytic, and sedative properties. Also has 5-HT2A receptor antagonist activity. Active metabolite is cetirizine. Metabolized by hepatic oxidation.",
       "time_to_max_concentration": "2 hours",
       "half_life": "20 hours (adults); 7 hours (children); 29 hours (elderly)",
-      "active_metabolites": "Cetirizine — a potent second-generation H1 antihistamine (the same drug sold as Zyrtec).",
+      "active_metabolites": "Cetirizine \u2014 a potent second-generation H1 antihistamine (the same drug sold as Zyrtec).",
       "half_life_of_active_metabolites": "Cetirizine: 8-9 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Diphenhydramine", "interaction": "Additive antihistamine, anticholinergic, and sedative effects. Increased risk of anticholinergic toxicity."},
-        {"drug": "Glycopyrrolate 1mg", "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, tachycardia)."},
-        {"drug": "Hyoscyamine 0.125mg", "interaction": "Additive anticholinergic effects. Significant risk of anticholinergic toxicity."},
-        {"drug": "Trazodone 50mg", "interaction": "Additive sedation and CNS depression."},
-        {"drug": "Zaleplon 5mg", "interaction": "Additive sedation."},
-        {"drug": "Ramelteon 8mg", "interaction": "Additive sedation."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation and anticholinergic effects."},
-        {"drug": "Cetirizine 10mg", "interaction": "Cetirizine is the active metabolite of hydroxyzine. Using both results in excessive antihistamine effect and is redundant."},
-        {"drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine", "interaction": "Additive antihistamine effects."},
-        {"drug": "Sertraline 50mg", "interaction": "Additive sedation. Both may prolong QTc at higher doses."},
-        {"drug": "Propranolol", "interaction": "Additive hypotensive effects possible."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Both may lower seizure threshold at high doses."}
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. Increased risk of anticholinergic toxicity."
+        },
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, tachycardia)."
+        },
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Additive anticholinergic effects. Significant risk of anticholinergic toxicity."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive sedation and CNS depression."
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation and anticholinergic effects."
+        },
+        {
+          "drug": "Cetirizine 10mg",
+          "interaction": "Cetirizine is the active metabolite of hydroxyzine. Using both results in excessive antihistamine effect and is redundant."
+        },
+        {
+          "drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine",
+          "interaction": "Additive antihistamine effects."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive sedation. Both may prolong QTc at higher doses."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Additive hypotensive effects possible."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Both may lower seizure threshold at high doses."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Hydroxyzine Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Hydroxyzine Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Hyoscyamine Sulfate (Sublingual)",
-      "brand_names": ["Levsin/SL", "Anaspaz", "NuLev", "Oscimin"],
+      "brand_names": [
+        "Levsin/SL",
+        "Anaspaz",
+        "NuLev",
+        "Oscimin"
+      ],
       "indication": {
-        "on_label": ["Adjunctive therapy for peptic ulcer disease", "Irritable bowel syndrome (IBS)", "Functional GI disorders", "Neurogenic bladder/bladder spasm", "Acute rhinitis", "Cystitis", "Renal colic", "Biliary colic", "Reduction of secretions (preoperative)"],
-        "off_label": ["Cramps/abdominal pain associated with GI disorders", "Excessive salivation/drooling", "Hyperhidrosis"]
+        "on_label": [
+          "Adjunctive therapy for peptic ulcer disease",
+          "Irritable bowel syndrome (IBS)",
+          "Functional GI disorders",
+          "Neurogenic bladder/bladder spasm",
+          "Acute rhinitis",
+          "Cystitis",
+          "Renal colic",
+          "Biliary colic",
+          "Reduction of secretions (preoperative)"
+        ],
+        "off_label": [
+          "Cramps/abdominal pain associated with GI disorders",
+          "Excessive salivation/drooling",
+          "Hyperhidrosis"
+        ]
       },
-      "doses": [0.125, 0.25],
+      "doses": [
+        0.125,
+        0.25
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "1.5 mg/day",
       "time_required_between_doses": "4 hours (or as needed, up to maximum daily dose)",
       "mechanism_of_action": "Anticholinergic/antimuscarinic agent. The levo-isomer of atropine. Blocks the action of acetylcholine at parasympathetic (muscarinic) receptor sites including smooth muscle, secretory glands, and CNS. Reduces GI motility and secretions, relaxes smooth muscle spasm. Crosses the blood-brain barrier (unlike glycopyrrolate).",
       "time_to_max_concentration": "Sublingual: 5-20 minutes (faster than oral tablets)",
       "half_life": "2-3.5 hours",
-      "active_metabolites": "Tropic acid and tropine (minor, via hydrolysis) — minimal pharmacologic significance",
+      "active_metabolites": "Tropic acid and tropine (minor, via hydrolysis) \u2014 minimal pharmacologic significance",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Glycopyrrolate 1mg", "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics — significantly increased risk of anticholinergic toxicity."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Diphenhydramine", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Propranolol", "interaction": "Hyoscyamine may cause tachycardia (vagolytic) opposing propranolol's effect."},
-        {"drug": "Ondansetron 4mg", "interaction": "Additive constipation effects."},
-        {"drug": "Loperamide 2mg", "interaction": "Additive GI slowing/constipation — combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus."}
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics \u2014 significantly increased risk of anticholinergic toxicity."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Hyoscyamine may cause tachycardia (vagolytic) opposing propranolol's effect."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Additive constipation effects."
+        },
+        {
+          "drug": "Loperamide 2mg",
+          "interaction": "Additive GI slowing/constipation \u2014 combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Hyoscyamine Sulfate Sublingual Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Hyoscyamine Sulfate"
+        }
       ]
     },
     {
       "generic_name": "Meloxicam",
-      "brand_names": ["Mobic", "Vivlodex", "Anjeso (IV)"],
+      "brand_names": [
+        "Mobic",
+        "Vivlodex",
+        "Anjeso (IV)"
+      ],
       "indication": {
-        "on_label": ["Osteoarthritis", "Rheumatoid arthritis", "Juvenile rheumatoid arthritis (≥2 years)"],
-        "off_label": ["Ankylosing spondylitis", "Acute pain", "Gout flare", "Dysmenorrhea"]
+        "on_label": [
+          "Osteoarthritis",
+          "Rheumatoid arthritis",
+          "Juvenile rheumatoid arthritis (\u22652 years)"
+        ],
+        "off_label": [
+          "Ankylosing spondylitis",
+          "Acute pain",
+          "Gout flare",
+          "Dysmenorrhea"
+        ]
       },
-      "doses": [7.5, 15],
+      "doses": [
+        7.5,
+        15
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "15 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
       "mechanism_of_action": "Preferential COX-2 inhibitor (non-selective NSAID at higher doses). Inhibits prostaglandin synthesis by inhibiting cyclooxygenase-1 and -2, with some preferential COX-2 selectivity. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP3A4.",
       "time_to_max_concentration": "4-5 hours (oral suspension); 5-6 hours (capsules)",
       "half_life": "15-20 hours (mean approximately 20 hours)",
-      "active_metabolites": "None — metabolites are inactive",
+      "active_metabolites": "None \u2014 metabolites are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."},
-        {"drug": "Celecoxib / Ibuprofen / Naproxen", "interaction": "Do not combine multiple NSAIDs. Additive GI, renal, and cardiovascular toxicity."},
-        {"drug": "Propranolol", "interaction": "NSAIDs may reduce antihypertensive effect."},
-        {"drug": "Esomeprazole 40mg", "interaction": "Gastroprotective benefit when co-administered."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce absorption. Separate dosing."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."
+        },
+        {
+          "drug": "Celecoxib / Ibuprofen / Naproxen",
+          "interaction": "Do not combine multiple NSAIDs. Additive GI, renal, and cardiovascular toxicity."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "NSAIDs may reduce antihypertensive effect."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Gastroprotective benefit when co-administered."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce absorption. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Meloxicam Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Meloxicam"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Ondansetron",
-      "brand_names": ["Zofran", "Zofran ODT"],
+      "brand_names": [
+        "Zofran",
+        "Zofran ODT"
+      ],
       "indication": {
-        "on_label": ["Prevention of nausea and vomiting associated with chemotherapy", "Prevention of nausea and vomiting associated with radiation therapy", "Prevention of postoperative nausea and vomiting"],
-        "off_label": ["Gastroenteritis-related nausea/vomiting", "Hyperemesis gravidarum", "Nausea from medications", "Alcohol use disorder (reduction of drinking)", "Pruritus (cholestatic)"]
+        "on_label": [
+          "Prevention of nausea and vomiting associated with chemotherapy",
+          "Prevention of nausea and vomiting associated with radiation therapy",
+          "Prevention of postoperative nausea and vomiting"
+        ],
+        "off_label": [
+          "Gastroenteritis-related nausea/vomiting",
+          "Hyperemesis gravidarum",
+          "Nausea from medications",
+          "Alcohol use disorder (reduction of drinking)",
+          "Pruritus (cholestatic)"
+        ]
       },
-      "doses": [4, 8, 16, 24],
+      "doses": [
+        4,
+        8,
+        16,
+        24
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "24 mg/day (oral); 16 mg single IV dose max",
       "time_required_between_doses": "4-8 hours depending on indication",
@@ -484,421 +1440,1181 @@
       "active_metabolites": "None clinically significant",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "Both affect serotonin pathways. Sertraline (CYP2D6 inhibitor) may modestly increase ondansetron levels. Generally safe combination."},
-        {"drug": "Trazodone 50mg", "interaction": "Both affect serotonin pathways. Generally safe but monitor."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Bupropion (CYP2D6 inhibitor) may modestly increase ondansetron levels."},
-        {"drug": "Glycopyrrolate / Hyoscyamine", "interaction": "Additive constipation effects."},
-        {"drug": "Loperamide 2mg", "interaction": "Additive constipation risk."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Both affect serotonin pathways. Low risk of interaction at typical doses."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Both affect serotonin pathways. Sertraline (CYP2D6 inhibitor) may modestly increase ondansetron levels. Generally safe combination."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Both affect serotonin pathways. Generally safe but monitor."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion (CYP2D6 inhibitor) may modestly increase ondansetron levels."
+        },
+        {
+          "drug": "Glycopyrrolate / Hyoscyamine",
+          "interaction": "Additive constipation effects."
+        },
+        {
+          "drug": "Loperamide 2mg",
+          "interaction": "Additive constipation risk."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Both affect serotonin pathways. Low risk of interaction at typical doses."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Ondansetron Tablets/ODT"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Ondansetron"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Ondansetron - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Ramelteon",
-      "brand_names": ["Rozerem"],
+      "brand_names": [
+        "Rozerem"
+      ],
       "indication": {
-        "on_label": ["Insomnia characterized by difficulty with sleep onset"],
-        "off_label": ["Circadian rhythm sleep-wake disorders", "Delirium prevention in ICU settings", "Jet lag"]
+        "on_label": [
+          "Insomnia characterized by difficulty with sleep onset"
+        ],
+        "off_label": [
+          "Circadian rhythm sleep-wake disorders",
+          "Delirium prevention in ICU settings",
+          "Jet lag"
+        ]
       },
-      "doses": [8],
+      "doses": [
+        8
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "8 mg/day",
       "time_required_between_doses": "24 hours (once daily, 30 minutes before bedtime)",
       "mechanism_of_action": "Selective melatonin receptor agonist with high affinity for MT1 and MT2 receptors in the suprachiasmatic nucleus (SCN). Promotes sleep onset by mimicking melatonin's action on sleep-wake cycle regulation. No affinity for GABA receptors, opioid receptors, or other sedative targets. Not a controlled substance. Metabolized primarily by CYP1A2 and secondarily by CYP2C and CYP3A4.",
       "time_to_max_concentration": "0.75-1 hour (median 0.75 hours)",
       "half_life": "1-2.6 hours",
-      "active_metabolites": "M-II metabolite — has approximately 1/10 to 1/5 the binding affinity of ramelteon for MT1/MT2 receptors and circulates at 20-100x higher levels than parent compound. May contribute to overall clinical effect.",
+      "active_metabolites": "M-II metabolite \u2014 has approximately 1/10 to 1/5 the binding affinity of ramelteon for MT1/MT2 receptors and circulates at 20-100x higher levels than parent compound. May contribute to overall clinical effect.",
       "half_life_of_active_metabolites": "M-II: 2-5 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Trazodone 50mg", "interaction": "Additive sedation."},
-        {"drug": "Zaleplon 5mg", "interaction": "Additive sedation. Both are sleep aids — using both is generally redundant."},
-        {"drug": "Diphenhydramine", "interaction": "Additive sedation."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive sedation."},
-        {"drug": "Sertraline 50mg", "interaction": "No significant pharmacokinetic interaction. Minimal additive sedation."}
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive sedation. Both are sleep aids \u2014 using both is generally redundant."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "No significant pharmacokinetic interaction. Minimal additive sedation."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Ramelteon Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Ramelteon"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Melatonin - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Zaleplon",
-      "brand_names": ["Sonata"],
+      "brand_names": [
+        "Sonata"
+      ],
       "indication": {
-        "on_label": ["Insomnia (short-term treatment for difficulty falling asleep)"],
-        "off_label": ["Middle-of-the-night awakenings (when at least 4 hours of sleep remain)"]
+        "on_label": [
+          "Insomnia (short-term treatment for difficulty falling asleep)"
+        ],
+        "off_label": [
+          "Middle-of-the-night awakenings (when at least 4 hours of sleep remain)"
+        ]
       },
-      "doses": [5, 10, 20],
+      "doses": [
+        5,
+        10,
+        20
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "20 mg/day; 5 mg recommended for elderly/debilitated patients",
       "time_required_between_doses": "Should only be taken once per night. Not for middle-of-night redosing unless 4+ hours remain before waking.",
       "mechanism_of_action": "Non-benzodiazepine hypnotic (pyrazolopyrimidine class). Selectively binds to the omega-1 (BZ1) subunit of the GABA-A receptor complex, enhancing GABAergic inhibition. More selective for sleep-inducing effects with minimal anxiolytic, muscle relaxant, or anticonvulsant properties. Primarily metabolized by aldehyde oxidase and CYP3A4.",
       "time_to_max_concentration": "1 hour (reduced to 2 hours with high-fat meal)",
       "half_life": "1 hour (approximately)",
-      "active_metabolites": "None — primary metabolites (5-oxo-zaleplon and desethylzaleplon) are inactive",
+      "active_metabolites": "None \u2014 primary metabolites (5-oxo-zaleplon and desethylzaleplon) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Trazodone 50mg", "interaction": "Additive CNS depression and sedation."},
-        {"drug": "Ramelteon 8mg", "interaction": "Additive sedation. Combining two sleep aids is generally redundant."},
-        {"drug": "Diphenhydramine", "interaction": "Additive CNS depression."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive sedation."},
-        {"drug": "Sertraline 50mg", "interaction": "Minimal direct interaction. Monitor for additive sedation."},
-        {"drug": "Propranolol", "interaction": "Additive CNS depression at higher doses. Generally minimal interaction."}
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive CNS depression and sedation."
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation. Combining two sleep aids is generally redundant."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive CNS depression."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Minimal direct interaction. Monitor for additive sedation."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Additive CNS depression at higher doses. Generally minimal interaction."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Zaleplon Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Zaleplon"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Zaleplon - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Famotidine",
-      "brand_names": ["Pepcid", "Pepcid AC (OTC)"],
+      "brand_names": [
+        "Pepcid",
+        "Pepcid AC (OTC)"
+      ],
       "indication": {
-        "on_label": ["Duodenal ulcer (short-term treatment and maintenance)", "Gastric ulcer (short-term treatment)", "Gastroesophageal reflux disease (GERD)", "Erosive esophagitis", "Pathological hypersecretory conditions (Zollinger-Ellison syndrome)"],
-        "off_label": ["Heartburn relief (OTC)", "Prevention of aspiration pneumonitis (preoperative)", "Stress ulcer prophylaxis", "Urticaria (adjunct to H1 antihistamines)", "NSAID-induced dyspepsia"]
+        "on_label": [
+          "Duodenal ulcer (short-term treatment and maintenance)",
+          "Gastric ulcer (short-term treatment)",
+          "Gastroesophageal reflux disease (GERD)",
+          "Erosive esophagitis",
+          "Pathological hypersecretory conditions (Zollinger-Ellison syndrome)"
+        ],
+        "off_label": [
+          "Heartburn relief (OTC)",
+          "Prevention of aspiration pneumonitis (preoperative)",
+          "Stress ulcer prophylaxis",
+          "Urticaria (adjunct to H1 antihistamines)",
+          "NSAID-induced dyspepsia"
+        ]
       },
-      "doses": [10, 20, 40],
+      "doses": [
+        10,
+        20,
+        40
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "40 mg/day (OTC use: 20 mg BID); 160 mg every 6 hours for hypersecretory conditions",
       "time_required_between_doses": "12-24 hours (once or twice daily)",
       "mechanism_of_action": "Competitive, reversible inhibitor of histamine H2 receptors on gastric parietal cells. Reduces basal and stimulated gastric acid secretion, including nocturnal acid secretion. Does not affect CYP450 enzymes significantly.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "2.5-3.5 hours; prolonged in renal impairment",
-      "active_metabolites": "None — famotidine S-oxide is the primary metabolite and is inactive",
+      "active_metabolites": "None \u2014 famotidine S-oxide is the primary metabolite and is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Esomeprazole 40mg", "interaction": "Dual acid suppression is generally redundant. If both used, H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy."},
-        {"drug": "Amphetamine Salts ER", "interaction": "May modestly raise gastric pH, potentially affecting amphetamine ER absorption (less effect than PPIs)."},
-        {"drug": "Colestipol 1g", "interaction": "Colestipol may bind famotidine. Separate dosing."}
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Dual acid suppression is generally redundant. If both used, H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy."
+        },
+        {
+          "drug": "Amphetamine Salts ER",
+          "interaction": "May modestly raise gastric pH, potentially affecting amphetamine ER absorption (less effect than PPIs)."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "Colestipol may bind famotidine. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Famotidine Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Famotidine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Famotidine - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Loperamide HCl",
-      "brand_names": ["Imodium", "Imodium A-D"],
+      "brand_names": [
+        "Imodium",
+        "Imodium A-D"
+      ],
       "indication": {
-        "on_label": ["Acute diarrhea (OTC)", "Chronic diarrhea associated with inflammatory bowel disease (Rx)", "Traveler's diarrhea"],
-        "off_label": ["IBS-predominant diarrhea (IBS-D)", "Short bowel syndrome", "Ileostomy output reduction"]
+        "on_label": [
+          "Acute diarrhea (OTC)",
+          "Chronic diarrhea associated with inflammatory bowel disease (Rx)",
+          "Traveler's diarrhea"
+        ],
+        "off_label": [
+          "IBS-predominant diarrhea (IBS-D)",
+          "Short bowel syndrome",
+          "Ileostomy output reduction"
+        ]
       },
-      "doses": [2],
+      "doses": [
+        2
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "16 mg/day (Rx); 8 mg/day (OTC self-treatment)",
       "time_required_between_doses": "After each loose stool, minimum 2 hours between doses",
       "mechanism_of_action": "Synthetic opioid that acts on mu-opioid receptors in the intestinal wall. Slows intestinal motility, prolongs transit time, and reduces fecal volume. Increases anal sphincter tone. Does not significantly cross the blood-brain barrier at therapeutic doses (P-glycoprotein substrate), so no central opioid effects.",
       "time_to_max_concentration": "2.5 hours (capsule); 5 hours (liquid)",
       "half_life": "10.8 hours (range 9-14 hours)",
-      "active_metabolites": "N-demethyl loperamide — minimal clinical significance at therapeutic doses",
+      "active_metabolites": "N-demethyl loperamide \u2014 minimal clinical significance at therapeutic doses",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Hyoscyamine 0.125mg", "interaction": "Additive GI slowing. Increased risk of constipation, ileus, or toxic megacolon."},
-        {"drug": "Glycopyrrolate 1mg", "interaction": "Additive GI slowing and anticholinergic effects."},
-        {"drug": "Ondansetron 4mg", "interaction": "Additive constipation."},
-        {"drug": "Diphenhydramine", "interaction": "Additive constipation and anticholinergic effects."}
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Additive GI slowing. Increased risk of constipation, ileus, or toxic megacolon."
+        },
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Additive GI slowing and anticholinergic effects."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Additive constipation."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive constipation and anticholinergic effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Loperamide Hydrochloride Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Loperamide Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Loperamide - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Simethicone",
-      "brand_names": ["Gas-X", "Mylicon", "Phazyme"],
+      "brand_names": [
+        "Gas-X",
+        "Mylicon",
+        "Phazyme"
+      ],
       "indication": {
-        "on_label": ["Relief of pressure, bloating, and fullness from excess gas in the GI tract"],
-        "off_label": ["Adjunct for bowel preparation before colonoscopy/endoscopy", "Relief of colic symptoms in infants (drops formulation)"]
+        "on_label": [
+          "Relief of pressure, bloating, and fullness from excess gas in the GI tract"
+        ],
+        "off_label": [
+          "Adjunct for bowel preparation before colonoscopy/endoscopy",
+          "Relief of colic symptoms in infants (drops formulation)"
+        ]
       },
-      "doses": [40, 80, 125, 180, 250],
+      "doses": [
+        40,
+        80,
+        125,
+        180,
+        250
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "500 mg/day",
       "time_required_between_doses": "4-6 hours (after meals and at bedtime)",
       "mechanism_of_action": "Antifoaming agent. Changes the surface tension of gas bubbles in the GI tract, causing them to coalesce into larger bubbles that can be more easily passed by belching or flatulence. Is chemically inert, not absorbed systemically, and has no pharmacological activity.",
-      "time_to_max_concentration": "Not applicable — not absorbed systemically",
-      "half_life": "Not applicable — not absorbed systemically. Passes through GI tract unchanged.",
-      "active_metabolites": "None — not absorbed or metabolized",
+      "time_to_max_concentration": "Not applicable \u2014 not absorbed systemically",
+      "half_life": "Not applicable \u2014 not absorbed systemically. Passes through GI tract unchanged.",
+      "active_metabolites": "None \u2014 not absorbed or metabolized",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"note": "No known clinically significant drug interactions. Simethicone is inert and not absorbed."}
+        {
+          "drug": "None",
+          "interaction": "No known clinically significant drug interactions. Simethicone is inert and not absorbed."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Simethicone Softgels/Chewable Tablets"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Simethicone - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Ibuprofen",
-      "brand_names": ["Advil", "Motrin", "Motrin IB"],
+      "brand_names": [
+        "Advil",
+        "Motrin",
+        "Motrin IB"
+      ],
       "indication": {
-        "on_label": ["Mild to moderate pain", "Fever reduction", "Osteoarthritis", "Rheumatoid arthritis", "Primary dysmenorrhea", "Juvenile idiopathic arthritis"],
-        "off_label": ["Migraine", "Gout flare", "Pericarditis", "Patent ductus arteriosus (IV formulation)", "Dental pain"]
+        "on_label": [
+          "Mild to moderate pain",
+          "Fever reduction",
+          "Osteoarthritis",
+          "Rheumatoid arthritis",
+          "Primary dysmenorrhea",
+          "Juvenile idiopathic arthritis"
+        ],
+        "off_label": [
+          "Migraine",
+          "Gout flare",
+          "Pericarditis",
+          "Patent ductus arteriosus (IV formulation)",
+          "Dental pain"
+        ]
       },
-      "doses": [200, 400, 600, 800],
+      "doses": [
+        200,
+        400,
+        600,
+        800
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "3200 mg/day (Rx); 1200 mg/day (OTC self-treatment)",
       "time_required_between_doses": "4-6 hours (OTC); 6-8 hours (Rx 800mg doses)",
       "mechanism_of_action": "Non-selective NSAID. Inhibits both cyclooxygenase-1 (COX-1) and cyclooxygenase-2 (COX-2), reducing prostaglandin synthesis. Provides anti-inflammatory, analgesic, and antipyretic effects. Metabolized by CYP2C9 and CYP2C8.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "2 hours (range 1.8-2.5 hours)",
-      "active_metabolites": "None — metabolites are inactive hydroxylated and conjugated compounds",
+      "active_metabolites": "None \u2014 metabolites are inactive hydroxylated and conjugated compounds",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold)."},
-        {"drug": "Celecoxib / Meloxicam / Naproxen", "interaction": "Avoid concurrent use of multiple NSAIDs."},
-        {"drug": "Propranolol", "interaction": "NSAIDs may reduce antihypertensive effect."},
-        {"drug": "Esomeprazole 40mg", "interaction": "PPI provides gastroprotection during NSAID use."},
-        {"drug": "Famotidine 20mg", "interaction": "H2 blocker provides partial gastroprotection."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce ibuprofen absorption. Separate dosing."},
-        {"drug": "Acetaminophen 500mg", "interaction": "Can be used together alternately for additive analgesia. Different mechanisms of action. Generally safe combination."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold)."
+        },
+        {
+          "drug": "Celecoxib / Meloxicam / Naproxen",
+          "interaction": "Avoid concurrent use of multiple NSAIDs."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "NSAIDs may reduce antihypertensive effect."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "PPI provides gastroprotection during NSAID use."
+        },
+        {
+          "drug": "Famotidine 20mg",
+          "interaction": "H2 blocker provides partial gastroprotection."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce ibuprofen absorption. Separate dosing."
+        },
+        {
+          "drug": "Acetaminophen 500mg",
+          "interaction": "Can be used together alternately for additive analgesia. Different mechanisms of action. Generally safe combination."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Ibuprofen Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Ibuprofen"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Acetaminophen",
-      "brand_names": ["Tylenol", "Panadol"],
+      "brand_names": [
+        "Tylenol",
+        "Panadol"
+      ],
       "indication": {
-        "on_label": ["Mild to moderate pain", "Fever reduction"],
-        "off_label": ["Osteoarthritis (first-line)", "Headache/migraine (component)", "Dental pain"]
+        "on_label": [
+          "Mild to moderate pain",
+          "Fever reduction"
+        ],
+        "off_label": [
+          "Osteoarthritis (first-line)",
+          "Headache/migraine (component)",
+          "Dental pain"
+        ]
       },
-      "doses": [325, 500, 650, 1000],
+      "doses": [
+        325,
+        500,
+        650,
+        1000
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "4000 mg/day (healthy adults); 2000-3000 mg/day recommended for chronic use or those with liver disease or alcohol use",
       "time_required_between_doses": "4-6 hours",
       "mechanism_of_action": "Exact mechanism not fully understood. Thought to inhibit COX enzymes centrally (in the brain/spinal cord) rather than peripherally, reducing prostaglandin synthesis in the CNS. May also involve activation of descending serotonergic pathways and interaction with the endocannabinoid system via its metabolite AM404. Minimal anti-inflammatory activity. Metabolized primarily by hepatic glucuronidation and sulfation; minor pathway via CYP2E1 produces hepatotoxic metabolite NAPQI.",
       "time_to_max_concentration": "0.5-1 hour (IR tablets); 30-60 minutes (liquid gel)",
       "half_life": "2-3 hours",
-      "active_metabolites": "AM404 (formed in the CNS, interacts with endocannabinoid system — contributes to analgesic effect). NAPQI is a toxic reactive metabolite (not therapeutic) normally detoxified by glutathione.",
+      "active_metabolites": "AM404 (formed in the CNS, interacts with endocannabinoid system \u2014 contributes to analgesic effect). NAPQI is a toxic reactive metabolite (not therapeutic) normally detoxified by glutathione.",
       "half_life_of_active_metabolites": "AM404: not well characterized systemically; NAPQI: rapidly conjugated with glutathione",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam", "interaction": "Can be safely alternated with NSAIDs for additive analgesia. Different mechanisms."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce absorption. Separate dosing."},
-        {"drug": "Propranolol", "interaction": "No significant interaction at standard doses."}
+        {
+          "drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam",
+          "interaction": "Can be safely alternated with NSAIDs for additive analgesia. Different mechanisms."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce absorption. Separate dosing."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "No significant interaction at standard doses."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Acetaminophen Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Acetaminophen"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Acetaminophen - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Naproxen Sodium",
-      "brand_names": ["Aleve", "Naprosyn", "Anaprox", "Naprelan"],
+      "brand_names": [
+        "Aleve",
+        "Naprosyn",
+        "Anaprox",
+        "Naprelan"
+      ],
       "indication": {
-        "on_label": ["Mild to moderate pain", "Fever", "Osteoarthritis", "Rheumatoid arthritis", "Ankylosing spondylitis", "Primary dysmenorrhea", "Acute gout", "Juvenile idiopathic arthritis", "Tendonitis/bursitis"],
-        "off_label": ["Migraine", "Menstrual migraine prophylaxis"]
+        "on_label": [
+          "Mild to moderate pain",
+          "Fever",
+          "Osteoarthritis",
+          "Rheumatoid arthritis",
+          "Ankylosing spondylitis",
+          "Primary dysmenorrhea",
+          "Acute gout",
+          "Juvenile idiopathic arthritis",
+          "Tendonitis/bursitis"
+        ],
+        "off_label": [
+          "Migraine",
+          "Menstrual migraine prophylaxis"
+        ]
       },
-      "doses": [220, 250, 275, 375, 500, 550],
+      "doses": [
+        220,
+        250,
+        275,
+        375,
+        500,
+        550
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "1500 mg/day (Rx, naproxen base); 660 mg/day (OTC naproxen sodium, i.e., 220mg TID)",
       "time_required_between_doses": "8-12 hours",
       "mechanism_of_action": "Non-selective NSAID. Inhibits COX-1 and COX-2, reducing prostaglandin synthesis. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (naproxen sodium); 2-4 hours (naproxen base)",
       "half_life": "12-17 hours",
-      "active_metabolites": "None — 6-O-desmethyl naproxen is inactive",
+      "active_metabolites": "None \u2014 6-O-desmethyl naproxen is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."},
-        {"drug": "Celecoxib / Meloxicam / Ibuprofen", "interaction": "Avoid concurrent NSAIDs."},
-        {"drug": "Propranolol", "interaction": "NSAIDs may reduce antihypertensive effect."},
-        {"drug": "Esomeprazole 40mg", "interaction": "PPI provides gastroprotection."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce absorption. Separate dosing."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."
+        },
+        {
+          "drug": "Celecoxib / Meloxicam / Ibuprofen",
+          "interaction": "Avoid concurrent NSAIDs."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "NSAIDs may reduce antihypertensive effect."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "PPI provides gastroprotection."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce absorption. Separate dosing."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Naproxen Sodium Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Naproxen"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Loratadine",
-      "brand_names": ["Claritin", "Alavert"],
+      "brand_names": [
+        "Claritin",
+        "Alavert"
+      ],
       "indication": {
-        "on_label": ["Seasonal allergic rhinitis", "Chronic idiopathic urticaria"],
-        "off_label": ["Perennial allergic rhinitis", "Allergic conjunctivitis"]
+        "on_label": [
+          "Seasonal allergic rhinitis",
+          "Chronic idiopathic urticaria"
+        ],
+        "off_label": [
+          "Perennial allergic rhinitis",
+          "Allergic conjunctivitis"
+        ]
       },
-      "doses": [10],
+      "doses": [
+        10
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "10 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
       "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Metabolized by CYP3A4 and CYP2D6 to its active metabolite desloratadine. Non-sedating at recommended doses.",
       "time_to_max_concentration": "1-2 hours (loratadine); 3-4 hours (desloratadine metabolite)",
       "half_life": "8 hours (loratadine); 27 hours (desloratadine, active metabolite)",
-      "active_metabolites": "Desloratadine — the same active ingredient as Clarinex. Equipotent antihistamine.",
+      "active_metabolites": "Desloratadine \u2014 the same active ingredient as Clarinex. Equipotent antihistamine.",
       "half_life_of_active_metabolites": "Desloratadine: 27 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Desloratadine 5mg", "interaction": "Desloratadine IS the active metabolite of loratadine. Using both is redundant. Avoid concurrent use."},
-        {"drug": "Cetirizine / Levocetirizine / Fexofenadine", "interaction": "Taking multiple antihistamines increases sedation risk. Generally not recommended."},
-        {"drug": "Diphenhydramine", "interaction": "Additive antihistamine effects. Increased sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive antihistamine effects."},
-        {"drug": "Bupropion 300mg XR / Sertraline 50mg", "interaction": "Both are CYP2D6 inhibitors and may theoretically increase loratadine levels, though clinical significance is minimal."}
+        {
+          "drug": "Desloratadine 5mg",
+          "interaction": "Desloratadine IS the active metabolite of loratadine. Using both is redundant. Avoid concurrent use."
+        },
+        {
+          "drug": "Cetirizine / Levocetirizine / Fexofenadine",
+          "interaction": "Taking multiple antihistamines increases sedation risk. Generally not recommended."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive antihistamine effects. Increased sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive antihistamine effects."
+        },
+        {
+          "drug": "Bupropion 300mg XR / Sertraline 50mg",
+          "interaction": "Both are CYP2D6 inhibitors and may theoretically increase loratadine levels, though clinical significance is minimal."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Loratadine Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Loratadine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Diphenhydramine HCl",
-      "brand_names": ["Benadryl", "ZzzQuil", "Sominex", "Unisom SleepGels"],
+      "brand_names": [
+        "Benadryl",
+        "ZzzQuil",
+        "Sominex",
+        "Unisom SleepGels"
+      ],
       "indication": {
-        "on_label": ["Allergic rhinitis", "Allergic conjunctivitis", "Urticaria/angioedema", "Motion sickness", "Insomnia (short-term)", "Common cold symptoms", "Pruritus", "Parkinsonism (adjunct)"],
-        "off_label": ["Drug-induced extrapyramidal symptoms/dystonia", "Anaphylaxis (adjunct)", "Nausea/vomiting (mild)"]
+        "on_label": [
+          "Allergic rhinitis",
+          "Allergic conjunctivitis",
+          "Urticaria/angioedema",
+          "Motion sickness",
+          "Insomnia (short-term)",
+          "Common cold symptoms",
+          "Pruritus",
+          "Parkinsonism (adjunct)"
+        ],
+        "off_label": [
+          "Drug-induced extrapyramidal symptoms/dystonia",
+          "Anaphylaxis (adjunct)",
+          "Nausea/vomiting (mild)"
+        ]
       },
-      "doses": [25, 50],
+      "doses": [
+        25,
+        50
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "300 mg/day",
       "time_required_between_doses": "4-6 hours",
       "mechanism_of_action": "First-generation antihistamine (ethylamine class). Competitive H1 receptor antagonist with significant anticholinergic, sedative, and anti-emetic properties. Inhibits CYP2D6. Crosses the blood-brain barrier readily, causing CNS depression/sedation.",
       "time_to_max_concentration": "1-4 hours (typically 2 hours)",
       "half_life": "4-8 hours (adults); may be prolonged in elderly",
-      "active_metabolites": "N-desmethyldiphenhydramine and others — minimal clinical significance",
+      "active_metabolites": "N-desmethyldiphenhydramine and others \u2014 minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive antihistamine, anticholinergic, and sedative effects. High redundancy and toxicity risk."},
-        {"drug": "Glycopyrrolate 1mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Hyoscyamine 0.125mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Trazodone 50mg", "interaction": "Additive sedation."},
-        {"drug": "Zaleplon 5mg", "interaction": "Additive CNS depression."},
-        {"drug": "Ramelteon 8mg", "interaction": "Additive sedation."},
-        {"drug": "Doxylamine 25mg", "interaction": "Both are first-generation sedating antihistamines. Highly redundant and additive sedation."},
-        {"drug": "Propranolol", "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."},
-        {"drug": "Sertraline 50mg", "interaction": "Additive sedation. DPH inhibits CYP2D6, may modestly increase sertraline levels."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Both inhibit CYP2D6. Additive CYP2D6 inhibition may increase levels of 2D6 substrates."},
-        {"drug": "Loperamide 2mg", "interaction": "Additive constipation and anticholinergic effects."},
-        {"drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine", "interaction": "Additive antihistamine effects. Generally avoid combining 1st and 2nd gen antihistamines routinely."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Additive CNS depression. Both are commonly combined in OTC cold products but monitor for excessive sedation."}
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. High redundancy and toxicity risk."
+        },
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive CNS depression."
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and additive sedation."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive sedation. DPH inhibits CYP2D6, may modestly increase sertraline levels."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Both inhibit CYP2D6. Additive CYP2D6 inhibition may increase levels of 2D6 substrates."
+        },
+        {
+          "drug": "Loperamide 2mg",
+          "interaction": "Additive constipation and anticholinergic effects."
+        },
+        {
+          "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
+          "interaction": "Additive antihistamine effects. Generally avoid combining 1st and 2nd gen antihistamines routinely."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Additive CNS depression. Both are commonly combined in OTC cold products but monitor for excessive sedation."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Diphenhydramine Hydrochloride Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Diphenhydramine Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Cetirizine HCl",
-      "brand_names": ["Zyrtec"],
+      "brand_names": [
+        "Zyrtec"
+      ],
       "indication": {
-        "on_label": ["Seasonal allergic rhinitis", "Perennial allergic rhinitis", "Chronic idiopathic urticaria"],
-        "off_label": ["Atopic dermatitis/eczema (pruritus)", "Allergic conjunctivitis", "Cold urticaria"]
+        "on_label": [
+          "Seasonal allergic rhinitis",
+          "Perennial allergic rhinitis",
+          "Chronic idiopathic urticaria"
+        ],
+        "off_label": [
+          "Atopic dermatitis/eczema (pruritus)",
+          "Allergic conjunctivitis",
+          "Cold urticaria"
+        ]
       },
-      "doses": [5, 10],
+      "doses": [
+        5,
+        10
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "10 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
       "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of hydroxyzine. Minimal anticholinergic activity. Low CNS penetration but can cause mild sedation in some patients. Primarily renally eliminated (minimal hepatic metabolism).",
       "time_to_max_concentration": "1 hour",
       "half_life": "8-9 hours (adults); prolonged in renal impairment",
-      "active_metabolites": "None significant — cetirizine itself is the active metabolite of hydroxyzine. Minimal further metabolism.",
+      "active_metabolites": "None significant \u2014 cetirizine itself is the active metabolite of hydroxyzine. Minimal further metabolism.",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Hydroxyzine 10mg", "interaction": "Cetirizine IS the active metabolite of hydroxyzine. Concurrent use results in excessive antihistamine effect. Avoid."},
-        {"drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine", "interaction": "Multiple antihistamines generally not recommended."},
-        {"drug": "Diphenhydramine", "interaction": "Additive antihistamine and sedative effects."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive sedation."},
-        {"drug": "Trazodone 50mg / Zaleplon 5mg / Ramelteon 8mg", "interaction": "Additive sedation possible with cetirizine."}
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Cetirizine IS the active metabolite of hydroxyzine. Concurrent use results in excessive antihistamine effect. Avoid."
+        },
+        {
+          "drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine",
+          "interaction": "Multiple antihistamines generally not recommended."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive antihistamine and sedative effects."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Trazodone 50mg / Zaleplon 5mg / Ramelteon 8mg",
+          "interaction": "Additive sedation possible with cetirizine."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Cetirizine Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Cetirizine Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Fexofenadine HCl",
-      "brand_names": ["Allegra"],
+      "brand_names": [
+        "Allegra"
+      ],
       "indication": {
-        "on_label": ["Seasonal allergic rhinitis", "Chronic idiopathic urticaria"],
-        "off_label": ["Allergic conjunctivitis", "Chronic urticaria (higher doses up to 240mg BID)"]
+        "on_label": [
+          "Seasonal allergic rhinitis",
+          "Chronic idiopathic urticaria"
+        ],
+        "off_label": [
+          "Allergic conjunctivitis",
+          "Chronic urticaria (higher doses up to 240mg BID)"
+        ]
       },
-      "doses": [60, 180],
+      "doses": [
+        60,
+        180
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "180 mg/day (standard); up to 480 mg/day studied in chronic urticaria",
       "time_required_between_doses": "12-24 hours (60mg BID or 180mg once daily)",
-      "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of terfenadine. Non-sedating — does not cross the blood-brain barrier significantly. Not significantly metabolized hepatically. Primarily excreted unchanged in feces.",
+      "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of terfenadine. Non-sedating \u2014 does not cross the blood-brain barrier significantly. Not significantly metabolized hepatically. Primarily excreted unchanged in feces.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "14.4 hours",
-      "active_metabolites": "None significant — fexofenadine undergoes minimal metabolism",
+      "active_metabolites": "None significant \u2014 fexofenadine undergoes minimal metabolism",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Other antihistamines (Desloratadine, Loratadine, Cetirizine, Levocetirizine, Hydroxyzine, Diphenhydramine)", "interaction": "Multiple antihistamines generally not recommended, though fexofenadine is the least sedating."},
-        {"drug": "Colestipol 1g", "interaction": "May reduce fexofenadine absorption. Separate dosing."},
-        {"drug": "Famotidine 20mg / Esomeprazole 40mg", "interaction": "Antacids containing aluminum/magnesium reduce fexofenadine absorption, but H2 blockers and PPIs do not significantly affect it."}
+        {
+          "drug": "Other antihistamines (Desloratadine, Loratadine, Cetirizine, Levocetirizine, Hydroxyzine, Diphenhydramine)",
+          "interaction": "Multiple antihistamines generally not recommended, though fexofenadine is the least sedating."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "May reduce fexofenadine absorption. Separate dosing."
+        },
+        {
+          "drug": "Famotidine 20mg / Esomeprazole 40mg",
+          "interaction": "Antacids containing aluminum/magnesium reduce fexofenadine absorption, but H2 blockers and PPIs do not significantly affect it."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Fexofenadine Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Fexofenadine Hydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Levocetirizine Dihydrochloride",
-      "brand_names": ["Xyzal"],
+      "brand_names": [
+        "Xyzal"
+      ],
       "indication": {
-        "on_label": ["Seasonal allergic rhinitis", "Perennial allergic rhinitis", "Chronic idiopathic urticaria"],
-        "off_label": ["Allergic conjunctivitis", "Atopic dermatitis (pruritus)"]
+        "on_label": [
+          "Seasonal allergic rhinitis",
+          "Perennial allergic rhinitis",
+          "Chronic idiopathic urticaria"
+        ],
+        "off_label": [
+          "Allergic conjunctivitis",
+          "Atopic dermatitis (pruritus)"
+        ]
       },
-      "doses": [2.5, 5],
+      "doses": [
+        2.5,
+        5
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "5 mg/day",
       "time_required_between_doses": "24 hours (once daily, in the evening)",
-      "mechanism_of_action": "Second-generation antihistamine. R-enantiomer of cetirizine with approximately twice the binding affinity for H1 receptors. Selective peripheral H1 receptor antagonist. Minimal metabolism — primarily excreted unchanged in urine.",
+      "mechanism_of_action": "Second-generation antihistamine. R-enantiomer of cetirizine with approximately twice the binding affinity for H1 receptors. Selective peripheral H1 receptor antagonist. Minimal metabolism \u2014 primarily excreted unchanged in urine.",
       "time_to_max_concentration": "0.9 hours",
       "half_life": "8-9 hours",
       "active_metabolites": "None significant",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Cetirizine 10mg", "interaction": "Levocetirizine IS the active R-enantiomer of cetirizine. Using both is redundant. Avoid concurrent use."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Both cetirizine and levocetirizine are metabolites of hydroxyzine. Redundant."},
-        {"drug": "Other antihistamines", "interaction": "Multiple antihistamines generally not recommended."}
+        {
+          "drug": "Cetirizine 10mg",
+          "interaction": "Levocetirizine IS the active R-enantiomer of cetirizine. Using both is redundant. Avoid concurrent use."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Both cetirizine and levocetirizine are metabolites of hydroxyzine. Redundant."
+        },
+        {
+          "drug": "Other antihistamines",
+          "interaction": "Multiple antihistamines generally not recommended."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Levocetirizine Dihydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Levocetirizine Dihydrochloride"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Dextromethorphan HBr",
-      "brand_names": ["Delsym", "Robitussin DM (component)", "various OTC cough products"],
+      "brand_names": [
+        "Delsym",
+        "Robitussin DM (component)",
+        "various OTC cough products"
+      ],
       "indication": {
-        "on_label": ["Temporary relief of cough due to minor throat/bronchial irritation (common cold)"],
-        "off_label": ["Pseudobulbar affect (in combination with quinidine as Nuedexta)", "Neuropathic pain", "Treatment-resistant depression (investigational)"]
+        "on_label": [
+          "Temporary relief of cough due to minor throat/bronchial irritation (common cold)"
+        ],
+        "off_label": [
+          "Pseudobulbar affect (in combination with quinidine as Nuedexta)",
+          "Neuropathic pain",
+          "Treatment-resistant depression (investigational)"
+        ]
       },
-      "doses": [10, 15, 20, 30],
+      "doses": [
+        10,
+        15,
+        20,
+        30
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "120 mg/day (adults)",
       "time_required_between_doses": "4-8 hours (IR: every 4 hours; ER: every 12 hours)",
       "mechanism_of_action": "Non-opioid antitussive. Acts centrally to elevate the cough threshold. NMDA receptor antagonist, sigma-1 receptor agonist, and serotonin reuptake inhibitor at higher doses. Also has weak affinity for opioid receptors. Metabolized primarily by CYP2D6 to dextrorphan (active metabolite with NMDA antagonist activity).",
       "time_to_max_concentration": "2-2.5 hours (IR formulations)",
       "half_life": "3-6 hours (extensive CYP2D6 metabolizers); up to 24+ hours in poor CYP2D6 metabolizers",
-      "active_metabolites": "Dextrorphan — NMDA receptor antagonist with significant pharmacological activity. Formed via CYP2D6.",
+      "active_metabolites": "Dextrorphan \u2014 NMDA receptor antagonist with significant pharmacological activity. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "Dextrorphan: approximately 3-4 hours",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Sertraline 50mg", "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic — high risk of serotonin syndrome. Avoid or use with extreme caution."},
-        {"drug": "Bupropion 300mg XR", "interaction": "CRITICAL: Bupropion is a potent CYP2D6 inhibitor and dramatically increases DXM levels (this mechanism is the basis for the drug Auvelity). Risk of serotonin syndrome and DXM toxicity."},
-        {"drug": "Trazodone 50mg", "interaction": "Additive serotonergic effects. Risk of serotonin syndrome."},
-        {"drug": "Buspirone 7.5mg", "interaction": "Additive serotonergic effects."},
-        {"drug": "Diphenhydramine", "interaction": "Additive CNS depression. Commonly combined in OTC products. Diphenhydramine also inhibits CYP2D6, increasing DXM levels."},
-        {"drug": "Doxylamine 25mg", "interaction": "Additive CNS depression."},
-        {"drug": "Ondansetron 4mg", "interaction": "Both affect serotonin pathways. Low risk at typical doses."}
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic \u2014 high risk of serotonin syndrome. Avoid or use with extreme caution."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "CRITICAL: Bupropion is a potent CYP2D6 inhibitor and dramatically increases DXM levels (this mechanism is the basis for the drug Auvelity). Risk of serotonin syndrome and DXM toxicity."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive serotonergic effects. Risk of serotonin syndrome."
+        },
+        {
+          "drug": "Buspirone 7.5mg",
+          "interaction": "Additive serotonergic effects."
+        },
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Additive CNS depression. Commonly combined in OTC products. Diphenhydramine also inhibits CYP2D6, increasing DXM levels."
+        },
+        {
+          "drug": "Doxylamine 25mg",
+          "interaction": "Additive CNS depression."
+        },
+        {
+          "drug": "Ondansetron 4mg",
+          "interaction": "Both affect serotonin pathways. Low risk at typical doses."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Dextromethorphan HBr Liquid/Capsules"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Dextromethorphan Hydrobromide"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Dextromethorphan - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Doxylamine Succinate",
-      "brand_names": ["Unisom SleepTabs", "NyQuil (component)"],
+      "brand_names": [
+        "Unisom SleepTabs",
+        "NyQuil (component)"
+      ],
       "indication": {
-        "on_label": ["Insomnia (short-term, OTC nighttime sleep-aid)", "Allergy symptoms (antihistamine)"],
-        "off_label": ["Nausea and vomiting of pregnancy (often combined with pyridoxine/B6 as Diclegis/Bonjesta)", "Common cold symptoms"]
+        "on_label": [
+          "Insomnia (short-term, OTC nighttime sleep-aid)",
+          "Allergy symptoms (antihistamine)"
+        ],
+        "off_label": [
+          "Nausea and vomiting of pregnancy (often combined with pyridoxine/B6 as Diclegis/Bonjesta)",
+          "Common cold symptoms"
+        ]
       },
-      "doses": [12.5, 25],
+      "doses": [
+        12.5,
+        25
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "25 mg per dose (as sleep aid); 75 mg/day for NVP (in combination with pyridoxine)",
       "time_required_between_doses": "Once at bedtime (sleep aid); 8-12 hours for NVP indication",
       "mechanism_of_action": "First-generation antihistamine (ethylamine class, same class as diphenhydramine). Competitive H1 receptor antagonist with significant anticholinergic and sedative properties. CNS penetration produces drowsiness.",
       "time_to_max_concentration": "2-3 hours",
       "half_life": "10 hours (range 7-12 hours)",
-      "active_metabolites": "N-desmethyldoxylamine and N,N-didesmethyldoxylamine — minimal clinical significance",
+      "active_metabolites": "N-desmethyldoxylamine and N,N-didesmethyldoxylamine \u2014 minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Diphenhydramine", "interaction": "Both are first-generation sedating antihistamines. Highly redundant and strongly additive sedation."},
-        {"drug": "Hydroxyzine 10mg", "interaction": "Additive sedation and anticholinergic effects."},
-        {"drug": "Glycopyrrolate 1mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Hyoscyamine 0.125mg", "interaction": "Additive anticholinergic effects."},
-        {"drug": "Trazodone 50mg", "interaction": "Additive sedation."},
-        {"drug": "Zaleplon 5mg", "interaction": "Additive sedation."},
-        {"drug": "Ramelteon 8mg", "interaction": "Additive sedation."},
-        {"drug": "Sertraline 50mg", "interaction": "Additive sedation. Minor serotonergic interaction."},
-        {"drug": "Dextromethorphan 15mg", "interaction": "Additive CNS depression. Commonly combined in OTC products."},
-        {"drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine", "interaction": "Additive antihistamine effects."}
+        {
+          "drug": "Diphenhydramine",
+          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and strongly additive sedation."
+        },
+        {
+          "drug": "Hydroxyzine 10mg",
+          "interaction": "Additive sedation and anticholinergic effects."
+        },
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Additive anticholinergic effects."
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation."
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive sedation. Minor serotonergic interaction."
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Additive CNS depression. Commonly combined in OTC products."
+        },
+        {
+          "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
+          "interaction": "Additive antihistamine effects."
+        }
+      ],
+      "citations": [
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
       ]
     },
     {
       "generic_name": "Pseudoephedrine HCl",
-      "brand_names": ["Sudafed", "Sudafed 12 Hour", "Nexafed"],
+      "brand_names": [
+        "Sudafed",
+        "Sudafed 12 Hour",
+        "Nexafed"
+      ],
       "indication": {
-        "on_label": ["Nasal congestion due to common cold, sinusitis, or upper respiratory allergies"],
-        "off_label": ["Eustachian tube dysfunction", "Adjunct for sinus pressure"]
+        "on_label": [
+          "Nasal congestion due to common cold, sinusitis, or upper respiratory allergies"
+        ],
+        "off_label": [
+          "Eustachian tube dysfunction",
+          "Adjunct for sinus pressure"
+        ]
       },
-      "doses": [30, 60, 120, 240],
+      "doses": [
+        30,
+        60,
+        120,
+        240
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "240 mg/day",
       "time_required_between_doses": "4-6 hours (IR 30mg); 12 hours (ER 120mg); 24 hours (ER 240mg)",
       "mechanism_of_action": "Sympathomimetic amine. Acts as an indirect-acting alpha- and beta-adrenergic agonist by displacing norepinephrine from storage sites. Stimulates alpha-adrenergic receptors in nasal mucosa, producing vasoconstriction and reducing nasal congestion. Also has mild beta-adrenergic activity (bronchodilation, cardiac stimulation).",
       "time_to_max_concentration": "1-3 hours (IR); 4-6 hours (ER)",
       "half_life": "5-8 hours (pH-dependent; shorter with acidic urine)",
-      "active_metabolites": "None significant — excreted primarily unchanged in urine (43-96% depending on urine pH)",
+      "active_metabolites": "None significant \u2014 excreted primarily unchanged in urine (43-96% depending on urine pH)",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"drug": "Propranolol", "interaction": "IMPORTANT: Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive/cardiac effects. Risk of unopposed alpha-adrenergic stimulation causing severe hypertension, especially with non-selective beta-blockers like propranolol."},
-        {"drug": "Methylphenidate / Amphetamine Salts", "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."},
-        {"drug": "Bupropion 300mg XR", "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."}
+        {
+          "drug": "Propranolol",
+          "interaction": "IMPORTANT: Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive/cardiac effects. Risk of unopposed alpha-adrenergic stimulation causing severe hypertension, especially with non-selective beta-blockers like propranolol."
+        },
+        {
+          "drug": "Methylphenidate / Amphetamine Salts",
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Pseudoephedrine Hydrochloride Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Pseudoephedrine Hydrochloride"
+        }
       ]
     },
     {
       "generic_name": "Guaifenesin",
-      "brand_names": ["Mucinex", "Robitussin (component)"],
+      "brand_names": [
+        "Mucinex",
+        "Robitussin (component)"
+      ],
       "indication": {
-        "on_label": ["Expectorant for productive cough — helps loosen phlegm and thin bronchial secretions"],
-        "off_label": ["Adjunct for chronic sinusitis", "Fibromyalgia (historically proposed, not evidence-based)", "Kidney stone prevention (increases urine volume)"]
+        "on_label": [
+          "Expectorant for productive cough \u2014 helps loosen phlegm and thin bronchial secretions"
+        ],
+        "off_label": [
+          "Adjunct for chronic sinusitis",
+          "Fibromyalgia (historically proposed, not evidence-based)",
+          "Kidney stone prevention (increases urine volume)"
+        ]
       },
-      "doses": [200, 400, 600, 1200],
+      "doses": [
+        200,
+        400,
+        600,
+        1200
+      ],
       "dose_unit": "mg",
       "maximum_daily_dosage": "2400 mg/day",
       "time_required_between_doses": "4 hours (IR); 12 hours (ER 600mg or 1200mg)",
       "mechanism_of_action": "Expectorant. Increases respiratory tract fluid secretions and helps to loosen phlegm and thin bronchial secretions by reducing the adhesiveness and surface tension of mucus, facilitating removal by coughing. Stimulates secretions from the submucosal glands of the respiratory tract. May also have some antitussive activity at higher doses.",
       "time_to_max_concentration": "0.5-1 hour (IR formulations)",
       "half_life": "1 hour",
-      "active_metabolites": "None significant — metabolized to beta-(2-methoxyphenoxy) lactic acid (inactive) and excreted renally",
+      "active_metabolites": "None significant \u2014 metabolized to beta-(2-methoxyphenoxy) lactic acid (inactive) and excreted renally",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
-        {"note": "No significant pharmacokinetic or pharmacodynamic interactions with other drugs on this list. Guaifenesin is generally well-tolerated with minimal drug interaction potential."}
+        {
+          "drug": "None",
+          "interaction": "No significant pharmacokinetic or pharmacodynamic interactions with other drugs on this list. Guaifenesin is generally well-tolerated with minimal drug interaction potential."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Guaifenesin Extended-Release Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Guaifenesin"
+        }
       ]
     }
   ]
