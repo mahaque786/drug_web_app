@@ -381,7 +381,7 @@
     }
 
     function getAppsScriptUrl() {
-      return localStorage.getItem('appsScriptUrl') || '';
+      return localStorage.getItem('appsScriptUrl') || document.getElementById('apps-script-url').value.trim();
     }
 
     function setStatus(message, isSuccess) {
@@ -425,7 +425,7 @@
       const unit = med.dose_unit || 'mg';
       const options = ['<option value="">Select a dose...</option>'];
       med.doses.forEach(function(d) {
-        options.push('<option value="' + d + '">' + d + ' ' + escapeHtml(unit) + '</option>');
+        options.push('<option value="' + escapeHtml(String(d)) + '">' + escapeHtml(String(d)) + ' ' + escapeHtml(unit) + '</option>');
       });
       doseSelect.innerHTML = options.join('');
       doseSelect.disabled = false;
@@ -805,11 +805,6 @@
       const stored = getAppsScriptUrl();
       if (stored) {
         document.getElementById('apps-script-url').value = stored;
-      } else {
-        const defaultUrl = document.getElementById('apps-script-url').value.trim();
-        if (defaultUrl) {
-          localStorage.setItem('appsScriptUrl', defaultUrl);
-        }
       }
       loadData();
       fetchLogs();
