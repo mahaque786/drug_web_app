@@ -61,6 +61,14 @@
         {
           "drug": "Propranolol",
           "interaction": "Opposing cardiovascular effects; propranolol may mitigate stimulant-induced tachycardia/hypertension. This combination is sometimes used therapeutically but requires monitoring."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function."
         }
       ],
       "citations": [
@@ -124,6 +132,14 @@
         {
           "drug": "Propranolol",
           "interaction": "Opposing cardiovascular effects; may counteract stimulant-induced tachycardia."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function."
         }
       ],
       "citations": [
@@ -202,6 +218,18 @@
         {
           "drug": "Famotidine 20mg",
           "interaction": "H2 blockers may raise gastric pH, potentially altering amphetamine absorption (though less effect than PPIs)."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
         }
       ],
       "citations": [
@@ -271,6 +299,18 @@
         {
           "drug": "Propranolol",
           "interaction": "Opposing cardiovascular effects."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
         }
       ],
       "citations": [
@@ -320,7 +360,7 @@
       "mechanism_of_action": "Partial agonist at serotonin 5-HT1A receptors (both presynaptic autoreceptors and postsynaptic receptors). Moderate affinity for brain D2 dopamine receptors. Does not bind to benzodiazepine receptors or affect GABA binding. Metabolized by CYP3A4.",
       "time_to_max_concentration": "0.7-1.5 hours (40-90 minutes)",
       "half_life": "2-3 hours",
-      "active_metabolites": "1-pyrimidinylpiperazine (1-PP) \u2014 potent alpha-2 adrenergic antagonist which may contribute to pharmacological effects. 6-hydroxybuspirone is also an active metabolite (5-HT1A partial agonist) with plasma levels 40-fold higher than parent.",
+      "active_metabolites": "1-pyrimidinylpiperazine (1-PP) — potent alpha-2 adrenergic antagonist which may contribute to pharmacological effects. 6-hydroxybuspirone is also an active metabolite (5-HT1A partial agonist) with plasma levels 40-fold higher than parent.",
       "half_life_of_active_metabolites": "1-PP: approximately 6 hours; 6-hydroxybuspirone: data limited but longer than parent compound",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -430,6 +470,14 @@
         {
           "drug": "Hydroxyzine 10mg",
           "interaction": "Bupropion may lower seizure threshold; hydroxyzine at high doses may also lower seizure threshold. Additive risk."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Excessive caffeine may increase seizure risk with bupropion. Monitor for irritability, tremor, increased blood pressure, and insomnia."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
         }
       ],
       "citations": [
@@ -473,9 +521,9 @@
       "maximum_daily_dosage": "16 g/day (tablets); 30 g/day (granules)",
       "time_required_between_doses": "12 hours (given 1-2 times daily) or as a single daily dose",
       "mechanism_of_action": "Bile acid sequestrant. Binds bile acids in the intestine to form an insoluble complex that is excreted in feces. This removes bile acids from the enterohepatic circulation, promoting hepatic conversion of cholesterol to bile acids, ultimately lowering LDL cholesterol levels. Not absorbed systemically.",
-      "time_to_max_concentration": "Not applicable \u2014 colestipol is not absorbed systemically",
-      "half_life": "Not applicable \u2014 not absorbed systemically",
-      "active_metabolites": "None \u2014 not absorbed or metabolized systemically",
+      "time_to_max_concentration": "Not applicable — colestipol is not absorbed systemically",
+      "half_life": "Not applicable — not absorbed systemically",
+      "active_metabolites": "None — not absorbed or metabolized systemically",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -492,7 +540,7 @@
         },
         {
           "drug": "Levothyroxine (if applicable)",
-          "interaction": "Classic interaction \u2014 significantly reduces thyroid hormone absorption."
+          "interaction": "Classic interaction — significantly reduces thyroid hormone absorption."
         },
         {
           "drug": "Esomeprazole 40mg",
@@ -509,6 +557,10 @@
         {
           "drug": "Finasteride 1mg",
           "interaction": "May reduce absorption. Separate dosing."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours."
         }
       ],
       "citations": [
@@ -620,7 +672,7 @@
       "mechanism_of_action": "Non-selective beta-adrenergic receptor blocker (blocks both beta-1 and beta-2 receptors). Reduces heart rate, myocardial contractility, blood pressure, and myocardial oxygen demand. Also has membrane-stabilizing activity. Metabolized primarily by CYP2D6 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (IR); 6 hours (LA formulation)",
       "half_life": "3-6 hours (IR formulation); 8-11 hours (LA formulation)",
-      "active_metabolites": "4-hydroxypropranolol \u2014 has beta-blocking activity comparable to propranolol. Formed via CYP2D6.",
+      "active_metabolites": "4-hydroxypropranolol — has beta-blocking activity comparable to propranolol. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "4-hydroxypropranolol: approximately 5-6 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -662,6 +714,18 @@
         {
           "drug": "Buspirone 7.5mg",
           "interaction": "No significant pharmacokinetic interaction documented. Propranolol is not significantly displaced by buspirone."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine (CYP2D6 inhibitor) may increase propranolol exposure, leading to increased risk of bradycardia and hypotension."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Monitor hemodynamic parameters."
         }
       ],
       "citations": [
@@ -714,7 +778,7 @@
       "mechanism_of_action": "Selective serotonin reuptake inhibitor (SSRI). Potently and selectively inhibits neuronal reuptake of serotonin (5-HT) with minimal effects on norepinephrine and dopamine reuptake. Also moderate inhibitor of CYP2D6.",
       "time_to_max_concentration": "4.5-8.4 hours",
       "half_life": "26 hours (approximately; range 22-36 hours)",
-      "active_metabolites": "N-desmethylsertraline \u2014 approximately 1/8 as potent as sertraline for serotonin reuptake inhibition.",
+      "active_metabolites": "N-desmethylsertraline — approximately 1/8 as potent as sertraline for serotonin reuptake inhibition.",
       "half_life_of_active_metabolites": "N-desmethylsertraline: 62-104 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -768,6 +832,10 @@
         {
           "drug": "Doxylamine 25mg",
           "interaction": "Additive sedation and serotonergic effects."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine may modestly inhibit sertraline metabolism. Monitor for increased sertraline effects."
         }
       ],
       "citations": [
@@ -815,7 +883,7 @@
       "mechanism_of_action": "Serotonin antagonist and reuptake inhibitor (SARI). Inhibits serotonin reuptake and blocks 5-HT2A and 5-HT2C receptors. Also blocks alpha-1 adrenergic receptors (causes orthostatic hypotension) and H1 histamine receptors (causes sedation). Metabolized primarily by CYP3A4.",
       "time_to_max_concentration": "1-2 hours (IR, fasting); delayed with food",
       "half_life": "5-9 hours (biphasic elimination: initial phase 3-6 hours, terminal phase 5-9 hours)",
-      "active_metabolites": "m-chlorophenylpiperazine (mCPP) \u2014 a serotonin agonist with anxiogenic and some serotonergic properties.",
+      "active_metabolites": "m-chlorophenylpiperazine (mCPP) — a serotonin agonist with anxiogenic and some serotonergic properties.",
       "half_life_of_active_metabolites": "mCPP: 4-14 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -913,7 +981,7 @@
       "mechanism_of_action": "Proton pump inhibitor (PPI). Suppresses gastric acid secretion by specific inhibition of the H+/K+ ATPase enzyme system (proton pump) at the secretory surface of the gastric parietal cell. Esomeprazole is the S-isomer of omeprazole. Blocks the final step of acid production. Metabolized by CYP2C19 and CYP3A4.",
       "time_to_max_concentration": "1-2 hours (delayed-release capsule); 1.5 hours",
       "half_life": "1-1.5 hours (but duration of antisecretory effect lasts up to 24 hours due to irreversible binding to proton pump)",
-      "active_metabolites": "None \u2014 metabolites (hydroxy and desmethyl metabolites) have no significant antisecretory activity",
+      "active_metabolites": "None — metabolites (hydroxy and desmethyl metabolites) have no significant antisecretory activity",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -922,11 +990,15 @@
         },
         {
           "drug": "Famotidine 20mg",
-          "interaction": "Dual acid suppression \u2014 generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression."
+          "interaction": "Dual acid suppression — generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression."
         },
         {
           "drug": "Colestipol 1g",
           "interaction": "Colestipol may bind esomeprazole and reduce absorption. Separate dosing."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough."
         }
       ],
       "citations": [
@@ -975,7 +1047,7 @@
       "mechanism_of_action": "Quaternary ammonium anticholinergic (muscarinic receptor antagonist). Blocks the action of acetylcholine at parasympathetic sites in smooth muscle, secretory glands, and the CNS (though poor CNS penetration due to quaternary structure). Reduces gastrointestinal motility, gastric acid secretion, salivation, and other secretions. Does not cross the blood-brain barrier.",
       "time_to_max_concentration": "3 hours (oral solution in fasted state)",
       "half_life": "Approximately 3 hours (oral); 0.6-1.2 hours (IV)",
-      "active_metabolites": "None significant \u2014 >80% excreted as unchanged drug in urine",
+      "active_metabolites": "None significant — >80% excreted as unchanged drug in urine",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -988,7 +1060,7 @@
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Strongly additive anticholinergic effects \u2014 both are anticholinergic agents. High risk of anticholinergic toxicity."
+          "interaction": "Strongly additive anticholinergic effects — both are anticholinergic agents. High risk of anticholinergic toxicity."
         },
         {
           "drug": "Doxylamine 25mg",
@@ -1027,7 +1099,7 @@
         "on_label": [
           "Osteoarthritis",
           "Rheumatoid arthritis",
-          "Juvenile rheumatoid arthritis (\u22652 years)",
+          "Juvenile rheumatoid arthritis (≥2 years)",
           "Ankylosing spondylitis",
           "Acute pain",
           "Primary dysmenorrhea",
@@ -1051,7 +1123,7 @@
       "mechanism_of_action": "Selective cyclooxygenase-2 (COX-2) inhibitor. Inhibits prostaglandin synthesis primarily by inhibiting COX-2. Has minimal COX-1 inhibition at therapeutic doses, which theoretically reduces GI toxicity compared to non-selective NSAIDs. Metabolized primarily by CYP2C9.",
       "time_to_max_concentration": "3 hours",
       "half_life": "11 hours (range 8-12 hours)",
-      "active_metabolites": "None \u2014 metabolites (carboxylic acid, glucuronide conjugates) are inactive",
+      "active_metabolites": "None — metabolites (carboxylic acid, glucuronide conjugates) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1060,7 +1132,7 @@
         },
         {
           "drug": "Ibuprofen / Naproxen / Meloxicam",
-          "interaction": "Avoid concurrent use of multiple NSAIDs \u2014 additive GI, renal, and cardiovascular risk with no added efficacy."
+          "interaction": "Avoid concurrent use of multiple NSAIDs — additive GI, renal, and cardiovascular risk with no added efficacy."
         },
         {
           "drug": "Propranolol",
@@ -1068,11 +1140,15 @@
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Esomeprazole provides gastroprotection \u2014 beneficial combination if NSAID use is necessary."
+          "interaction": "Esomeprazole provides gastroprotection — beneficial combination if NSAID use is necessary."
         },
         {
           "drug": "Colestipol 1g",
           "interaction": "May reduce celecoxib absorption. Separate dosing."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine inhibits CYP2C9, potentially increasing celecoxib levels. Clinical significance not fully established."
         }
       ],
       "citations": [
@@ -1116,10 +1192,10 @@
       "dose_unit": "mg",
       "maximum_daily_dosage": "5 mg/day",
       "time_required_between_doses": "24 hours (once daily)",
-      "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Active metabolite of loratadine. Has anti-inflammatory and antiallergic properties beyond histamine blockade. Non-sedating at recommended doses. Metabolized by CYP3A4 and CYP2D6 (though poorly metabolized \u2014 most is eliminated unchanged).",
+      "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Active metabolite of loratadine. Has anti-inflammatory and antiallergic properties beyond histamine blockade. Non-sedating at recommended doses. Metabolized by CYP3A4 and CYP2D6 (though poorly metabolized — most is eliminated unchanged).",
       "time_to_max_concentration": "3 hours",
       "half_life": "27 hours",
-      "active_metabolites": "3-hydroxydesloratadine \u2014 has antihistaminic activity",
+      "active_metabolites": "3-hydroxydesloratadine — has antihistaminic activity",
       "half_life_of_active_metabolites": "Not well characterized (formation-rate limited)",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1190,7 +1266,7 @@
       "mechanism_of_action": "First-generation antihistamine (H1 receptor antagonist) with anticholinergic, anxiolytic, and sedative properties. Also has 5-HT2A receptor antagonist activity. Active metabolite is cetirizine. Metabolized by hepatic oxidation.",
       "time_to_max_concentration": "2 hours",
       "half_life": "20 hours (adults); 7 hours (children); 29 hours (elderly)",
-      "active_metabolites": "Cetirizine \u2014 a potent second-generation H1 antihistamine (the same drug sold as Zyrtec).",
+      "active_metabolites": "Cetirizine — a potent second-generation H1 antihistamine (the same drug sold as Zyrtec).",
       "half_life_of_active_metabolites": "Cetirizine: 8-9 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1293,12 +1369,12 @@
       "mechanism_of_action": "Anticholinergic/antimuscarinic agent. The levo-isomer of atropine. Blocks the action of acetylcholine at parasympathetic (muscarinic) receptor sites including smooth muscle, secretory glands, and CNS. Reduces GI motility and secretions, relaxes smooth muscle spasm. Crosses the blood-brain barrier (unlike glycopyrrolate).",
       "time_to_max_concentration": "Sublingual: 5-20 minutes (faster than oral tablets)",
       "half_life": "2-3.5 hours",
-      "active_metabolites": "Tropic acid and tropine (minor, via hydrolysis) \u2014 minimal pharmacologic significance",
+      "active_metabolites": "Tropic acid and tropine (minor, via hydrolysis) — minimal pharmacologic significance",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics \u2014 significantly increased risk of anticholinergic toxicity."
+          "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics — significantly increased risk of anticholinergic toxicity."
         },
         {
           "drug": "Hydroxyzine 10mg",
@@ -1322,7 +1398,7 @@
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive GI slowing/constipation \u2014 combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus."
+          "interaction": "Additive GI slowing/constipation — combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus."
         }
       ],
       "citations": [
@@ -1347,7 +1423,7 @@
         "on_label": [
           "Osteoarthritis",
           "Rheumatoid arthritis",
-          "Juvenile rheumatoid arthritis (\u22652 years)"
+          "Juvenile rheumatoid arthritis (≥2 years)"
         ],
         "off_label": [
           "Ankylosing spondylitis",
@@ -1366,7 +1442,7 @@
       "mechanism_of_action": "Preferential COX-2 inhibitor (non-selective NSAID at higher doses). Inhibits prostaglandin synthesis by inhibiting cyclooxygenase-1 and -2, with some preferential COX-2 selectivity. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP3A4.",
       "time_to_max_concentration": "4-5 hours (oral suspension); 5-6 hours (capsules)",
       "half_life": "15-20 hours (mean approximately 20 hours)",
-      "active_metabolites": "None \u2014 metabolites are inactive",
+      "active_metabolites": "None — metabolites are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1504,7 +1580,7 @@
       "mechanism_of_action": "Selective melatonin receptor agonist with high affinity for MT1 and MT2 receptors in the suprachiasmatic nucleus (SCN). Promotes sleep onset by mimicking melatonin's action on sleep-wake cycle regulation. No affinity for GABA receptors, opioid receptors, or other sedative targets. Not a controlled substance. Metabolized primarily by CYP1A2 and secondarily by CYP2C and CYP3A4.",
       "time_to_max_concentration": "0.75-1 hour (median 0.75 hours)",
       "half_life": "1-2.6 hours",
-      "active_metabolites": "M-II metabolite \u2014 has approximately 1/10 to 1/5 the binding affinity of ramelteon for MT1/MT2 receptors and circulates at 20-100x higher levels than parent compound. May contribute to overall clinical effect.",
+      "active_metabolites": "M-II metabolite — has approximately 1/10 to 1/5 the binding affinity of ramelteon for MT1/MT2 receptors and circulates at 20-100x higher levels than parent compound. May contribute to overall clinical effect.",
       "half_life_of_active_metabolites": "M-II: 2-5 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1513,7 +1589,7 @@
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive sedation. Both are sleep aids \u2014 using both is generally redundant."
+          "interaction": "Additive sedation. Both are sleep aids — using both is generally redundant."
         },
         {
           "drug": "Diphenhydramine",
@@ -1530,6 +1606,10 @@
         {
           "drug": "Sertraline 50mg",
           "interaction": "No significant pharmacokinetic interaction. Minimal additive sedation."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Major interaction — cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. May significantly increase ramelteon exposure."
         }
       ],
       "citations": [
@@ -1571,7 +1651,7 @@
       "mechanism_of_action": "Non-benzodiazepine hypnotic (pyrazolopyrimidine class). Selectively binds to the omega-1 (BZ1) subunit of the GABA-A receptor complex, enhancing GABAergic inhibition. More selective for sleep-inducing effects with minimal anxiolytic, muscle relaxant, or anticonvulsant properties. Primarily metabolized by aldehyde oxidase and CYP3A4.",
       "time_to_max_concentration": "1 hour (reduced to 2 hours with high-fat meal)",
       "half_life": "1 hour (approximately)",
-      "active_metabolites": "None \u2014 primary metabolites (5-oxo-zaleplon and desethylzaleplon) are inactive",
+      "active_metabolites": "None — primary metabolites (5-oxo-zaleplon and desethylzaleplon) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1601,6 +1681,10 @@
         {
           "drug": "Propranolol",
           "interaction": "Additive CNS depression at higher doses. Generally minimal interaction."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Major interaction — cimetidine inhibits aldehyde oxidase and CYP3A4 (zaleplon's metabolic pathways), increasing zaleplon exposure by 85%. Reduce zaleplon dose to 5 mg."
         }
       ],
       "citations": [
@@ -1651,7 +1735,7 @@
       "mechanism_of_action": "Competitive, reversible inhibitor of histamine H2 receptors on gastric parietal cells. Reduces basal and stimulated gastric acid secretion, including nocturnal acid secretion. Does not affect CYP450 enzymes significantly.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "2.5-3.5 hours; prolonged in renal impairment",
-      "active_metabolites": "None \u2014 famotidine S-oxide is the primary metabolite and is inactive",
+      "active_metabolites": "None — famotidine S-oxide is the primary metabolite and is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1665,6 +1749,10 @@
         {
           "drug": "Colestipol 1g",
           "interaction": "Colestipol may bind famotidine. Separate dosing."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Both are H2-receptor antagonists; concurrent use is redundant and provides no additional benefit."
         }
       ],
       "citations": [
@@ -1709,7 +1797,7 @@
       "mechanism_of_action": "Synthetic opioid that acts on mu-opioid receptors in the intestinal wall. Slows intestinal motility, prolongs transit time, and reduces fecal volume. Increases anal sphincter tone. Does not significantly cross the blood-brain barrier at therapeutic doses (P-glycoprotein substrate), so no central opioid effects.",
       "time_to_max_concentration": "2.5 hours (capsule); 5 hours (liquid)",
       "half_life": "10.8 hours (range 9-14 hours)",
-      "active_metabolites": "N-demethyl loperamide \u2014 minimal clinical significance at therapeutic doses",
+      "active_metabolites": "N-demethyl loperamide — minimal clinical significance at therapeutic doses",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1771,9 +1859,9 @@
       "maximum_daily_dosage": "500 mg/day",
       "time_required_between_doses": "4-6 hours (after meals and at bedtime)",
       "mechanism_of_action": "Antifoaming agent. Changes the surface tension of gas bubbles in the GI tract, causing them to coalesce into larger bubbles that can be more easily passed by belching or flatulence. Is chemically inert, not absorbed systemically, and has no pharmacological activity.",
-      "time_to_max_concentration": "Not applicable \u2014 not absorbed systemically",
-      "half_life": "Not applicable \u2014 not absorbed systemically. Passes through GI tract unchanged.",
-      "active_metabolites": "None \u2014 not absorbed or metabolized",
+      "time_to_max_concentration": "Not applicable — not absorbed systemically",
+      "half_life": "Not applicable — not absorbed systemically. Passes through GI tract unchanged.",
+      "active_metabolites": "None — not absorbed or metabolized",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1828,7 +1916,7 @@
       "mechanism_of_action": "Non-selective NSAID. Inhibits both cyclooxygenase-1 (COX-1) and cyclooxygenase-2 (COX-2), reducing prostaglandin synthesis. Provides anti-inflammatory, analgesic, and antipyretic effects. Metabolized by CYP2C9 and CYP2C8.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "2 hours (range 1.8-2.5 hours)",
-      "active_metabolites": "None \u2014 metabolites are inactive hydroxylated and conjugated compounds",
+      "active_metabolites": "None — metabolites are inactive hydroxylated and conjugated compounds",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1904,7 +1992,7 @@
       "mechanism_of_action": "Exact mechanism not fully understood. Thought to inhibit COX enzymes centrally (in the brain/spinal cord) rather than peripherally, reducing prostaglandin synthesis in the CNS. May also involve activation of descending serotonergic pathways and interaction with the endocannabinoid system via its metabolite AM404. Minimal anti-inflammatory activity. Metabolized primarily by hepatic glucuronidation and sulfation; minor pathway via CYP2E1 produces hepatotoxic metabolite NAPQI.",
       "time_to_max_concentration": "0.5-1 hour (IR tablets); 30-60 minutes (liquid gel)",
       "half_life": "2-3 hours",
-      "active_metabolites": "AM404 (formed in the CNS, interacts with endocannabinoid system \u2014 contributes to analgesic effect). NAPQI is a toxic reactive metabolite (not therapeutic) normally detoxified by glutathione.",
+      "active_metabolites": "AM404 (formed in the CNS, interacts with endocannabinoid system — contributes to analgesic effect). NAPQI is a toxic reactive metabolite (not therapeutic) normally detoxified by glutathione.",
       "half_life_of_active_metabolites": "AM404: not well characterized systemically; NAPQI: rapidly conjugated with glutathione",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -1974,7 +2062,7 @@
       "mechanism_of_action": "Non-selective NSAID. Inhibits COX-1 and COX-2, reducing prostaglandin synthesis. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (naproxen sodium); 2-4 hours (naproxen base)",
       "half_life": "12-17 hours",
-      "active_metabolites": "None \u2014 6-O-desmethyl naproxen is inactive",
+      "active_metabolites": "None — 6-O-desmethyl naproxen is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2038,7 +2126,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Metabolized by CYP3A4 and CYP2D6 to its active metabolite desloratadine. Non-sedating at recommended doses.",
       "time_to_max_concentration": "1-2 hours (loratadine); 3-4 hours (desloratadine metabolite)",
       "half_life": "8 hours (loratadine); 27 hours (desloratadine, active metabolite)",
-      "active_metabolites": "Desloratadine \u2014 the same active ingredient as Clarinex. Equipotent antihistamine.",
+      "active_metabolites": "Desloratadine — the same active ingredient as Clarinex. Equipotent antihistamine.",
       "half_life_of_active_metabolites": "Desloratadine: 27 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2112,7 +2200,7 @@
       "mechanism_of_action": "First-generation antihistamine (ethylamine class). Competitive H1 receptor antagonist with significant anticholinergic, sedative, and anti-emetic properties. Inhibits CYP2D6. Crosses the blood-brain barrier readily, causing CNS depression/sedation.",
       "time_to_max_concentration": "1-4 hours (typically 2 hours)",
       "half_life": "4-8 hours (adults); may be prolonged in elderly",
-      "active_metabolites": "N-desmethyldiphenhydramine and others \u2014 minimal clinical significance",
+      "active_metabolites": "N-desmethyldiphenhydramine and others — minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2210,7 +2298,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of hydroxyzine. Minimal anticholinergic activity. Low CNS penetration but can cause mild sedation in some patients. Primarily renally eliminated (minimal hepatic metabolism).",
       "time_to_max_concentration": "1 hour",
       "half_life": "8-9 hours (adults); prolonged in renal impairment",
-      "active_metabolites": "None significant \u2014 cetirizine itself is the active metabolite of hydroxyzine. Minimal further metabolism.",
+      "active_metabolites": "None significant — cetirizine itself is the active metabolite of hydroxyzine. Minimal further metabolism.",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2271,10 +2359,10 @@
       "dose_unit": "mg",
       "maximum_daily_dosage": "180 mg/day (standard); up to 480 mg/day studied in chronic urticaria",
       "time_required_between_doses": "12-24 hours (60mg BID or 180mg once daily)",
-      "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of terfenadine. Non-sedating \u2014 does not cross the blood-brain barrier significantly. Not significantly metabolized hepatically. Primarily excreted unchanged in feces.",
+      "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of terfenadine. Non-sedating — does not cross the blood-brain barrier significantly. Not significantly metabolized hepatically. Primarily excreted unchanged in feces.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "14.4 hours",
-      "active_metabolites": "None significant \u2014 fexofenadine undergoes minimal metabolism",
+      "active_metabolites": "None significant — fexofenadine undergoes minimal metabolism",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2328,7 +2416,7 @@
       "dose_unit": "mg",
       "maximum_daily_dosage": "5 mg/day",
       "time_required_between_doses": "24 hours (once daily, in the evening)",
-      "mechanism_of_action": "Second-generation antihistamine. R-enantiomer of cetirizine with approximately twice the binding affinity for H1 receptors. Selective peripheral H1 receptor antagonist. Minimal metabolism \u2014 primarily excreted unchanged in urine.",
+      "mechanism_of_action": "Second-generation antihistamine. R-enantiomer of cetirizine with approximately twice the binding affinity for H1 receptors. Selective peripheral H1 receptor antagonist. Minimal metabolism — primarily excreted unchanged in urine.",
       "time_to_max_concentration": "0.9 hours",
       "half_life": "8-9 hours",
       "active_metabolites": "None significant",
@@ -2391,12 +2479,12 @@
       "mechanism_of_action": "Non-opioid antitussive. Acts centrally to elevate the cough threshold. NMDA receptor antagonist, sigma-1 receptor agonist, and serotonin reuptake inhibitor at higher doses. Also has weak affinity for opioid receptors. Metabolized primarily by CYP2D6 to dextrorphan (active metabolite with NMDA antagonist activity).",
       "time_to_max_concentration": "2-2.5 hours (IR formulations)",
       "half_life": "3-6 hours (extensive CYP2D6 metabolizers); up to 24+ hours in poor CYP2D6 metabolizers",
-      "active_metabolites": "Dextrorphan \u2014 NMDA receptor antagonist with significant pharmacological activity. Formed via CYP2D6.",
+      "active_metabolites": "Dextrorphan — NMDA receptor antagonist with significant pharmacological activity. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "Dextrorphan: approximately 3-4 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic \u2014 high risk of serotonin syndrome. Avoid or use with extreme caution."
+          "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic — high risk of serotonin syndrome. Avoid or use with extreme caution."
         },
         {
           "drug": "Bupropion 300mg XR",
@@ -2464,7 +2552,7 @@
       "mechanism_of_action": "First-generation antihistamine (ethylamine class, same class as diphenhydramine). Competitive H1 receptor antagonist with significant anticholinergic and sedative properties. CNS penetration produces drowsiness.",
       "time_to_max_concentration": "2-3 hours",
       "half_life": "10 hours (range 7-12 hours)",
-      "active_metabolites": "N-desmethyldoxylamine and N,N-didesmethyldoxylamine \u2014 minimal clinical significance",
+      "active_metabolites": "N-desmethyldoxylamine and N,N-didesmethyldoxylamine — minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2543,7 +2631,7 @@
       "mechanism_of_action": "Sympathomimetic amine. Acts as an indirect-acting alpha- and beta-adrenergic agonist by displacing norepinephrine from storage sites. Stimulates alpha-adrenergic receptors in nasal mucosa, producing vasoconstriction and reducing nasal congestion. Also has mild beta-adrenergic activity (bronchodilation, cardiac stimulation).",
       "time_to_max_concentration": "1-3 hours (IR); 4-6 hours (ER)",
       "half_life": "5-8 hours (pH-dependent; shorter with acidic urine)",
-      "active_metabolites": "None significant \u2014 excreted primarily unchanged in urine (43-96% depending on urine pH)",
+      "active_metabolites": "None significant — excreted primarily unchanged in urine (43-96% depending on urine pH)",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2557,6 +2645,14 @@
         {
           "drug": "Bupropion 300mg XR",
           "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant and sympathomimetic effects; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine. Avoid concurrent use or use with extreme caution."
         }
       ],
       "citations": [
@@ -2578,7 +2674,7 @@
       ],
       "indication": {
         "on_label": [
-          "Expectorant for productive cough \u2014 helps loosen phlegm and thin bronchial secretions"
+          "Expectorant for productive cough — helps loosen phlegm and thin bronchial secretions"
         ],
         "off_label": [
           "Adjunct for chronic sinusitis",
@@ -2598,12 +2694,16 @@
       "mechanism_of_action": "Expectorant. Increases respiratory tract fluid secretions and helps to loosen phlegm and thin bronchial secretions by reducing the adhesiveness and surface tension of mucus, facilitating removal by coughing. Stimulates secretions from the submucosal glands of the respiratory tract. May also have some antitussive activity at higher doses.",
       "time_to_max_concentration": "0.5-1 hour (IR formulations)",
       "half_life": "1 hour",
-      "active_metabolites": "None significant \u2014 metabolized to beta-(2-methoxyphenoxy) lactic acid (inactive) and excreted renally",
+      "active_metabolites": "None significant — metabolized to beta-(2-methoxyphenoxy) lactic acid (inactive) and excreted renally",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "None",
           "interaction": "No significant pharmacokinetic or pharmacodynamic interactions with other drugs on this list. Guaifenesin is generally well-tolerated with minimal drug interaction potential."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Available as a fixed-dose combination product (ephedrine/guaifenesin) for temporary relief of mild asthma symptoms with expectoration."
         }
       ],
       "citations": [
@@ -2614,6 +2714,245 @@
         {
           "type": "Drug Label",
           "title": "Guaifenesin"
+        }
+      ]
+    },
+    {
+      "generic_name": "Caffeine",
+      "brand_names": [
+        "NoDoz",
+        "Vivarin",
+        "Stay Awake",
+        "Cafcit (Rx, caffeine citrate)"
+      ],
+      "indication": {
+        "on_label": [
+          "Restore mental alertness or wakefulness during fatigue or drowsiness",
+          "Apnea of prematurity (caffeine citrate, Rx)"
+        ],
+        "off_label": [
+          "Migraine (adjunct, in combination with acetaminophen and aspirin)",
+          "Post-dural puncture headache",
+          "Enhancement of athletic/endurance performance",
+          "Bronchopulmonary dysplasia prevention in premature infants"
+        ]
+      },
+      "doses": [
+        100,
+        200
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "200 mg per dose; may repeat every 3-4 hours as needed (OTC alertness aid)",
+      "time_required_between_doses": "3-4 hours",
+      "mechanism_of_action": "Methylxanthine-class CNS stimulant. Antagonizes all four adenosine receptor subtypes (A1, A2a, A2b, A3); wakefulness is primarily driven by A2a antagonism. Also stimulates catecholamine release, exerts positive cardiac inotropic/chronotropic effects, increases gastric acid secretion, and promotes diuresis.",
+      "time_to_max_concentration": "30-90 minutes (oral, adults)",
+      "half_life": "~5 hours (adults); up to 15 hours in late pregnancy; up to 100 hours in premature neonates",
+      "active_metabolites": "Paraxanthine, theobromine, theophylline (all dimethylxanthines with unique pharmacologic effects)",
+      "half_life_of_active_metabolites": "Paraxanthine ~3-4 hours; theobromine ~6-10 hours; theophylline ~3-7 hours",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Methylphenidate / Amphetamine Salts",
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor. Patients should limit caffeine intake while using stimulant medications."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion carries a dose-related seizure risk. Excessive caffeine (a psychostimulant) may increase this risk. Monitor for irritability, tremor, increased blood pressure, and insomnia."
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination was historically used for weight loss but carries risk of nervousness, irritability, insomnia, and cardiac arrhythmias."
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine, potentially increasing caffeine-related side effects. Caffeine dosage or intake may need to be reduced."
+        },
+        {
+          "drug": "Pseudoephedrine HCl",
+          "interaction": "Additive CNS-stimulant effects. Both are sympathomimetics; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects."
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol through opposing cardiovascular mechanisms."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Caffeine Tablets (OTC Alertness Aid)"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Caffeine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Caffeine - StatPearls, NCBI Bookshelf"
+        }
+      ]
+    },
+    {
+      "generic_name": "Cimetidine",
+      "brand_names": [
+        "Tagamet",
+        "Tagamet HB 200 (OTC)"
+      ],
+      "indication": {
+        "on_label": [
+          "Duodenal ulcer (short-term treatment and maintenance)",
+          "Gastric ulcer (short-term treatment)",
+          "Gastroesophageal reflux disease (GERD) with esophagitis",
+          "Pathological hypersecretory conditions (Zollinger-Ellison syndrome)",
+          "Heartburn and acid indigestion (OTC)"
+        ],
+        "off_label": [
+          "Stress ulcer prophylaxis (critically ill patients)",
+          "Acid aspiration prophylaxis prior to anesthesia",
+          "Urticaria/angioedema (adjunct to H1-blocker)",
+          "Viral warts (verruca vulgaris, molluscum contagiosum)",
+          "Interstitial cystitis",
+          "Short bowel syndrome",
+          "NSAID-induced ulcer prophylaxis"
+        ]
+      },
+      "doses": [
+        200,
+        300,
+        400,
+        800
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "400 mg/day (OTC); 2400 mg/day (prescription, hypersecretory conditions)",
+      "time_required_between_doses": "6-12 hours (dose dependent); 800 mg at bedtime for ulcer",
+      "mechanism_of_action": "Competitive H2-receptor antagonist. Blocks histamine from stimulating H2 receptors on gastric parietal cells, reducing basal and stimulated gastric acid secretion. Also a non-selective inhibitor of hepatic cytochrome P450 enzymes (CYP1A2, CYP2C9, CYP2D6, CYP3A4), leading to numerous drug interactions.",
+      "time_to_max_concentration": "1-2 hours",
+      "half_life": "~2 hours; prolonged in renal impairment",
+      "active_metabolites": "None significant — cimetidine sulfoxide is the primary metabolite with minimal activity",
+      "half_life_of_active_metabolites": "Not applicable",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Propranolol",
+          "interaction": "Cimetidine (weak CYP2D6 inhibitor) may increase propranolol exposure. Monitor for increased propranolol adverse reactions including bradycardia and hypotension."
+        },
+        {
+          "drug": "Amphetamine Salts (IR and ER)",
+          "interaction": "H2-blockers may raise gastrointestinal pH, increasing amphetamine absorption and potentially exacerbating stimulant effects. Use with caution."
+        },
+        {
+          "drug": "Ramelteon",
+          "interaction": "Major interaction — cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. Concurrent use may significantly increase ramelteon exposure and risk of adverse reactions."
+        },
+        {
+          "drug": "Zaleplon",
+          "interaction": "Major interaction — reduce zaleplon initial dose to 5 mg with cimetidine. Cimetidine inhibits both aldehyde oxidase and CYP3A4, increasing zaleplon Cmax and AUC by 85%."
+        },
+        {
+          "drug": "Celecoxib",
+          "interaction": "Cimetidine inhibits CYP2C9, which metabolizes celecoxib. May result in increased celecoxib levels, though clinical significance is not fully established."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine. Caffeine dosage or intake may need to be reduced if caffeine-related side effects occur."
+        },
+        {
+          "drug": "Esomeprazole 40mg",
+          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy."
+        },
+        {
+          "drug": "Famotidine",
+          "interaction": "Both are H2-receptor antagonists; concurrent use provides no additional benefit and is redundant. Use one or the other."
+        },
+        {
+          "drug": "Sertraline",
+          "interaction": "Cimetidine may modestly inhibit metabolism of sertraline (CYP2D6 substrate). Monitor for increased sertraline effects."
+        },
+        {
+          "drug": "Colestipol 1g",
+          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Tagamet HB 200 (Cimetidine Tablets 200 mg)"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Cimetidine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Cimetidine - StatPearls, NCBI Bookshelf"
+        }
+      ]
+    },
+    {
+      "generic_name": "Ephedrine Sulfate",
+      "brand_names": [
+        "Akovaz",
+        "Corphedra",
+        "Emerphed",
+        "Rezipres"
+      ],
+      "indication": {
+        "on_label": [
+          "Clinically significant hypotension occurring perioperatively"
+        ],
+        "off_label": [
+          "Hypotension during spinal or epidural anesthesia (including obstetric)",
+          "Asthma/bronchospasm (historical use, rarely used today)",
+          "Nasal congestion",
+          "Myasthenia gravis (limited evidence)"
+        ]
+      },
+      "doses": [
+        25
+      ],
+      "dose_unit": "mg (oral tablet)",
+      "maximum_daily_dosage": "150 mg/day (oral, for asthma indication)",
+      "time_required_between_doses": "4 hours (oral, as needed)",
+      "mechanism_of_action": "Mixed-acting sympathomimetic amine. Acts both directly on alpha- and beta-adrenergic receptors and indirectly by inhibiting neuronal norepinephrine reuptake and displacing norepinephrine from storage vesicles. Produces vasoconstriction (alpha-1), increased cardiac chronotropy and inotropy (beta-1), and bronchodilation (beta-2). Stereoisomer of pseudoephedrine with more pronounced indirect mechanism.",
+      "time_to_max_concentration": "~1.8 hours (oral)",
+      "half_life": "~6 hours (oral); urinary excretion is pH-dependent (shorter with acidic urine)",
+      "active_metabolites": "Norephedrine — the parent drug and metabolite are both excreted in urine",
+      "half_life_of_active_metabolites": "Not well characterized; eliminated renally",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Propranolol",
+          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Beta-blockade may reduce ephedrine's bronchodilatory and cardiac effects while ephedrine may counteract propranolol's antihypertensive effect. Monitor hemodynamic parameters."
+        },
+        {
+          "drug": "Methylphenidate / Amphetamine Salts",
+          "interaction": "Methylphenidate derivatives can potentiate the pressor actions of vasopressors like ephedrine. Additive sympathomimetic/cardiovascular effects. Monitor cardiac function."
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination may cause nervousness, irritability, insomnia, and cardiac arrhythmias."
+        },
+        {
+          "drug": "Pseudoephedrine HCl",
+          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine by adding to sympathomimetic activity. Avoid concurrent use or use with extreme caution."
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+        },
+        {
+          "drug": "Guaifenesin",
+          "interaction": "Available as a fixed-dose combination product (ephedrine HCl 12.5 mg / guaifenesin 200 mg) for temporary relief of mild asthma symptoms with expectoration."
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Ephedrine Sulfate Tablets"
+        },
+        {
+          "type": "Drug Label",
+          "title": "Ephedrine"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Ephedrine - StatPearls, NCBI Bookshelf"
         }
       ]
     }
