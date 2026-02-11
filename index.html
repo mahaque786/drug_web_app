@@ -81,7 +81,6 @@
       margin-bottom: 0.8rem;
       color: var(--primary);
     }
-    .config-row,
     .form-grid {
       display: grid;
       gap: 0.75rem;
@@ -301,15 +300,7 @@
 
   <section class="logger">
     <h2>Log a Medication Dose</h2>
-    <div class="config-row">
-      <div class="field">
-        <label for="apps-script-url">Apps Script Web App URL</label>
-        <input id="apps-script-url" type="text" value="https://script.google.com/macros/library/d/199KeJeL6hqruRI-rP2_O9-NC0pY9q6OGmeBtEHdhuljVep5SpwKRZceI/1" placeholder="https://script.google.com/macros/s/.../exec">
-      </div>
-      <button type="button" id="save-url-btn" class="secondary">Save URL</button>
-    </div>
-
-    <div class="status" id="log-status">Set your Apps Script URL, then log medications.</div>
+    <div class="status" id="log-status">Loading medication logs...</div>
 
     <div class="form-grid">
       <div class="field">
@@ -380,8 +371,10 @@
       return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
     }
 
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/library/d/199KeJeL6hqruRI-rP2_O9-NC0pY9q6OGmeBtEHdhuljVep5SpwKRZceI/1';
+
     function getAppsScriptUrl() {
-      return localStorage.getItem('appsScriptUrl') || document.getElementById('apps-script-url').value.trim();
+      return APPS_SCRIPT_URL;
     }
 
     function setStatus(message, isSuccess) {
@@ -788,24 +781,9 @@
       buildReasonOptions(med);
     });
 
-    document.getElementById('save-url-btn').addEventListener('click', function() {
-      const val = document.getElementById('apps-script-url').value.trim();
-      if (!val) {
-        setStatus('Apps Script URL is empty.');
-        return;
-      }
-      localStorage.setItem('appsScriptUrl', val);
-      setStatus('Apps Script URL saved. Loading logs...', true);
-      fetchLogs();
-    });
-
     document.getElementById('log-submit-btn').addEventListener('click', submitLog);
 
     (function init() {
-      const stored = getAppsScriptUrl();
-      if (stored) {
-        document.getElementById('apps-script-url').value = stored;
-      }
       loadData();
       fetchLogs();
     })();
