@@ -15,6 +15,10 @@
       --border: #e2e8f0;
       --accent: #059669;
       --warning: #d97706;
+      --danger: #b91c1c;
+      --success-bg: #dcfce7;
+      --success-text: #166534;
+      --danger-bg: #fee2e2;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -63,6 +67,104 @@
       color: var(--text-secondary);
       white-space: nowrap;
     }
+    .logger {
+      max-width: 1100px;
+      margin: 0 auto 1rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .logger h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+    .config-row,
+    .form-grid {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-bottom: 0.75rem;
+      align-items: end;
+    }
+    .field label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: #fff;
+    }
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.62rem 0.9rem;
+      font-size: 0.92rem;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: #475569;
+    }
+    .status {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+    }
+    .status.success {
+      color: var(--success-text);
+    }
+    .warnings {
+      margin-top: 0.5rem;
+      border: 1px solid #fecaca;
+      background: var(--danger-bg);
+      color: var(--danger);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: none;
+    }
+    .warnings h3 {
+      font-size: 0.92rem;
+      margin-bottom: 0.35rem;
+    }
+    .warnings ul { padding-left: 1rem; }
+    .success-box {
+      margin-top: 0.5rem;
+      border: 1px solid #86efac;
+      background: var(--success-bg);
+      color: var(--success-text);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      display: none;
+      font-size: 0.9rem;
+    }
+    .logs-table-wrap {
+      margin-top: 0.8rem;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      padding: 0.45rem;
+    }
+    th { color: var(--text-secondary); font-weight: 600; }
     #med-list {
       max-width: 1100px;
       margin: 0 auto;
@@ -196,6 +298,60 @@
     <p id="source-info"></p>
   </header>
   <div class="disclaimer" id="disclaimer"></div>
+
+  <section class="logger">
+    <h2>Log a Medication Dose</h2>
+    <div class="config-row">
+      <div class="field">
+        <label for="apps-script-url">Apps Script Web App URL</label>
+        <input id="apps-script-url" type="text" placeholder="https://script.google.com/macros/s/.../exec">
+      </div>
+      <button type="button" id="save-url-btn" class="secondary">Save URL</button>
+    </div>
+
+    <div class="status" id="log-status">Set your Apps Script URL, then log medications.</div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="log-medication">Medication</label>
+        <select id="log-medication">
+          <option value="">Select a medication...</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="log-dose">Dose (mg)</label>
+        <input id="log-dose" type="number" step="0.01" min="0" placeholder="e.g. 10">
+      </div>
+      <div class="field">
+        <label for="log-reason">Reason</label>
+        <select id="log-reason" disabled>
+          <option value="">Select medication first...</option>
+        </select>
+      </div>
+      <button type="button" id="log-submit-btn">Log Dose</button>
+    </div>
+
+    <div class="warnings" id="warning-box">
+      <h3>Safety Warnings</h3>
+      <ul id="warning-list"></ul>
+    </div>
+    <div class="success-box" id="success-box"></div>
+
+    <div class="logs-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Medication</th>
+            <th>Dose</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody id="logs-body"></tbody>
+      </table>
+    </div>
+  </section>
+
   <div class="controls">
     <input type="text" id="search" placeholder="Search by medication name, brand, or keyword…" aria-label="Search medications">
     <span class="count" id="count"></span>
@@ -206,6 +362,257 @@
 
   <script>
     let medications = [];
+    let logs = [];
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(str == null ? '' : String(str)));
+      return div.innerHTML;
+    }
+
+    function normalizeMedicationName(name) {
+      return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    }
+
+    function getAppsScriptUrl() {
+      return localStorage.getItem('appsScriptUrl') || '';
+    }
+
+    function setStatus(message, isSuccess) {
+      const el = document.getElementById('log-status');
+      el.textContent = message;
+      el.classList.toggle('success', Boolean(isSuccess));
+    }
+
+    function parseHours(text) {
+      const matches = String(text || '').match(/(\d+(?:\.\d+)?)/g);
+      if (!matches || matches.length === 0) return null;
+      return Math.min.apply(null, matches.map(Number));
+    }
+
+    function parseMaxDailyDose(text) {
+      const matches = String(text || '').match(/(\d+(?:\.\d+)?)/g);
+      if (!matches || matches.length === 0) return null;
+      return Math.max.apply(null, matches.map(Number));
+    }
+
+    function parseTimestamp(value) {
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? null : date;
+    }
+
+    function getSelectedMedication() {
+      const medName = document.getElementById('log-medication').value;
+      return medications.find(function(med) {
+        return med.generic_name === medName;
+      }) || null;
+    }
+
+    function buildReasonOptions(med) {
+      const reasonSelect = document.getElementById('log-reason');
+      if (!med) {
+        reasonSelect.innerHTML = '<option value="">Select medication first...</option>';
+        reasonSelect.disabled = true;
+        return;
+      }
+
+      const options = ['<option value="">Select reason...</option>'];
+      med.indication.on_label.forEach(function(reason) {
+        options.push('<option value="' + escapeHtml(reason) + '">On-label: ' + escapeHtml(reason) + '</option>');
+      });
+      med.indication.off_label.forEach(function(reason) {
+        options.push('<option value="' + escapeHtml(reason) + '">Off-label: ' + escapeHtml(reason) + '</option>');
+      });
+
+      reasonSelect.innerHTML = options.join('');
+      reasonSelect.disabled = false;
+    }
+
+    function renderLogsTable() {
+      const body = document.getElementById('logs-body');
+      if (!logs.length) {
+        body.innerHTML = '<tr><td colspan="4" style="color:#64748b;">No logged doses yet.</td></tr>';
+        return;
+      }
+      const sorted = logs.slice().sort(function(a, b) {
+        return new Date(b.timestamp) - new Date(a.timestamp);
+      });
+      body.innerHTML = sorted.slice(0, 20).map(function(row) {
+        return '<tr>' +
+          '<td>' + escapeHtml(row.timestamp) + '</td>' +
+          '<td>' + escapeHtml(row.medicationName) + '</td>' +
+          '<td>' + escapeHtml(row.dose) + '</td>' +
+          '<td>' + escapeHtml(row.reason) + '</td>' +
+          '</tr>';
+      }).join('');
+    }
+
+    function isConcerningInteraction(text) {
+      return /(serotonin syndrome|seizure|hypertension|tachycardia|qt|arrhythmia|cardiac|respiratory|toxicity|pressor|contraindicated|cns overstimulation)/i.test(text || '');
+    }
+
+    function evaluateWarnings(med, enteredDose) {
+      const warnings = [];
+      const now = new Date();
+      const medNameNorm = normalizeMedicationName(med.generic_name);
+
+      const sameMedLogs = logs
+        .filter(function(entry) { return normalizeMedicationName(entry.medicationName) === medNameNorm; })
+        .map(function(entry) {
+          return {
+            date: parseTimestamp(entry.timestamp),
+            dose: Number(entry.dose) || 0
+          };
+        })
+        .filter(function(entry) { return entry.date; });
+
+      const minHours = parseHours(med.time_required_between_doses);
+      if (sameMedLogs.length && minHours != null) {
+        const latest = sameMedLogs.sort(function(a, b) { return b.date - a.date; })[0];
+        const elapsedHours = (now - latest.date) / 3600000;
+        if (elapsedHours < minHours) {
+          warnings.push('Too soon since last dose of ' + med.generic_name + '. Wait at least ' + minHours + ' hours between doses.');
+        }
+      }
+
+      const maxDaily = parseMaxDailyDose(med.maximum_daily_dosage);
+      if (maxDaily != null) {
+        const last24hTotal = sameMedLogs
+          .filter(function(entry) { return (now - entry.date) <= 24 * 3600000; })
+          .reduce(function(sum, entry) { return sum + entry.dose; }, 0);
+        if (last24hTotal + enteredDose > maxDaily) {
+          warnings.push('This dose may exceed the maximum daily dose for ' + med.generic_name + ' (' + maxDaily + ' mg/day).');
+        }
+      }
+
+      const recentLogs = logs
+        .map(function(entry) {
+          return {
+            name: normalizeMedicationName(entry.medicationName),
+            timestamp: parseTimestamp(entry.timestamp)
+          };
+        })
+        .filter(function(entry) { return entry.timestamp && (now - entry.timestamp) <= 24 * 3600000; });
+
+      med.interactions_with_other_drugs_on_this_list.forEach(function(ix) {
+        const interactionDrugNorm = normalizeMedicationName(ix.drug);
+        const wasTaken = recentLogs.some(function(entry) {
+          return entry.name.includes(interactionDrugNorm) || interactionDrugNorm.includes(entry.name);
+        });
+        if (wasTaken && isConcerningInteraction(ix.interaction)) {
+          warnings.push('Potential concerning interaction with ' + ix.drug + ': ' + ix.interaction);
+        }
+      });
+
+      const colestipolRecent = logs.some(function(entry) {
+        const name = normalizeMedicationName(entry.medicationName);
+        const ts = parseTimestamp(entry.timestamp);
+        if (!ts) return false;
+        return name.includes('colestipol') && ((now - ts) <= 4 * 3600000);
+      });
+      if (colestipolRecent && !medNameNorm.includes('colestipol')) {
+        warnings.push('Colestipol was taken less than 4 hours ago. This may reduce absorption of other medications.');
+      }
+
+      return warnings;
+    }
+
+    async function fetchLogs() {
+      const url = getAppsScriptUrl();
+      if (!url) {
+        logs = [];
+        renderLogsTable();
+        return;
+      }
+      try {
+        const response = await fetch(url + '?action=logs', { method: 'GET' });
+        const data = await response.json();
+        if (!data.success) throw new Error(data.error || 'Could not load logs');
+        logs = (data.logs || []).map(function(row) {
+          return {
+            timestamp: row.timestamp,
+            medicationName: row.medicationName,
+            dose: row.dose,
+            reason: row.reason
+          };
+        });
+        renderLogsTable();
+        setStatus('Connected. Loaded ' + logs.length + ' log entries.', true);
+      } catch (err) {
+        setStatus('Could not load logs from Apps Script URL. Check deployment access and URL.');
+      }
+    }
+
+    async function submitLog() {
+      const med = getSelectedMedication();
+      const dose = Number(document.getElementById('log-dose').value);
+      const reason = document.getElementById('log-reason').value;
+      const warningBox = document.getElementById('warning-box');
+      const warningList = document.getElementById('warning-list');
+      const successBox = document.getElementById('success-box');
+
+      warningBox.style.display = 'none';
+      warningList.innerHTML = '';
+      successBox.style.display = 'none';
+
+      if (!med || !dose || dose <= 0 || !reason) {
+        setStatus('Select medication, enter a valid dose, and choose a reason before logging.');
+        return;
+      }
+
+      const foundWarnings = evaluateWarnings(med, dose);
+      if (foundWarnings.length > 0) {
+        warningList.innerHTML = foundWarnings.map(function(w) { return '<li>' + escapeHtml(w) + '</li>'; }).join('');
+        warningBox.style.display = 'block';
+      }
+
+      const url = getAppsScriptUrl();
+      if (!url) {
+        setStatus('Please set your Apps Script Web App URL first.');
+        return;
+      }
+
+      const payload = {
+        action: 'log',
+        medicationName: med.generic_name,
+        dose: dose,
+        reason: reason
+      };
+
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json();
+        if (!data.success) throw new Error(data.error || 'Failed to log dose');
+
+        const logged = data.logged || {
+          timestamp: new Date().toISOString(),
+          medicationName: med.generic_name,
+          dose: dose,
+          reason: reason
+        };
+        logs.push(logged);
+        renderLogsTable();
+
+        successBox.textContent = 'Dose logged successfully.';
+        successBox.style.display = 'block';
+        setStatus('Dose logged to Google Sheet.', true);
+      } catch (err) {
+        setStatus('Failed to send log to Apps Script. Verify deployment permissions and CORS setup.');
+      }
+    }
+
+    function populateMedicationSelect() {
+      const select = document.getElementById('log-medication');
+      const options = ['<option value="">Select a medication...</option>'];
+      medications.forEach(function(med) {
+        options.push('<option value="' + escapeHtml(med.generic_name) + '">' + escapeHtml(med.generic_name) + '</option>');
+      });
+      select.innerHTML = options.join('');
+    }
 
     async function loadData() {
       try {
@@ -221,16 +628,11 @@
 
         medications = data.medications;
         renderCards(medications);
+        populateMedicationSelect();
       } catch (err) {
         document.getElementById('med-list').innerHTML =
           '<p class="no-results">Error loading medication data. Make sure medlist.json is served from the same origin.</p>';
       }
-    }
-
-    function escapeHtml(str) {
-      const div = document.createElement('div');
-      div.appendChild(document.createTextNode(str));
-      return div.innerHTML;
     }
 
     function renderCards(meds) {
@@ -355,7 +757,29 @@
       renderCards(filtered);
     });
 
-    loadData();
+    document.getElementById('log-medication').addEventListener('change', function() {
+      buildReasonOptions(getSelectedMedication());
+    });
+
+    document.getElementById('save-url-btn').addEventListener('click', function() {
+      const val = document.getElementById('apps-script-url').value.trim();
+      if (!val) {
+        setStatus('Apps Script URL is empty.');
+        return;
+      }
+      localStorage.setItem('appsScriptUrl', val);
+      setStatus('Apps Script URL saved. Loading logs...', true);
+      fetchLogs();
+    });
+
+    document.getElementById('log-submit-btn').addEventListener('click', submitLog);
+
+    (function init() {
+      const stored = getAppsScriptUrl();
+      document.getElementById('apps-script-url').value = stored;
+      loadData();
+      fetchLogs();
+    })();
   </script>
 </body>
 </html>
