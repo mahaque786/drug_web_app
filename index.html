@@ -371,7 +371,7 @@
       return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
     }
 
-    const APPS_SCRIPT_URL = '${{ secrets.GAS_WEBHOOK_URL }}';
+    const APPS_SCRIPT_URL = ${{ secrets.GAS_WEBHOOK_URL }};
 
     function getAppsScriptUrl() {
       return APPS_SCRIPT_URL;
