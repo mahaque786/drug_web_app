@@ -44,31 +44,38 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Amphetamine Salts (IR and ER)",
-          "interaction": "Additive CNS stimulant effects; concurrent use of two stimulants increases risk of cardiovascular effects (hypertension, tachycardia), insomnia, and CNS overstimulation. Generally not prescribed together at full doses."
+          "interaction": "Additive CNS stimulant effects; concurrent use of two stimulants increases risk of cardiovascular effects (hypertension, tachycardia), insomnia, and CNS overstimulation. Generally not prescribed together at full doses.",
+          "severity": "moderate"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion lowers the seizure threshold; combined use with stimulants may further increase seizure risk. Additive dopaminergic and noradrenergic effects."
+          "interaction": "Bupropion lowers the seizure threshold; combined use with stimulants may further increase seizure risk. Additive dopaminergic and noradrenergic effects.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Methylphenidate may inhibit the metabolism of SSRIs. Rare risk of serotonin syndrome with combined serotonergic activity. Monitor for increased sertraline side effects."
+          "interaction": "Methylphenidate may inhibit the metabolism of SSRIs. Rare risk of serotonin syndrome with combined serotonergic activity. Monitor for increased sertraline side effects.",
+          "severity": "moderate"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Proton pump inhibitors may alter absorption characteristics of some extended-release methylphenidate formulations by changing gastric pH, though clinical significance is generally low for OROS formulations."
+          "interaction": "Proton pump inhibitors may alter absorption characteristics of some extended-release methylphenidate formulations by changing gastric pH, though clinical significance is generally low for OROS formulations.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Opposing cardiovascular effects; propranolol may mitigate stimulant-induced tachycardia/hypertension. This combination is sometimes used therapeutically but requires monitoring."
+          "interaction": "Opposing cardiovascular effects; propranolol may mitigate stimulant-induced tachycardia/hypertension. This combination is sometimes used therapeutically but requires monitoring.",
+          "severity": "mild"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use."
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function."
+          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -84,7 +91,8 @@
           "type": "StatPearls",
           "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow whole; do not crush, chew, or break extended-release tablets/capsules. Concerta tablets should be taken with liquid. Capsule formulations (Ritalin LA, Metadate CD, Aptensio XR) may be opened and sprinkled on applesauce; do not crush or chew beads."
     },
     {
       "generic_name": "Methylphenidate HCl (Immediate-Release)",
@@ -119,27 +127,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Amphetamine Salts (IR and ER)",
-          "interaction": "Additive CNS stimulant effects; increased cardiovascular risk and CNS overstimulation."
+          "interaction": "Additive CNS stimulant effects; increased cardiovascular risk and CNS overstimulation.",
+          "severity": "moderate"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion lowers seizure threshold; additive dopaminergic effects. Monitor for seizures and cardiovascular effects."
+          "interaction": "Bupropion lowers seizure threshold; additive dopaminergic effects. Monitor for seizures and cardiovascular effects.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Methylphenidate may inhibit SSRIs metabolism. Monitor for serotonergic effects."
+          "interaction": "Methylphenidate may inhibit SSRIs metabolism. Monitor for serotonergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Opposing cardiovascular effects; may counteract stimulant-induced tachycardia."
+          "interaction": "Opposing cardiovascular effects; may counteract stimulant-induced tachycardia.",
+          "severity": "mild"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use."
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor during concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function."
+          "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -155,7 +169,8 @@
           "type": "StatPearls",
           "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take 30-45 minutes before meals. Taking with food may delay absorption. Tablets may be taken with water."
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Extended-Release)",
@@ -193,43 +208,53 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Methylphenidate (IR and XR)",
-          "interaction": "Additive CNS stimulant effects; increased risk of cardiovascular adverse events and CNS overstimulation."
+          "interaction": "Additive CNS stimulant effects; increased risk of cardiovascular adverse events and CNS overstimulation.",
+          "severity": "moderate"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Additive dopaminergic/noradrenergic effects. Bupropion lowers seizure threshold. Increased risk of seizures and cardiovascular effects."
+          "interaction": "Additive dopaminergic/noradrenergic effects. Bupropion lowers seizure threshold. Increased risk of seizures and cardiovascular effects.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Increased serotonergic activity; theoretical risk of serotonin syndrome. Monitor for symptoms."
+          "interaction": "Increased serotonergic activity; theoretical risk of serotonin syndrome. Monitor for symptoms.",
+          "severity": "moderate"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Proton pump inhibitors reduce gastric acidity, which may shorten Tmax of amphetamine ER capsules (median Tmax shortened from 5 hours to 2.75 hours). May lead to earlier and higher peak concentrations."
+          "interaction": "Proton pump inhibitors reduce gastric acidity, which may shorten Tmax of amphetamine ER capsules (median Tmax shortened from 5 hours to 2.75 hours). May lead to earlier and higher peak concentrations.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Opposing cardiovascular effects. Propranolol may attenuate amphetamine-induced tachycardia and hypertension."
+          "interaction": "Opposing cardiovascular effects. Propranolol may attenuate amphetamine-induced tachycardia and hypertension.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Trazodone may cause false-positive amphetamine screens. Additive effects on monoamine systems."
+          "interaction": "Trazodone may cause false-positive amphetamine screens. Additive effects on monoamine systems.",
+          "severity": "moderate"
         },
         {
           "drug": "Famotidine 20mg",
-          "interaction": "H2 blockers may raise gastric pH, potentially altering amphetamine absorption (though less effect than PPIs)."
+          "interaction": "H2 blockers may raise gastric pH, potentially altering amphetamine absorption (though less effect than PPIs).",
+          "severity": "mild"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor."
+          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects."
+          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects.",
+          "severity": "mild"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia).",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -245,7 +270,8 @@
           "type": "StatPearls",
           "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow capsule whole, or open capsule and sprinkle contents on applesauce; consume immediately without chewing. A high-fat meal may delay Tmax by approximately 2.5 hours."
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Immediate-Release)",
@@ -282,35 +308,43 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Methylphenidate (IR and XR)",
-          "interaction": "Additive CNS stimulant effects."
+          "interaction": "Additive CNS stimulant effects.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Additive dopaminergic effects; increased seizure risk."
+          "interaction": "Additive dopaminergic effects; increased seizure risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Increased serotonergic activity; monitor for serotonin syndrome symptoms."
+          "interaction": "Increased serotonergic activity; monitor for serotonin syndrome symptoms.",
+          "severity": "moderate"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "May alter amphetamine absorption by reducing gastric acidity."
+          "interaction": "May alter amphetamine absorption by reducing gastric acidity.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Opposing cardiovascular effects."
+          "interaction": "Opposing cardiovascular effects.",
+          "severity": "mild"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor."
+          "interaction": "Additive CNS-stimulant effects. Patients should limit caffeine intake to avoid nervousness, irritability, insomnia, or tremor.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects."
+          "interaction": "Cimetidine may raise gastrointestinal pH, potentially increasing amphetamine absorption and exacerbating stimulant effects.",
+          "severity": "mild"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia).",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -326,7 +360,8 @@
           "type": "StatPearls",
           "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take first dose on awakening. May be taken with or without food. A high-fat meal may delay absorption slightly."
     },
     {
       "generic_name": "Buspirone HCl",
@@ -365,27 +400,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive serotonergic effects; theoretical risk of serotonin syndrome, though this combination is commonly used clinically for augmentation. Monitor for serotonin syndrome symptoms."
+          "interaction": "Additive serotonergic effects; theoretical risk of serotonin syndrome, though this combination is commonly used clinically for augmentation. Monitor for serotonin syndrome symptoms.",
+          "severity": "moderate"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "One report of concomitant use causing 3- to 6-fold elevations in SGPT (ALT). Additive serotonergic effects and theoretical serotonin syndrome risk. Monitor liver function."
+          "interaction": "One report of concomitant use causing 3- to 6-fold elevations in SGPT (ALT). Additive serotonergic effects and theoretical serotonin syndrome risk. Monitor liver function.",
+          "severity": "severe"
         },
         {
           "drug": "Propranolol",
-          "interaction": "In vitro studies show buspirone does not displace propranolol from plasma proteins. No significant pharmacokinetic interaction expected at therapeutic levels, but both may have additive CNS effects."
+          "interaction": "In vitro studies show buspirone does not displace propranolol from plasma proteins. No significant pharmacokinetic interaction expected at therapeutic levels, but both may have additive CNS effects.",
+          "severity": "info"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "No significant known interaction."
+          "interaction": "No significant known interaction.",
+          "severity": "info"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "No well-documented pharmacokinetic interaction. Both affect monoamine systems through different mechanisms."
+          "interaction": "No well-documented pharmacokinetic interaction. Both affect monoamine systems through different mechanisms.",
+          "severity": "info"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive serotonergic effects; monitor for serotonin syndrome."
+          "interaction": "Additive serotonergic effects; monitor for serotonin syndrome.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -401,7 +442,8 @@
           "type": "StatPearls",
           "title": "Buspirone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take consistently with or without food. Food increases bioavailability; taking with food is generally preferred. Take at the same time(s) each day for consistent blood levels."
     },
     {
       "generic_name": "Bupropion HCl (Extended-Release)",
@@ -441,51 +483,63 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Methylphenidate (IR and XR)",
-          "interaction": "Additive dopaminergic and noradrenergic effects. Bupropion lowers seizure threshold; use caution."
+          "interaction": "Additive dopaminergic and noradrenergic effects. Bupropion lowers seizure threshold; use caution.",
+          "severity": "moderate"
         },
         {
           "drug": "Amphetamine Salts (IR and ER)",
-          "interaction": "Additive dopaminergic effects. Increased seizure risk. Monitor cardiovascular parameters."
+          "interaction": "Additive dopaminergic effects. Increased seizure risk. Monitor cardiovascular parameters.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Bupropion is a potent CYP2D6 inhibitor and may increase sertraline levels. Monitor for increased SSRI side effects."
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor and may increase sertraline levels. Monitor for increased SSRI side effects.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Bupropion (CYP2D6 inhibitor) may increase propranolol levels, as propranolol is partially metabolized by CYP2D6. Monitor for bradycardia and hypotension."
+          "interaction": "Bupropion (CYP2D6 inhibitor) may increase propranolol levels, as propranolol is partially metabolized by CYP2D6. Monitor for bradycardia and hypotension.",
+          "severity": "moderate"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Bupropion is a potent CYP2D6 inhibitor and significantly increases dextromethorphan levels. Risk of DXM toxicity and serotonin syndrome. Avoid or use with extreme caution."
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor and significantly increases dextromethorphan levels. Risk of DXM toxicity and serotonin syndrome. Avoid or use with extreme caution.",
+          "severity": "severe"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of trazodone (though trazodone is primarily CYP3A4-metabolized). Additive seizure risk."
+          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of trazodone (though trazodone is primarily CYP3A4-metabolized). Additive seizure risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of ondansetron. Clinical significance is uncertain."
+          "interaction": "Bupropion may inhibit CYP2D6-mediated metabolism of ondansetron. Clinical significance is uncertain.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Bupropion may lower seizure threshold; hydroxyzine at high doses may also lower seizure threshold. Additive risk."
+          "interaction": "Bupropion may lower seizure threshold; hydroxyzine at high doses may also lower seizure threshold. Additive risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Excessive caffeine may increase seizure risk with bupropion. Monitor for irritability, tremor, increased blood pressure, and insomnia."
+          "interaction": "Excessive caffeine may increase seizure risk with bupropion. Monitor for irritability, tremor, increased blood pressure, and insomnia.",
+          "severity": "moderate"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Meclizine may affect seizure threshold when combined with bupropion."
+          "interaction": "Meclizine may affect seizure threshold when combined with bupropion.",
+          "severity": "moderate"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase bupropion levels."
+          "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase bupropion levels.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -501,7 +555,8 @@
           "type": "StatPearls",
           "title": "Bupropion - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow whole; do not crush, split, or chew extended-release tablets. Take in the morning to reduce risk of insomnia."
     },
     {
       "generic_name": "Colestipol HCl",
@@ -536,39 +591,48 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "ALL other oral medications on this list",
-          "interaction": "Colestipol can bind to and reduce absorption of virtually any co-administered oral medication. Other medications should be taken at least 1 hour before or 4 hours after colestipol to minimize this interaction. Specific concerns include:"
+          "interaction": "Colestipol can bind to and reduce absorption of virtually any co-administered oral medication. Other medications should be taken at least 1 hour before or 4 hours after colestipol to minimize this interaction. Specific concerns include:",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "May reduce sertraline absorption. Separate administration by at least 1 hour before or 4 hours after colestipol."
+          "interaction": "May reduce sertraline absorption. Separate administration by at least 1 hour before or 4 hours after colestipol.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Colestipol may reduce propranolol absorption. Separate administration times."
+          "interaction": "Colestipol may reduce propranolol absorption. Separate administration times.",
+          "severity": "mild"
         },
         {
           "drug": "Levothyroxine (if applicable)",
-          "interaction": "Classic interaction \u2014 significantly reduces thyroid hormone absorption."
+          "interaction": "Classic interaction \u2014 significantly reduces thyroid hormone absorption.",
+          "severity": "moderate"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Famotidine 20mg",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "NSAIDs (Celecoxib, Meloxicam, Ibuprofen, Naproxen)",
-          "interaction": "May reduce NSAID absorption. Separate dosing."
+          "interaction": "May reduce NSAID absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Finasteride 1mg",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours."
+          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -584,7 +648,8 @@
           "type": "StatPearls",
           "title": "Colestipol - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with meals and a full glass of water or other liquid. Mix granules with at least 3 oz of liquid or a pulpy fruit. Take other medications at least 1 hour before or 4 hours after colestipol to avoid reduced absorption."
     },
     {
       "generic_name": "Finasteride",
@@ -617,7 +682,8 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Colestipol 1g",
-          "interaction": "Colestipol may reduce finasteride absorption. Separate dosing times."
+          "interaction": "Colestipol may reduce finasteride absorption. Separate dosing times.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -633,7 +699,8 @@
           "type": "StatPearls",
           "title": "Finasteride - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Propranolol HCl",
@@ -685,59 +752,73 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Methylphenidate (IR and XR)",
-          "interaction": "Opposing cardiovascular effects. Propranolol may mitigate stimulant-induced tachycardia/hypertension. Sometimes used deliberately."
+          "interaction": "Opposing cardiovascular effects. Propranolol may mitigate stimulant-induced tachycardia/hypertension. Sometimes used deliberately.",
+          "severity": "mild"
         },
         {
           "drug": "Amphetamine Salts (IR and ER)",
-          "interaction": "Opposing cardiovascular effects. May counteract amphetamine-induced tachycardia."
+          "interaction": "Opposing cardiovascular effects. May counteract amphetamine-induced tachycardia.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion inhibits CYP2D6, potentially increasing propranolol levels. Monitor for excessive bradycardia and hypotension."
+          "interaction": "Bupropion inhibits CYP2D6, potentially increasing propranolol levels. Monitor for excessive bradycardia and hypotension.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Sertraline is a moderate CYP2D6 inhibitor and may increase propranolol levels. Monitor heart rate and blood pressure."
+          "interaction": "Sertraline is a moderate CYP2D6 inhibitor and may increase propranolol levels. Monitor heart rate and blood pressure.",
+          "severity": "mild"
         },
         {
           "drug": "Pseudoephedrine",
-          "interaction": "Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive effects. Risk of unopposed alpha-adrenergic stimulation leading to hypertension."
+          "interaction": "Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive effects. Risk of unopposed alpha-adrenergic stimulation leading to hypertension.",
+          "severity": "moderate"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive hypotensive effects possible."
+          "interaction": "Additive hypotensive effects possible.",
+          "severity": "mild"
         },
         {
           "drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam",
-          "interaction": "NSAIDs may reduce the antihypertensive effect of propranolol by inhibiting renal prostaglandin synthesis."
+          "interaction": "NSAIDs may reduce the antihypertensive effect of propranolol by inhibiting renal prostaglandin synthesis.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "Colestipol may reduce propranolol absorption. Separate dosing."
+          "interaction": "Colestipol may reduce propranolol absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Buspirone 7.5mg",
-          "interaction": "No significant pharmacokinetic interaction documented. Propranolol is not significantly displaced by buspirone."
+          "interaction": "No significant pharmacokinetic interaction documented. Propranolol is not significantly displaced by buspirone.",
+          "severity": "info"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol."
+          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine (CYP2D6 inhibitor) may increase propranolol exposure, leading to increased risk of bradycardia and hypotension."
+          "interaction": "Cimetidine (CYP2D6 inhibitor) may increase propranolol exposure, leading to increased risk of bradycardia and hypotension.",
+          "severity": "moderate"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Monitor hemodynamic parameters."
+          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Monitor hemodynamic parameters.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase propranolol levels."
+          "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase propranolol levels.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -753,7 +834,8 @@
           "type": "StatPearls",
           "title": "Propranolol - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take consistently with or without food. A high-protein meal may increase bioavailability of propranolol. Take at the same time each day."
     },
     {
       "generic_name": "Sertraline HCl",
@@ -795,67 +877,83 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Monitor for symptoms (agitation, hyperthermia, clonus, tremor)."
+          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Monitor for symptoms (agitation, hyperthermia, clonus, tremor).",
+          "severity": "moderate"
         },
         {
           "drug": "Buspirone 7.5mg",
-          "interaction": "Additive serotonergic effects; commonly used together for augmentation, but monitor for serotonin syndrome."
+          "interaction": "Additive serotonergic effects; commonly used together for augmentation, but monitor for serotonin syndrome.",
+          "severity": "moderate"
         },
         {
           "drug": "Tramadol (if applicable)",
-          "interaction": "Serotonin syndrome risk."
+          "interaction": "Serotonin syndrome risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Ondansetron is a 5-HT3 antagonist. Sertraline (CYP2D6 inhibitor) may increase ondansetron levels. Generally considered safe."
+          "interaction": "Ondansetron is a 5-HT3 antagonist. Sertraline (CYP2D6 inhibitor) may increase ondansetron levels. Generally considered safe.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Sertraline inhibits CYP2D6, significantly increasing DXM levels. Increased risk of serotonin syndrome. Avoid or use with caution."
+          "interaction": "Sertraline inhibits CYP2D6, significantly increasing DXM levels. Increased risk of serotonin syndrome. Avoid or use with caution.",
+          "severity": "moderate"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion (CYP2D6 inhibitor) may increase sertraline levels. Both affect monoamine systems."
+          "interaction": "Bupropion (CYP2D6 inhibitor) may increase sertraline levels. Both affect monoamine systems.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Sertraline (moderate CYP2D6 inhibitor) may increase propranolol levels. Monitor heart rate and blood pressure."
+          "interaction": "Sertraline (moderate CYP2D6 inhibitor) may increase propranolol levels. Monitor heart rate and blood pressure.",
+          "severity": "mild"
         },
         {
           "drug": "Amphetamine Salts / Methylphenidate",
-          "interaction": "Additive serotonergic effects. Commonly used together but monitor."
+          "interaction": "Additive serotonergic effects. Commonly used together but monitor.",
+          "severity": "mild"
         },
         {
           "drug": "Celecoxib / Meloxicam / Ibuprofen / Naproxen",
-          "interaction": "NSAIDs combined with SSRIs significantly increase risk of GI bleeding (3-6 fold increased risk). Use lowest effective NSAID dose and consider gastroprotection."
+          "interaction": "NSAIDs combined with SSRIs significantly increase risk of GI bleeding (3-6 fold increased risk). Use lowest effective NSAID dose and consider gastroprotection.",
+          "severity": "moderate"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce sertraline absorption. Separate dosing."
+          "interaction": "May reduce sertraline absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive sedation possible. Both may prolong QTc at higher doses."
+          "interaction": "Additive sedation possible. Both may prolong QTc at higher doses.",
+          "severity": "moderate"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Diphenhydramine inhibits CYP2D6 and may modestly increase sertraline levels. Additive sedation."
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may modestly increase sertraline levels. Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation and serotonergic effects."
+          "interaction": "Additive sedation and serotonergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine may modestly inhibit sertraline metabolism. Monitor for increased sertraline effects."
+          "interaction": "Cimetidine may modestly inhibit sertraline metabolism. Monitor for increased sertraline effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation with meclizine."
+          "interaction": "Additive sedation with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive sedation with dimenhydrinate."
+          "interaction": "Additive sedation with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -871,7 +969,8 @@
           "type": "StatPearls",
           "title": "Sertraline - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may improve tolerability and reduce nausea."
     },
     {
       "generic_name": "Trazodone HCl",
@@ -908,59 +1007,73 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Commonly co-prescribed (sertraline AM, trazodone for sleep) but monitor."
+          "interaction": "Additive serotonergic effects; increased risk of serotonin syndrome. Commonly co-prescribed (sertraline AM, trazodone for sleep) but monitor.",
+          "severity": "moderate"
         },
         {
           "drug": "Buspirone 7.5mg",
-          "interaction": "One report of 3-6 fold ALT elevations with concurrent use. Additive serotonergic effects."
+          "interaction": "One report of 3-6 fold ALT elevations with concurrent use. Additive serotonergic effects.",
+          "severity": "severe"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion may inhibit CYP2D6 metabolism of trazodone. Additive seizure risk at high doses."
+          "interaction": "Bupropion may inhibit CYP2D6 metabolism of trazodone. Additive seizure risk at high doses.",
+          "severity": "moderate"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive serotonergic effects; risk of serotonin syndrome."
+          "interaction": "Additive serotonergic effects; risk of serotonin syndrome.",
+          "severity": "moderate"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Ondansetron is a 5-HT3 antagonist; theoretical interaction with serotonergic agents. Generally safe."
+          "interaction": "Ondansetron is a 5-HT3 antagonist; theoretical interaction with serotonergic agents. Generally safe.",
+          "severity": "info"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation when combined."
+          "interaction": "Additive sedation when combined.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive CNS depression and sedation. Use caution."
+          "interaction": "Additive CNS depression and sedation. Use caution.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive sedation and CNS depression."
+          "interaction": "Additive sedation and CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive sedation and CNS depression."
+          "interaction": "Additive sedation and CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Additive hypotensive effects (trazodone blocks alpha-1 receptors)."
+          "interaction": "Additive hypotensive effects (trazodone blocks alpha-1 receptors).",
+          "severity": "mild"
         },
         {
           "drug": "Amphetamine Salts",
-          "interaction": "Trazodone may cause false-positive amphetamine urine screens."
+          "interaction": "Trazodone may cause false-positive amphetamine urine screens.",
+          "severity": "moderate"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation with meclizine."
+          "interaction": "Additive sedation with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive sedation with dimenhydrinate."
+          "interaction": "Additive sedation with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -976,7 +1089,8 @@
           "type": "StatPearls",
           "title": "Trazodone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take shortly after a meal or a light snack. Food increases absorption and reduces risk of dizziness and lightheadedness. Taking on an empty stomach may increase side effects."
     },
     {
       "generic_name": "Esomeprazole Magnesium",
@@ -1014,19 +1128,23 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Amphetamine Salts ER 30mg",
-          "interaction": "PPIs reduce gastric acidity, which may shorten Tmax of extended-release amphetamine capsules (median Tmax shortened from ~5 hours to ~2.75 hours), leading to earlier peak effect."
+          "interaction": "PPIs reduce gastric acidity, which may shorten Tmax of extended-release amphetamine capsules (median Tmax shortened from ~5 hours to ~2.75 hours), leading to earlier peak effect.",
+          "severity": "mild"
         },
         {
           "drug": "Famotidine 20mg",
-          "interaction": "Dual acid suppression \u2014 generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression."
+          "interaction": "Dual acid suppression \u2014 generally redundant and not recommended. PPIs are superior to H2 blockers for sustained acid suppression.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "Colestipol may bind esomeprazole and reduce absorption. Separate dosing."
+          "interaction": "Colestipol may bind esomeprazole and reduce absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough."
+          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1042,7 +1160,8 @@
           "type": "StatPearls",
           "title": "Proton Pump Inhibitors (PPI) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take at least 30-60 minutes before a meal, preferably before breakfast. Swallow capsule whole, or open capsule and mix granules with applesauce; do not crush or chew. For maximum efficacy, take before the first meal of the day."
     },
     {
       "generic_name": "Glycopyrrolate",
@@ -1080,35 +1199,43 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, blurred vision, tachycardia, cognitive impairment)."
+          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, blurred vision, tachycardia, cognitive impairment).",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive anticholinergic effects. Increased risk of anticholinergic toxicity."
+          "interaction": "Additive anticholinergic effects. Increased risk of anticholinergic toxicity.",
+          "severity": "moderate"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Strongly additive anticholinergic effects \u2014 both are anticholinergic agents. High risk of anticholinergic toxicity."
+          "interaction": "Strongly additive anticholinergic effects \u2014 both are anticholinergic agents. High risk of anticholinergic toxicity.",
+          "severity": "severe"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Glycopyrrolate may cause tachycardia (vagolytic effect) which opposes propranolol's bradycardic effect."
+          "interaction": "Glycopyrrolate may cause tachycardia (vagolytic effect) which opposes propranolol's bradycardic effect.",
+          "severity": "mild"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Both may cause constipation. Additive GI slowing effects."
+          "interaction": "Both may cause constipation. Additive GI slowing effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive anticholinergic effects with meclizine."
+          "interaction": "Additive anticholinergic effects with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive anticholinergic effects with dimenhydrinate."
+          "interaction": "Additive anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1124,7 +1251,8 @@
           "type": "StatPearls",
           "title": "Glycopyrrolate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take on an empty stomach, 1 hour before or 2 hours after meals. Food significantly decreases absorption. Oral solution (Cuvposa) should also be given on an empty stomach."
     },
     {
       "generic_name": "Celecoxib",
@@ -1164,27 +1292,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold). Consider gastroprotection with PPI."
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold). Consider gastroprotection with PPI.",
+          "severity": "moderate"
         },
         {
           "drug": "Ibuprofen / Naproxen / Meloxicam",
-          "interaction": "Avoid concurrent use of multiple NSAIDs \u2014 additive GI, renal, and cardiovascular risk with no added efficacy."
+          "interaction": "Avoid concurrent use of multiple NSAIDs \u2014 additive GI, renal, and cardiovascular risk with no added efficacy.",
+          "severity": "moderate"
         },
         {
           "drug": "Propranolol",
-          "interaction": "NSAIDs may reduce antihypertensive effect of beta-blockers by inhibiting renal prostaglandin synthesis."
+          "interaction": "NSAIDs may reduce antihypertensive effect of beta-blockers by inhibiting renal prostaglandin synthesis.",
+          "severity": "mild"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Esomeprazole provides gastroprotection \u2014 beneficial combination if NSAID use is necessary."
+          "interaction": "Esomeprazole provides gastroprotection \u2014 beneficial combination if NSAID use is necessary.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce celecoxib absorption. Separate dosing."
+          "interaction": "May reduce celecoxib absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine inhibits CYP2C9, potentially increasing celecoxib levels. Clinical significance not fully established."
+          "interaction": "Cimetidine inhibits CYP2C9, potentially increasing celecoxib levels. Clinical significance not fully established.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1204,7 +1338,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Capsule may be opened and sprinkled on applesauce for those who cannot swallow capsules."
     },
     {
       "generic_name": "Desloratadine",
@@ -1236,31 +1371,38 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Loratadine 10mg",
-          "interaction": "Desloratadine is the active metabolite of loratadine. Using both is redundant and increases total antihistamine load. Avoid concurrent use."
+          "interaction": "Desloratadine is the active metabolite of loratadine. Using both is redundant and increases total antihistamine load. Avoid concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Cetirizine / Levocetirizine / Fexofenadine",
-          "interaction": "Taking multiple antihistamines is generally not recommended as it increases sedation risk without proportional efficacy benefit. However, some allergists combine different classes."
+          "interaction": "Taking multiple antihistamines is generally not recommended as it increases sedation risk without proportional efficacy benefit. However, some allergists combine different classes.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive antihistamine effects. First-generation antihistamines add significant sedation."
+          "interaction": "Additive antihistamine effects. First-generation antihistamines add significant sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive antihistamine effects and sedation."
+          "interaction": "Additive antihistamine effects and sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive antihistamine and sedative effects."
+          "interaction": "Additive antihistamine and sedative effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1276,7 +1418,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Hydroxyzine HCl",
@@ -1315,59 +1458,73 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. Increased risk of anticholinergic toxicity."
+          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. Increased risk of anticholinergic toxicity.",
+          "severity": "moderate"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, tachycardia)."
+          "interaction": "Additive anticholinergic effects (dry mouth, constipation, urinary retention, tachycardia).",
+          "severity": "mild"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive anticholinergic effects. Significant risk of anticholinergic toxicity."
+          "interaction": "Additive anticholinergic effects. Significant risk of anticholinergic toxicity.",
+          "severity": "moderate"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation and CNS depression."
+          "interaction": "Additive sedation and CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation and anticholinergic effects."
+          "interaction": "Additive sedation and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Cetirizine 10mg",
-          "interaction": "Cetirizine is the active metabolite of hydroxyzine. Using both results in excessive antihistamine effect and is redundant."
+          "interaction": "Cetirizine is the active metabolite of hydroxyzine. Using both results in excessive antihistamine effect and is redundant.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine",
-          "interaction": "Additive antihistamine effects."
+          "interaction": "Additive antihistamine effects.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive sedation. Both may prolong QTc at higher doses."
+          "interaction": "Additive sedation. Both may prolong QTc at higher doses.",
+          "severity": "moderate"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Additive hypotensive effects possible."
+          "interaction": "Additive hypotensive effects possible.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Both may lower seizure threshold at high doses."
+          "interaction": "Both may lower seizure threshold at high doses.",
+          "severity": "moderate"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation and anticholinergic effects with meclizine."
+          "interaction": "Additive sedation and anticholinergic effects with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate."
+          "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1383,7 +1540,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset."
     },
     {
       "generic_name": "Hyoscyamine Sulfate (Sublingual)",
@@ -1426,39 +1584,48 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics \u2014 significantly increased risk of anticholinergic toxicity."
+          "interaction": "Strongly additive anticholinergic effects. Both are anticholinergics \u2014 significantly increased risk of anticholinergic toxicity.",
+          "severity": "severe"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Hyoscyamine may cause tachycardia (vagolytic) opposing propranolol's effect."
+          "interaction": "Hyoscyamine may cause tachycardia (vagolytic) opposing propranolol's effect.",
+          "severity": "mild"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Additive constipation effects."
+          "interaction": "Additive constipation effects.",
+          "severity": "mild"
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive GI slowing/constipation \u2014 combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus."
+          "interaction": "Additive GI slowing/constipation \u2014 combined anticholinergic and opioid receptor effects on gut motility. Risk of paralytic ileus.",
+          "severity": "severe"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive anticholinergic effects with meclizine."
+          "interaction": "Additive anticholinergic effects with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive anticholinergic effects with dimenhydrinate."
+          "interaction": "Additive anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1470,7 +1637,8 @@
           "type": "Drug Label",
           "title": "Hyoscyamine Sulfate"
         }
-      ]
+      ],
+      "administration": "Place sublingual tablet under the tongue. May be taken with or without food. For oral tablets, take 30-60 minutes before meals to reduce GI motility."
     },
     {
       "generic_name": "Meloxicam",
@@ -1507,23 +1675,28 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Celecoxib / Ibuprofen / Naproxen",
-          "interaction": "Do not combine multiple NSAIDs. Additive GI, renal, and cardiovascular toxicity."
+          "interaction": "Do not combine multiple NSAIDs. Additive GI, renal, and cardiovascular toxicity.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "NSAIDs may reduce antihypertensive effect."
+          "interaction": "NSAIDs may reduce antihypertensive effect.",
+          "severity": "mild"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Gastroprotective benefit when co-administered."
+          "interaction": "Gastroprotective benefit when co-administered.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1539,7 +1712,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food or milk may reduce GI upset."
     },
     {
       "generic_name": "Ondansetron",
@@ -1578,27 +1752,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Both affect serotonin pathways. Sertraline (CYP2D6 inhibitor) may modestly increase ondansetron levels. Generally safe combination."
+          "interaction": "Both affect serotonin pathways. Sertraline (CYP2D6 inhibitor) may modestly increase ondansetron levels. Generally safe combination.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Both affect serotonin pathways. Generally safe but monitor."
+          "interaction": "Both affect serotonin pathways. Generally safe but monitor.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion (CYP2D6 inhibitor) may modestly increase ondansetron levels."
+          "interaction": "Bupropion (CYP2D6 inhibitor) may modestly increase ondansetron levels.",
+          "severity": "mild"
         },
         {
           "drug": "Glycopyrrolate / Hyoscyamine",
-          "interaction": "Additive constipation effects."
+          "interaction": "Additive constipation effects.",
+          "severity": "mild"
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive constipation risk."
+          "interaction": "Additive constipation risk.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Both affect serotonin pathways. Low risk of interaction at typical doses."
+          "interaction": "Both affect serotonin pathways. Low risk of interaction at typical doses.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -1614,7 +1794,8 @@
           "type": "StatPearls",
           "title": "Ondansetron - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions. ODT (orally disintegrating tablet) should be placed on the tongue and allowed to dissolve; can be taken with or without water."
     },
     {
       "generic_name": "Ramelteon",
@@ -1645,39 +1826,48 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive sedation. Both are sleep aids \u2014 using both is generally redundant."
+          "interaction": "Additive sedation. Both are sleep aids \u2014 using both is generally redundant.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "No significant pharmacokinetic interaction. Minimal additive sedation."
+          "interaction": "No significant pharmacokinetic interaction. Minimal additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Major interaction \u2014 cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. May significantly increase ramelteon exposure."
+          "interaction": "Major interaction \u2014 cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. May significantly increase ramelteon exposure.",
+          "severity": "moderate"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation with meclizine."
+          "interaction": "Additive sedation with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive sedation with dimenhydrinate."
+          "interaction": "Additive sedation with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1693,7 +1883,8 @@
           "type": "StatPearls",
           "title": "Melatonin - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Do not take with or immediately after a high-fat meal, as this delays absorption and reduces efficacy. Take on an empty stomach for best results. Take within 30 minutes of going to bed."
     },
     {
       "generic_name": "Zaleplon",
@@ -1724,43 +1915,53 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive CNS depression and sedation."
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation. Combining two sleep aids is generally redundant."
+          "interaction": "Additive sedation. Combining two sleep aids is generally redundant.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive CNS depression."
+          "interaction": "Additive CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Minimal direct interaction. Monitor for additive sedation."
+          "interaction": "Minimal direct interaction. Monitor for additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Additive CNS depression at higher doses. Generally minimal interaction."
+          "interaction": "Additive CNS depression at higher doses. Generally minimal interaction.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Major interaction \u2014 cimetidine inhibits aldehyde oxidase and CYP3A4 (zaleplon's metabolic pathways), increasing zaleplon exposure by 85%. Reduce zaleplon dose to 5 mg."
+          "interaction": "Major interaction \u2014 cimetidine inhibits aldehyde oxidase and CYP3A4 (zaleplon's metabolic pathways), increasing zaleplon exposure by 85%. Reduce zaleplon dose to 5 mg.",
+          "severity": "moderate"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive CNS depression with meclizine."
+          "interaction": "Additive CNS depression with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive CNS depression with dimenhydrinate."
+          "interaction": "Additive CNS depression with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1776,7 +1977,8 @@
           "type": "StatPearls",
           "title": "Zaleplon - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Do not take with or immediately after a heavy or high-fat meal, as food significantly delays absorption. Take on an empty stomach at bedtime or after going to bed if unable to fall asleep."
     },
     {
       "generic_name": "Famotidine",
@@ -1816,19 +2018,23 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Dual acid suppression is generally redundant. If both used, H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy."
+          "interaction": "Dual acid suppression is generally redundant. If both used, H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy.",
+          "severity": "mild"
         },
         {
           "drug": "Amphetamine Salts ER",
-          "interaction": "May modestly raise gastric pH, potentially affecting amphetamine ER absorption (less effect than PPIs)."
+          "interaction": "May modestly raise gastric pH, potentially affecting amphetamine ER absorption (less effect than PPIs).",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "Colestipol may bind famotidine. Separate dosing."
+          "interaction": "Colestipol may bind famotidine. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Both are H2-receptor antagonists; concurrent use is redundant and provides no additional benefit."
+          "interaction": "Both are H2-receptor antagonists; concurrent use is redundant and provides no additional benefit.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1844,7 +2050,8 @@
           "type": "StatPearls",
           "title": "Famotidine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. For heartburn prevention, take 15-60 minutes before consuming food or beverages that cause heartburn."
     },
     {
       "generic_name": "Loperamide HCl",
@@ -1878,27 +2085,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive GI slowing. Increased risk of constipation, ileus, or toxic megacolon."
+          "interaction": "Additive GI slowing. Increased risk of constipation, ileus, or toxic megacolon.",
+          "severity": "severe"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive GI slowing and anticholinergic effects."
+          "interaction": "Additive GI slowing and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Additive constipation."
+          "interaction": "Additive constipation.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive constipation and anticholinergic effects."
+          "interaction": "Additive constipation and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive anticholinergic effects (constipation) with meclizine."
+          "interaction": "Additive anticholinergic effects (constipation) with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive constipation and anticholinergic effects with dimenhydrinate."
+          "interaction": "Additive constipation and anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1914,7 +2127,8 @@
           "type": "StatPearls",
           "title": "Loperamide - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Ensure adequate fluid intake."
     },
     {
       "generic_name": "Simethicone",
@@ -1950,7 +2164,8 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "None",
-          "interaction": "No known clinically significant drug interactions. Simethicone is inert and not absorbed."
+          "interaction": "No known clinically significant drug interactions. Simethicone is inert and not absorbed.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -1962,7 +2177,8 @@
           "type": "StatPearls",
           "title": "Simethicone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take after meals and at bedtime for best results. Chewable tablets should be chewed thoroughly before swallowing."
     },
     {
       "generic_name": "Ibuprofen",
@@ -2005,31 +2221,38 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold)."
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk (3-6 fold).",
+          "severity": "moderate"
         },
         {
           "drug": "Celecoxib / Meloxicam / Naproxen",
-          "interaction": "Avoid concurrent use of multiple NSAIDs."
+          "interaction": "Avoid concurrent use of multiple NSAIDs.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "NSAIDs may reduce antihypertensive effect."
+          "interaction": "NSAIDs may reduce antihypertensive effect.",
+          "severity": "mild"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "PPI provides gastroprotection during NSAID use."
+          "interaction": "PPI provides gastroprotection during NSAID use.",
+          "severity": "mild"
         },
         {
           "drug": "Famotidine 20mg",
-          "interaction": "H2 blocker provides partial gastroprotection."
+          "interaction": "H2 blocker provides partial gastroprotection.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce ibuprofen absorption. Separate dosing."
+          "interaction": "May reduce ibuprofen absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Acetaminophen 500mg",
-          "interaction": "Can be used together alternately for additive analgesia. Different mechanisms of action. Generally safe combination."
+          "interaction": "Can be used together alternately for additive analgesia. Different mechanisms of action. Generally safe combination.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2045,7 +2268,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with food, milk, or a full glass of water to reduce GI upset. Avoid taking on an empty stomach if possible."
     },
     {
       "generic_name": "Acetaminophen",
@@ -2081,15 +2305,18 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Ibuprofen / Naproxen / Celecoxib / Meloxicam",
-          "interaction": "Can be safely alternated with NSAIDs for additive analgesia. Different mechanisms."
+          "interaction": "Can be safely alternated with NSAIDs for additive analgesia. Different mechanisms.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "No significant interaction at standard doses."
+          "interaction": "No significant interaction at standard doses.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -2105,7 +2332,8 @@
           "type": "StatPearls",
           "title": "Acetaminophen - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Can be taken on an empty stomach. Taking with food may slow absorption slightly but does not affect overall efficacy."
     },
     {
       "generic_name": "Naproxen Sodium",
@@ -2151,23 +2379,28 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk."
+          "interaction": "SSRIs + NSAIDs significantly increase GI bleeding risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Celecoxib / Meloxicam / Ibuprofen",
-          "interaction": "Avoid concurrent NSAIDs."
+          "interaction": "Avoid concurrent NSAIDs.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "NSAIDs may reduce antihypertensive effect."
+          "interaction": "NSAIDs may reduce antihypertensive effect.",
+          "severity": "mild"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "PPI provides gastroprotection."
+          "interaction": "PPI provides gastroprotection.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce absorption. Separate dosing."
+          "interaction": "May reduce absorption. Separate dosing.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2183,7 +2416,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with food, milk, or a full glass of water to reduce GI upset. Avoid taking on an empty stomach to minimize risk of stomach irritation."
     },
     {
       "generic_name": "Loratadine",
@@ -2215,31 +2449,38 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Desloratadine 5mg",
-          "interaction": "Desloratadine IS the active metabolite of loratadine. Using both is redundant. Avoid concurrent use."
+          "interaction": "Desloratadine IS the active metabolite of loratadine. Using both is redundant. Avoid concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Cetirizine / Levocetirizine / Fexofenadine",
-          "interaction": "Taking multiple antihistamines increases sedation risk. Generally not recommended."
+          "interaction": "Taking multiple antihistamines increases sedation risk. Generally not recommended.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive antihistamine effects. Increased sedation."
+          "interaction": "Additive antihistamine effects. Increased sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive antihistamine effects."
+          "interaction": "Additive antihistamine effects.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR / Sertraline 50mg",
-          "interaction": "Both are CYP2D6 inhibitors and may theoretically increase loratadine levels, though clinical significance is minimal."
+          "interaction": "Both are CYP2D6 inhibitors and may theoretically increase loratadine levels, though clinical significance is minimal.",
+          "severity": "info"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2255,7 +2496,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Diphenhydramine HCl",
@@ -2297,63 +2539,78 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. High redundancy and toxicity risk."
+          "interaction": "Additive antihistamine, anticholinergic, and sedative effects. High redundancy and toxicity risk.",
+          "severity": "mild"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive CNS depression."
+          "interaction": "Additive CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and additive sedation."
+          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels."
+          "interaction": "Diphenhydramine inhibits CYP2D6 and may increase propranolol levels.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive sedation. DPH inhibits CYP2D6, may modestly increase sertraline levels."
+          "interaction": "Additive sedation. DPH inhibits CYP2D6, may modestly increase sertraline levels.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Both inhibit CYP2D6. Additive CYP2D6 inhibition may increase levels of 2D6 substrates."
+          "interaction": "Both inhibit CYP2D6. Additive CYP2D6 inhibition may increase levels of 2D6 substrates.",
+          "severity": "mild"
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive constipation and anticholinergic effects."
+          "interaction": "Additive constipation and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
-          "interaction": "Additive antihistamine effects. Generally avoid combining 1st and 2nd gen antihistamines routinely."
+          "interaction": "Additive antihistamine effects. Generally avoid combining 1st and 2nd gen antihistamines routinely.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive CNS depression. Both are commonly combined in OTC cold products but monitor for excessive sedation."
+          "interaction": "Additive CNS depression. Both are commonly combined in OTC cold products but monitor for excessive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Risk of excessive CNS depression with meclizine."
+          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Risk of excessive CNS depression with meclizine.",
+          "severity": "moderate"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Dimenhydrinate contains diphenhydramine as its active moiety. Concurrent use is highly redundant and significantly increases risk of sedation and anticholinergic effects. Avoid combination."
+          "interaction": "Dimenhydrinate contains diphenhydramine as its active moiety. Concurrent use is highly redundant and significantly increases risk of sedation and anticholinergic effects. Avoid combination.",
+          "severity": "severe"
         }
       ],
       "citations": [
@@ -2369,7 +2626,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food or milk may reduce GI upset."
     },
     {
       "generic_name": "Cetirizine HCl",
@@ -2403,31 +2661,38 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Cetirizine IS the active metabolite of hydroxyzine. Concurrent use results in excessive antihistamine effect. Avoid."
+          "interaction": "Cetirizine IS the active metabolite of hydroxyzine. Concurrent use results in excessive antihistamine effect. Avoid.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Fexofenadine / Levocetirizine",
-          "interaction": "Multiple antihistamines generally not recommended."
+          "interaction": "Multiple antihistamines generally not recommended.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive antihistamine and sedative effects."
+          "interaction": "Additive antihistamine and sedative effects.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg / Zaleplon 5mg / Ramelteon 8mg",
-          "interaction": "Additive sedation possible with cetirizine."
+          "interaction": "Additive sedation possible with cetirizine.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2443,7 +2708,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Fexofenadine HCl",
@@ -2475,23 +2741,28 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Other antihistamines (Desloratadine, Loratadine, Cetirizine, Levocetirizine, Hydroxyzine, Diphenhydramine)",
-          "interaction": "Multiple antihistamines generally not recommended, though fexofenadine is the least sedating."
+          "interaction": "Multiple antihistamines generally not recommended, though fexofenadine is the least sedating.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "May reduce fexofenadine absorption. Separate dosing."
+          "interaction": "May reduce fexofenadine absorption. Separate dosing.",
+          "severity": "mild"
         },
         {
           "drug": "Famotidine 20mg / Esomeprazole 40mg",
-          "interaction": "Antacids containing aluminum/magnesium reduce fexofenadine absorption, but H2 blockers and PPIs do not significantly affect it."
+          "interaction": "Antacids containing aluminum/magnesium reduce fexofenadine absorption, but H2 blockers and PPIs do not significantly affect it.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2507,7 +2778,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with water. Do not take with fruit juices (orange, apple, grapefruit) as they may reduce absorption by up to 36%. May be taken with or without food."
     },
     {
       "generic_name": "Levocetirizine Dihydrochloride",
@@ -2540,23 +2812,28 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Cetirizine 10mg",
-          "interaction": "Levocetirizine IS the active R-enantiomer of cetirizine. Using both is redundant. Avoid concurrent use."
+          "interaction": "Levocetirizine IS the active R-enantiomer of cetirizine. Using both is redundant. Avoid concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Both cetirizine and levocetirizine are metabolites of hydroxyzine. Redundant."
+          "interaction": "Both cetirizine and levocetirizine are metabolites of hydroxyzine. Redundant.",
+          "severity": "mild"
         },
         {
           "drug": "Other antihistamines",
-          "interaction": "Multiple antihistamines generally not recommended."
+          "interaction": "Multiple antihistamines generally not recommended.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2572,7 +2849,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Take in the evening. No meal-related restrictions."
     },
     {
       "generic_name": "Dextromethorphan HBr",
@@ -2608,39 +2886,48 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Sertraline 50mg",
-          "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic \u2014 high risk of serotonin syndrome. Avoid or use with extreme caution."
+          "interaction": "CRITICAL: Sertraline (CYP2D6 inhibitor) significantly increases DXM levels. Both are serotonergic \u2014 high risk of serotonin syndrome. Avoid or use with extreme caution.",
+          "severity": "severe"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "CRITICAL: Bupropion is a potent CYP2D6 inhibitor and dramatically increases DXM levels (this mechanism is the basis for the drug Auvelity). Risk of serotonin syndrome and DXM toxicity."
+          "interaction": "CRITICAL: Bupropion is a potent CYP2D6 inhibitor and dramatically increases DXM levels (this mechanism is the basis for the drug Auvelity). Risk of serotonin syndrome and DXM toxicity.",
+          "severity": "severe"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive serotonergic effects. Risk of serotonin syndrome."
+          "interaction": "Additive serotonergic effects. Risk of serotonin syndrome.",
+          "severity": "moderate"
         },
         {
           "drug": "Buspirone 7.5mg",
-          "interaction": "Additive serotonergic effects."
+          "interaction": "Additive serotonergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Diphenhydramine",
-          "interaction": "Additive CNS depression. Commonly combined in OTC products. Diphenhydramine also inhibits CYP2D6, increasing DXM levels."
+          "interaction": "Additive CNS depression. Commonly combined in OTC products. Diphenhydramine also inhibits CYP2D6, increasing DXM levels.",
+          "severity": "mild"
         },
         {
           "drug": "Doxylamine 25mg",
-          "interaction": "Additive CNS depression."
+          "interaction": "Additive CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Ondansetron 4mg",
-          "interaction": "Both affect serotonin pathways. Low risk at typical doses."
+          "interaction": "Both affect serotonin pathways. Low risk at typical doses.",
+          "severity": "info"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive CNS depression with meclizine."
+          "interaction": "Additive CNS depression with meclizine.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive CNS depression with dimenhydrinate. Commonly combined in OTC products but monitor for excessive sedation."
+          "interaction": "Additive CNS depression with dimenhydrinate. Commonly combined in OTC products but monitor for excessive sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2656,7 +2943,8 @@
           "type": "StatPearls",
           "title": "Dextromethorphan - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Doxylamine Succinate",
@@ -2689,51 +2977,63 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Diphenhydramine",
-          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and strongly additive sedation."
+          "interaction": "Both are first-generation sedating antihistamines. Highly redundant and strongly additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine 10mg",
-          "interaction": "Additive sedation and anticholinergic effects."
+          "interaction": "Additive sedation and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive sedation. Minor serotonergic interaction."
+          "interaction": "Additive sedation. Minor serotonergic interaction.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive CNS depression. Commonly combined in OTC products."
+          "interaction": "Additive CNS depression. Commonly combined in OTC products.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
-          "interaction": "Additive antihistamine effects."
+          "interaction": "Additive antihistamine effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Additive sedation and anticholinergic effects with meclizine (first-generation antihistamine)."
+          "interaction": "Additive sedation and anticholinergic effects with meclizine (first-generation antihistamine).",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate (first-generation antihistamine)."
+          "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2741,7 +3041,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Take 30 minutes before bedtime when used as a sleep aid."
     },
     {
       "generic_name": "Pseudoephedrine HCl",
@@ -2776,23 +3077,28 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Propranolol",
-          "interaction": "IMPORTANT: Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive/cardiac effects. Risk of unopposed alpha-adrenergic stimulation causing severe hypertension, especially with non-selective beta-blockers like propranolol."
+          "interaction": "IMPORTANT: Pseudoephedrine (sympathomimetic) may counteract propranolol's antihypertensive/cardiac effects. Risk of unopposed alpha-adrenergic stimulation causing severe hypertension, especially with non-selective beta-blockers like propranolol.",
+          "severity": "severe"
         },
         {
           "drug": "Methylphenidate / Amphetamine Salts",
-          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia)."
+          "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia).",
+          "severity": "moderate"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant and sympathomimetic effects; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects."
+          "interaction": "Additive CNS-stimulant and sympathomimetic effects; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects.",
+          "severity": "mild"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine. Avoid concurrent use or use with extreme caution."
+          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine. Avoid concurrent use or use with extreme caution.",
+          "severity": "severe"
         }
       ],
       "citations": [
@@ -2804,7 +3110,8 @@
           "type": "Drug Label",
           "title": "Pseudoephedrine Hydrochloride"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Swallow extended-release tablets whole; do not crush or chew."
     },
     {
       "generic_name": "Guaifenesin",
@@ -2839,11 +3146,13 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "None",
-          "interaction": "No significant pharmacokinetic or pharmacodynamic interactions with other drugs on this list. Guaifenesin is generally well-tolerated with minimal drug interaction potential."
+          "interaction": "No significant pharmacokinetic or pharmacodynamic interactions with other drugs on this list. Guaifenesin is generally well-tolerated with minimal drug interaction potential.",
+          "severity": "info"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Available as a fixed-dose combination product (ephedrine/guaifenesin) for temporary relief of mild asthma symptoms with expectoration."
+          "interaction": "Available as a fixed-dose combination product (ephedrine/guaifenesin) for temporary relief of mild asthma symptoms with expectoration.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2855,7 +3164,8 @@
           "type": "Drug Label",
           "title": "Guaifenesin"
         }
-      ]
+      ],
+      "administration": "Take with a full glass of water to help loosen mucus. May be taken with or without food. Swallow extended-release tablets whole; do not crush, chew, or break."
     },
     {
       "generic_name": "Caffeine",
@@ -2892,27 +3202,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Methylphenidate / Amphetamine Salts",
-          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor. Patients should limit caffeine intake while using stimulant medications."
+          "interaction": "Additive CNS-stimulant effects. Excessive caffeine may contribute to nervousness, irritability, insomnia, or tremor. Patients should limit caffeine intake while using stimulant medications.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Bupropion carries a dose-related seizure risk. Excessive caffeine (a psychostimulant) may increase this risk. Monitor for irritability, tremor, increased blood pressure, and insomnia."
+          "interaction": "Bupropion carries a dose-related seizure risk. Excessive caffeine (a psychostimulant) may increase this risk. Monitor for irritability, tremor, increased blood pressure, and insomnia.",
+          "severity": "moderate"
         },
         {
           "drug": "Ephedrine Sulfate",
-          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination was historically used for weight loss but carries risk of nervousness, irritability, insomnia, and cardiac arrhythmias."
+          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination was historically used for weight loss but carries risk of nervousness, irritability, insomnia, and cardiac arrhythmias.",
+          "severity": "moderate"
         },
         {
           "drug": "Cimetidine",
-          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine, potentially increasing caffeine-related side effects. Caffeine dosage or intake may need to be reduced."
+          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine, potentially increasing caffeine-related side effects. Caffeine dosage or intake may need to be reduced.",
+          "severity": "mild"
         },
         {
           "drug": "Pseudoephedrine HCl",
-          "interaction": "Additive CNS-stimulant effects. Both are sympathomimetics; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects."
+          "interaction": "Additive CNS-stimulant effects. Both are sympathomimetics; excessive caffeine may worsen nervousness, irritability, insomnia, or cardiac effects.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol through opposing cardiovascular mechanisms."
+          "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol through opposing cardiovascular mechanisms.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2928,7 +3244,8 @@
           "type": "StatPearls",
           "title": "Caffeine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Avoid taking late in the day to prevent insomnia."
     },
     {
       "generic_name": "Cimetidine",
@@ -2971,43 +3288,53 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Propranolol",
-          "interaction": "Cimetidine (weak CYP2D6 inhibitor) may increase propranolol exposure. Monitor for increased propranolol adverse reactions including bradycardia and hypotension."
+          "interaction": "Cimetidine (weak CYP2D6 inhibitor) may increase propranolol exposure. Monitor for increased propranolol adverse reactions including bradycardia and hypotension.",
+          "severity": "moderate"
         },
         {
           "drug": "Amphetamine Salts (IR and ER)",
-          "interaction": "H2-blockers may raise gastrointestinal pH, increasing amphetamine absorption and potentially exacerbating stimulant effects. Use with caution."
+          "interaction": "H2-blockers may raise gastrointestinal pH, increasing amphetamine absorption and potentially exacerbating stimulant effects. Use with caution.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon",
-          "interaction": "Major interaction \u2014 cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. Concurrent use may significantly increase ramelteon exposure and risk of adverse reactions."
+          "interaction": "Major interaction \u2014 cimetidine inhibits CYP3A4 and CYP1A2, which metabolize ramelteon. Concurrent use may significantly increase ramelteon exposure and risk of adverse reactions.",
+          "severity": "moderate"
         },
         {
           "drug": "Zaleplon",
-          "interaction": "Major interaction \u2014 reduce zaleplon initial dose to 5 mg with cimetidine. Cimetidine inhibits both aldehyde oxidase and CYP3A4, increasing zaleplon Cmax and AUC by 85%."
+          "interaction": "Major interaction \u2014 reduce zaleplon initial dose to 5 mg with cimetidine. Cimetidine inhibits both aldehyde oxidase and CYP3A4, increasing zaleplon Cmax and AUC by 85%.",
+          "severity": "moderate"
         },
         {
           "drug": "Celecoxib",
-          "interaction": "Cimetidine inhibits CYP2C9, which metabolizes celecoxib. May result in increased celecoxib levels, though clinical significance is not fully established."
+          "interaction": "Cimetidine inhibits CYP2C9, which metabolizes celecoxib. May result in increased celecoxib levels, though clinical significance is not fully established.",
+          "severity": "mild"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine. Caffeine dosage or intake may need to be reduced if caffeine-related side effects occur."
+          "interaction": "Cimetidine (CYP1A2 inhibitor) may inhibit hepatic oxidative metabolism of caffeine. Caffeine dosage or intake may need to be reduced if caffeine-related side effects occur.",
+          "severity": "mild"
         },
         {
           "drug": "Esomeprazole 40mg",
-          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy."
+          "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough on PPI therapy.",
+          "severity": "mild"
         },
         {
           "drug": "Famotidine",
-          "interaction": "Both are H2-receptor antagonists; concurrent use provides no additional benefit and is redundant. Use one or the other."
+          "interaction": "Both are H2-receptor antagonists; concurrent use provides no additional benefit and is redundant. Use one or the other.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline",
-          "interaction": "Cimetidine may modestly inhibit metabolism of sertraline (CYP2D6 substrate). Monitor for increased sertraline effects."
+          "interaction": "Cimetidine may modestly inhibit metabolism of sertraline (CYP2D6 substrate). Monitor for increased sertraline effects.",
+          "severity": "mild"
         },
         {
           "drug": "Colestipol 1g",
-          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours."
+          "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3023,7 +3350,8 @@
           "type": "StatPearls",
           "title": "Cimetidine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. For ulcer treatment, take with meals and at bedtime. For heartburn prevention, take 30 minutes before consuming foods or beverages that may cause heartburn."
     },
     {
       "generic_name": "Ephedrine Sulfate",
@@ -3058,27 +3386,33 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Propranolol",
-          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Beta-blockade may reduce ephedrine's bronchodilatory and cardiac effects while ephedrine may counteract propranolol's antihypertensive effect. Monitor hemodynamic parameters."
+          "interaction": "Concomitant use may antagonize the cardiovascular effects of either drug. Beta-blockade may reduce ephedrine's bronchodilatory and cardiac effects while ephedrine may counteract propranolol's antihypertensive effect. Monitor hemodynamic parameters.",
+          "severity": "mild"
         },
         {
           "drug": "Methylphenidate / Amphetamine Salts",
-          "interaction": "Methylphenidate derivatives can potentiate the pressor actions of vasopressors like ephedrine. Additive sympathomimetic/cardiovascular effects. Monitor cardiac function."
+          "interaction": "Methylphenidate derivatives can potentiate the pressor actions of vasopressors like ephedrine. Additive sympathomimetic/cardiovascular effects. Monitor cardiac function.",
+          "severity": "moderate"
         },
         {
           "drug": "Caffeine",
-          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination may cause nervousness, irritability, insomnia, and cardiac arrhythmias."
+          "interaction": "Additive CNS-stimulant and cardiovascular effects. The combination may cause nervousness, irritability, insomnia, and cardiac arrhythmias.",
+          "severity": "moderate"
         },
         {
           "drug": "Pseudoephedrine HCl",
-          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine by adding to sympathomimetic activity. Avoid concurrent use or use with extreme caution."
+          "interaction": "Both are sympathomimetic amines. Pseudoephedrine can potentiate the effects and increase the toxicity of ephedrine by adding to sympathomimetic activity. Avoid concurrent use or use with extreme caution.",
+          "severity": "severe"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk."
+          "interaction": "Additive noradrenergic effects. Potential for increased blood pressure and seizure risk.",
+          "severity": "moderate"
         },
         {
           "drug": "Guaifenesin",
-          "interaction": "Available as a fixed-dose combination product (ephedrine HCl 12.5 mg / guaifenesin 200 mg) for temporary relief of mild asthma symptoms with expectoration."
+          "interaction": "Available as a fixed-dose combination product (ephedrine HCl 12.5 mg / guaifenesin 200 mg) for temporary relief of mild asthma symptoms with expectoration.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3094,7 +3428,8 @@
           "type": "StatPearls",
           "title": "Ephedrine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No specific meal-related restrictions for oral formulations."
     },
     {
       "generic_name": "Meclizine HCl",
@@ -3133,59 +3468,73 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Diphenhydramine HCl",
-          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Risk of excessive CNS depression."
+          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Risk of excessive CNS depression.",
+          "severity": "moderate"
         },
         {
           "drug": "Doxylamine Succinate",
-          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines."
+          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine HCl",
-          "interaction": "Additive sedation and anticholinergic effects. High redundancy as both are sedating antihistamines."
+          "interaction": "Additive sedation and anticholinergic effects. High redundancy as both are sedating antihistamines.",
+          "severity": "mild"
         },
         {
           "drug": "Dimenhydrinate",
-          "interaction": "Redundant antiemetic/antivertigo effects. Both cause sedation and anticholinergic effects. Avoid concurrent use."
+          "interaction": "Redundant antiemetic/antivertigo effects. Both cause sedation and anticholinergic effects. Avoid concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive anticholinergic effects (dry mouth, urinary retention, constipation)."
+          "interaction": "Additive anticholinergic effects (dry mouth, urinary retention, constipation).",
+          "severity": "mild"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation and CNS depression."
+          "interaction": "Additive sedation and CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive CNS depression and sedation."
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "May lower seizure threshold; use with caution."
+          "interaction": "May lower seizure threshold; use with caution.",
+          "severity": "moderate"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
-          "interaction": "Additive antihistamine effects. Generally avoid combining first- and second-generation antihistamines routinely."
+          "interaction": "Additive antihistamine effects. Generally avoid combining first- and second-generation antihistamines routinely.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive CNS depression."
+          "interaction": "Additive CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive anticholinergic effects (constipation)."
+          "interaction": "Additive anticholinergic effects (constipation).",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3197,7 +3546,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. For motion sickness, take 1 hour before travel."
     },
     {
       "generic_name": "Dimenhydrinate",
@@ -3233,63 +3583,78 @@
       "interactions_with_other_drugs_on_this_list": [
         {
           "drug": "Diphenhydramine HCl",
-          "interaction": "Dimenhydrinate contains diphenhydramine as its active moiety (~55%). Concurrent use is highly redundant and significantly increases risk of sedation and anticholinergic effects. Avoid combination."
+          "interaction": "Dimenhydrinate contains diphenhydramine as its active moiety (~55%). Concurrent use is highly redundant and significantly increases risk of sedation and anticholinergic effects. Avoid combination.",
+          "severity": "severe"
         },
         {
           "drug": "Doxylamine Succinate",
-          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines."
+          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines.",
+          "severity": "mild"
         },
         {
           "drug": "Hydroxyzine HCl",
-          "interaction": "Additive sedation and anticholinergic effects."
+          "interaction": "Additive sedation and anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Meclizine HCl",
-          "interaction": "Redundant antiemetic/antivertigo effects. Both cause sedation and anticholinergic effects. Avoid concurrent use."
+          "interaction": "Redundant antiemetic/antivertigo effects. Both cause sedation and anticholinergic effects. Avoid concurrent use.",
+          "severity": "mild"
         },
         {
           "drug": "Glycopyrrolate 1mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Hyoscyamine 0.125mg",
-          "interaction": "Additive anticholinergic effects."
+          "interaction": "Additive anticholinergic effects.",
+          "severity": "mild"
         },
         {
           "drug": "Trazodone 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Zaleplon 5mg",
-          "interaction": "Additive CNS depression."
+          "interaction": "Additive CNS depression.",
+          "severity": "mild"
         },
         {
           "drug": "Ramelteon 8mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Sertraline 50mg",
-          "interaction": "Additive sedation."
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Bupropion 300mg XR",
-          "interaction": "Both inhibit CYP2D6. Diphenhydramine component may increase bupropion levels."
+          "interaction": "Both inhibit CYP2D6. Diphenhydramine component may increase bupropion levels.",
+          "severity": "mild"
         },
         {
           "drug": "Propranolol",
-          "interaction": "Diphenhydramine component inhibits CYP2D6 and may increase propranolol levels."
+          "interaction": "Diphenhydramine component inhibits CYP2D6 and may increase propranolol levels.",
+          "severity": "mild"
         },
         {
           "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
-          "interaction": "Additive antihistamine effects. Generally avoid combining first- and second-generation antihistamines routinely."
+          "interaction": "Additive antihistamine effects. Generally avoid combining first- and second-generation antihistamines routinely.",
+          "severity": "mild"
         },
         {
           "drug": "Dextromethorphan 15mg",
-          "interaction": "Additive CNS depression. Commonly combined in OTC products but monitor for excessive sedation."
+          "interaction": "Additive CNS depression. Commonly combined in OTC products but monitor for excessive sedation.",
+          "severity": "mild"
         },
         {
           "drug": "Loperamide 2mg",
-          "interaction": "Additive constipation and anticholinergic effects."
+          "interaction": "Additive constipation and anticholinergic effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3305,7 +3670,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. For motion sickness, take 30 minutes to 1 hour before travel."
     }
   ]
 }
