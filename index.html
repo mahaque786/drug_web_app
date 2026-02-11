@@ -267,6 +267,37 @@
       font-weight: 600;
       color: var(--accent);
     }
+    .severity-badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .severity-info {
+      background: #e0f2fe;
+      color: #0369a1;
+    }
+    .severity-mild {
+      background: #fef9c3;
+      color: #854d0e;
+    }
+    .severity-moderate {
+      background: #fed7aa;
+      color: #9a3412;
+    }
+    .severity-severe {
+      background: #fecaca;
+      color: #991b1b;
+    }
+    .severity-lethal {
+      background: #991b1b;
+      color: #ffffff;
+    }
     .citation-list { list-style: none; }
     .citation-list li {
       padding: 0.35rem 0;
@@ -697,8 +728,11 @@
           return '<span class="tag off-label">' + escapeHtml(t) + '</span>';
         }).join('');
 
+        const severityLabels = { info: 'Info', mild: 'Mild', moderate: 'Moderate', severe: 'Severe', lethal: 'Lethal' };
         const interactions = med.interactions_with_other_drugs_on_this_list.map(function(ix) {
-          return '<li><span class="interaction-drug">' + escapeHtml(ix.drug) + ':</span> ' + escapeHtml(ix.interaction) + '</li>';
+          var sev = ix.severity || 'info';
+          var badge = '<span class="severity-badge severity-' + escapeHtml(sev) + '">' + escapeHtml(severityLabels[sev] || sev) + '</span>';
+          return '<li><span class="interaction-drug">' + escapeHtml(ix.drug) + ':</span>' + badge + ' ' + escapeHtml(ix.interaction) + '</li>';
         }).join('');
 
         var citations = '';
