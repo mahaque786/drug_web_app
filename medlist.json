@@ -2742,12 +2742,12 @@
         200
       ],
       "dose_unit": "mg",
-      "maximum_daily_dosage": "200 mg per dose; may repeat every 3-4 hours as needed (OTC alertness aid)",
+      "maximum_daily_dosage": "400-600 mg/day (OTC alertness aid); 200 mg per dose, may repeat every 3-4 hours",
       "time_required_between_doses": "3-4 hours",
       "mechanism_of_action": "Methylxanthine-class CNS stimulant. Antagonizes all four adenosine receptor subtypes (A1, A2a, A2b, A3); wakefulness is primarily driven by A2a antagonism. Also stimulates catecholamine release, exerts positive cardiac inotropic/chronotropic effects, increases gastric acid secretion, and promotes diuresis.",
       "time_to_max_concentration": "30-90 minutes (oral, adults)",
-      "half_life": "~5 hours (adults); up to 15 hours in late pregnancy; up to 100 hours in premature neonates",
-      "active_metabolites": "Paraxanthine, theobromine, theophylline (all dimethylxanthines with unique pharmacologic effects)",
+      "half_life": "Approximately 5 hours (adults); up to 15 hours in late pregnancy; up to 100 hours in premature neonates",
+      "active_metabolites": "Paraxanthine, theobromine, theophylline (all dimethylxanthines with unique pharmacological effects)",
       "half_life_of_active_metabolites": "Paraxanthine ~3-4 hours; theobromine ~6-10 hours; theophylline ~3-7 hours",
       "interactions_with_other_drugs_on_this_list": [
         {
@@ -2825,7 +2825,7 @@
       "time_required_between_doses": "6-12 hours (dose dependent); 800 mg at bedtime for ulcer",
       "mechanism_of_action": "Competitive H2-receptor antagonist. Blocks histamine from stimulating H2 receptors on gastric parietal cells, reducing basal and stimulated gastric acid secretion. Also a non-selective inhibitor of hepatic cytochrome P450 enzymes (CYP1A2, CYP2C9, CYP2D6, CYP3A4), leading to numerous drug interactions.",
       "time_to_max_concentration": "1-2 hours",
-      "half_life": "~2 hours; prolonged in renal impairment",
+      "half_life": "Approximately 2 hours; prolonged in renal impairment",
       "active_metabolites": "None significant — cimetidine sulfoxide is the primary metabolite with minimal activity",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2911,8 +2911,8 @@
       "maximum_daily_dosage": "150 mg/day (oral, for asthma indication)",
       "time_required_between_doses": "4 hours (oral, as needed)",
       "mechanism_of_action": "Mixed-acting sympathomimetic amine. Acts both directly on alpha- and beta-adrenergic receptors and indirectly by inhibiting neuronal norepinephrine reuptake and displacing norepinephrine from storage vesicles. Produces vasoconstriction (alpha-1), increased cardiac chronotropy and inotropy (beta-1), and bronchodilation (beta-2). Stereoisomer of pseudoephedrine with more pronounced indirect mechanism.",
-      "time_to_max_concentration": "~1.8 hours (oral)",
-      "half_life": "~6 hours (oral); urinary excretion is pH-dependent (shorter with acidic urine)",
+      "time_to_max_concentration": "Approximately 1.8 hours (oral)",
+      "half_life": "Approximately 6 hours (oral); urinary excretion is pH-dependent (shorter with acidic urine)",
       "active_metabolites": "Norephedrine — the parent drug and metabolite are both excreted in urine",
       "half_life_of_active_metabolites": "Not well characterized; eliminated renally",
       "interactions_with_other_drugs_on_this_list": [
