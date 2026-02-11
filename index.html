@@ -139,6 +139,20 @@
       margin-bottom: 0.35rem;
     }
     .warnings ul { padding-left: 1rem; }
+    .proceed-anyway-btn {
+      margin-top: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: var(--danger);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .proceed-anyway-btn:hover {
+      opacity: 0.85;
+    }
     .success-box {
       margin-top: 0.5rem;
       border: 1px solid #86efac;
@@ -331,6 +345,7 @@
     <div class="warnings" id="warning-box">
       <h3>Safety Warnings</h3>
       <ul id="warning-list"></ul>
+      <button type="button" id="proceed-anyway-btn" class="proceed-anyway-btn" aria-label="Proceed with dose submission despite safety warnings">Proceed Anyway</button>
     </div>
     <div class="success-box" id="success-box"></div>
 
@@ -559,7 +574,7 @@
       }
     }
 
-    async function submitLog() {
+    async function submitLog(bypassWarnings = false) {
       const med = getSelectedMedication();
       const selectedDose = Number(document.getElementById('log-dose').value);
       const units = Number(document.getElementById('log-units').value) || 1;
@@ -578,10 +593,13 @@
         return;
       }
 
-      const foundWarnings = evaluateWarnings(med, dose);
-      if (foundWarnings.length > 0) {
-        warningList.innerHTML = foundWarnings.map(function(w) { return '<li>' + escapeHtml(w) + '</li>'; }).join('');
-        warningBox.style.display = 'block';
+      if (!bypassWarnings) {
+        const foundWarnings = evaluateWarnings(med, dose);
+        if (foundWarnings.length > 0) {
+          warningList.innerHTML = foundWarnings.map(function(w) { return '<li>' + escapeHtml(w) + '</li>'; }).join('');
+          warningBox.style.display = 'block';
+          return;
+        }
       }
 
       const url = getAppsScriptUrl();
@@ -781,7 +799,9 @@
       buildReasonOptions(med);
     });
 
-    document.getElementById('log-submit-btn').addEventListener('click', submitLog);
+    document.getElementById('log-submit-btn').addEventListener('click', function() { submitLog(false); });
+
+    document.getElementById('proceed-anyway-btn').addEventListener('click', function() { submitLog(true); });
 
     (function init() {
       loadData();
