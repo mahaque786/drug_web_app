@@ -304,7 +304,7 @@
     <div class="config-row">
       <div class="field">
         <label for="apps-script-url">Apps Script Web App URL</label>
-        <input id="apps-script-url" type="text" placeholder="https://script.google.com/macros/s/.../exec">
+        <input id="apps-script-url" type="text" value="https://script.google.com/macros/library/d/199KeJeL6hqruRI-rP2_O9-NC0pY9q6OGmeBtEHdhuljVep5SpwKRZceI/1" placeholder="https://script.google.com/macros/s/.../exec">
       </div>
       <button type="button" id="save-url-btn" class="secondary">Save URL</button>
     </div>
@@ -319,8 +319,14 @@
         </select>
       </div>
       <div class="field">
-        <label for="log-dose">Dose (mg)</label>
-        <input id="log-dose" type="number" step="0.01" min="0" placeholder="e.g. 10">
+        <label for="log-dose">Dose</label>
+        <select id="log-dose" disabled>
+          <option value="">Select medication first...</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="log-units">Units taken</label>
+        <input id="log-units" type="number" step="1" min="1" value="1" placeholder="e.g. 1">
       </div>
       <div class="field">
         <label for="log-reason">Reason</label>
@@ -375,7 +381,7 @@
     }
 
     function getAppsScriptUrl() {
-      return localStorage.getItem('appsScriptUrl') || '';
+      return localStorage.getItem('appsScriptUrl') || document.getElementById('apps-script-url').value.trim();
     }
 
     function setStatus(message, isSuccess) {
@@ -406,6 +412,23 @@
       return medications.find(function(med) {
         return med.generic_name === medName;
       }) || null;
+    }
+
+    function buildDoseOptions(med) {
+      const doseSelect = document.getElementById('log-dose');
+      if (!med) {
+        doseSelect.innerHTML = '<option value="">Select medication first...</option>';
+        doseSelect.disabled = true;
+        return;
+      }
+
+      const unit = med.dose_unit || 'mg';
+      const options = ['<option value="">Select a dose...</option>'];
+      med.doses.forEach(function(d) {
+        options.push('<option value="' + escapeHtml(String(d)) + '">' + escapeHtml(String(d)) + ' ' + escapeHtml(unit) + '</option>');
+      });
+      doseSelect.innerHTML = options.join('');
+      doseSelect.disabled = false;
     }
 
     function buildReasonOptions(med) {
@@ -545,7 +568,9 @@
 
     async function submitLog() {
       const med = getSelectedMedication();
-      const dose = Number(document.getElementById('log-dose').value);
+      const selectedDose = Number(document.getElementById('log-dose').value);
+      const units = Number(document.getElementById('log-units').value) || 1;
+      const dose = selectedDose * units;
       const reason = document.getElementById('log-reason').value;
       const warningBox = document.getElementById('warning-box');
       const warningList = document.getElementById('warning-list');
@@ -555,8 +580,8 @@
       warningList.innerHTML = '';
       successBox.style.display = 'none';
 
-      if (!med || !dose || dose <= 0 || !reason) {
-        setStatus('Select medication, enter a valid dose, and choose a reason before logging.');
+      if (!med || !selectedDose || selectedDose <= 0 || !reason) {
+        setStatus('Select medication, choose a dose, and select a reason before logging.');
         return;
       }
 
@@ -758,7 +783,9 @@
     });
 
     document.getElementById('log-medication').addEventListener('change', function() {
-      buildReasonOptions(getSelectedMedication());
+      const med = getSelectedMedication();
+      buildDoseOptions(med);
+      buildReasonOptions(med);
     });
 
     document.getElementById('save-url-btn').addEventListener('click', function() {
@@ -776,7 +803,9 @@
 
     (function init() {
       const stored = getAppsScriptUrl();
-      document.getElementById('apps-script-url').value = stored;
+      if (stored) {
+        document.getElementById('apps-script-url').value = stored;
+      }
       loadData();
       fetchLogs();
     })();
