@@ -781,6 +781,8 @@
                 '<div class="info-value">' + escapeHtml(med.half_life_of_active_metabolites) + '</div>' +
               '</div>' +
             '</div>' +
+            (med.administration ? '<div class="section-title">Administration</div>' +
+            '<p class="info-value">' + escapeHtml(med.administration) + '</p>' : '') +
             '<div class="section-title">Mechanism of Action</div>' +
             '<p class="info-value">' + escapeHtml(med.mechanism_of_action) + '</p>' +
             '<div class="section-title">On-Label Indications</div>' +

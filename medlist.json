@@ -91,7 +91,8 @@
           "type": "StatPearls",
           "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow whole; do not crush, chew, or break extended-release tablets/capsules. Concerta tablets should be taken with liquid. Capsule formulations (Ritalin LA, Metadate CD, Aptensio XR) may be opened and sprinkled on applesauce; do not crush or chew beads."
     },
     {
       "generic_name": "Methylphenidate HCl (Immediate-Release)",
@@ -168,7 +169,8 @@
           "type": "StatPearls",
           "title": "Methylphenidate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take 30-45 minutes before meals. Taking with food may delay absorption. Tablets may be taken with water."
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Extended-Release)",
@@ -268,7 +270,8 @@
           "type": "StatPearls",
           "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow capsule whole, or open capsule and sprinkle contents on applesauce; consume immediately without chewing. A high-fat meal may delay Tmax by approximately 2.5 hours."
     },
     {
       "generic_name": "Amphetamine Mixed Salts (Immediate-Release)",
@@ -357,7 +360,8 @@
           "type": "StatPearls",
           "title": "Dextroamphetamine-Amphetamine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take first dose on awakening. May be taken with or without food. A high-fat meal may delay absorption slightly."
     },
     {
       "generic_name": "Buspirone HCl",
@@ -438,7 +442,8 @@
           "type": "StatPearls",
           "title": "Buspirone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take consistently with or without food. Food increases bioavailability; taking with food is generally preferred. Take at the same time(s) each day for consistent blood levels."
     },
     {
       "generic_name": "Bupropion HCl (Extended-Release)",
@@ -550,7 +555,8 @@
           "type": "StatPearls",
           "title": "Bupropion - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Swallow whole; do not crush, split, or chew extended-release tablets. Take in the morning to reduce risk of insomnia."
     },
     {
       "generic_name": "Colestipol HCl",
@@ -642,7 +648,8 @@
           "type": "StatPearls",
           "title": "Colestipol - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with meals and a full glass of water or other liquid. Mix granules with at least 3 oz of liquid or a pulpy fruit. Take other medications at least 1 hour before or 4 hours after colestipol to avoid reduced absorption."
     },
     {
       "generic_name": "Finasteride",
@@ -692,7 +699,8 @@
           "type": "StatPearls",
           "title": "Finasteride - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Propranolol HCl",
@@ -826,7 +834,8 @@
           "type": "StatPearls",
           "title": "Propranolol - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take consistently with or without food. A high-protein meal may increase bioavailability of propranolol. Take at the same time each day."
     },
     {
       "generic_name": "Sertraline HCl",
@@ -960,7 +969,8 @@
           "type": "StatPearls",
           "title": "Sertraline - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may improve tolerability and reduce nausea."
     },
     {
       "generic_name": "Trazodone HCl",
@@ -1079,7 +1089,8 @@
           "type": "StatPearls",
           "title": "Trazodone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take shortly after a meal or a light snack. Food increases absorption and reduces risk of dizziness and lightheadedness. Taking on an empty stomach may increase side effects."
     },
     {
       "generic_name": "Esomeprazole Magnesium",
@@ -1149,7 +1160,8 @@
           "type": "StatPearls",
           "title": "Proton Pump Inhibitors (PPI) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take at least 30-60 minutes before a meal, preferably before breakfast. Swallow capsule whole, or open capsule and mix granules with applesauce; do not crush or chew. For maximum efficacy, take before the first meal of the day."
     },
     {
       "generic_name": "Glycopyrrolate",
@@ -1239,7 +1251,8 @@
           "type": "StatPearls",
           "title": "Glycopyrrolate - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take on an empty stomach, 1 hour before or 2 hours after meals. Food significantly decreases absorption. Oral solution (Cuvposa) should also be given on an empty stomach."
     },
     {
       "generic_name": "Celecoxib",
@@ -1325,7 +1338,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Capsule may be opened and sprinkled on applesauce for those who cannot swallow capsules."
     },
     {
       "generic_name": "Desloratadine",
@@ -1404,7 +1418,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Hydroxyzine HCl",
@@ -1525,7 +1540,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset."
     },
     {
       "generic_name": "Hyoscyamine Sulfate (Sublingual)",
@@ -1621,7 +1637,8 @@
           "type": "Drug Label",
           "title": "Hyoscyamine Sulfate"
         }
-      ]
+      ],
+      "administration": "Place sublingual tablet under the tongue. May be taken with or without food. For oral tablets, take 30-60 minutes before meals to reduce GI motility."
     },
     {
       "generic_name": "Meloxicam",
@@ -1695,7 +1712,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food or milk may reduce GI upset."
     },
     {
       "generic_name": "Ondansetron",
@@ -1776,7 +1794,8 @@
           "type": "StatPearls",
           "title": "Ondansetron - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions. ODT (orally disintegrating tablet) should be placed on the tongue and allowed to dissolve; can be taken with or without water."
     },
     {
       "generic_name": "Ramelteon",
@@ -1864,7 +1883,8 @@
           "type": "StatPearls",
           "title": "Melatonin - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Do not take with or immediately after a high-fat meal, as this delays absorption and reduces efficacy. Take on an empty stomach for best results. Take within 30 minutes of going to bed."
     },
     {
       "generic_name": "Zaleplon",
@@ -1957,7 +1977,8 @@
           "type": "StatPearls",
           "title": "Zaleplon - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Do not take with or immediately after a heavy or high-fat meal, as food significantly delays absorption. Take on an empty stomach at bedtime or after going to bed if unable to fall asleep."
     },
     {
       "generic_name": "Famotidine",
@@ -2029,7 +2050,8 @@
           "type": "StatPearls",
           "title": "Famotidine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. For heartburn prevention, take 15-60 minutes before consuming food or beverages that cause heartburn."
     },
     {
       "generic_name": "Loperamide HCl",
@@ -2105,7 +2127,8 @@
           "type": "StatPearls",
           "title": "Loperamide - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Ensure adequate fluid intake."
     },
     {
       "generic_name": "Simethicone",
@@ -2154,7 +2177,8 @@
           "type": "StatPearls",
           "title": "Simethicone - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take after meals and at bedtime for best results. Chewable tablets should be chewed thoroughly before swallowing."
     },
     {
       "generic_name": "Ibuprofen",
@@ -2244,7 +2268,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with food, milk, or a full glass of water to reduce GI upset. Avoid taking on an empty stomach if possible."
     },
     {
       "generic_name": "Acetaminophen",
@@ -2307,7 +2332,8 @@
           "type": "StatPearls",
           "title": "Acetaminophen - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Can be taken on an empty stomach. Taking with food may slow absorption slightly but does not affect overall efficacy."
     },
     {
       "generic_name": "Naproxen Sodium",
@@ -2390,7 +2416,8 @@
           "type": "StatPearls",
           "title": "Nonsteroidal Anti-Inflammatory Drugs (NSAIDs) - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with food, milk, or a full glass of water to reduce GI upset. Avoid taking on an empty stomach to minimize risk of stomach irritation."
     },
     {
       "generic_name": "Loratadine",
@@ -2469,7 +2496,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Diphenhydramine HCl",
@@ -2598,7 +2626,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food or milk may reduce GI upset."
     },
     {
       "generic_name": "Cetirizine HCl",
@@ -2679,7 +2708,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Fexofenadine HCl",
@@ -2748,7 +2778,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "Take with water. Do not take with fruit juices (orange, apple, grapefruit) as they may reduce absorption by up to 36%. May be taken with or without food."
     },
     {
       "generic_name": "Levocetirizine Dihydrochloride",
@@ -2818,7 +2849,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Take in the evening. No meal-related restrictions."
     },
     {
       "generic_name": "Dextromethorphan HBr",
@@ -2911,7 +2943,8 @@
           "type": "StatPearls",
           "title": "Dextromethorphan - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No meal-related restrictions."
     },
     {
       "generic_name": "Doxylamine Succinate",
@@ -3008,7 +3041,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Take 30 minutes before bedtime when used as a sleep aid."
     },
     {
       "generic_name": "Pseudoephedrine HCl",
@@ -3076,7 +3110,8 @@
           "type": "Drug Label",
           "title": "Pseudoephedrine Hydrochloride"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Swallow extended-release tablets whole; do not crush or chew."
     },
     {
       "generic_name": "Guaifenesin",
@@ -3129,7 +3164,8 @@
           "type": "Drug Label",
           "title": "Guaifenesin"
         }
-      ]
+      ],
+      "administration": "Take with a full glass of water to help loosen mucus. May be taken with or without food. Swallow extended-release tablets whole; do not crush, chew, or break."
     },
     {
       "generic_name": "Caffeine",
@@ -3208,7 +3244,8 @@
           "type": "StatPearls",
           "title": "Caffeine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. Avoid taking late in the day to prevent insomnia."
     },
     {
       "generic_name": "Cimetidine",
@@ -3313,7 +3350,8 @@
           "type": "StatPearls",
           "title": "Cimetidine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. For ulcer treatment, take with meals and at bedtime. For heartburn prevention, take 30 minutes before consuming foods or beverages that may cause heartburn."
     },
     {
       "generic_name": "Ephedrine Sulfate",
@@ -3390,7 +3428,8 @@
           "type": "StatPearls",
           "title": "Ephedrine - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. No specific meal-related restrictions for oral formulations."
     },
     {
       "generic_name": "Meclizine HCl",
@@ -3507,7 +3546,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. For motion sickness, take 1 hour before travel."
     },
     {
       "generic_name": "Dimenhydrinate",
@@ -3630,7 +3670,8 @@
           "type": "StatPearls",
           "title": "Antihistamines - StatPearls, NCBI Bookshelf"
         }
-      ]
+      ],
+      "administration": "May be taken with or without food. Taking with food may reduce GI upset. For motion sickness, take 30 minutes to 1 hour before travel."
     }
   ]
 }
