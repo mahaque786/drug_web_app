@@ -386,10 +386,22 @@
       return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
     }
 
-        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwNeAFxg6IpfzQf9iDxAx3spavPA0cwNvwvAEFKdBEgt4OmndJREHGT10TOVUVFt4Nsbg/exec';
+    function resolveAppsScriptUrl() {
+      if (typeof window.GAS_WEBHOOK_URL !== 'undefined') {
+        return window.GAS_WEBHOOK_URL;
+      }
+      return null;
+    }
+
+    const appsScriptUrl = resolveAppsScriptUrl();
+    const isWebhookMissing = appsScriptUrl === null;
+    if (isWebhookMissing) {
+      console.warn('GAS_WEBHOOK_URL not configured. Set window.GAS_WEBHOOK_URL to enable Google Sheets logging.');
+    }
 
     function getAppsScriptUrl() {
-      return APPS_SCRIPT_URL;
+      // Returns the configured Apps Script URL or null if none is set. fetchLogs and submitLog guard against null before making webhook requests.
+      return appsScriptUrl;
     }
 
     function setStatus(message, isSuccess) {
