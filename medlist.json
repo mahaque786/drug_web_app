@@ -255,6 +255,11 @@
           "drug": "Ephedrine Sulfate",
           "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia).",
           "severity": "moderate"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Amphetamines may pharmacodynamically counteract the sedative properties of chlorpheniramine. Alternatively, chlorpheniramine may blunt the stimulant effects of amphetamines used for narcolepsy or ADHD.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -344,6 +349,11 @@
         {
           "drug": "Ephedrine Sulfate",
           "interaction": "Additive sympathomimetic effects. Increased cardiovascular risk (hypertension, tachycardia).",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Amphetamines may pharmacodynamically counteract the sedative properties of chlorpheniramine. Alternatively, chlorpheniramine may blunt the stimulant effects of amphetamines used for narcolepsy or ADHD.",
           "severity": "moderate"
         }
       ],
@@ -540,6 +550,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase bupropion levels.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma levels and toxicity. Also, bupropion lowers the seizure threshold; monitor for increased side effects.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -819,6 +834,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Diphenhydramine component of dimenhydrinate inhibits CYP2D6 and may increase propranolol levels.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Chlorpheniramine is a weak CYP2D6 inhibitor; propranolol is a CYP2D6 substrate. Chlorpheniramine may modestly increase propranolol plasma concentrations. Monitor for bradycardia or hypotension.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -954,6 +974,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive sedation with dimenhydrinate.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation. Monitor for increased CNS depression.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1073,6 +1098,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive sedation with dimenhydrinate.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression and sedation. Monitor for excessive drowsiness.",
           "severity": "mild"
         }
       ],
@@ -1236,6 +1266,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive anticholinergic effects with dimenhydrinate.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive anticholinergic effects (dry mouth, urinary retention, constipation, blurred vision). Monitor for increased anticholinergic adverse effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1319,6 +1354,11 @@
           "drug": "Cimetidine",
           "interaction": "Cimetidine inhibits CYP2C9, potentially increasing celecoxib levels. Clinical significance not fully established.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Celecoxib is a CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma concentrations and risk of toxicity. A dosage adjustment may be warranted.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1402,6 +1442,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive antihistamine effects. Avoid routinely combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
           "severity": "mild"
         }
       ],
@@ -1525,6 +1570,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation and anticholinergic effects. Both are sedating first-generation antihistamines; concurrent use increases risk of excessive CNS depression.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1625,6 +1675,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive anticholinergic effects. Concurrent use may lead to increased anticholinergic toxicity.",
           "severity": "mild"
         }
       ],
@@ -1868,6 +1923,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive sedation with dimenhydrinate.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1961,6 +2021,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive CNS depression with dimenhydrinate.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
         }
       ],
@@ -2111,6 +2176,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive constipation and anticholinergic effects with dimenhydrinate.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive anticholinergic effects (constipation). Monitor for worsening constipation or bowel complications.",
           "severity": "mild"
         }
       ],
@@ -2481,6 +2551,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive antihistamine effects. Avoid routinely combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2611,6 +2686,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Dimenhydrinate contains diphenhydramine as its active moiety. Concurrent use is highly redundant and significantly increases risk of sedation and anticholinergic effects. Avoid combination.",
           "severity": "severe"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Both are first-generation H1 antihistamines; concurrent use significantly increases CNS depression and anticholinergic adverse effects. Avoid combination.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2693,6 +2773,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive antihistamine effects. Avoid combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2762,6 +2847,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive antihistamine effects. Avoid routinely combining first-generation and second-generation antihistamines.",
           "severity": "mild"
         }
       ],
@@ -2833,6 +2923,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive antihistamine effects with dimenhydrinate (first-generation antihistamine).",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive antihistamine effects. Avoid combining first-generation and second-generation antihistamines.",
           "severity": "mild"
         }
       ],
@@ -2927,6 +3022,11 @@
         {
           "drug": "Dimenhydrinate",
           "interaction": "Additive CNS depression with dimenhydrinate. Commonly combined in OTC products but monitor for excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression. Commonly combined in OTC cough and cold products; monitor for excessive sedation.",
           "severity": "mild"
         }
       ],
@@ -3034,6 +3134,11 @@
           "drug": "Dimenhydrinate",
           "interaction": "Additive sedation and anticholinergic effects with dimenhydrinate (first-generation antihistamine).",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines. Avoid combination.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -3535,6 +3640,11 @@
           "drug": "Loperamide 2mg",
           "interaction": "Additive anticholinergic effects (constipation).",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation and anticholinergic effects. Both are first-generation antihistamines; redundant antihistamine activity with risk of excessive CNS depression.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3655,6 +3765,11 @@
           "drug": "Loperamide 2mg",
           "interaction": "Additive constipation and anticholinergic effects.",
           "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive sedation and anticholinergic effects. Dimenhydrinate contains diphenhydramine as its active moiety; concurrent use with another first-generation antihistamine significantly increases risk of CNS depression and anticholinergic effects.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -3672,6 +3787,149 @@
         }
       ],
       "administration": "May be taken with or without food. Taking with food may reduce GI upset. For motion sickness, take 30 minutes to 1 hour before travel."
+    },
+    {
+      "generic_name": "Chlorpheniramine Maleate",
+      "brand_names": [
+        "Aller-Chlor",
+        "Allergy Relief",
+        "Chlor-Trimeton",
+        "Chlor-Trimeton Allergy 12 Hour",
+        "Teldrin HBP",
+        "AHIST",
+        "Diabetic Tussin Allergy Relief"
+      ],
+      "indication": {
+        "on_label": [
+          "Seasonal and perennial allergic rhinitis (rhinorrhea, sneezing, itching of the nose or throat, allergic conjunctivitis)",
+          "Upper respiratory allergies"
+        ],
+        "off_label": [
+          "Common cold symptom relief",
+          "Urticaria/pruritus"
+        ]
+      },
+      "doses": [
+        2,
+        4,
+        8,
+        12
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "24 mg/day (adults and children 12+); 12 mg/day (children 6-11)",
+      "time_required_between_doses": "4-6 hours (immediate-release); 12 hours (extended-release 12 mg)",
+      "mechanism_of_action": "First-generation H1 antihistamine of the alkylamine class. Competitively and reversibly blocks H1 histamine receptors, preventing histamine-mediated allergic responses. Also possesses anticholinergic and mild CNS depressant properties. Acts as both a CYP2D6 substrate and a weak CYP2D6 inhibitor.",
+      "time_to_max_concentration": "2-3 hours (immediate-release oral tablet)",
+      "half_life": "12-43 hours (adults; highly variable due to individual differences in CYP2D6 metabolism)",
+      "active_metabolites": "Desmethylchlorpheniramine (weakly active); didesmethylchlorpheniramine",
+      "half_life_of_active_metabolites": "Variable; not clinically significant",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Diphenhydramine HCl",
+          "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Both are first-generation H1 antihistamines; concurrent use significantly increases CNS depression and anticholinergic adverse effects. Avoid combination.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Doxylamine Succinate",
+          "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines. Avoid combination.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Hydroxyzine HCl",
+          "interaction": "Additive sedation and anticholinergic effects. Both are sedating first-generation antihistamines; concurrent use increases risk of excessive CNS depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Meclizine HCl",
+          "interaction": "Additive sedation and anticholinergic effects. Both are first-generation antihistamines; redundant antihistamine activity with risk of excessive CNS depression.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dimenhydrinate",
+          "interaction": "Additive sedation and anticholinergic effects. Dimenhydrinate contains diphenhydramine as its active moiety; concurrent use with another first-generation antihistamine significantly increases risk of CNS depression and anticholinergic effects.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Glycopyrrolate 1mg",
+          "interaction": "Additive anticholinergic effects (dry mouth, urinary retention, constipation, blurred vision). Monitor for increased anticholinergic adverse effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Hyoscyamine 0.125mg",
+          "interaction": "Additive anticholinergic effects. Concurrent use may lead to increased anticholinergic toxicity.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Trazodone 50mg",
+          "interaction": "Additive CNS depression and sedation. Monitor for excessive drowsiness.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Zaleplon 5mg",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ramelteon 8mg",
+          "interaction": "Additive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Sertraline 50mg",
+          "interaction": "Additive sedation. Monitor for increased CNS depression.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Bupropion 300mg XR",
+          "interaction": "Bupropion is a potent CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma levels and toxicity. Also, bupropion lowers the seizure threshold; monitor for increased side effects.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Propranolol",
+          "interaction": "Chlorpheniramine is a weak CYP2D6 inhibitor; propranolol is a CYP2D6 substrate. Chlorpheniramine may modestly increase propranolol plasma concentrations. Monitor for bradycardia or hypotension.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Celecoxib",
+          "interaction": "Celecoxib is a CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma concentrations and risk of toxicity. A dosage adjustment may be warranted.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Amphetamine Mixed Salts (IR and ER)",
+          "interaction": "Amphetamines may pharmacodynamically counteract the sedative properties of chlorpheniramine. Alternatively, chlorpheniramine may blunt the stimulant effects of amphetamines used for narcolepsy or ADHD.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Desloratadine / Loratadine / Cetirizine / Fexofenadine / Levocetirizine",
+          "interaction": "Additive antihistamine effects. Generally avoid routinely combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dextromethorphan 15mg",
+          "interaction": "Additive CNS depression. Commonly combined in OTC cough and cold products; monitor for excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Loperamide 2mg",
+          "interaction": "Additive anticholinergic effects (constipation). Monitor for worsening constipation or bowel complications.",
+          "severity": "mild"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Chlorpheniramine Maleate Tablet (CVS Allergy Relief)"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Chlorpheniramine - Drug Information, Merck Manual Professional Edition (Elsevier)"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Antihistamines - StatPearls, NCBI Bookshelf"
+        }
+      ],
+      "administration": "May be taken with or without food. Swallow extended-release tablets whole; do not crush or chew. Immediate-release tablets may be broken in half for lower doses (e.g., children 6-11 years). Take with water. Avoid alcoholic beverages while taking this medication."
     }
   ]
 }
