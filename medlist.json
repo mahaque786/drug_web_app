@@ -437,6 +437,11 @@
           "drug": "Dextromethorphan 15mg",
           "interaction": "Additive serotonergic effects; monitor for serotonin syndrome.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depressant effects possible. Monitor for increased sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -555,6 +560,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Bupropion is a potent CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma levels and toxicity. Also, bupropion lowers the seizure threshold; monitor for increased side effects.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Bupropion may inhibit CYP2D6, a minor metabolic pathway for zolpidem. Monitor for increased zolpidem CNS effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -839,6 +849,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Chlorpheniramine is a weak CYP2D6 inhibitor; propranolol is a CYP2D6 substrate. Chlorpheniramine may modestly increase propranolol plasma concentrations. Monitor for bradycardia or hypotension.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -979,6 +994,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation. Monitor for increased CNS depression.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Sertraline increases exposure to zolpidem (pharmacokinetic interaction). Consider using a lower zolpidem dose (5 mg IR) when co-administering.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1104,6 +1124,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive CNS depression and sedation. Monitor for excessive drowsiness.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation. Both are CNS depressants used for sleep; concurrent use increases risk of excessive sedation and next-day impairment.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1448,6 +1473,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive antihistamine effects. Avoid routinely combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Minimal sedation with desloratadine; additive CNS effects unlikely but possible at higher doses.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1574,6 +1604,11 @@
         {
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation and anticholinergic effects. Both are sedating first-generation antihistamines; concurrent use increases risk of excessive CNS depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation. Concurrent use increases risk of excessive sedation and next-day impairment.",
           "severity": "moderate"
         }
       ],
@@ -1928,6 +1963,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive sedation. Combining two sleep aids is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2027,6 +2067,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Both are non-benzodiazepine Z-drugs. Concurrent use of two sedative-hypnotics at bedtime is not recommended; additive CNS depression.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2691,6 +2736,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation, anticholinergic effects, and antihistamine activity. Both are first-generation H1 antihistamines; concurrent use significantly increases CNS depression and anticholinergic adverse effects. Avoid combination.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression. Combined use increases sedation and risk of next-day impairment.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2777,6 +2827,11 @@
         {
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive antihistamine effects. Avoid combining first-generation and second-generation antihistamines. Second-generation agents are preferred for allergy treatment.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Cetirizine has mild sedating properties; additive CNS depression possible.",
           "severity": "mild"
         }
       ],
@@ -2929,6 +2984,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive antihistamine effects. Avoid combining first-generation and second-generation antihistamines.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Levocetirizine has mild sedating properties; additive CNS depression possible.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3027,6 +3087,11 @@
         {
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive CNS depression. Commonly combined in OTC cough and cold products; monitor for excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depressant effects possible.",
           "severity": "mild"
         }
       ],
@@ -3138,6 +3203,11 @@
         {
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation and anticholinergic effects with other first-generation antihistamines. Avoid combination.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation.",
           "severity": "moderate"
         }
       ],
@@ -3440,6 +3510,11 @@
           "drug": "Colestipol 1g",
           "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Cimetidine inhibits CYP3A4 and CYP1A2 (key metabolic pathways for zolpidem), potentially increasing zolpidem exposure. Consider using a lower zolpidem dose.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -3645,6 +3720,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation and anticholinergic effects. Both are first-generation antihistamines; redundant antihistamine activity with risk of excessive CNS depression.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3770,6 +3850,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive sedation and anticholinergic effects. Dimenhydrinate contains diphenhydramine as its active moiety; concurrent use with another first-generation antihistamine significantly increases risk of CNS depression and anticholinergic effects.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3913,6 +3998,11 @@
           "drug": "Loperamide 2mg",
           "interaction": "Additive anticholinergic effects (constipation). Monitor for worsening constipation or bowel complications.",
           "severity": "mild"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3930,6 +4020,149 @@
         }
       ],
       "administration": "May be taken with or without food. Swallow extended-release tablets whole; do not crush or chew. Immediate-release tablets may be broken in half for lower doses (e.g., children 6-11 years). Take with water. Avoid alcoholic beverages while taking this medication."
+    },
+    {
+      "generic_name": "Zolpidem Tartrate",
+      "brand_names": [
+        "Ambien",
+        "Ambien CR",
+        "Edluar",
+        "Intermezzo",
+        "Zolpimist"
+      ],
+      "indication": {
+        "on_label": [
+          "Insomnia (short-term treatment for difficulty with sleep initiation)",
+          "Insomnia with sleep onset and/or sleep maintenance difficulties (extended-release formulation)"
+        ],
+        "off_label": [
+          "Middle-of-the-night awakenings (sublingual Intermezzo formulation, when at least 4 hours of sleep remain)",
+          "Restoration of brain function in patients in a vegetative state after brain injury"
+        ]
+      },
+      "doses": [
+        1.75,
+        3.5,
+        5,
+        6.25,
+        10,
+        12.5
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "IR tablets: 10 mg/day; ER tablets (Ambien CR): 12.5 mg/day; sublingual (Intermezzo): 3.5 mg/night. Women and elderly: lower doses recommended (IR 5 mg, ER 6.25 mg).",
+      "time_required_between_doses": "Once per night only; do not re-administer during the same night. At least 7 to 8 hours of sleep must remain before planned waking.",
+      "mechanism_of_action": "Non-benzodiazepine hypnotic (imidazopyridine class). Preferentially binds the BZ1 (omega-1) subunit of the GABA-A receptor complex, enhancing GABAergic inhibitory effects and increasing chloride conductance, leading to sedation and sleep induction. Selective binding to BZ1 (alpha1/alpha5 subunit ratio) explains relative absence of myorelaxant and anticonvulsant effects compared to benzodiazepines. Metabolized primarily by CYP3A4, and to a lesser extent by CYP2C9, CYP1A2, and CYP2D6.",
+      "time_to_max_concentration": "~1.6 hours (immediate-release); ~1.5 hours (extended-release); 35\u201375 minutes (sublingual). Food delays absorption significantly.",
+      "half_life": "~2.5\u20132.8 hours (range 1.4\u20134.5 hours). Prolonged in hepatic impairment. Women clear zolpidem more slowly than men.",
+      "active_metabolites": "None \u2014 metabolites are inactive, primarily excreted renally",
+      "half_life_of_active_metabolites": "Not applicable",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Sertraline HCl",
+          "interaction": "Concurrent administration of sertraline increases exposure to zolpidem (pharmacokinetic interaction). Consider using a lower zolpidem dose (5 mg IR) when co-administering.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Trazodone HCl",
+          "interaction": "Additive CNS depression and sedation. Both are CNS depressants used for sleep; concurrent use increases risk of excessive sedation and next-day impairment.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Bupropion HCl (Extended-Release)",
+          "interaction": "Bupropion may inhibit CYP2D6, a minor metabolic pathway for zolpidem. Monitor for increased zolpidem CNS effects. Additive CNS effects possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Buspirone HCl",
+          "interaction": "Additive CNS depressant effects possible. Monitor for increased sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Propranolol HCl",
+          "interaction": "Additive CNS depression at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Hydroxyzine HCl",
+          "interaction": "Additive CNS depression and sedation. Concurrent use increases risk of excessive sedation and next-day impairment.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Ramelteon",
+          "interaction": "Additive sedation. Combining two sleep aids is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Zaleplon",
+          "interaction": "Both are non-benzodiazepine Z-drugs. Concurrent use of two sedative-hypnotics at bedtime is not recommended; additive CNS depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Diphenhydramine HCl",
+          "interaction": "Additive CNS depression. Combined use increases sedation and risk of next-day impairment.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Doxylamine Succinate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Cimetidine inhibits CYP3A4 and CYP1A2 (key metabolic pathways for zolpidem), potentially increasing zolpidem exposure. Consider using a lower zolpidem dose.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Desloratadine",
+          "interaction": "Minimal sedation with desloratadine; additive CNS effects unlikely but possible at higher doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Cetirizine HCl",
+          "interaction": "Cetirizine has mild sedating properties; additive CNS depression possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Levocetirizine Dihydrochloride",
+          "interaction": "Levocetirizine has mild sedating properties; additive CNS depression possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dextromethorphan HBr",
+          "interaction": "Additive CNS depressant effects possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Meclizine HCl",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dimenhydrinate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Zolpidem Tartrate Tablets (Aurobindo Pharma)"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Zolpidem - StatPearls, NCBI Bookshelf"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Zolpidem - Drug Information, Merck Manual Professional Edition"
+        }
+      ],
+      "administration": "Take immediately before bedtime with at least 7 to 8 hours remaining before the planned time of awakening. Do not take with or immediately after a high-fat meal as food delays absorption. Take as a single dose; do not re-administer during the same night. Women should use 5 mg (IR) or 6.25 mg (ER) as the initial dose. Swallow extended-release tablets whole; do not crush, break, or chew."
     }
   ]
 }
