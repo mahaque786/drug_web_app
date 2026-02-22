@@ -314,6 +314,8 @@
       font-weight: 600;
       margin-right: 0.4rem;
     }
+    .log-search-wrap { margin-bottom: 0.5rem; }
+    .log-search-wrap input { max-width: 400px; }
     .no-results {
       text-align: center;
       color: var(--text-secondary);
@@ -350,7 +352,8 @@
     <div class="form-grid">
       <div class="field">
         <label for="log-medication">Medication</label>
-        <select id="log-medication">
+        <input type="text" id="med-select-search" placeholder="Type to filter medications…" autocomplete="off" aria-label="Filter medication list">
+        <select id="log-medication" style="margin-top:0.35rem;">
           <option value="">Select a medication...</option>
         </select>
       </div>
@@ -381,6 +384,9 @@
     <div class="success-box" id="success-box"></div>
 
     <div class="logs-table-wrap">
+      <div class="log-search-wrap">
+        <input type="text" id="log-search" placeholder="Search logs by medication, dose, or reason…" autocomplete="off" aria-label="Search dose logs">
+      </div>
       <table>
         <thead>
           <tr>
@@ -490,13 +496,20 @@
       reasonSelect.disabled = false;
     }
 
-    function renderLogsTable() {
+    function renderLogsTable(filterText) {
       const body = document.getElementById('logs-body');
-      if (!logs.length) {
-        body.innerHTML = '<tr><td colspan="4" style="color:#64748b;">No logged doses yet.</td></tr>';
+      const query = (filterText || '').toLowerCase().trim();
+      const filtered = query ? logs.filter(function(row) {
+        return (row.medicationName || '').toLowerCase().includes(query) ||
+               String(row.dose || '').toLowerCase().includes(query) ||
+               (row.reason || '').toLowerCase().includes(query);
+      }) : logs;
+      if (!filtered.length) {
+        body.innerHTML = '<tr><td colspan="4" style="color:#64748b;">' +
+          (query ? 'No matching log entries.' : 'No logged doses yet.') + '</td></tr>';
         return;
       }
-      const sorted = logs.slice().sort(function(a, b) {
+      const sorted = filtered.slice().sort(function(a, b) {
         return new Date(b.timestamp) - new Date(a.timestamp);
       });
       body.innerHTML = sorted.slice(0, 20).map(function(row) {
@@ -672,13 +685,29 @@
       }
     }
 
-    function populateMedicationSelect() {
+    function populateMedicationSelect(filterText) {
       const select = document.getElementById('log-medication');
+      const current = select.value;
+      const query = (filterText || '').toLowerCase().trim();
       const options = ['<option value="">Select a medication...</option>'];
       medications.forEach(function(med) {
-        options.push('<option value="' + escapeHtml(med.generic_name) + '">' + escapeHtml(med.generic_name) + '</option>');
+        if (!query || med.generic_name.toLowerCase().includes(query) ||
+            med.brand_names.some(function(b) { return b.toLowerCase().includes(query); })) {
+          options.push('<option value="' + escapeHtml(med.generic_name) + '">' + escapeHtml(med.generic_name) + '</option>');
+        }
       });
       select.innerHTML = options.join('');
+      // Restore selection only if it still passes the filter
+      const filteredMatch = query
+        ? medications.some(function(m) {
+            return m.generic_name === current &&
+              (m.generic_name.toLowerCase().includes(query) ||
+               m.brand_names.some(function(b) { return b.toLowerCase().includes(query); }));
+          })
+        : medications.some(function(m) { return m.generic_name === current; });
+      if (current && filteredMatch) {
+        select.value = current;
+      }
     }
 
     async function loadData() {
@@ -827,6 +856,18 @@
         return searchable.indexOf(query) !== -1;
       });
       renderCards(filtered);
+    });
+
+    document.getElementById('med-select-search').addEventListener('input', function(e) {
+      populateMedicationSelect(e.target.value);
+      // If the previously selected medication is now filtered out, reset dependent dropdowns
+      const med = getSelectedMedication();
+      buildDoseOptions(med);
+      buildReasonOptions(med);
+    });
+
+    document.getElementById('log-search').addEventListener('input', function(e) {
+      renderLogsTable(e.target.value);
     });
 
     document.getElementById('log-medication').addEventListener('change', function() {
