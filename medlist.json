@@ -76,6 +76,11 @@
           "drug": "Ephedrine Sulfate",
           "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "PPIs raise gastric pH, which may alter absorption characteristics of some extended-release methylphenidate formulations. Clinical significance is generally low for OROS-type formulations.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -154,6 +159,11 @@
           "drug": "Ephedrine Sulfate",
           "interaction": "Methylphenidate can potentiate the pressor actions of vasopressors like ephedrine. Monitor cardiac function.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "PPIs raise gastric pH; minimal effect on absorption of immediate-release methylphenidate formulations.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -260,6 +270,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Amphetamines may pharmacodynamically counteract the sedative properties of chlorpheniramine. Alternatively, chlorpheniramine may blunt the stimulant effects of amphetamines used for narcolepsy or ADHD.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "PPIs reduce gastric acidity, which may shorten the Tmax of extended-release amphetamine formulations (median Tmax may be shortened from ~5 hours to ~2.75 hours), leading to an earlier peak effect.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -355,6 +370,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Amphetamines may pharmacodynamically counteract the sedative properties of chlorpheniramine. Alternatively, chlorpheniramine may blunt the stimulant effects of amphetamines used for narcolepsy or ADHD.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "PPIs raise gastric pH; minimal effect on absorption of immediate-release amphetamine formulations.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -441,6 +461,16 @@
         {
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depressant effects possible. Monitor for increased sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression possible. Buspirone does not enhance benzodiazepine activity at GABA-A receptors, but combined anxiolytic and sedative effects may occur.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression possible. Buspirone does not enhance benzodiazepine effects at GABA-A receptors, but additive sedative effects may occur.",
           "severity": "mild"
         }
       ],
@@ -565,6 +595,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Bupropion may inhibit CYP2D6, a minor metabolic pathway for zolpidem. Monitor for increased zolpidem CNS effects.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Bupropion lowers the seizure threshold; benzodiazepines are anticonvulsants that may partially mitigate this risk. Monitor for CNS effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Bupropion lowers the seizure threshold; benzodiazepines have anticonvulsant properties that may partially offset this. Monitor for CNS effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -657,6 +697,11 @@
         {
           "drug": "Cimetidine",
           "interaction": "Colestipol may bind cimetidine in the GI tract, reducing its absorption. Separate dosing by at least 1-2 hours.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Colestipol (bile acid sequestrant) may bind pantoprazole in the GI tract and reduce its absorption. Separate doses by at least 1-2 hours.",
           "severity": "mild"
         }
       ],
@@ -854,6 +899,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression at higher doses. Generally minimal interaction at standard doses.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -999,6 +1054,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Sertraline increases exposure to zolpidem (pharmacokinetic interaction). Consider using a lower zolpidem dose (5 mg IR) when co-administering.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression possible. Extremely rare serotonin syndrome risk (lorazepam is not serotonergic). Monitor for increased sedation when combined.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression possible. Monitor for increased sedation when combined.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1129,6 +1194,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression and sedation. Both are CNS depressants used for sleep; concurrent use increases risk of excessive sedation and next-day impairment.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1200,6 +1275,11 @@
           "drug": "Cimetidine",
           "interaction": "Dual acid suppression is generally redundant. If both used, the H2 blocker at bedtime may help with nocturnal acid breakthrough.",
           "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Dual PPI therapy \u2014 redundant and not recommended. Both drugs irreversibly inhibit the gastric proton pump; concurrent use provides no additional benefit and increases adverse effect risk.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1384,6 +1464,11 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Celecoxib is a CYP2D6 inhibitor; chlorpheniramine is a CYP2D6 substrate. Concurrent use may increase chlorpheniramine plasma concentrations and risk of toxicity. A dosage adjustment may be warranted.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs such as celecoxib to reduce risk of NSAID-induced gastropathy and peptic ulcers. Beneficial combination for GI protection.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -1610,6 +1695,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression and sedation. Concurrent use increases risk of excessive sedation and next-day impairment.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression and sedation. Hydroxyzine's antihistaminergic and anxiolytic properties compound the CNS depressant effect of lorazepam.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Hydroxyzine's antihistaminergic/sedative properties compound the CNS depressant effects of temazepam.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1787,6 +1882,11 @@
           "drug": "Colestipol 1g",
           "interaction": "May reduce absorption. Separate dosing.",
           "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -1968,6 +2068,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive sedation. Combining two sleep aids is generally redundant and may cause excessive sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive sedation. Both are used for sleep; combining may increase risk of excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive sedation. Combining a melatonin receptor agonist with a benzodiazepine for sleep is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2072,6 +2182,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Both are non-benzodiazepine Z-drugs. Concurrent use of two sedative-hypnotics at bedtime is not recommended; additive CNS depression.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) is not recommended; significantly increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) is not recommended; increases risk of excessive sedation.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2144,6 +2264,11 @@
         {
           "drug": "Cimetidine",
           "interaction": "Both are H2-receptor antagonists; concurrent use is redundant and provides no additional benefit.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Dual acid suppression \u2014 generally redundant. PPIs are superior to H2 blockers for sustained acid suppression. H2 blocker at bedtime may help with nocturnal acid breakthrough if used separately.",
           "severity": "mild"
         }
       ],
@@ -2368,6 +2493,11 @@
           "drug": "Acetaminophen 500mg",
           "interaction": "Can be used together alternately for additive analgesia. Different mechanisms of action. Generally safe combination.",
           "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -2516,6 +2646,11 @@
           "drug": "Colestipol 1g",
           "interaction": "May reduce absorption. Separate dosing.",
           "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
         }
       ],
       "citations": [
@@ -2740,6 +2875,16 @@
         {
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression. Combined use increases sedation and risk of next-day impairment.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation.",
           "severity": "moderate"
         }
       ],
@@ -3093,6 +3238,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depressant effects possible.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression possible. Lorazepam is not a serotonergic agent; CNS depression is the primary concern.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression possible.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3208,6 +3363,16 @@
         {
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression and sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
           "severity": "moderate"
         }
       ],
@@ -3404,6 +3569,16 @@
           "drug": "Propranolol",
           "interaction": "Caffeine may attenuate the antihypertensive and heart-rate lowering effects of propranolol through opposing cardiovascular mechanisms.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the sedative and anxiolytic effects of lorazepam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the hypnotic effects of temazepam.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3515,6 +3690,21 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Cimetidine inhibits CYP3A4 and CYP1A2 (key metabolic pathways for zolpidem), potentially increasing zolpidem exposure. Consider using a lower zolpidem dose.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Minimal pharmacokinetic interaction. Lorazepam undergoes direct glucuronidation and is not significantly metabolized by CYP450 enzymes, so cimetidine's CYP inhibition has little clinical impact.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Minimal pharmacokinetic interaction. Temazepam is primarily metabolized via glucuronide conjugation with minimal CYP450 involvement, so cimetidine's CYP inhibition has limited clinical impact.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Pantoprazole Sodium",
+          "interaction": "Dual acid suppression is redundant. Cimetidine also inhibits CYP2C19 and CYP3A4, which metabolize pantoprazole, potentially increasing pantoprazole exposure.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3592,6 +3782,16 @@
         {
           "drug": "Guaifenesin",
           "interaction": "Available as a fixed-dose combination product (ephedrine HCl 12.5 mg / guaifenesin 200 mg) for temporary relief of mild asthma symptoms with expectoration.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of lorazepam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of temazepam.",
           "severity": "mild"
         }
       ],
@@ -3725,6 +3925,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3853,6 +4063,16 @@
         },
         {
           "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Temazepam",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
         }
@@ -4003,6 +4223,16 @@
           "drug": "Zolpidem Tartrate",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression and sedation. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression and sedation. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -4146,6 +4376,16 @@
           "drug": "Chlorpheniramine Maleate",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Lorazepam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) significantly increases risk of excessive sedation, respiratory depression, and next-day impairment. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) significantly increases risk of excessive sedation and respiratory depression. Not recommended.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -4163,6 +4403,398 @@
         }
       ],
       "administration": "Take immediately before bedtime with at least 7 to 8 hours remaining before the planned time of awakening. Do not take with or immediately after a high-fat meal as food delays absorption. Take as a single dose; do not re-administer during the same night. Women should use 5 mg (IR) or 6.25 mg (ER) as the initial dose. Swallow extended-release tablets whole; do not crush, break, or chew."
+    },
+    {
+      "generic_name": "Lorazepam",
+      "brand_names": [
+        "Ativan",
+        "Loreev XR"
+      ],
+      "indication": {
+        "on_label": [
+          "Short-term (up to 4 months) relief of anxiety symptoms associated with anxiety disorders",
+          "Anxiety-related insomnia",
+          "Anesthesia premedication (to relieve anxiety or induce sedation/amnesia) in adults",
+          "Status epilepticus (IV/IM)"
+        ],
+        "off_label": [
+          "Rapid tranquilization of agitated patients",
+          "Alcohol withdrawal delirium and syndrome",
+          "Insomnia",
+          "Panic disorder",
+          "Delirium",
+          "Chemotherapy-associated anticipatory nausea and vomiting (adjunct or breakthrough)",
+          "Psychogenic catatonia",
+          "Vertigo"
+        ]
+      },
+      "doses": [
+        0.5,
+        1,
+        2
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "10 mg/day (anxiety); 2-4 mg at bedtime (insomnia); individualized dosing for other indications",
+      "time_required_between_doses": "Anxiety: every 8-12 hours (2-3 divided doses/day); Insomnia: once nightly at bedtime",
+      "mechanism_of_action": "Benzodiazepine. Binds to benzodiazepine receptors on postsynaptic GABA-A ligand-gated chloride channel neurons at multiple CNS sites, enhancing the inhibitory effects of GABA. Increases chloride ion conductance, leading to neuronal hyperpolarization and CNS depression. Undergoes direct glucuronidation in the liver without significant CYP450 metabolism, making it safer in hepatic dysfunction.",
+      "time_to_max_concentration": "2 hours (oral); 1-3 minutes (IV); 15-30 minutes (IM)",
+      "half_life": "14 \u00b1 5 hours (range 10-20 hours)",
+      "active_metabolites": "None \u2014 lorazepam glucuronide is the primary metabolite and is pharmacologically inactive",
+      "half_life_of_active_metabolites": "Not applicable (inactive metabolite)",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Temazepam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases the risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) increases risk of excessive sedation, respiratory depression, and next-day impairment. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zaleplon",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) increases risk of excessive sedation and respiratory depression. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Trazodone HCl",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Hydroxyzine HCl",
+          "interaction": "Additive CNS depression and sedation. Hydroxyzine's antihistaminergic and anxiolytic properties compound the CNS depressant effect of lorazepam.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Diphenhydramine HCl",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Doxylamine Succinate",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression and sedation. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Sertraline HCl",
+          "interaction": "Additive CNS depression possible. Extremely rare risk of serotonin syndrome. Monitor for increased sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Bupropion HCl (Extended-Release)",
+          "interaction": "Bupropion lowers the seizure threshold; benzodiazepines are anticonvulsants that may partially mitigate this risk. Monitor for CNS effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Buspirone HCl",
+          "interaction": "Additive CNS depression possible. Buspirone does not enhance benzodiazepine activity at GABA-A receptors, but additive anxiolytic/sedative effects may occur.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Propranolol HCl",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ramelteon",
+          "interaction": "Additive sedation. Both are used for sleep; combining may increase risk of excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Meclizine HCl",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dimenhydrinate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dextromethorphan HBr",
+          "interaction": "Additive CNS depression possible. Lorazepam is not a serotonergic agent, so serotonin syndrome risk is not a concern; CNS depression is the primary risk.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Minimal pharmacokinetic interaction. Lorazepam undergoes direct glucuronidation (Phase II) and is not significantly metabolized by CYP450 enzymes, so cimetidine's CYP inhibition has little clinical impact.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the sedative and anxiolytic effects of lorazepam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of lorazepam.",
+          "severity": "mild"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Lorazepam Tablets, USP (Leading Pharma)"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Lorazepam \u2014 Drug Information, Merck Manual Professional Edition"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Lorazepam \u2014 StatPearls, NCBI Bookshelf"
+        }
+      ],
+      "administration": "May be taken with or without food. For anxiety: take in 2-3 divided doses, with the larger dose at bedtime. For insomnia: take 2-4 mg at bedtime. Do not abruptly discontinue; taper dose gradually to avoid withdrawal. Extended-release capsules (Loreev XR) should be taken once daily in the morning; swallow whole, do not crush or chew. Schedule IV controlled substance."
+    },
+    {
+      "generic_name": "Pantoprazole Sodium",
+      "brand_names": [
+        "Protonix",
+        "First-Pantoprazole"
+      ],
+      "indication": {
+        "on_label": [
+          "Erosive esophagitis associated with gastroesophageal reflux disease (GERD)",
+          "Maintenance of healing of erosive esophagitis",
+          "Pathological hypersecretory conditions (e.g., Zollinger-Ellison syndrome)"
+        ],
+        "off_label": [
+          "Helicobacter pylori eradication (as part of triple/quadruple therapy with antibiotics)",
+          "Prevention of NSAID-induced ulcers",
+          "Stress ulcer prophylaxis in critically ill patients",
+          "Prevention of peptic ulcer rebleeding"
+        ]
+      },
+      "doses": [
+        20,
+        40
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "40 mg/day (standard GERD); up to 240 mg/day for Zollinger-Ellison syndrome",
+      "time_required_between_doses": "24 hours (once daily, taken 30-60 minutes before a meal); 12 hours if twice-daily dosing needed for hypersecretory conditions",
+      "mechanism_of_action": "Proton pump inhibitor (PPI) of the benzimidazole class. Irreversibly inhibits the H+/K+ ATPase enzyme system (gastric proton pump) at the secretory surface of the gastric parietal cell, blocking the final step of acid production for up to 24 hours. Metabolized primarily by CYP2C19 demethylation and sulfation, with secondary oxidation by CYP3A4. Metabolites are pharmacologically inactive.",
+      "time_to_max_concentration": "2-2.5 hours (delayed-release tablets); maximal acid suppression effect at 2-6 hours",
+      "half_life": "~1 hour (but duration of acid suppression lasts up to 24 hours due to irreversible binding to the proton pump)",
+      "active_metabolites": "None \u2014 metabolites (desmethylpantoprazole sulfate and others) have no significant antisecretory activity",
+      "half_life_of_active_metabolites": "Not clinically relevant",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Esomeprazole Magnesium",
+          "interaction": "Dual PPI therapy \u2014 generally redundant and not recommended. Both drugs irreversibly inhibit the gastric proton pump; concurrent use provides no additional benefit and increases risk of adverse effects (hypomagnesemia, vitamin B12 deficiency, C. difficile).",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Famotidine",
+          "interaction": "Dual acid suppression \u2014 generally redundant. PPIs are superior to H2 blockers for sustained acid suppression. H2 blocker at bedtime may help with nocturnal acid breakthrough if used separately.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Dual acid suppression is redundant. Cimetidine also inhibits CYP2C19 and CYP3A4, which are metabolic pathways for pantoprazole, potentially increasing pantoprazole exposure.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Colestipol HCl",
+          "interaction": "Colestipol (bile acid sequestrant) may bind pantoprazole in the GI tract and reduce its absorption. Separate doses by at least 1-2 hours.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Methylphenidate HCl (Extended-Release)",
+          "interaction": "PPIs raise gastric pH, which may alter the absorption characteristics of some extended-release methylphenidate formulations (e.g., OROS-type). Clinical significance is generally low for most ER formulations.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Amphetamine Mixed Salts (Extended-Release)",
+          "interaction": "PPIs reduce gastric acidity, which may shorten the Tmax of extended-release amphetamine formulations (median Tmax may be shortened from ~5 hours to ~2.75 hours), leading to an earlier peak effect.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Celecoxib",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs such as celecoxib to reduce the risk of NSAID-induced gastropathy and peptic ulcers. This is a pharmacologically beneficial combination. No adverse pharmacokinetic interaction.",
+          "severity": "info"
+        },
+        {
+          "drug": "Ibuprofen",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
+        },
+        {
+          "drug": "Naproxen Sodium",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
+        },
+        {
+          "drug": "Meloxicam",
+          "interaction": "Pantoprazole is often co-prescribed with NSAIDs to reduce risk of NSAID-induced gastrointestinal injury. Beneficial combination for GI protection.",
+          "severity": "info"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Pantoprazole Sodium Delayed-Release Tablets (Mylan Pharmaceuticals)"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Pantoprazole \u2014 Drug Information, Merck Manual Professional Edition"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Pantoprazole \u2014 StatPearls, NCBI Bookshelf"
+        }
+      ],
+      "administration": "Take 30-60 minutes before a meal, preferably before breakfast, for optimal efficacy. Swallow tablets whole; do not crush, split, or chew. Delayed-release granules for oral suspension may be mixed with apple juice or applesauce. May be taken with or without food, but pre-meal dosing is preferred for maximum efficacy."
+    },
+    {
+      "generic_name": "Temazepam",
+      "brand_names": [
+        "Restoril"
+      ],
+      "indication": {
+        "on_label": [
+          "Short-term (7-10 days) treatment of insomnia characterized by difficulty falling asleep, frequent nocturnal awakenings, and/or early morning awakenings"
+        ],
+        "off_label": [
+          "Insomnia related to jet lag or shift work",
+          "Acute anxiety or panic disorder (interim, short-term use)",
+          "Insomnia related to acute mountain sickness",
+          "Nocturnal myoclonus"
+        ]
+      },
+      "doses": [
+        7.5,
+        15,
+        22.5,
+        30
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "30 mg/night; 7.5-15 mg recommended for elderly or debilitated patients",
+      "time_required_between_doses": "Once nightly at bedtime; do not redose during the same night",
+      "mechanism_of_action": "Benzodiazepine hypnotic. Classified as a positive allosteric modulator of GABA-A receptors (GABA-PAM), with particular affinity for \u03b11 subunits. Binds to benzodiazepine receptors on GABA-A chloride channel complexes in the CNS (limbic, thalamic, and hypothalamic regions), enhancing GABAergic inhibition by increasing chloride ion influx frequency. This leads to CNS depression, producing sedation, anxiolysis, skeletal muscle relaxation, and anticonvulsant effects. Metabolized primarily via direct glucuronide conjugation (Phase II); undergoes minimal CYP450 metabolism.",
+      "time_to_max_concentration": "1.2-1.6 hours (average ~1.5 hours)",
+      "half_life": "3.5-18.4 hours (terminal half-life, average ~8.8 hours); may be prolonged in elderly patients",
+      "active_metabolites": "Oxazepam (minor metabolite via parallel oxidation pathway) \u2014 pharmacologically active but present in small amounts. Temazepam glucuronide is the primary (inactive) metabolite.",
+      "half_life_of_active_metabolites": "Oxazepam: 5-15 hours (minor contribution to overall effect)",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Lorazepam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) significantly increases risk of excessive sedation, respiratory depression, and next-day impairment. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zaleplon",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) increases risk of excessive sedation and respiratory depression. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Trazodone HCl",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Hydroxyzine HCl",
+          "interaction": "Additive CNS depression. Hydroxyzine's antihistaminergic/sedative properties compound the CNS depressant effects of temazepam.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Diphenhydramine HCl",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Doxylamine Succinate",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Sertraline HCl",
+          "interaction": "Additive CNS depression possible. Monitor for increased sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Bupropion HCl (Extended-Release)",
+          "interaction": "Bupropion lowers the seizure threshold; benzodiazepines have anticonvulsant properties that may partially offset this. Monitor for CNS effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Buspirone HCl",
+          "interaction": "Additive CNS depression possible. Buspirone does not enhance benzodiazepine effects at GABA-A receptors, but additive sedative effects may occur.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Propranolol HCl",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ramelteon",
+          "interaction": "Additive sedation. Combining a benzodiazepine with a melatonin receptor agonist for sleep is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Meclizine HCl",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dimenhydrinate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dextromethorphan HBr",
+          "interaction": "Additive CNS depression possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Minimal pharmacokinetic interaction. Temazepam undergoes primarily glucuronide conjugation (Phase II) with minimal CYP450 metabolism, so cimetidine's CYP inhibition has limited clinical impact.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the sedative and hypnotic effects of temazepam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of temazepam.",
+          "severity": "mild"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Temazepam Capsules (Ascend Laboratories)"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Temazepam \u2014 Drug Information, Merck Manual Professional Edition"
+        },
+        {
+          "type": "StatPearls",
+          "title": "Temazepam \u2014 StatPearls, NCBI Bookshelf"
+        }
+      ],
+      "administration": "Take 15-30 minutes before bedtime. May be taken with or without food. Use the lowest effective dose. Do not use for more than 7-10 days without reassessment. Do not abruptly discontinue; taper dose gradually to avoid withdrawal. Schedule IV controlled substance."
     }
   ]
 }
