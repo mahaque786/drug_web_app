@@ -270,7 +270,9 @@
       return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
     }
 
-        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwNeAFxg6IpfzQf9iDxAx3spavPA0cwNvwvAEFKdBEgt4OmndJREHGT10TOVUVFt4Nsbg/exec';
+        const SUPABASE_URL = 'https://nbfowxkikrrlaxkeomcn.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5iZm93eGtpa3JybGF4a2VvbWNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MTgxNjQsImV4cCI6MjA5MDI5NDE2NH0.BEmCznniskPWUCcXpJLY4yGsnwD7Y9hmhP82ZOggKo8';
+
 
     function getAppsScriptUrl() {
       return APPS_SCRIPT_URL;
@@ -440,30 +442,27 @@
     }
 
     async function fetchLogs() {
-      const url = getAppsScriptUrl();
-      if (!url) {
-        logs = [];
-        renderLogsTable();
-        return;
-      }
-      try {
-        const response = await fetch(url + '?action=logs', { method: 'GET' });
-        const data = await response.json();
-        if (!data.success) throw new Error(data.error || 'Could not load logs');
-        logs = (data.logs || []).map(function(row) {
-          return {
-            timestamp: row.timestamp,
-            medicationName: row.medicationName,
-            dose: row.dose,
-            reason: row.reason
-          };
-        });
-        renderLogsTable();
-        setStatus('Connected. Loaded ' + logs.length + ' log entries.', true);
-      } catch (err) {
-        setStatus('Could not load logs from Apps Script URL. Check deployment access and URL.');
-      }
-    }
+  try {
+    const response = await fetch(
+      SUPABASE_URL + '/rest/v1/medication_logs?select=*&order=timestamp.desc',
+      { headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY } }
+    );
+    const rows = await response.json();
+    logs = rows.map(function(row) {
+      return {
+        timestamp: row.timestamp,
+        medicationName: row.medication_name,
+        dose: row.dose,
+        reason: row.reason
+      };
+    });
+    renderLogsTable();
+    setStatus('Connected. Loaded ' + logs.length + ' log entries.', true);
+  } catch (err) {
+    setStatus('Could not load logs from Supabase.');
+  }
+}
+
 
     async function submitLog(bypassWarnings = false) {
       const med = getSelectedMedication();
@@ -507,13 +506,30 @@
       };
 
       try {
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: JSON.stringify(payload)
-        });
-        const data = await response.json();
-        if (!data.success) throw new Error(data.error || 'Failed to log dose');
+        const response = await fetch(
+  SUPABASE_URL + '/rest/v1/medication_logs',
+  {
+    method: 'POST',
+    headers: {
+      'apikey': SUPABASE_ANON_KEY,
+      'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+      'Content-Type': 'application/json',
+      'Prefer': 'return=representation'
+    },
+    body: JSON.stringify({
+      medication_name: med.generic_name,
+      dose: dose,
+      reason: reason
+    })
+  }
+);
+const data = await response.json();
+const logged = {
+  timestamp: data[0].timestamp,
+  medicationName: data[0].medication_name,
+  dose: data[0].dose,
+  reason: data[0].reason
+};
 
         const logged = data.logged || {
           timestamp: new Date().toISOString(),
