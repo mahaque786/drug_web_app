@@ -506,18 +506,14 @@
             })
           }
         );
-        if (!response.ok) throw new Error('Supabase returned status ' + response.status);
+        if (!response.ok) throw new Error('Supabase returned status ' + response.status + ': ' + response.statusText);
         const data = await response.json();
-        const logged = data.length > 0 ? {
+        if (!Array.isArray(data) || data.length === 0) throw new Error('Supabase returned no data for the inserted row.');
+        const logged = {
           timestamp: data[0].timestamp,
           medicationName: data[0].medication_name,
           dose: data[0].dose,
           reason: data[0].reason
-        } : {
-          timestamp: new Date().toISOString(),
-          medicationName: med.generic_name,
-          dose: dose,
-          reason: reason
         };
         logs.push(logged);
         renderLogsTable();
