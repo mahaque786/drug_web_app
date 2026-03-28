@@ -297,6 +297,15 @@
       return Number.isNaN(date.getTime()) ? null : date;
     }
 
+    function formatTimestamp(value) {
+      const date = parseTimestamp(value);
+      if (!date) return value || '';
+      return date.toLocaleString(undefined, {
+        month: 'short', day: 'numeric', year: 'numeric',
+        hour: 'numeric', minute: '2-digit'
+      });
+    }
+
     function getSelectedMedication() {
       const medName = document.getElementById('log-medication').value;
       return medications.find(function(med) {
@@ -359,7 +368,7 @@
       });
       body.innerHTML = sorted.slice(0, 20).map(function(row) {
         return '<tr>' +
-          '<td>' + escapeHtml(row.timestamp) + '</td>' +
+          '<td>' + escapeHtml(formatTimestamp(row.timestamp)) + '</td>' +
           '<td>' + escapeHtml(row.medicationName) + '</td>' +
           '<td>' + escapeHtml(row.dose) + '</td>' +
           '<td>' + escapeHtml(row.reason) + '</td>' +
