@@ -274,10 +274,6 @@
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5iZm93eGtpa3JybGF4a2VvbWNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MTgxNjQsImV4cCI6MjA5MDI5NDE2NH0.BEmCznniskPWUCcXpJLY4yGsnwD7Y9hmhP82ZOggKo8';
 
 
-    function getAppsScriptUrl() {
-      return APPS_SCRIPT_URL;
-    }
-
     function setStatus(message, isSuccess) {
       const el = document.getElementById('log-status');
       el.textContent = message;
@@ -492,46 +488,32 @@
         }
       }
 
-      const url = getAppsScriptUrl();
-      if (!url) {
-        setStatus('Please set your Apps Script Web App URL first.');
-        return;
-      }
-
-      const payload = {
-        action: 'log',
-        medicationName: med.generic_name,
-        dose: dose,
-        reason: reason
-      };
-
       try {
         const response = await fetch(
-  SUPABASE_URL + '/rest/v1/medication_logs',
-  {
-    method: 'POST',
-    headers: {
-      'apikey': SUPABASE_ANON_KEY,
-      'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-      'Content-Type': 'application/json',
-      'Prefer': 'return=representation'
-    },
-    body: JSON.stringify({
-      medication_name: med.generic_name,
-      dose: dose,
-      reason: reason
-    })
-  }
-);
-const data = await response.json();
-const logged = {
-  timestamp: data[0].timestamp,
-  medicationName: data[0].medication_name,
-  dose: data[0].dose,
-  reason: data[0].reason
-};
-
-        const logged = data.logged || {
+          SUPABASE_URL + '/rest/v1/medication_logs',
+          {
+            method: 'POST',
+            headers: {
+              'apikey': SUPABASE_ANON_KEY,
+              'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+              'Content-Type': 'application/json',
+              'Prefer': 'return=representation'
+            },
+            body: JSON.stringify({
+              medication_name: med.generic_name,
+              dose: dose,
+              reason: reason
+            })
+          }
+        );
+        if (!response.ok) throw new Error('Supabase returned status ' + response.status);
+        const data = await response.json();
+        const logged = data.length > 0 ? {
+          timestamp: data[0].timestamp,
+          medicationName: data[0].medication_name,
+          dose: data[0].dose,
+          reason: data[0].reason
+        } : {
           timestamp: new Date().toISOString(),
           medicationName: med.generic_name,
           dose: dose,
@@ -542,9 +524,9 @@ const logged = {
 
         successBox.textContent = 'Dose logged successfully.';
         successBox.style.display = 'block';
-        setStatus('Dose logged to Google Sheet.', true);
+        setStatus('Dose logged successfully.', true);
       } catch (err) {
-        setStatus('Failed to send log to Apps Script. Verify deployment permissions and CORS setup.');
+        setStatus('Failed to log dose. Check your connection and try again.');
       }
     }
 
