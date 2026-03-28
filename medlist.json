@@ -39,6 +39,7 @@
       "mechanism_of_action": "Blocks the reuptake of norepinephrine and dopamine into the presynaptic neuron and increases the release of these monoamines into the extraneuronal space. The d-threo enantiomer is the more pharmacologically active isomer.",
       "time_to_max_concentration": "6-10 hours (Concerta/OROS); 1-2 hours initial peak then 4-7 hours second peak (Ritalin LA/Metadate CD)",
       "half_life": "3.5 hours (Concerta); 6.8 hours (apparent, extended-release capsule formulations due to absorption-rate-limited elimination)",
+      "duration_of_action": "8-12 hours (Concerta/OROS: ~12 hours; Ritalin LA/Metadate CD: ~8 hours)",
       "active_metabolites": "None clinically significant. Ritalinic acid (alpha-phenyl-piperidine acetic acid/PPA) is the primary metabolite but has little or no pharmacologic activity.",
       "half_life_of_active_metabolites": "3-4 hours (ritalinic acid, but not pharmacologically active)",
       "interactions_with_other_drugs_on_this_list": [
@@ -127,6 +128,7 @@
       "mechanism_of_action": "Blocks the reuptake of norepinephrine and dopamine into the presynaptic neuron and increases the release of these monoamines into the extraneuronal space.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "2-3 hours (mean approximately 2.9 hours in adults)",
+      "duration_of_action": "3-4 hours per dose",
       "active_metabolites": "None clinically significant. Ritalinic acid is the primary metabolite but has little or no pharmacologic activity.",
       "half_life_of_active_metabolites": "3-4 hours (ritalinic acid, not pharmacologically active)",
       "interactions_with_other_drugs_on_this_list": [
@@ -213,6 +215,7 @@
       "mechanism_of_action": "Non-catecholamine sympathomimetic amine. Blocks reuptake of norepinephrine and dopamine into presynaptic neurons and increases release of these monoamines into the extraneuronal space. Also has minor effects on serotonin. Contains d-amphetamine and l-amphetamine salts in a 3:1 ratio.",
       "time_to_max_concentration": "7 hours (d-amphetamine); 7-8 hours (l-amphetamine) in fasted state",
       "half_life": "d-amphetamine: 10-11 hours; l-amphetamine: 10-13 hours (adults)",
+      "duration_of_action": "8-12 hours",
       "active_metabolites": "4-hydroxyamphetamine, alpha-hydroxyamphetamine, norephedrine. These metabolites have some pharmacologic activity but contribute minimally to overall clinical effect at therapeutic doses.",
       "half_life_of_active_metabolites": "Not well characterized independently; urinary elimination is pH-dependent",
       "interactions_with_other_drugs_on_this_list": [
@@ -323,6 +326,7 @@
       "mechanism_of_action": "Non-catecholamine sympathomimetic amine. Blocks reuptake of norepinephrine and dopamine and increases release of monoamines. Contains d-amphetamine and l-amphetamine salts in a 3:1 ratio.",
       "time_to_max_concentration": "3 hours (both d- and l-amphetamine)",
       "half_life": "d-amphetamine: 9.77-11 hours; l-amphetamine: 11.5-13.8 hours",
+      "duration_of_action": "4-6 hours per dose",
       "active_metabolites": "4-hydroxyamphetamine, alpha-hydroxyamphetamine, norephedrine",
       "half_life_of_active_metabolites": "Not well characterized independently; urinary elimination is pH-dependent",
       "interactions_with_other_drugs_on_this_list": [
@@ -425,6 +429,7 @@
       "mechanism_of_action": "Partial agonist at serotonin 5-HT1A receptors (both presynaptic autoreceptors and postsynaptic receptors). Moderate affinity for brain D2 dopamine receptors. Does not bind to benzodiazepine receptors or affect GABA binding. Metabolized by CYP3A4.",
       "time_to_max_concentration": "0.7-1.5 hours (40-90 minutes)",
       "half_life": "2-3 hours",
+      "duration_of_action": "2-3 hours per dose; full anxiolytic effect requires 2-4 weeks of continuous dosing",
       "active_metabolites": "1-pyrimidinylpiperazine (1-PP) — potent alpha-2 adrenergic antagonist which may contribute to pharmacological effects. 6-hydroxybuspirone is also an active metabolite (5-HT1A partial agonist) with plasma levels 40-fold higher than parent.",
       "half_life_of_active_metabolites": "1-PP: approximately 6 hours; 6-hydroxybuspirone: data limited but longer than parent compound",
       "interactions_with_other_drugs_on_this_list": [
@@ -523,6 +528,7 @@
       "mechanism_of_action": "Norepinephrine-dopamine reuptake inhibitor (NDRI). Weakly inhibits reuptake of norepinephrine and dopamine. Does not inhibit monoamine oxidase. Mechanism of antidepressant activity is not fully understood. Also a nicotinic acetylcholine receptor antagonist. Is a potent CYP2D6 inhibitor.",
       "time_to_max_concentration": "5 hours (XL formulation); 3 hours (SR formulation)",
       "half_life": "21 hours (mean; range 8-40 hours)",
+      "duration_of_action": "1-2 days (XL: 24 hours; SR: ~12 hours)",
       "active_metabolites": "Hydroxybupropion (primary, via CYP2B6), threohydrobupropion, erythrohydrobupropion. Hydroxybupropion has approximately half the potency of bupropion as an antidepressant.",
       "half_life_of_active_metabolites": "Hydroxybupropion: ~20 hours; Threohydrobupropion: ~37 hours; Erythrohydrobupropion: ~33 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -651,6 +657,7 @@
       "mechanism_of_action": "Bile acid sequestrant. Binds bile acids in the intestine to form an insoluble complex that is excreted in feces. This removes bile acids from the enterohepatic circulation, promoting hepatic conversion of cholesterol to bile acids, ultimately lowering LDL cholesterol levels. Not absorbed systemically.",
       "time_to_max_concentration": "Not applicable — colestipol is not absorbed systemically",
       "half_life": "Not applicable — not absorbed systemically",
+      "duration_of_action": "12-24 hours (not absorbed systemically; acts locally in the GI tract by binding bile acids)",
       "active_metabolites": "None — not absorbed or metabolized systemically",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -747,6 +754,7 @@
       "mechanism_of_action": "Competitive and specific inhibitor of Type II 5-alpha reductase, an intracellular enzyme that converts testosterone to dihydrotestosterone (DHT). Reduces serum and tissue DHT concentrations.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "6 hours (range 3-16 hours); in elderly (>70 years): approximately 8 hours",
+      "duration_of_action": "At least 24 hours (5-alpha reductase inhibition persists due to irreversible enzyme binding; DHT levels return to baseline within approximately 14 days of discontinuation)",
       "active_metabolites": "Two metabolites have been identified (monohydroxylated and omega-carboxylic acid metabolites) with approximately 20% of finasteride's activity for 5-alpha reductase inhibition.",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
@@ -817,6 +825,7 @@
       "mechanism_of_action": "Non-selective beta-adrenergic receptor blocker (blocks both beta-1 and beta-2 receptors). Reduces heart rate, myocardial contractility, blood pressure, and myocardial oxygen demand. Also has membrane-stabilizing activity. Metabolized primarily by CYP2D6 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (IR); 6 hours (LA formulation)",
       "half_life": "3-6 hours (IR formulation); 8-11 hours (LA formulation)",
+      "duration_of_action": "IR: 6-12 hours; LA/ER: up to 24 hours",
       "active_metabolites": "4-hydroxypropranolol — has beta-blocking activity comparable to propranolol. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "4-hydroxypropranolol: approximately 5-6 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -962,6 +971,7 @@
       "mechanism_of_action": "Selective serotonin reuptake inhibitor (SSRI). Potently and selectively inhibits neuronal reuptake of serotonin (5-HT) with minimal effects on norepinephrine and dopamine reuptake. Also moderate inhibitor of CYP2D6.",
       "time_to_max_concentration": "4.5-8.4 hours",
       "half_life": "26 hours (approximately; range 22-36 hours)",
+      "duration_of_action": "24 hours (once-daily dosing at steady state); full antidepressant effect requires 4-6 weeks of continuous dosing",
       "active_metabolites": "N-desmethylsertraline — approximately 1/8 as potent as sertraline for serotonin reuptake inhibition.",
       "half_life_of_active_metabolites": "N-desmethylsertraline: 62-104 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -1112,6 +1122,7 @@
       "mechanism_of_action": "Serotonin antagonist and reuptake inhibitor (SARI). Inhibits serotonin reuptake and blocks 5-HT2A and 5-HT2C receptors. Also blocks alpha-1 adrenergic receptors (causes orthostatic hypotension) and H1 histamine receptors (causes sedation). Metabolized primarily by CYP3A4.",
       "time_to_max_concentration": "1-2 hours (IR, fasting); delayed with food",
       "half_life": "5-9 hours (biphasic elimination: initial phase 3-6 hours, terminal phase 5-9 hours)",
+      "duration_of_action": "Sedative/hypnotic effect: 6-8 hours; full antidepressant effect requires 2-4 weeks of continuous dosing",
       "active_metabolites": "m-chlorophenylpiperazine (mCPP) — a serotonin agonist with anxiogenic and some serotonergic properties.",
       "half_life_of_active_metabolites": "mCPP: 4-14 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -1258,6 +1269,7 @@
       "mechanism_of_action": "Proton pump inhibitor (PPI). Suppresses gastric acid secretion by specific inhibition of the H+/K+ ATPase enzyme system (proton pump) at the secretory surface of the gastric parietal cell. Esomeprazole is the S-isomer of omeprazole. Blocks the final step of acid production. Metabolized by CYP2C19 and CYP3A4.",
       "time_to_max_concentration": "1-2 hours (delayed-release capsule); 1.5 hours",
       "half_life": "1-1.5 hours (but duration of antisecretory effect lasts up to 24 hours due to irreversible binding to proton pump)",
+      "duration_of_action": "Up to 24 hours (antisecretory effect persists due to irreversible binding to the proton pump, despite a short plasma half-life)",
       "active_metabolites": "None — metabolites (hydroxy and desmethyl metabolites) have no significant antisecretory activity",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
@@ -1339,6 +1351,7 @@
       "mechanism_of_action": "Quaternary ammonium anticholinergic (muscarinic receptor antagonist). Blocks the action of acetylcholine at parasympathetic sites in smooth muscle, secretory glands, and the CNS (though poor CNS penetration due to quaternary structure). Reduces gastrointestinal motility, gastric acid secretion, salivation, and other secretions. Does not cross the blood-brain barrier.",
       "time_to_max_concentration": "3 hours (oral solution in fasted state)",
       "half_life": "Approximately 3 hours (oral); 0.6-1.2 hours (IV)",
+      "duration_of_action": "Oral: approximately 6-8 hours; anticholinergic effects last up to 7 hours",
       "active_metabolites": "None significant — >80% excreted as unchanged drug in urine",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -1437,6 +1450,7 @@
       "mechanism_of_action": "Selective cyclooxygenase-2 (COX-2) inhibitor. Inhibits prostaglandin synthesis primarily by inhibiting COX-2. Has minimal COX-1 inhibition at therapeutic doses, which theoretically reduces GI toxicity compared to non-selective NSAIDs. Metabolized primarily by CYP2C9.",
       "time_to_max_concentration": "3 hours",
       "half_life": "11 hours (range 8-12 hours)",
+      "duration_of_action": "12-24 hours (depending on dose and indication)",
       "active_metabolites": "None — metabolites (carboxylic acid, glucuronide conjugates) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -1531,6 +1545,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Active metabolite of loratadine. Has anti-inflammatory and antiallergic properties beyond histamine blockade. Non-sedating at recommended doses. Metabolized by CYP3A4 and CYP2D6 (though poorly metabolized — most is eliminated unchanged).",
       "time_to_max_concentration": "3 hours",
       "half_life": "27 hours",
+      "duration_of_action": "24 hours (antihistaminic activity may persist for as long as 24 hours)",
       "active_metabolites": "3-hydroxydesloratadine — has antihistaminic activity",
       "half_life_of_active_metabolites": "Not well characterized (formation-rate limited)",
       "interactions_with_other_drugs_on_this_list": [
@@ -1628,6 +1643,7 @@
       "mechanism_of_action": "First-generation antihistamine (H1 receptor antagonist) with anticholinergic, anxiolytic, and sedative properties. Also has 5-HT2A receptor antagonist activity. Active metabolite is cetirizine. Metabolized by hepatic oxidation.",
       "time_to_max_concentration": "2 hours",
       "half_life": "20 hours (adults); 7 hours (children); 29 hours (elderly)",
+      "duration_of_action": "4-6 hours (clinical sedative and anxiolytic effects)",
       "active_metabolites": "Cetirizine — a potent second-generation H1 antihistamine (the same drug sold as Zyrtec).",
       "half_life_of_active_metabolites": "Cetirizine: 8-9 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -1774,6 +1790,7 @@
       "mechanism_of_action": "Anticholinergic/antimuscarinic agent. The levo-isomer of atropine. Blocks the action of acetylcholine at parasympathetic (muscarinic) receptor sites including smooth muscle, secretory glands, and CNS. Reduces GI motility and secretions, relaxes smooth muscle spasm. Crosses the blood-brain barrier (unlike glycopyrrolate).",
       "time_to_max_concentration": "Sublingual: 5-20 minutes (faster than oral tablets)",
       "half_life": "2-3.5 hours",
+      "duration_of_action": "Approximately 4 hours (sublingual onset within 5-20 minutes)",
       "active_metabolites": "Tropic acid and tropine (minor, via hydrolysis) — minimal pharmacologic significance",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
@@ -1870,6 +1887,7 @@
       "mechanism_of_action": "Preferential COX-2 inhibitor (non-selective NSAID at higher doses). Inhibits prostaglandin synthesis by inhibiting cyclooxygenase-1 and -2, with some preferential COX-2 selectivity. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP3A4.",
       "time_to_max_concentration": "4-5 hours (oral suspension); 5-6 hours (capsules)",
       "half_life": "15-20 hours (mean approximately 20 hours)",
+      "duration_of_action": "24 hours (once-daily dosing supported by the long elimination half-life of 15-20 hours)",
       "active_metabolites": "None — metabolites are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -1957,6 +1975,7 @@
       "mechanism_of_action": "Selective 5-HT3 (serotonin type 3) receptor antagonist. Blocks serotonin at 5-HT3 receptors both peripherally (on vagal nerve terminals) and centrally (in the chemoreceptor trigger zone). Metabolized by CYP3A4, CYP1A2, and CYP2D6.",
       "time_to_max_concentration": "2 hours (oral); 15-30 minutes (ODT, though similar to oral)",
       "half_life": "3-6 hours (adults); may be prolonged in hepatic impairment",
+      "duration_of_action": "4-8 hours (antiemetic effect; varies by route and indication)",
       "active_metabolites": "None clinically significant",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2031,6 +2050,7 @@
       "mechanism_of_action": "Selective melatonin receptor agonist with high affinity for MT1 and MT2 receptors in the suprachiasmatic nucleus (SCN). Promotes sleep onset by mimicking melatonin's action on sleep-wake cycle regulation. No affinity for GABA receptors, opioid receptors, or other sedative targets. Not a controlled substance. Metabolized primarily by CYP1A2 and secondarily by CYP2C and CYP3A4.",
       "time_to_max_concentration": "0.75-1 hour (median 0.75 hours)",
       "half_life": "1-2.6 hours",
+      "duration_of_action": "1-2 hours (targets sleep onset; short duration due to rapid elimination)",
       "active_metabolites": "M-II metabolite — has approximately 1/10 to 1/5 the binding affinity of ramelteon for MT1/MT2 receptors and circulates at 20-100x higher levels than parent compound. May contribute to overall clinical effect.",
       "half_life_of_active_metabolites": "M-II: 2-5 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -2140,6 +2160,7 @@
       "mechanism_of_action": "Non-benzodiazepine hypnotic (pyrazolopyrimidine class). Selectively binds to the omega-1 (BZ1) subunit of the GABA-A receptor complex, enhancing GABAergic inhibition. More selective for sleep-inducing effects with minimal anxiolytic, muscle relaxant, or anticonvulsant properties. Primarily metabolized by aldehyde oxidase and CYP3A4.",
       "time_to_max_concentration": "1 hour (reduced to 2 hours with high-fat meal)",
       "half_life": "1 hour (approximately)",
+      "duration_of_action": "Approximately 4 hours",
       "active_metabolites": "None — primary metabolites (5-oxo-zaleplon and desethylzaleplon) are inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2263,6 +2284,7 @@
       "mechanism_of_action": "Competitive, reversible inhibitor of histamine H2 receptors on gastric parietal cells. Reduces basal and stimulated gastric acid secretion, including nocturnal acid secretion. Does not affect CYP450 enzymes significantly.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "2.5-3.5 hours; prolonged in renal impairment",
+      "duration_of_action": "10-12 hours (antisecretory effect)",
       "active_metabolites": "None — famotidine S-oxide is the primary metabolite and is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2340,6 +2362,7 @@
       "mechanism_of_action": "Synthetic opioid that acts on mu-opioid receptors in the intestinal wall. Slows intestinal motility, prolongs transit time, and reduces fecal volume. Increases anal sphincter tone. Does not significantly cross the blood-brain barrier at therapeutic doses (P-glycoprotein substrate), so no central opioid effects.",
       "time_to_max_concentration": "2.5 hours (capsule); 5 hours (liquid)",
       "half_life": "10.8 hours (range 9-14 hours)",
+      "duration_of_action": "Up to 24 hours (antidiarrheal effect persists well beyond the plasma half-life due to local action on intestinal opioid receptors)",
       "active_metabolites": "N-demethyl loperamide — minimal clinical significance at therapeutic doses",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
@@ -2424,6 +2447,7 @@
       "mechanism_of_action": "Antifoaming agent. Changes the surface tension of gas bubbles in the GI tract, causing them to coalesce into larger bubbles that can be more easily passed by belching or flatulence. Is chemically inert, not absorbed systemically, and has no pharmacological activity.",
       "time_to_max_concentration": "Not applicable — not absorbed systemically",
       "half_life": "Not applicable — not absorbed systemically. Passes through GI tract unchanged.",
+      "duration_of_action": "Not applicable — acts physically (not pharmacologically) by reducing surface tension of gas bubbles in the GI tract; not absorbed systemically",
       "active_metabolites": "None — not absorbed or metabolized",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2481,6 +2505,7 @@
       "mechanism_of_action": "Non-selective NSAID. Inhibits both cyclooxygenase-1 (COX-1) and cyclooxygenase-2 (COX-2), reducing prostaglandin synthesis. Provides anti-inflammatory, analgesic, and antipyretic effects. Metabolized by CYP2C9 and CYP2C8.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "2 hours (range 1.8-2.5 hours)",
+      "duration_of_action": "6-8 hours (analgesic and anti-inflammatory effect)",
       "active_metabolites": "None — metabolites are inactive hydroxylated and conjugated compounds",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2575,6 +2600,7 @@
       "mechanism_of_action": "Exact mechanism not fully understood. Thought to inhibit COX enzymes centrally (in the brain/spinal cord) rather than peripherally, reducing prostaglandin synthesis in the CNS. May also involve activation of descending serotonergic pathways and interaction with the endocannabinoid system via its metabolite AM404. Minimal anti-inflammatory activity. Metabolized primarily by hepatic glucuronidation and sulfation; minor pathway via CYP2E1 produces hepatotoxic metabolite NAPQI.",
       "time_to_max_concentration": "0.5-1 hour (IR tablets); 30-60 minutes (liquid gel)",
       "half_life": "2-3 hours",
+      "duration_of_action": "4-6 hours (analgesic and antipyretic effect)",
       "active_metabolites": "AM404 (formed in the CNS, interacts with endocannabinoid system — contributes to analgesic effect). NAPQI is a toxic reactive metabolite (not therapeutic) normally detoxified by glutathione.",
       "half_life_of_active_metabolites": "AM404: not well characterized systemically; NAPQI: rapidly conjugated with glutathione",
       "interactions_with_other_drugs_on_this_list": [
@@ -2654,6 +2680,7 @@
       "mechanism_of_action": "Non-selective NSAID. Inhibits COX-1 and COX-2, reducing prostaglandin synthesis. Anti-inflammatory, analgesic, and antipyretic. Metabolized by CYP2C9 and CYP1A2.",
       "time_to_max_concentration": "1-4 hours (naproxen sodium); 2-4 hours (naproxen base)",
       "half_life": "12-17 hours",
+      "duration_of_action": "8-12 hours (analgesic and anti-inflammatory effect; longer duration than ibuprofen due to longer half-life)",
       "active_metabolites": "None — 6-O-desmethyl naproxen is inactive",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -2734,6 +2761,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Long-acting selective peripheral H1 receptor antagonist. Metabolized by CYP3A4 and CYP2D6 to its active metabolite desloratadine. Non-sedating at recommended doses.",
       "time_to_max_concentration": "1-2 hours (loratadine); 3-4 hours (desloratadine metabolite)",
       "half_life": "8 hours (loratadine); 27 hours (desloratadine, active metabolite)",
+      "duration_of_action": "Greater than 24 hours",
       "active_metabolites": "Desloratadine — the same active ingredient as Clarinex. Equipotent antihistamine.",
       "half_life_of_active_metabolites": "Desloratadine: 27 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -2829,6 +2857,7 @@
       "mechanism_of_action": "First-generation antihistamine (ethylamine class). Competitive H1 receptor antagonist with significant anticholinergic, sedative, and anti-emetic properties. Inhibits CYP2D6. Crosses the blood-brain barrier readily, causing CNS depression/sedation.",
       "time_to_max_concentration": "1-4 hours (typically 2 hours)",
       "half_life": "4-8 hours (adults); may be prolonged in elderly",
+      "duration_of_action": "4-6 hours",
       "active_metabolites": "N-desmethyldiphenhydramine and others — minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
@@ -2971,6 +3000,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of hydroxyzine. Minimal anticholinergic activity. Low CNS penetration but can cause mild sedation in some patients. Primarily renally eliminated (minimal hepatic metabolism).",
       "time_to_max_concentration": "1 hour",
       "half_life": "8-9 hours (adults); prolonged in renal impairment",
+      "duration_of_action": "24 hours (rapid onset with a long duration of action)",
       "active_metabolites": "None significant — cetirizine itself is the active metabolite of hydroxyzine. Minimal further metabolism.",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3061,6 +3091,7 @@
       "mechanism_of_action": "Second-generation antihistamine. Selective peripheral H1 receptor antagonist. Active metabolite of terfenadine. Non-sedating — does not cross the blood-brain barrier significantly. Not significantly metabolized hepatically. Primarily excreted unchanged in feces.",
       "time_to_max_concentration": "1-3 hours",
       "half_life": "14.4 hours",
+      "duration_of_action": "12-24 hours (60 mg twice daily or 180 mg once daily; wheal-and-flare suppression persists for up to 12 hours per dose)",
       "active_metabolites": "None significant — fexofenadine undergoes minimal metabolism",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3137,6 +3168,7 @@
       "mechanism_of_action": "Second-generation antihistamine. R-enantiomer of cetirizine with approximately twice the binding affinity for H1 receptors. Selective peripheral H1 receptor antagonist. Minimal metabolism — primarily excreted unchanged in urine.",
       "time_to_max_concentration": "0.9 hours",
       "half_life": "8-9 hours",
+      "duration_of_action": "24 hours (once-daily dosing; active R-enantiomer of cetirizine)",
       "active_metabolites": "None significant",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3221,6 +3253,7 @@
       "mechanism_of_action": "Non-opioid antitussive. Acts centrally to elevate the cough threshold. NMDA receptor antagonist, sigma-1 receptor agonist, and serotonin reuptake inhibitor at higher doses. Also has weak affinity for opioid receptors. Metabolized primarily by CYP2D6 to dextrorphan (active metabolite with NMDA antagonist activity).",
       "time_to_max_concentration": "2-2.5 hours (IR formulations)",
       "half_life": "3-6 hours (extensive CYP2D6 metabolizers); up to 24+ hours in poor CYP2D6 metabolizers",
+      "duration_of_action": "IR: approximately 3-6 hours; ER: up to 12 hours",
       "active_metabolites": "Dextrorphan — NMDA receptor antagonist with significant pharmacological activity. Formed via CYP2D6.",
       "half_life_of_active_metabolites": "Dextrorphan: approximately 3-4 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -3332,6 +3365,7 @@
       "mechanism_of_action": "First-generation antihistamine (ethylamine class, same class as diphenhydramine). Competitive H1 receptor antagonist with significant anticholinergic and sedative properties. CNS penetration produces drowsiness.",
       "time_to_max_concentration": "2-3 hours",
       "half_life": "10 hours (range 7-12 hours)",
+      "duration_of_action": "4-6 hours (sedative and antihistaminic effect)",
       "active_metabolites": "N-desmethyldoxylamine and N,N-didesmethyldoxylamine — minimal clinical significance",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
@@ -3452,6 +3486,7 @@
       "mechanism_of_action": "Sympathomimetic amine. Acts as an indirect-acting alpha- and beta-adrenergic agonist by displacing norepinephrine from storage sites. Stimulates alpha-adrenergic receptors in nasal mucosa, producing vasoconstriction and reducing nasal congestion. Also has mild beta-adrenergic activity (bronchodilation, cardiac stimulation).",
       "time_to_max_concentration": "1-3 hours (IR); 4-6 hours (ER)",
       "half_life": "5-8 hours (pH-dependent; shorter with acidic urine)",
+      "duration_of_action": "IR: 4-6 hours; ER: 12-24 hours (decongestant effect)",
       "active_metabolites": "None significant — excreted primarily unchanged in urine (43-96% depending on urine pH)",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3521,6 +3556,7 @@
       "mechanism_of_action": "Expectorant. Increases respiratory tract fluid secretions and helps to loosen phlegm and thin bronchial secretions by reducing the adhesiveness and surface tension of mucus, facilitating removal by coughing. Stimulates secretions from the submucosal glands of the respiratory tract. May also have some antitussive activity at higher doses.",
       "time_to_max_concentration": "0.5-1 hour (IR formulations)",
       "half_life": "1 hour",
+      "duration_of_action": "IR: approximately 4 hours; ER: up to 12 hours",
       "active_metabolites": "None significant — metabolized to beta-(2-methoxyphenoxy) lactic acid (inactive) and excreted renally",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3577,6 +3613,7 @@
       "mechanism_of_action": "Methylxanthine-class CNS stimulant. Antagonizes all four adenosine receptor subtypes (A1, A2a, A2b, A3); wakefulness is primarily driven by A2a antagonism. Also stimulates catecholamine release, exerts positive cardiac inotropic/chronotropic effects, increases gastric acid secretion, and promotes diuresis.",
       "time_to_max_concentration": "30-90 minutes (oral, adults)",
       "half_life": "Approximately 5 hours (adults); up to 15 hours in late pregnancy; up to 100 hours in premature neonates",
+      "duration_of_action": "3-5 hours (stimulant effect; influenced by individual CYP1A2 metabolism variability)",
       "active_metabolites": "Paraxanthine, theobromine, theophylline (all dimethylxanthines with unique pharmacological effects)",
       "half_life_of_active_metabolites": "Paraxanthine ~3-4 hours; theobromine ~6-10 hours; theophylline ~3-7 hours",
       "interactions_with_other_drugs_on_this_list": [
@@ -3678,6 +3715,7 @@
       "mechanism_of_action": "Competitive H2-receptor antagonist. Blocks histamine from stimulating H2 receptors on gastric parietal cells, reducing basal and stimulated gastric acid secretion. Also a non-selective inhibitor of hepatic cytochrome P450 enzymes (CYP1A2, CYP2C9, CYP2D6, CYP3A4), leading to numerous drug interactions.",
       "time_to_max_concentration": "1-2 hours",
       "half_life": "Approximately 2 hours; prolonged in renal impairment",
+      "duration_of_action": "4-8 hours (antisecretory effect; shorter duration than famotidine)",
       "active_metabolites": "None significant — cimetidine sulfoxide is the primary metabolite with minimal activity",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -3801,6 +3839,7 @@
       "mechanism_of_action": "Mixed-acting sympathomimetic amine. Acts both directly on alpha- and beta-adrenergic receptors and indirectly by inhibiting neuronal norepinephrine reuptake and displacing norepinephrine from storage vesicles. Produces vasoconstriction (alpha-1), increased cardiac chronotropy and inotropy (beta-1), and bronchodilation (beta-2). Stereoisomer of pseudoephedrine with more pronounced indirect mechanism.",
       "time_to_max_concentration": "Approximately 1.8 hours (oral)",
       "half_life": "Approximately 6 hours (oral); urinary excretion is pH-dependent (shorter with acidic urine)",
+      "duration_of_action": "Oral: 3-6 hours (sympathomimetic effect)",
       "active_metabolites": "Norephedrine — the parent drug and metabolite are both excreted in urine",
       "half_life_of_active_metabolites": "Not well characterized; eliminated renally",
       "interactions_with_other_drugs_on_this_list": [
@@ -3893,6 +3932,7 @@
       "mechanism_of_action": "First-generation antihistamine (piperazine class) and H1 receptor antagonist with anticholinergic, CNS depressant, and local anesthetic effects. Exerts antiemetic and antivertigo effects through central anticholinergic properties. Depresses labyrinth excitability and vestibular stimulation, and may affect the medullary chemoreceptor trigger zone.",
       "time_to_max_concentration": "3 hours (median; range 1.5-6 hours)",
       "half_life": "5-6 hours",
+      "duration_of_action": "8-24 hours",
       "active_metabolites": "Not well characterized; metabolites are excreted in urine",
       "half_life_of_active_metabolites": "Not well characterized",
       "interactions_with_other_drugs_on_this_list": [
@@ -4028,6 +4068,7 @@
       "mechanism_of_action": "Contains approximately 55% diphenhydramine (active moiety) and 45% 8-chlorotheophylline. The diphenhydramine component is a first-generation antihistamine with CNS depressant, anticholinergic, antiemetic, and local anesthetic effects. Anticholinergic effects inhibit vestibular stimulation during motion sickness and vertigo. Inhibits labyrinthine stimulation for up to 3 hours and the emetic response to apomorphine.",
       "time_to_max_concentration": "15-30 minutes (oral); almost immediate (IV); 20-30 minutes (IM)",
       "half_life": "3.5 hours (diphenhydramine component)",
+      "duration_of_action": "3-6 hours",
       "active_metabolites": "Diphenhydramine is the active moiety; it is extensively metabolized by the liver. Metabolites have minimal pharmacological activity.",
       "half_life_of_active_metabolites": "Not clinically significant",
       "interactions_with_other_drugs_on_this_list": [
@@ -4176,6 +4217,7 @@
       "mechanism_of_action": "First-generation H1 antihistamine of the alkylamine class. Competitively and reversibly blocks H1 histamine receptors, preventing histamine-mediated allergic responses. Also possesses anticholinergic and mild CNS depressant properties. Acts as both a CYP2D6 substrate and a weak CYP2D6 inhibitor.",
       "time_to_max_concentration": "2-3 hours (immediate-release oral tablet)",
       "half_life": "12-43 hours (adults; highly variable due to individual differences in CYP2D6 metabolism)",
+      "duration_of_action": "IR: 4-6 hours; ER: up to 12 hours",
       "active_metabolites": "Desmethylchlorpheniramine (weakly active); didesmethylchlorpheniramine",
       "half_life_of_active_metabolites": "Variable; not clinically significant",
       "interactions_with_other_drugs_on_this_list": [
@@ -4334,6 +4376,7 @@
       "mechanism_of_action": "Non-benzodiazepine hypnotic (imidazopyridine class). Preferentially binds the BZ1 (omega-1) subunit of the GABA-A receptor complex, enhancing GABAergic inhibitory effects and increasing chloride conductance, leading to sedation and sleep induction. Selective binding to BZ1 (alpha1/alpha5 subunit ratio) explains relative absence of myorelaxant and anticonvulsant effects compared to benzodiazepines. Metabolized primarily by CYP3A4, and to a lesser extent by CYP2C9, CYP1A2, and CYP2D6.",
       "time_to_max_concentration": "~1.6 hours (immediate-release); ~1.5 hours (extended-release); 35–75 minutes (sublingual). Food delays absorption significantly.",
       "half_life": "~2.5–2.8 hours (range 1.4–4.5 hours). Prolonged in hepatic impairment. Women clear zolpidem more slowly than men.",
+      "duration_of_action": "IR: 6-8 hours; ER (Ambien CR): 6-8 hours (designed for sleep maintenance throughout the night)",
       "active_metabolites": "None — metabolites are inactive, primarily excreted renally",
       "half_life_of_active_metabolites": "Not applicable",
       "interactions_with_other_drugs_on_this_list": [
@@ -4489,6 +4532,7 @@
       "mechanism_of_action": "Benzodiazepine. Binds to benzodiazepine receptors on postsynaptic GABA-A ligand-gated chloride channel neurons at multiple CNS sites, enhancing the inhibitory effects of GABA. Increases chloride ion conductance, leading to neuronal hyperpolarization and CNS depression. Undergoes direct glucuronidation in the liver without significant CYP450 metabolism, making it safer in hepatic dysfunction.",
       "time_to_max_concentration": "2 hours (oral); 1-3 minutes (IV); 15-30 minutes (IM)",
       "half_life": "14 ± 5 hours (range 10-20 hours)",
+      "duration_of_action": "6-8 hours (anxiolytic effect per dose)",
       "active_metabolites": "None — lorazepam glucuronide is the primary metabolite and is pharmacologically inactive",
       "half_life_of_active_metabolites": "Not applicable (inactive metabolite)",
       "interactions_with_other_drugs_on_this_list": [
@@ -4633,6 +4677,7 @@
       "mechanism_of_action": "Proton pump inhibitor (PPI) of the benzimidazole class. Irreversibly inhibits the H+/K+ ATPase enzyme system (gastric proton pump) at the secretory surface of the gastric parietal cell, blocking the final step of acid production for up to 24 hours. Metabolized primarily by CYP2C19 demethylation and sulfation, with secondary oxidation by CYP3A4. Metabolites are pharmacologically inactive.",
       "time_to_max_concentration": "2-2.5 hours (delayed-release tablets); maximal acid suppression effect at 2-6 hours",
       "half_life": "~1 hour (but duration of acid suppression lasts up to 24 hours due to irreversible binding to the proton pump)",
+      "duration_of_action": "24 hours (antisecretory effect persists due to irreversible binding to the proton pump, despite a short plasma half-life)",
       "active_metabolites": "None — metabolites (desmethylpantoprazole sulfate and others) have no significant antisecretory activity",
       "half_life_of_active_metabolites": "Not clinically relevant",
       "interactions_with_other_drugs_on_this_list": [
@@ -4736,6 +4781,7 @@
       "mechanism_of_action": "Benzodiazepine hypnotic. Classified as a positive allosteric modulator of GABA-A receptors (GABA-PAM), with particular affinity for α1 subunits. Binds to benzodiazepine receptors on GABA-A chloride channel complexes in the CNS (limbic, thalamic, and hypothalamic regions), enhancing GABAergic inhibition by increasing chloride ion influx frequency. This leads to CNS depression, producing sedation, anxiolysis, skeletal muscle relaxation, and anticonvulsant effects. Metabolized primarily via direct glucuronide conjugation (Phase II); undergoes minimal CYP450 metabolism.",
       "time_to_max_concentration": "1.2-1.6 hours (average ~1.5 hours)",
       "half_life": "3.5-18.4 hours (terminal half-life, average ~8.8 hours); may be prolonged in elderly patients",
+      "duration_of_action": "6-8 hours (hypnotic effect; suitable for sleep maintenance throughout the night)",
       "active_metabolites": "Oxazepam (minor metabolite via parallel oxidation pathway) — pharmacologically active but present in small amounts. Temazepam glucuronide is the primary (inactive) metabolite.",
       "half_life_of_active_metabolites": "Oxazepam: 5-15 hours (minor contribution to overall effect)",
       "interactions_with_other_drugs_on_this_list": [
@@ -4892,6 +4938,7 @@
       "mechanism_of_action": "Irreversible cyclooxygenase-1 (COX-1) inhibitor and modifier of COX-2 enzymatic activity. Unlike other NSAIDs which bind reversibly, aspirin's acetyl group covalently and irreversibly modifies the COX enzymes. Irreversibly blocks thromboxane A2 synthesis on platelets, preventing platelet aggregation for the lifespan of the platelet (7-10 days). Provides anti-inflammatory, analgesic, and antipyretic effects via prostaglandin synthesis inhibition.",
       "time_to_max_concentration": "1-2 hours (immediate-release); ~4 hours (enteric-coated)",
       "half_life": "15-20 minutes (aspirin, rapidly hydrolyzed to salicylic acid); salicylic acid half-life is dose-dependent: 2-3 hours (low dose), up to 15-30 hours (high anti-inflammatory doses)",
+      "duration_of_action": "Analgesic/antipyretic: 4-6 hours; Antiplatelet: 7-10 days (irreversible COX-1 inhibition persists for the lifespan of the platelet)",
       "active_metabolites": "Salicylic acid — the primary active metabolite responsible for anti-inflammatory and analgesic effects. Formed by rapid hydrolysis of aspirin by esterases in the GI mucosa, plasma, and liver.",
       "half_life_of_active_metabolites": "2-3 hours (salicylic acid, low dose); dose-dependent kinetics — up to 15-30 hours at high anti-inflammatory doses due to saturable metabolism",
       "interactions_with_other_drugs_on_this_list": [
