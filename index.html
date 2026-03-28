@@ -471,6 +471,10 @@
                 '<div class="info-label">Half-Life</div>' +
                 '<div class="info-value">' + escapeHtml(med.half_life) + '</div>' +
               '</div>' +
+              (med.duration_of_action ? '<div class="info-item">' +
+                '<div class="info-label">Duration of Action</div>' +
+                '<div class="info-value">' + escapeHtml(med.duration_of_action) + '</div>' +
+              '</div>' : '') +
               '<div class="info-item">' +
                 '<div class="info-label">Active Metabolites</div>' +
                 '<div class="info-value">' + escapeHtml(med.active_metabolites) + '</div>' +
