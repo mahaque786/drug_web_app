@@ -270,10 +270,16 @@
       return (name || '').toLowerCase().replace(/\s+/g, ' ').trim();
     }
 
-        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwNeAFxg6IpfzQf9iDxAx3spavPA0cwNvwvAEFKdBEgt4OmndJREHGT10TOVUVFt4Nsbg/exec';
+    /* ── Supabase configuration ──────────────────────────────────────── */
+    const SUPABASE_URL  = '';   // e.g. 'https://xyzproject.supabase.co'
+    const SUPABASE_ANON_KEY = '';   // public anon key from Supabase dashboard
 
-    function getAppsScriptUrl() {
-      return APPS_SCRIPT_URL;
+    function supabaseHeaders() {
+      return {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Content-Type': 'application/json'
+      };
     }
 
     function setStatus(message, isSuccess) {
@@ -440,28 +446,30 @@
     }
 
     async function fetchLogs() {
-      const url = getAppsScriptUrl();
-      if (!url) {
+      if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
         logs = [];
         renderLogsTable();
         return;
       }
       try {
-        const response = await fetch(url + '?action=logs', { method: 'GET' });
-        const data = await response.json();
-        if (!data.success) throw new Error(data.error || 'Could not load logs');
-        logs = (data.logs || []).map(function(row) {
+        const response = await fetch(
+          SUPABASE_URL + '/rest/v1/medication_logs?select=*&order=timestamp.desc',
+          { method: 'GET', headers: supabaseHeaders() }
+        );
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const rows = await response.json();
+        logs = rows.map(function(row) {
           return {
             timestamp: row.timestamp,
-            medicationName: row.medicationName,
+            medicationName: row.medication_name,
             dose: row.dose,
             reason: row.reason
           };
         });
         renderLogsTable();
-        setStatus('Connected. Loaded ' + logs.length + ' log entries.', true);
+        setStatus('Connected to Supabase. Loaded ' + logs.length + ' log entries.', true);
       } catch (err) {
-        setStatus('Could not load logs from Apps Script URL. Check deployment access and URL.');
+        setStatus('Could not load logs from Supabase. Check your URL and anon key.');
       }
     }
 
@@ -493,42 +501,41 @@
         }
       }
 
-      const url = getAppsScriptUrl();
-      if (!url) {
-        setStatus('Please set your Apps Script Web App URL first.');
+      if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+        setStatus('Please configure your Supabase URL and anon key first.');
         return;
       }
 
-      const payload = {
-        action: 'log',
-        medicationName: med.generic_name,
-        dose: dose,
-        reason: reason
-      };
-
       try {
-        const response = await fetch(url, {
+        const response = await fetch(SUPABASE_URL + '/rest/v1/medication_logs', {
           method: 'POST',
-          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-          body: JSON.stringify(payload)
+          headers: Object.assign({}, supabaseHeaders(), { 'Prefer': 'return=representation' }),
+          body: JSON.stringify({
+            medication_name: med.generic_name,
+            dose: dose,
+            reason: reason
+          })
         });
-        const data = await response.json();
-        if (!data.success) throw new Error(data.error || 'Failed to log dose');
-
-        const logged = data.logged || {
-          timestamp: new Date().toISOString(),
-          medicationName: med.generic_name,
-          dose: dose,
-          reason: reason
+        if (!response.ok) {
+          const errBody = await response.json().catch(function() { return {}; });
+          throw new Error(errBody.message || 'HTTP ' + response.status);
+        }
+        const rows = await response.json();
+        const row = rows[0] || {};
+        const logged = {
+          timestamp: row.timestamp || new Date().toISOString(),
+          medicationName: row.medication_name || med.generic_name,
+          dose: row.dose || dose,
+          reason: row.reason || reason
         };
         logs.push(logged);
         renderLogsTable();
 
         successBox.textContent = 'Dose logged successfully.';
         successBox.style.display = 'block';
-        setStatus('Dose logged to Google Sheet.', true);
+        setStatus('Dose logged to Supabase.', true);
       } catch (err) {
-        setStatus('Failed to send log to Apps Script. Verify deployment permissions and CORS setup.');
+        setStatus('Failed to log dose to Supabase: ' + err.message);
       }
     }
 
