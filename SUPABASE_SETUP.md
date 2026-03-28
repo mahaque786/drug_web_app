@@ -49,6 +49,15 @@ VALUES
   ('2025-01-15T22:00:00Z', 'Temazepam (capsule)', 15, 'Insomnia');
 ```
 
+## Security note
+
+The RLS policies above allow **unrestricted anonymous** reads and inserts, which
+matches the original public Apps Script behaviour. For a production deployment
+you should:
+
+- Enable Supabase Auth and scope the policies to `auth.uid()`.
+- Add rate limiting at the API gateway or Edge Functions layer.
+
 ## REST API used by the front-end
 
 | Operation | Endpoint |
