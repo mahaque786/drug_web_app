@@ -181,6 +181,19 @@
       border-top: 1px solid var(--border);
       margin-top: 2rem;
     }
+    .bp-category {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-left: 0.4rem;
+    }
+    .bp-normal    { background: #dcfce7; color: #166534; }
+    .bp-elevated  { background: #fef9c3; color: #854d0e; }
+    .bp-stage1    { background: #ffedd5; color: #9a3412; }
+    .bp-stage2    { background: #fee2e2; color: #991b1b; }
+    .bp-crisis    { background: #fca5a5; color: #7f1d1d; }
     @media (max-width: 600px) {
       header h1 { font-size: 1.3rem; }
       .form-grid { grid-template-columns: 1fr; }
@@ -250,6 +263,52 @@
           </tr>
         </thead>
         <tbody id="logs-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="logger" id="bp-section">
+    <h2>Log Blood Pressure</h2>
+    <div class="status" id="bp-status">Loading blood pressure logs…</div>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="bp-systolic">Systolic (mmHg)</label>
+        <input type="number" id="bp-systolic" min="1" max="300" placeholder="e.g. 120">
+      </div>
+      <div class="field">
+        <label for="bp-diastolic">Diastolic (mmHg)</label>
+        <input type="number" id="bp-diastolic" min="1" max="200" placeholder="e.g. 80">
+      </div>
+      <div class="field">
+        <label for="bp-pulse">Pulse (bpm, optional)</label>
+        <input type="number" id="bp-pulse" min="1" max="300" placeholder="e.g. 72">
+      </div>
+      <div class="field">
+        <label for="bp-notes">Notes (optional)</label>
+        <input type="text" id="bp-notes" placeholder="e.g. after exercise">
+      </div>
+      <button type="button" id="bp-submit-btn">Log Blood Pressure</button>
+    </div>
+
+    <div class="success-box" id="bp-success-box"></div>
+
+    <div class="logs-table-wrap">
+      <div class="log-search-wrap">
+        <input type="text" id="bp-search" placeholder="Search by notes or category…" autocomplete="off" aria-label="Search blood pressure logs">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Systolic</th>
+            <th>Diastolic</th>
+            <th>Pulse</th>
+            <th>Category</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="bp-logs-body"></tbody>
       </table>
     </div>
   </section>
@@ -601,9 +660,144 @@
 
     document.getElementById('proceed-anyway-btn').addEventListener('click', function() { submitLog(true); });
 
+    // ── Blood Pressure Logger ────────────────────────────────────────────────
+
+    let bpLogs = [];
+
+    function setBpStatus(message, isSuccess) {
+      const el = document.getElementById('bp-status');
+      el.textContent = message;
+      el.classList.toggle('success', Boolean(isSuccess));
+    }
+
+    function classifyBP(systolic, diastolic) {
+      if (systolic > 180 || diastolic > 120) return { label: 'Hypertensive Crisis', css: 'bp-crisis' };
+      if (systolic >= 140 || diastolic >= 90)  return { label: 'High BP Stage 2',    css: 'bp-stage2' };
+      if (systolic >= 130 || diastolic >= 80)  return { label: 'High BP Stage 1',    css: 'bp-stage1' };
+      if (systolic >= 120 && diastolic < 80)   return { label: 'Elevated',           css: 'bp-elevated' };
+      return                                          { label: 'Normal',              css: 'bp-normal' };
+    }
+
+    function renderBPLogsTable(filterText) {
+      const body = document.getElementById('bp-logs-body');
+      const query = (filterText || '').toLowerCase().trim();
+      const filtered = query ? bpLogs.filter(function(row) {
+        const cat = classifyBP(row.systolic, row.diastolic).label;
+        return (row.notes || '').toLowerCase().includes(query) ||
+               cat.toLowerCase().includes(query);
+      }) : bpLogs;
+      if (!filtered.length) {
+        body.innerHTML = '<tr><td colspan="6" style="color:#64748b;">' +
+          (query ? 'No matching blood pressure entries.' : 'No blood pressure readings logged yet.') + '</td></tr>';
+        return;
+      }
+      const sorted = filtered.slice().sort(function(a, b) {
+        return new Date(b.timestamp) - new Date(a.timestamp);
+      });
+      body.innerHTML = sorted.slice(0, 20).map(function(row) {
+        const cat = classifyBP(row.systolic, row.diastolic);
+        return '<tr>' +
+          '<td>' + escapeHtml(formatTimestamp(row.timestamp)) + '</td>' +
+          '<td>' + escapeHtml(String(row.systolic)) + '</td>' +
+          '<td>' + escapeHtml(String(row.diastolic)) + '</td>' +
+          '<td>' + escapeHtml(row.pulse != null ? String(row.pulse) : '—') + '</td>' +
+          '<td><span class="bp-category ' + cat.css + '">' + escapeHtml(cat.label) + '</span></td>' +
+          '<td>' + escapeHtml(row.notes || '') + '</td>' +
+          '</tr>';
+      }).join('');
+    }
+
+    async function fetchBPLogs() {
+      try {
+        const response = await fetch(
+          SUPABASE_URL + '/rest/v1/blood_pressure_logs?select=*&order=timestamp.desc',
+          { headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY } }
+        );
+        const rows = await response.json();
+        bpLogs = rows.map(function(row) {
+          return {
+            timestamp: row.timestamp,
+            systolic:  row.systolic,
+            diastolic: row.diastolic,
+            pulse:     row.pulse,
+            notes:     row.notes
+          };
+        });
+        renderBPLogsTable();
+        setBpStatus('Connected. Loaded ' + bpLogs.length + ' blood pressure entries.', true);
+      } catch (err) {
+        setBpStatus('Could not load blood pressure logs from Supabase.');
+      }
+    }
+
+    async function submitBPLog() {
+      const systolic  = parseInt(document.getElementById('bp-systolic').value,  10);
+      const diastolic = parseInt(document.getElementById('bp-diastolic').value, 10);
+      const pulseVal  = document.getElementById('bp-pulse').value.trim();
+      const pulse     = pulseVal !== '' ? parseInt(pulseVal, 10) : null;
+      const notes     = document.getElementById('bp-notes').value.trim();
+      const successBox = document.getElementById('bp-success-box');
+
+      successBox.style.display = 'none';
+
+      if (!systolic || !diastolic || systolic <= 0 || diastolic <= 0) {
+        setBpStatus('Please enter valid systolic and diastolic values.');
+        return;
+      }
+
+      try {
+        const payload = { systolic: systolic, diastolic: diastolic, notes: notes || null };
+        if (pulse !== null) payload.pulse = pulse;
+
+        const response = await fetch(
+          SUPABASE_URL + '/rest/v1/blood_pressure_logs',
+          {
+            method: 'POST',
+            headers: {
+              'apikey': SUPABASE_ANON_KEY,
+              'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+              'Content-Type': 'application/json',
+              'Prefer': 'return=representation'
+            },
+            body: JSON.stringify(payload)
+          }
+        );
+        if (!response.ok) throw new Error('Supabase returned status ' + response.status + ': ' + response.statusText);
+        const data = await response.json();
+        if (!Array.isArray(data) || data.length === 0) throw new Error('Supabase returned no data for the inserted row.');
+        const logged = {
+          timestamp: data[0].timestamp,
+          systolic:  data[0].systolic,
+          diastolic: data[0].diastolic,
+          pulse:     data[0].pulse,
+          notes:     data[0].notes
+        };
+        bpLogs.push(logged);
+        renderBPLogsTable();
+
+        document.getElementById('bp-systolic').value  = '';
+        document.getElementById('bp-diastolic').value = '';
+        document.getElementById('bp-pulse').value     = '';
+        document.getElementById('bp-notes').value     = '';
+
+        successBox.textContent = 'Blood pressure reading logged successfully.';
+        successBox.style.display = 'block';
+        setBpStatus('Blood pressure reading logged successfully.', true);
+      } catch (err) {
+        setBpStatus('Failed to log blood pressure reading. Check your connection and try again.');
+      }
+    }
+
+    document.getElementById('bp-submit-btn').addEventListener('click', submitBPLog);
+
+    document.getElementById('bp-search').addEventListener('input', function(e) {
+      renderBPLogsTable(e.target.value);
+    });
+
     (function init() {
       loadData();
       fetchLogs();
+      fetchBPLogs();
     })();
   </script>
 </body>
