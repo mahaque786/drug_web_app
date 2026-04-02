@@ -671,11 +671,11 @@
     }
 
     function classifyBP(systolic, diastolic) {
-      if (systolic > 180 || diastolic > 120) return { label: 'Hypertensive Crisis', css: 'bp-crisis' };
-      if (systolic >= 140 || diastolic >= 90)  return { label: 'High BP Stage 2',    css: 'bp-stage2' };
-      if (systolic >= 130 || diastolic >= 80)  return { label: 'High BP Stage 1',    css: 'bp-stage1' };
-      if (systolic >= 120 && diastolic < 80)   return { label: 'Elevated',           css: 'bp-elevated' };
-      return                                          { label: 'Normal',              css: 'bp-normal' };
+      if (systolic > 180 || diastolic > 120)      return { label: 'Hypertensive Crisis', css: 'bp-crisis' };
+      else if (systolic >= 140 || diastolic >= 90) return { label: 'High BP Stage 2',    css: 'bp-stage2' };
+      else if (systolic >= 130 || diastolic >= 80) return { label: 'High BP Stage 1',    css: 'bp-stage1' };
+      else if (systolic >= 120 && diastolic < 80)  return { label: 'Elevated',           css: 'bp-elevated' };
+      else                                         return { label: 'Normal',              css: 'bp-normal' };
     }
 
     function renderBPLogsTable(filterText) {
@@ -691,10 +691,12 @@
           (query ? 'No matching blood pressure entries.' : 'No blood pressure readings logged yet.') + '</td></tr>';
         return;
       }
-      const sorted = filtered.slice().sort(function(a, b) {
-        return new Date(b.timestamp) - new Date(a.timestamp);
+      const withTs = filtered.map(function(row) {
+        return { row: row, ts: new Date(row.timestamp) };
       });
-      body.innerHTML = sorted.slice(0, 20).map(function(row) {
+      withTs.sort(function(a, b) { return b.ts - a.ts; });
+      body.innerHTML = withTs.slice(0, 20).map(function(item) {
+        const row = item.row;
         const cat = classifyBP(row.systolic, row.diastolic);
         return '<tr>' +
           '<td>' + escapeHtml(formatTimestamp(row.timestamp)) + '</td>' +
@@ -741,7 +743,7 @@
       successBox.style.display = 'none';
 
       if (!systolic || !diastolic || systolic <= 0 || diastolic <= 0) {
-        setBpStatus('Please enter valid systolic and diastolic values.');
+        setBpStatus('Please enter positive systolic and diastolic values.');
         return;
       }
 
@@ -762,9 +764,12 @@
             body: JSON.stringify(payload)
           }
         );
-        if (!response.ok) throw new Error('Supabase returned status ' + response.status + ': ' + response.statusText);
+        if (!response.ok) {
+          console.error('BP log error: status ' + response.status + ' ' + response.statusText);
+          throw new Error('server_error');
+        }
         const data = await response.json();
-        if (!Array.isArray(data) || data.length === 0) throw new Error('Supabase returned no data for the inserted row.');
+        if (!Array.isArray(data) || data.length === 0) throw new Error('no data returned');
         const logged = {
           timestamp: data[0].timestamp,
           systolic:  data[0].systolic,
