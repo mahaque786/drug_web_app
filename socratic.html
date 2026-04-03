@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socratic Questioning — Medication Reference Guide</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --accent: #059669;
+      --warning: #d97706;
+      --danger: #b91c1c;
+      --success-bg: #dcfce7;
+      --success-text: #166534;
+      --danger-bg: #fee2e2;
+      --calm: #7c3aed;
+      --calm-light: #ede9fe;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.75rem; font-weight: 700; }
+    header p { font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem; }
+    .page-nav {
+      background: #1d4ed8;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+    }
+    .page-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      opacity: 0.8;
+    }
+    .page-nav a:hover { background: rgba(255,255,255,0.15); opacity: 1; }
+    .page-nav a.active { background: rgba(255,255,255,0.2); opacity: 1; font-weight: 600; }
+    .disclaimer {
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      color: #92400e;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 780px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 3rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1rem;
+      color: var(--calm);
+      margin-bottom: 0.5rem;
+    }
+    label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: #fff;
+      font-family: inherit;
+      line-height: 1.5;
+    }
+    input[type="text"]:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+    textarea { resize: vertical; min-height: 90px; }
+    .field { margin-bottom: 1rem; }
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.65rem 1.1rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: opacity 0.15s;
+    }
+    button:hover { opacity: 0.88; }
+    button.secondary {
+      background: #475569;
+    }
+    button.calm {
+      background: var(--calm);
+    }
+    button.danger-btn {
+      background: var(--danger);
+    }
+    .mode-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 540px) { .mode-grid { grid-template-columns: 1fr; } }
+    .mode-card {
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      user-select: none;
+    }
+    .mode-card:hover { border-color: var(--primary); background: var(--primary-light); }
+    .mode-card.selected { border-color: var(--calm); background: var(--calm-light); }
+    .mode-card .mode-icon { font-size: 2rem; margin-bottom: 0.4rem; }
+    .mode-card .mode-title { font-weight: 700; font-size: 1rem; color: var(--text); }
+    .mode-card .mode-desc { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.2rem; }
+    .progress-bar-wrap {
+      background: var(--border);
+      border-radius: 99px;
+      height: 6px;
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+    }
+    .progress-bar {
+      background: var(--calm);
+      height: 100%;
+      border-radius: 99px;
+      transition: width 0.3s ease;
+    }
+    .question-num {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .question-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+      line-height: 1.45;
+    }
+    .question-hint {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+    .context-summary {
+      background: var(--primary-light);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.88rem;
+    }
+    .context-summary strong { color: var(--primary); }
+    .summary-qa { list-style: none; }
+    .summary-qa li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .summary-qa li:last-child { border-bottom: none; }
+    .summary-q {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--calm);
+      margin-bottom: 0.25rem;
+    }
+    .summary-a {
+      font-size: 0.95rem;
+      white-space: pre-wrap;
+    }
+    .status-msg {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-top: 0.75rem;
+    }
+    .status-msg.success { color: var(--success-text); }
+    .status-msg.error { color: var(--danger); }
+    .records-list { list-style: none; }
+    .record-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+    }
+    .record-header {
+      background: #f1f5f9;
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .record-header:hover { background: #e2e8f0; }
+    .record-meta { font-size: 0.82rem; color: var(--text-secondary); }
+    .record-thought { font-weight: 600; font-size: 0.95rem; color: var(--text); }
+    .record-mode-badge {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .badge-anxiety { background: #fef3c7; color: #92400e; }
+    .badge-negative-thought { background: var(--calm-light); color: var(--calm); }
+    .record-body {
+      display: none;
+      padding: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .record-body.open { display: block; }
+    .record-toggle { font-size: 1.1rem; color: var(--text-secondary); transition: transform 0.2s; }
+    .record-toggle.open { transform: rotate(180deg); }
+    .section-head {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hidden { display: none !important; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .card { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧠 Socratic Questioning</h1>
+    <p>A CBT-based thought-examination tool to help you slow down and reframe distressing thoughts</p>
+  </header>
+  <nav class="page-nav">
+    <a href="index.html">📋 Medication Reference</a>
+    <a href="logger.html">💊 Dose Logger</a>
+    <a href="socratic.html" class="active">🧠 Socratic Questioning</a>
+  </nav>
+  <div class="disclaimer">
+    This tool is for personal reflection and educational use only. It is not a substitute for professional mental health care.
+    If you are in crisis, please contact a qualified mental health professional or emergency services.
+  </div>
+
+  <div class="container">
+
+    <!-- Step 0: Mode selection -->
+    <div id="step-mode" class="card">
+      <h2>Start a New Thought Record</h2>
+      <p style="margin-bottom:1rem; color:var(--text-secondary); font-size:0.95rem;">
+        Choose what best describes your current experience so the questions can be tailored to you.
+      </p>
+      <div class="mode-grid">
+        <div class="mode-card" id="mode-anxiety" onclick="selectMode('anxiety')">
+          <div class="mode-icon">😰</div>
+          <div class="mode-title">Anxiety &amp; Worst-Case Thinking</div>
+          <div class="mode-desc">You're feeling anxious and imagining worst-case scenarios.</div>
+        </div>
+        <div class="mode-card" id="mode-negative-thought" onclick="selectMode('negative_thought')">
+          <div class="mode-icon">💭</div>
+          <div class="mode-title">Specific Negative Thought</div>
+          <div class="mode-desc">You've identified a specific negative thought and want to examine it.</div>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button onclick="startSession()" class="calm">Continue →</button>
+      </div>
+    </div>
+
+    <!-- Step 1: Context entry -->
+    <div id="step-context" class="card hidden">
+      <h2>Describe Your Situation</h2>
+      <div class="field">
+        <label for="input-situation">What is the triggering situation or event?</label>
+        <textarea id="input-situation" placeholder="Briefly describe what happened or what you're worried about…"></textarea>
+      </div>
+      <div class="field">
+        <label for="input-thought">What is the automatic thought or belief going through your mind?</label>
+        <textarea id="input-thought" placeholder="e.g. "I always mess things up" or "Something terrible is about to happen"…"></textarea>
+      </div>
+      <div class="btn-row">
+        <button onclick="goToQuestions()" class="calm">Begin Questioning →</button>
+        <button onclick="goBack('step-context', 'step-mode')" class="secondary">← Back</button>
+      </div>
+    </div>
+
+    <!-- Step 2: Q&A -->
+    <div id="step-questions" class="card hidden">
+      <div class="context-summary" id="context-summary"></div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="question-num" id="question-num"></div>
+      <div class="question-text" id="question-text"></div>
+      <div class="question-hint" id="question-hint"></div>
+      <div class="field">
+        <label for="answer-input">Your answer</label>
+        <textarea id="answer-input" placeholder="Take your time — there are no wrong answers…" rows="4"></textarea>
+      </div>
+      <div class="btn-row">
+        <button onclick="nextQuestion()" class="calm" id="btn-next">Next Question →</button>
+        <button onclick="prevQuestion()" class="secondary" id="btn-prev">← Previous</button>
+      </div>
+    </div>
+
+    <!-- Step 3: Summary & Save -->
+    <div id="step-summary" class="card hidden">
+      <h2>✅ Thought Record Complete</h2>
+      <p style="margin-bottom:1rem; color:var(--text-secondary); font-size:0.95rem;">
+        Well done for taking the time to examine this thought. Review your responses below.
+      </p>
+      <div id="summary-context" class="context-summary" style="margin-bottom:1.25rem;"></div>
+      <ul class="summary-qa" id="summary-qa"></ul>
+      <div class="btn-row" style="margin-top:1.25rem;">
+        <button onclick="saveRecord()" class="calm">💾 Save to Records</button>
+        <button onclick="resetSession()" class="secondary">Start New Session</button>
+      </div>
+      <div id="save-status" class="status-msg"></div>
+    </div>
+
+    <!-- Saved Records -->
+    <div id="records-section">
+      <div class="section-head">📂 Saved Thought Records</div>
+      <div id="records-status" class="status-msg" style="margin-bottom:0.75rem;"></div>
+      <ul class="records-list" id="records-list"></ul>
+    </div>
+
+  </div>
+
+  <footer>
+    Socratic questioning is a method from Cognitive Behavioural Therapy. This tool supports personal reflection only — not a substitute for professional mental health care.
+  </footer>
+
+  <script>
+    const SUPABASE_URL = 'https://nbfowxkikrrlaxkeomcn.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5iZm93eGtpa3JybGF4a2VvbWNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MTgxNjQsImV4cCI6MjA5MDI5NDE2NH0.BEmCznniskPWUCcXpJLY4yGsnwD7Y9hmhP82ZOggKo8';
+
+    const QUESTIONS = {
+      anxiety: [
+        {
+          text: 'What is the worst that can happen?',
+          hint: 'Describe the most feared outcome in as much detail as feels useful.'
+        },
+        {
+          text: 'How could I deal with the potential worst-case scenario?',
+          hint: 'Think about practical steps, support systems, or coping strategies that could help you get through it.'
+        },
+        {
+          text: 'What is the best outcome?',
+          hint: 'Imagine the most positive realistic result of this situation.'
+        },
+        {
+          text: 'What is the most realistic outcome?',
+          hint: 'Setting aside extremes, what outcome is most likely based on evidence and past experience?'
+        },
+        {
+          text: 'How do I deal with the most realistic outcome?',
+          hint: 'What would you actually do, feel, or think if the realistic outcome occurred?'
+        }
+      ],
+      negative_thought: [
+        {
+          text: 'What is the evidence that supports this idea?',
+          hint: 'List the facts — concrete observations, not feelings — that seem to back up the thought.'
+        },
+        {
+          text: 'What is the evidence against this idea?',
+          hint: 'What facts or past experiences suggest the thought might not be entirely accurate?'
+        },
+        {
+          text: 'Is there an alternative explanation or viewpoint?',
+          hint: 'Could someone else interpret this situation differently? What other explanations are possible?'
+        },
+        {
+          text: 'What is the worst that could happen (if I\'m not already thinking the worst)?',
+          hint: 'If you haven\'t already catastrophised, what is the most feared outcome?'
+        },
+        {
+          text: 'If it happened, how could I cope? What could I do? What are my options?',
+          hint: 'Think through practical steps, support, or resources available to you.'
+        },
+        {
+          text: 'What is the best that could happen?',
+          hint: 'What is the most positive realistic outcome in this situation?'
+        },
+        {
+          text: 'What is the most realistic outcome? And how could I cope with it?',
+          hint: 'What is most likely to happen, and how would you manage that?'
+        },
+        {
+          text: 'What is the effect of my believing the automatic thought?',
+          hint: 'How does holding this thought affect your mood, behaviour, relationships, or decisions?'
+        },
+        {
+          text: 'What could be the effect of changing my thinking?',
+          hint: 'How might things be different if you adopted a more balanced perspective?'
+        },
+        {
+          text: 'What would I tell a close friend or family member if they were in the same situation?',
+          hint: 'Imagine someone you care about came to you with this exact thought. What would you say to them?'
+        },
+        {
+          text: 'What should I do?',
+          hint: 'Based on everything above, what action or response feels right or necessary?'
+        },
+        {
+          text: 'What can I do?',
+          hint: 'What is actually within your power or control right now?'
+        },
+        {
+          text: 'What are the advantages and disadvantages of thinking this way? And what about thinking a different way?',
+          hint: 'Weigh the pros and cons of maintaining this thought versus adopting a more balanced one.'
+        },
+        {
+          text: 'Am I making a thinking error?',
+          hint: 'Consider common distortions: all-or-nothing thinking, catastrophising, mind-reading, personalisation, overgeneralisation, emotional reasoning, "should" statements, or mental filtering.'
+        }
+      ]
+    };
+
+    let currentMode = null;
+    let currentStep = 0;
+    let answers = [];
+    let situation = '';
+    let automaticThought = '';
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(str == null ? '' : String(str)));
+      return div.innerHTML;
+    }
+
+    function show(id) { document.getElementById(id).classList.remove('hidden'); }
+    function hide(id) { document.getElementById(id).classList.add('hidden'); }
+
+    function selectMode(mode) {
+      currentMode = mode;
+      document.getElementById('mode-anxiety').classList.toggle('selected', mode === 'anxiety');
+      document.getElementById('mode-negative-thought').classList.toggle('selected', mode === 'negative_thought');
+    }
+
+    function startSession() {
+      if (!currentMode) {
+        alert('Please select a mode before continuing.');
+        return;
+      }
+      hide('step-mode');
+      show('step-context');
+      document.getElementById('input-situation').value = '';
+      document.getElementById('input-thought').value = '';
+    }
+
+    function goBack(hideId, showId) {
+      hide(hideId);
+      show(showId);
+    }
+
+    function goToQuestions() {
+      situation = document.getElementById('input-situation').value.trim();
+      automaticThought = document.getElementById('input-thought').value.trim();
+      if (!situation || !automaticThought) {
+        alert('Please describe both the situation and your automatic thought before continuing.');
+        return;
+      }
+      const questions = QUESTIONS[currentMode];
+      answers = new Array(questions.length).fill('');
+      currentStep = 0;
+
+      hide('step-context');
+      show('step-questions');
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const questions = QUESTIONS[currentMode];
+      const q = questions[currentStep];
+      const total = questions.length;
+
+      document.getElementById('context-summary').innerHTML =
+        '<strong>Situation:</strong> ' + escapeHtml(situation) +
+        '<br><strong>Thought:</strong> ' + escapeHtml(automaticThought);
+
+      document.getElementById('question-num').textContent =
+        'Question ' + (currentStep + 1) + ' of ' + total;
+      document.getElementById('question-text').textContent = q.text;
+      document.getElementById('question-hint').textContent = q.hint;
+      document.getElementById('answer-input').value = answers[currentStep] || '';
+
+      const pct = ((currentStep + 1) / total) * 100;
+      document.getElementById('progress-bar').style.width = pct + '%';
+
+      document.getElementById('btn-prev').disabled = currentStep === 0;
+      document.getElementById('btn-next').textContent =
+        currentStep === total - 1 ? 'Finish & Review →' : 'Next Question →';
+    }
+
+    function nextQuestion() {
+      const questions = QUESTIONS[currentMode];
+      answers[currentStep] = document.getElementById('answer-input').value;
+      if (currentStep < questions.length - 1) {
+        currentStep++;
+        renderQuestion();
+      } else {
+        hide('step-questions');
+        showSummary();
+      }
+    }
+
+    function prevQuestion() {
+      if (currentStep > 0) {
+        answers[currentStep] = document.getElementById('answer-input').value;
+        currentStep--;
+        renderQuestion();
+      }
+    }
+
+    function showSummary() {
+      const questions = QUESTIONS[currentMode];
+      const modeLabel = currentMode === 'anxiety' ? 'Anxiety & Worst-Case Thinking' : 'Specific Negative Thought';
+
+      document.getElementById('summary-context').innerHTML =
+        '<strong>Mode:</strong> ' + escapeHtml(modeLabel) +
+        '<br><strong>Situation:</strong> ' + escapeHtml(situation) +
+        '<br><strong>Automatic thought:</strong> ' + escapeHtml(automaticThought);
+
+      const qaHtml = questions.map(function(q, i) {
+        return '<li>' +
+          '<div class="summary-q">' + escapeHtml(q.text) + '</div>' +
+          '<div class="summary-a">' + escapeHtml(answers[i] || '(no answer given)') + '</div>' +
+          '</li>';
+      }).join('');
+      document.getElementById('summary-qa').innerHTML = qaHtml;
+      document.getElementById('save-status').textContent = '';
+      show('step-summary');
+    }
+
+    async function saveRecord() {
+      const questions = QUESTIONS[currentMode];
+      const responses = {};
+      questions.forEach(function(q, i) {
+        responses[q.text] = answers[i] || '';
+      });
+
+      const statusEl = document.getElementById('save-status');
+      statusEl.textContent = 'Saving…';
+      statusEl.className = 'status-msg';
+
+      try {
+        const response = await fetch(
+          SUPABASE_URL + '/rest/v1/thought_records',
+          {
+            method: 'POST',
+            headers: {
+              'apikey': SUPABASE_ANON_KEY,
+              'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+              'Content-Type': 'application/json',
+              'Prefer': 'return=representation'
+            },
+            body: JSON.stringify({
+              mode: currentMode,
+              situation: situation,
+              automatic_thought: automaticThought,
+              responses: responses
+            })
+          }
+        );
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        statusEl.textContent = '✓ Saved successfully.';
+        statusEl.className = 'status-msg success';
+        fetchRecords();
+      } catch (err) {
+        statusEl.textContent = 'Failed to save. Check your connection and try again.';
+        statusEl.className = 'status-msg error';
+      }
+    }
+
+    function resetSession() {
+      currentMode = null;
+      currentStep = 0;
+      answers = [];
+      situation = '';
+      automaticThought = '';
+      hide('step-context');
+      hide('step-questions');
+      hide('step-summary');
+      document.getElementById('mode-anxiety').classList.remove('selected');
+      document.getElementById('mode-negative-thought').classList.remove('selected');
+      show('step-mode');
+    }
+
+    async function fetchRecords() {
+      const statusEl = document.getElementById('records-status');
+      const listEl = document.getElementById('records-list');
+      statusEl.textContent = 'Loading saved records…';
+      statusEl.className = 'status-msg';
+      try {
+        const response = await fetch(
+          SUPABASE_URL + '/rest/v1/thought_records?select=*&order=created_at.desc&limit=50',
+          { headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY } }
+        );
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        const records = await response.json();
+        if (!records.length) {
+          statusEl.textContent = 'No saved records yet.';
+          listEl.innerHTML = '';
+          return;
+        }
+        statusEl.textContent = records.length + ' record' + (records.length !== 1 ? 's' : '') + ' saved.';
+        statusEl.className = 'status-msg success';
+        listEl.innerHTML = records.map(function(rec, idx) {
+          const modeLabel = rec.mode === 'anxiety' ? 'Anxiety' : 'Negative Thought';
+          const badgeClass = rec.mode === 'anxiety' ? 'badge-anxiety' : 'badge-negative-thought';
+          const dateStr = rec.created_at
+            ? new Date(rec.created_at).toLocaleString(undefined, { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' })
+            : '';
+          const qaEntries = rec.responses ? Object.entries(rec.responses) : [];
+          const qaHtml = qaEntries.map(function(entry) {
+            return '<li>' +
+              '<div class="summary-q">' + escapeHtml(entry[0]) + '</div>' +
+              '<div class="summary-a">' + escapeHtml(entry[1] || '(no answer given)') + '</div>' +
+              '</li>';
+          }).join('');
+          const situationHtml = rec.situation
+            ? '<div style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.5rem;"><strong>Situation:</strong> ' + escapeHtml(rec.situation) + '</div>'
+            : '';
+          return '<li class="record-item">' +
+            '<div class="record-header" onclick="toggleRecord(' + idx + ')">' +
+              '<div>' +
+                '<div class="record-thought">' + escapeHtml(rec.automatic_thought || '(no thought recorded)') + '</div>' +
+                '<div class="record-meta">' + escapeHtml(dateStr) +
+                  ' &nbsp;<span class="record-mode-badge ' + badgeClass + '">' + escapeHtml(modeLabel) + '</span>' +
+                '</div>' +
+              '</div>' +
+              '<span class="record-toggle" id="rec-toggle-' + idx + '">&#9660;</span>' +
+            '</div>' +
+            '<div class="record-body" id="rec-body-' + idx + '">' +
+              situationHtml +
+              '<ul class="summary-qa">' + qaHtml + '</ul>' +
+            '</div>' +
+          '</li>';
+        }).join('');
+      } catch (err) {
+        statusEl.textContent = 'Could not load records from Supabase. Make sure the thought_records table exists.';
+        statusEl.className = 'status-msg error';
+      }
+    }
+
+    function toggleRecord(idx) {
+      const body = document.getElementById('rec-body-' + idx);
+      const toggle = document.getElementById('rec-toggle-' + idx);
+      body.classList.toggle('open');
+      toggle.classList.toggle('open');
+    }
+
+    fetchRecords();
+  </script>
+</body>
+</html>
