@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom Logger — Medication Reference Guide</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --border: #e2e8f0;
+      --accent: #059669;
+      --warning: #d97706;
+      --danger: #b91c1c;
+      --success-bg: #dcfce7;
+      --success-text: #166534;
+      --danger-bg: #fee2e2;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.75rem; font-weight: 700; }
+    header p { font-size: 0.9rem; opacity: 0.85; margin-top: 0.25rem; }
+    .page-nav {
+      background: #1d4ed8;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+    }
+    .page-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 4px;
+      opacity: 0.8;
+    }
+    .page-nav a:hover { background: rgba(255,255,255,0.15); opacity: 1; }
+    .page-nav a.active { background: rgba(255,255,255,0.2); opacity: 1; font-weight: 600; }
+    .disclaimer {
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      color: #92400e;
+      padding: 0.75rem 1.25rem;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+    .section {
+      max-width: 1100px;
+      margin: 1.5rem auto 1rem;
+      padding: 1rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .section h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary);
+    }
+    .section h3 {
+      font-size: 1rem;
+      margin-bottom: 0.6rem;
+      color: var(--text);
+    }
+    .status {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+    }
+    .status.success { color: var(--success-text); }
+    .status.error { color: var(--danger); }
+    .filter-bar {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-bottom: 1rem;
+      align-items: end;
+    }
+    .field label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="number"], select, textarea {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      background: #fff;
+      font-family: inherit;
+    }
+    textarea { resize: vertical; min-height: 60px; }
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.62rem 0.9rem;
+      font-size: 0.92rem;
+      cursor: pointer;
+    }
+    button:hover { opacity: 0.9; }
+    button.secondary { background: #475569; }
+    button.danger-btn { background: var(--danger); }
+    button.accent-btn { background: var(--accent); }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .success-box {
+      margin-top: 0.5rem;
+      border: 1px solid #86efac;
+      background: var(--success-bg);
+      color: var(--success-text);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      display: none;
+      font-size: 0.9rem;
+    }
+    .error-box {
+      margin-top: 0.5rem;
+      border: 1px solid #fecaca;
+      background: var(--danger-bg);
+      color: var(--danger);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      display: none;
+      font-size: 0.9rem;
+    }
+
+    /* Symptom list */
+    .symptom-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .symptom-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .symptom-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 0.85rem;
+      cursor: pointer;
+      background: #fff;
+      user-select: none;
+    }
+    .symptom-header:hover { background: var(--primary-light); }
+    .symptom-header.expanded { background: var(--primary-light); }
+    .symptom-name { font-weight: 600; font-size: 0.95rem; flex: 1; }
+    .symptom-prompt { font-size: 0.82rem; color: var(--text-secondary); }
+    .system-badge {
+      font-size: 0.72rem;
+      background: var(--primary-light);
+      color: var(--primary);
+      border-radius: 4px;
+      padding: 0.15rem 0.45rem;
+      white-space: nowrap;
+      font-weight: 600;
+    }
+    .chevron {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      transition: transform 0.15s;
+      margin-left: auto;
+    }
+    .symptom-header.expanded .chevron { transform: rotate(180deg); }
+    .symptom-form {
+      display: none;
+      padding: 0.85rem;
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+    }
+    .symptom-form.visible { display: block; }
+    .form-grid {
+      display: grid;
+      gap: 0.65rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-bottom: 0.75rem;
+    }
+    .form-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+    .form-validation-msg {
+      font-size: 0.82rem;
+      color: var(--danger);
+      display: none;
+    }
+    .no-results {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .results-info {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Session panel */
+    .session-panel {
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      background: #fff;
+    }
+    .session-panel h3 { color: var(--primary); margin-bottom: 0.6rem; }
+    .session-empty { font-size: 0.9rem; color: var(--text-secondary); }
+    .session-items { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
+    .session-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      font-size: 0.88rem;
+    }
+    .session-item-info { flex: 1; }
+    .session-item-name { font-weight: 600; }
+    .session-item-meta { color: var(--text-secondary); font-size: 0.82rem; margin-top: 0.15rem; }
+    .remove-btn {
+      background: none;
+      border: none;
+      color: var(--danger);
+      cursor: pointer;
+      font-size: 0.85rem;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      line-height: 1;
+    }
+    .remove-btn:hover { background: var(--danger-bg); }
+    .session-actions { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+
+    /* History table */
+    .logs-table-wrap { margin-top: 0.8rem; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      padding: 0.45rem;
+    }
+    th { color: var(--text-secondary); font-weight: 600; }
+    .log-search-wrap { margin-bottom: 0.5rem; }
+    .log-search-wrap input { max-width: 400px; }
+    .presence-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+    }
+    .presence-present { background: var(--success-bg); color: var(--success-text); }
+    .presence-absent { background: #e2e8f0; color: #475569; }
+    .presence-unsure { background: #fef3c7; color: #92400e; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.3rem; }
+      .filter-bar { grid-template-columns: 1fr; }
+      .form-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Medication Reference Guide</h1>
+    <p id="source-info"></p>
+  </header>
+  <nav class="page-nav">
+    <a href="index.html">📋 Medication Reference</a>
+    <a href="logger.html">💊 Dose Logger</a>
+    <a href="socratic.html">🧠 Socratic Questioning</a>
+    <a href="symptom_logger.html" class="active">🩺 Symptom Logger</a>
+  </nav>
+  <div class="disclaimer" id="disclaimer"></div>
+
+  <section class="section">
+    <h2>Log Symptoms</h2>
+    <div class="status" id="status">Loading symptom library…</div>
+
+    <div class="filter-bar">
+      <div class="field">
+        <label for="system-filter">Body System</label>
+        <select id="system-filter">
+          <option value="">All Systems</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="symptom-search">Search Symptoms</label>
+        <input type="text" id="symptom-search" placeholder="Type symptom name or keyword…" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="results-info" id="results-info"></div>
+    <div class="symptom-list" id="symptom-list"></div>
+
+    <div class="session-panel" id="session-panel">
+      <h3>Current Session — <span id="session-count">0</span> symptom(s) added</h3>
+      <div class="session-empty" id="session-empty">No symptoms added yet. Expand a symptom above to fill in details and add it to the session.</div>
+      <div class="session-items" id="session-items" style="display:none;"></div>
+      <div class="session-actions">
+        <button type="button" id="submit-btn" class="accent-btn" disabled>Submit Session</button>
+        <button type="button" id="clear-btn" class="secondary" style="display:none;">Clear Session</button>
+      </div>
+      <div class="success-box" id="success-box"></div>
+      <div class="error-box" id="error-box"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Symptom Log History</h2>
+    <div class="status" id="history-status">Loading history…</div>
+    <div class="log-search-wrap">
+      <input type="text" id="log-search" placeholder="Search by symptom, system, or notes…" autocomplete="off" aria-label="Search symptom logs">
+    </div>
+    <div class="logs-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date / Time</th>
+            <th>Symptom</th>
+            <th>System</th>
+            <th>Presence</th>
+            <th>Severity</th>
+            <th>Frequency</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="logs-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer id="footer">Medication Reference Guide — symptom data sourced from comprehensive_master_symptom_library.json</footer>
+
+  <script>
+    // ─── Constants ─────────────────────────────────────────────────────────────
+    const SUPABASE_URL = 'https://nbfowxkikrrlaxkeomcn.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5iZm93eGtpa3JybGF4a2VvbWNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MTgxNjQsImV4cCI6MjA5MDI5NDE2NH0.BEmCznniskPWUCcXpJLY4yGsnwD7Y9hmhP82ZOggKo8';
+
+    const MAX_SHOWN           = 60;
+    const HISTORY_FETCH_LIMIT = 50;
+
+    const SEVERITY_LABELS   = ['None', 'Mild', 'Moderate', 'Severe', 'Very severe'];
+    const FREQUENCY_LABELS  = ['Never', 'Rarely', 'Sometimes', 'Often', 'Constantly'];
+    const IMPACT_LABELS     = ['Not at all', 'A little', 'Somewhat', 'A lot', 'Extremely'];
+
+    // ─── Field definitions ──────────────────────────────────────────────────────
+    const FIELD_DEFS = {
+      presence: {
+        label: 'Presence', required: true, type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: 'present', label: 'Present' },
+          { value: 'absent',  label: 'Absent'  },
+          { value: 'unsure',  label: 'Unsure'  }
+        ]
+      },
+      severity: {
+        label: 'Severity (0–4)', type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: '0', label: '0 – None'       },
+          { value: '1', label: '1 – Mild'       },
+          { value: '2', label: '2 – Moderate'   },
+          { value: '3', label: '3 – Severe'     },
+          { value: '4', label: '4 – Very severe'}
+        ]
+      },
+      frequency: {
+        label: 'Frequency (0–4)', type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: '0', label: '0 – Never'     },
+          { value: '1', label: '1 – Rarely'    },
+          { value: '2', label: '2 – Sometimes' },
+          { value: '3', label: '3 – Often'     },
+          { value: '4', label: '4 – Constantly'}
+        ]
+      },
+      functional_impact: {
+        label: 'Functional Impact (0–4)', type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: '0', label: '0 – Not at all'},
+          { value: '1', label: '1 – A little'  },
+          { value: '2', label: '2 – Somewhat'  },
+          { value: '3', label: '3 – A lot'     },
+          { value: '4', label: '4 – Extremely' }
+        ]
+      },
+      onset: {
+        label: 'Onset', type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: 'sudden',   label: 'Sudden'                   },
+          { value: 'gradual',  label: 'Gradual'                  },
+          { value: 'episodic', label: 'Episodic / comes in attacks'},
+          { value: 'unknown',  label: 'Unsure'                   }
+        ]
+      },
+      laterality: {
+        label: 'Side', type: 'select',
+        options: [
+          { value: '', label: 'Select…' },
+          { value: 'left',           label: 'Left'                        },
+          { value: 'right',          label: 'Right'                       },
+          { value: 'bilateral',      label: 'Both sides'                  },
+          { value: 'midline',        label: 'Midline / center'            },
+          { value: 'diffuse',        label: 'Diffuse / hard to localize'  },
+          { value: 'not_applicable', label: 'Not applicable'              }
+        ]
+      },
+      duration:               { label: 'Duration',                type: 'text', placeholder: 'e.g. lasts 10 min, started 3 weeks ago' },
+      location:               { label: 'Location',                type: 'text', placeholder: 'e.g. left lower abdomen, center of chest' },
+      radiation:              { label: 'Radiation',               type: 'text', placeholder: 'Does it travel anywhere else?' },
+      quality:                { label: 'Quality',                 type: 'text', placeholder: 'e.g. sharp, dull, burning, throbbing' },
+      triggers:               { label: 'Triggers',                type: 'text', placeholder: 'e.g. movement, stress, meals' },
+      relieving_factors:      { label: 'Relieving Factors',       type: 'text', placeholder: 'e.g. rest, ice, medication' },
+      associated_symptoms:    { label: 'Associated Symptoms',     type: 'text', placeholder: 'Other symptoms at the same time' },
+      quantity:               { label: 'Quantity',                type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
+      medication_context:     { label: 'Medication Context',      type: 'text', placeholder: 'Related medications (e.g. blood thinners)' },
+      color:                  { label: 'Color',                   type: 'text', placeholder: 'e.g. clear, yellow, green, red' },
+      amount:                 { label: 'Amount',                  type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
+      odor:                   { label: 'Odor',                    type: 'text', placeholder: 'e.g. none, foul, sweet' },
+      timing:                 { label: 'Timing',                  type: 'text', placeholder: 'e.g. morning, after meals, at night' },
+      appearance:             { label: 'Appearance',              type: 'text', placeholder: 'e.g. flat, raised, blistering, scaly' },
+      spread_pattern:         { label: 'Spread Pattern',          type: 'text', placeholder: 'Staying in one place or spreading?' },
+      itch_or_pain:           { label: 'Itch or Pain',            type: 'text', placeholder: 'Itchy, painful, both, or neither?' },
+      trigger_context:        { label: 'Trigger Context',         type: 'text', placeholder: 'Position, activity, or stressor' },
+      exertional_context:     { label: 'Exertional Context',      type: 'text', placeholder: 'At rest, mild activity, or heavy activity?' },
+      positional_context:     { label: 'Positional Context',      type: 'text', placeholder: 'Does body position change the symptom?' },
+      time_pattern:           { label: 'Time Pattern',            type: 'text', placeholder: 'e.g. every morning, around menstrual cycle' },
+      safety_impact:          { label: 'Safety Impact',           type: 'text', placeholder: 'Any immediate safety concern?' },
+      meal_relation:          { label: 'Meal Relation',           type: 'text', placeholder: 'Before, during, or after meals?' },
+      stool_or_emesis_character: { label: 'Stool / Vomit Character', type: 'text', placeholder: 'Color, consistency, blood, mucus?' },
+      cycle_relation:         { label: 'Cycle Relation',          type: 'text', placeholder: 'Related to menstrual cycle?' },
+      pregnancy_context:      { label: 'Pregnancy Context',       type: 'text', placeholder: 'Is pregnancy relevant?' },
+      sexual_context:         { label: 'Sexual Context',          type: 'text', placeholder: 'Linked to sexual activity?' },
+      age_context:            { label: 'Age Context',             type: 'text', placeholder: "Child's age and expected development" },
+      feeding_context:        { label: 'Feeding Context',         type: 'text', placeholder: 'Intake, latch, vomiting, urine/stool output' },
+      developmental_context:  { label: 'Developmental Context',   type: 'text', placeholder: 'Which milestones are affected?' }
+    };
+
+    // Fields stored as dedicated DB columns; everything else goes into `details`
+    const STRUCTURED_FIELDS = new Set([
+      'presence', 'severity', 'frequency', 'functional_impact',
+      'onset', 'laterality', 'duration', 'location', 'quality',
+      'triggers', 'relieving_factors', 'associated_symptoms'
+    ]);
+
+    // ─── App state ──────────────────────────────────────────────────────────────
+    let symptomMap  = {};   // symptom_id → symptom object
+    let systemMap   = {};   // system_key → { label, symptom_ids[] }
+    let allSymptoms = [];
+    let session     = [];   // array of { symptom, answers }
+    let logs        = [];
+    let expandedId  = null;
+
+    // ─── Utilities ──────────────────────────────────────────────────────────────
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(str == null ? '' : String(str)));
+      return div.innerHTML;
+    }
+
+    function formatTimestamp(value) {
+      const date = new Date(value);
+      if (isNaN(date.getTime())) return value || '';
+      return date.toLocaleString(undefined, {
+        month: 'short', day: 'numeric', year: 'numeric',
+        hour: 'numeric', minute: '2-digit'
+      });
+    }
+
+    function setStatus(msg, type) {
+      const el = document.getElementById('status');
+      el.textContent = msg;
+      el.className = 'status' + (type ? ' ' + type : '');
+    }
+
+    function setHistoryStatus(msg) {
+      document.getElementById('history-status').textContent = msg;
+    }
+
+    function systemLabel(key) {
+      return (systemMap[key] && systemMap[key].label) || key;
+    }
+
+    // ─── Library loading ────────────────────────────────────────────────────────
+    async function loadSymptomLibrary() {
+      try {
+        const res = await fetch('comprehensive_master_symptom_library.json');
+        if (!res.ok) throw new Error('Failed to load comprehensive_master_symptom_library.json: HTTP ' + res.status);
+        const data = await res.json();
+
+        allSymptoms = data.symptoms || [];
+        allSymptoms.forEach(function(s) { symptomMap[s.id] = s; });
+
+        (data.systems || []).forEach(function(sys) {
+          systemMap[sys.system_key] = { label: sys.label, symptom_ids: sys.symptom_ids };
+        });
+
+        populateSystemFilter(data.systems || []);
+        setStatus(allSymptoms.length + ' symptoms loaded. Select a system or search to begin.', 'success');
+        renderSymptomList();
+      } catch (err) {
+        setStatus('Error loading symptom library: ' + err.message, 'error');
+      }
+    }
+
+    function populateSystemFilter(systems) {
+      const sel = document.getElementById('system-filter');
+      systems.forEach(function(sys) {
+        const opt = document.createElement('option');
+        opt.value = sys.system_key;
+        opt.textContent = sys.label + ' (' + sys.symptom_ids.length + ')';
+        sel.appendChild(opt);
+      });
+    }
+
+    // ─── Symptom list rendering ─────────────────────────────────────────────────
+    function getFilteredSymptoms() {
+      const systemKey = document.getElementById('system-filter').value;
+      const query     = document.getElementById('symptom-search').value.toLowerCase().trim();
+
+      let subset = allSymptoms;
+      if (systemKey) {
+        const ids = new Set((systemMap[systemKey] || {}).symptom_ids || []);
+        subset = allSymptoms.filter(function(s) { return ids.has(s.id); });
+      }
+      if (query) {
+        subset = subset.filter(function(s) {
+          return s.display_name.toLowerCase().includes(query) ||
+                 s.canonical_name.toLowerCase().includes(query) ||
+                 (s.synonyms || []).some(function(syn) { return syn.toLowerCase().includes(query); }) ||
+                 (s.patient_prompt || '').toLowerCase().includes(query);
+        });
+      }
+      return subset;
+    }
+
+    function renderSymptomList() {
+      const filtered = getFilteredSymptoms();
+      const container = document.getElementById('symptom-list');
+      const info = document.getElementById('results-info');
+
+      if (!allSymptoms.length) { container.innerHTML = ''; info.textContent = ''; return; }
+
+      const shown = filtered.slice(0, MAX_SHOWN);
+
+      info.textContent = filtered.length === 0
+        ? ''
+        : 'Showing ' + shown.length + (filtered.length > MAX_SHOWN ? ' of ' + filtered.length : '') + ' symptom' + (shown.length !== 1 ? 's' : '');
+
+      if (!filtered.length) {
+        container.innerHTML = '<div class="no-results">No symptoms match your filter.</div>';
+        return;
+      }
+
+      container.innerHTML = shown.map(function(s) {
+        return buildSymptomCard(s);
+      }).join('');
+
+      // Re-attach expand listeners
+      container.querySelectorAll('.symptom-header').forEach(function(header) {
+        header.addEventListener('click', function() {
+          toggleExpand(header.dataset.id);
+        });
+      });
+
+      // Re-attach "Add to Session" buttons
+      container.querySelectorAll('.add-to-session-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          addToSession(btn.dataset.id);
+        });
+      });
+    }
+
+    function buildSymptomCard(symptom) {
+      const isExpanded = expandedId === symptom.id;
+      const sysLabel   = systemLabel(symptom.primary_system);
+
+      return (
+        '<div class="symptom-item" id="card-' + escapeHtml(symptom.id) + '">' +
+          '<div class="symptom-header' + (isExpanded ? ' expanded' : '') + '" data-id="' + escapeHtml(symptom.id) + '">' +
+            '<div>' +
+              '<div class="symptom-name">' + escapeHtml(symptom.display_name) + '</div>' +
+              '<div class="symptom-prompt">' + escapeHtml(symptom.patient_prompt || '') + '</div>' +
+            '</div>' +
+            '<span class="system-badge">' + escapeHtml(sysLabel) + '</span>' +
+            '<span class="chevron">▼</span>' +
+          '</div>' +
+          '<div class="symptom-form' + (isExpanded ? ' visible' : '') + '" id="form-' + escapeHtml(symptom.id) + '">' +
+            buildSymptomForm(symptom) +
+          '</div>' +
+        '</div>'
+      );
+    }
+
+    function buildSymptomForm(symptom) {
+      const fields = symptom.recommended_answer_fields || ['presence', 'severity', 'frequency'];
+      const formId = 'sf-' + symptom.id;
+
+      let html = '<form id="' + escapeHtml(formId) + '" novalidate><div class="form-grid">';
+      fields.forEach(function(fieldName) {
+        const def = FIELD_DEFS[fieldName];
+        if (!def) return;
+        html += '<div class="field">';
+        html += '<label for="' + escapeHtml(formId + '-' + fieldName) + '">' +
+                  escapeHtml(def.label) + (def.required ? ' *' : '') +
+                '</label>';
+        if (def.type === 'select') {
+          html += '<select id="' + escapeHtml(formId + '-' + fieldName) + '" name="' + escapeHtml(fieldName) + '"' +
+                  (def.required ? ' required' : '') + '>';
+          def.options.forEach(function(opt) {
+            html += '<option value="' + escapeHtml(opt.value) + '">' + escapeHtml(opt.label) + '</option>';
+          });
+          html += '</select>';
+        } else {
+          html += '<input type="text" id="' + escapeHtml(formId + '-' + fieldName) + '" name="' + escapeHtml(fieldName) + '" placeholder="' + escapeHtml(def.placeholder || '') + '">';
+        }
+        html += '</div>';
+      });
+      html += '</div>';
+
+      // Notes field always shown at the end
+      html += '<div class="field" style="grid-column:1/-1;margin-bottom:0.65rem;">' +
+                '<label for="' + escapeHtml(formId + '-notes') + '">Notes (optional)</label>' +
+                '<input type="text" id="' + escapeHtml(formId + '-notes') + '" name="notes" placeholder="Any additional observations…">' +
+              '</div>';
+
+      html += '<div class="form-actions">' +
+                '<button type="button" class="add-to-session-btn accent-btn" data-id="' + escapeHtml(symptom.id) + '">＋ Add to Session</button>' +
+                '<span class="form-validation-msg" id="val-' + escapeHtml(symptom.id) + '">Please select Presence before adding.</span>' +
+              '</div>';
+      html += '</form>';
+      return html;
+    }
+
+    function toggleExpand(symptomId) {
+      if (expandedId === symptomId) {
+        expandedId = null;
+      } else {
+        expandedId = symptomId;
+      }
+      renderSymptomList();
+    }
+
+    // ─── Session management ─────────────────────────────────────────────────────
+    function collectFormAnswers(symptomId) {
+      const formId = 'sf-' + symptomId;
+      const form   = document.getElementById(formId);
+      if (!form) return null;
+
+      const answers = {};
+      form.querySelectorAll('input[name], select[name]').forEach(function(el) {
+        if (el.value.trim() !== '') {
+          answers[el.name] = el.value.trim();
+        }
+      });
+      return answers;
+    }
+
+    function addToSession(symptomId) {
+      const answers = collectFormAnswers(symptomId);
+      if (!answers || !answers.presence) {
+        const valMsg = document.getElementById('val-' + symptomId);
+        if (valMsg) { valMsg.style.display = 'inline'; }
+        return;
+      }
+      const valMsg = document.getElementById('val-' + symptomId);
+      if (valMsg) { valMsg.style.display = 'none'; }
+
+      const symptom = symptomMap[symptomId];
+      // Replace existing entry for same symptom if re-added
+      const existing = session.findIndex(function(e) { return e.symptom.id === symptomId; });
+      if (existing >= 0) {
+        session[existing] = { symptom: symptom, answers: answers };
+      } else {
+        session.push({ symptom: symptom, answers: answers });
+      }
+      expandedId = null;
+      renderSymptomList();
+      renderSession();
+    }
+
+    function removeFromSession(index) {
+      session.splice(index, 1);
+      renderSession();
+    }
+
+    function renderSession() {
+      const countEl   = document.getElementById('session-count');
+      const emptyEl   = document.getElementById('session-empty');
+      const itemsEl   = document.getElementById('session-items');
+      const submitBtn = document.getElementById('submit-btn');
+      const clearBtn  = document.getElementById('clear-btn');
+
+      countEl.textContent = session.length;
+
+      if (session.length === 0) {
+        emptyEl.style.display = '';
+        itemsEl.style.display = 'none';
+        submitBtn.disabled = true;
+        clearBtn.style.display = 'none';
+        return;
+      }
+
+      emptyEl.style.display = 'none';
+      itemsEl.style.display = 'flex';
+      submitBtn.disabled = false;
+      clearBtn.style.display = '';
+
+      itemsEl.innerHTML = session.map(function(entry, i) {
+        const s  = entry.symptom;
+        const a  = entry.answers;
+        const presenceClass = 'presence-' + (a.presence || 'unsure');
+        const metaParts = [];
+        if (a.severity !== undefined && a.severity !== '') {
+          metaParts.push('Severity: ' + SEVERITY_LABELS[parseInt(a.severity, 10)]);
+        }
+        if (a.frequency !== undefined && a.frequency !== '') {
+          metaParts.push('Frequency: ' + FREQUENCY_LABELS[parseInt(a.frequency, 10)]);
+        }
+        if (a.duration) metaParts.push('Duration: ' + a.duration);
+
+        return (
+          '<div class="session-item">' +
+            '<div class="session-item-info">' +
+              '<div class="session-item-name">' + escapeHtml(s.display_name) + '</div>' +
+              '<div class="session-item-meta">' +
+                '<span class="presence-badge ' + escapeHtml(presenceClass) + '">' + escapeHtml(a.presence || '') + '</span>' +
+                (metaParts.length ? ' &nbsp;' + escapeHtml(metaParts.join(' · ')) : '') +
+              '</div>' +
+            '</div>' +
+            '<button type="button" class="remove-btn" data-index="' + i + '" aria-label="Remove ' + escapeHtml(s.display_name) + ' from session">✕</button>' +
+          '</div>'
+        );
+      }).join('');
+
+      itemsEl.querySelectorAll('.remove-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() { removeFromSession(Number(btn.dataset.index)); });
+      });
+    }
+
+    // ─── Supabase submit ────────────────────────────────────────────────────────
+    async function submitSession() {
+      const submitBtn = document.getElementById('submit-btn');
+      const successBox = document.getElementById('success-box');
+      const errorBox   = document.getElementById('error-box');
+      successBox.style.display = 'none';
+      errorBox.style.display   = 'none';
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Submitting…';
+
+      const rows = session.map(function(entry) {
+        return buildRow(entry.symptom, entry.answers);
+      });
+
+      try {
+        const res = await fetch(SUPABASE_URL + '/rest/v1/symptom_logs', {
+          method: 'POST',
+          headers: {
+            'apikey':        SUPABASE_ANON_KEY,
+            'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+            'Content-Type':  'application/json',
+            'Prefer':        'return=minimal'
+          },
+          body: JSON.stringify(rows)
+        });
+        if (!res.ok) {
+          const text = await res.text();
+          throw new Error('Supabase error ' + res.status + ': ' + text);
+        }
+        const count = session.length;
+        session = [];
+        renderSession();
+        successBox.textContent = count + ' symptom' + (count !== 1 ? 's' : '') + ' logged successfully.';
+        successBox.style.display = 'block';
+        await fetchLogs();
+      } catch (err) {
+        errorBox.textContent = 'Failed to submit: ' + err.message;
+        errorBox.style.display = 'block';
+        submitBtn.disabled = false;
+      }
+      submitBtn.textContent = 'Submit Session';
+    }
+
+    function buildRow(symptom, answers) {
+      const details = {};
+      Object.keys(answers).forEach(function(key) {
+        if (!STRUCTURED_FIELDS.has(key)) {
+          details[key] = answers[key];
+        }
+      });
+
+      return {
+        symptom_id:          symptom.id,
+        symptom_name:        symptom.display_name,
+        system_key:          symptom.primary_system,
+        presence:            answers.presence || 'unsure',
+        severity:            (function() { var v = parseInt(answers.severity, 10); return !isNaN(v) ? v : null; }()),
+        frequency:           (function() { var v = parseInt(answers.frequency, 10); return !isNaN(v) ? v : null; }()),
+        functional_impact:   (function() { var v = parseInt(answers.functional_impact, 10); return !isNaN(v) ? v : null; }()),
+        onset:               answers.onset     || null,
+        laterality:          answers.laterality || null,
+        duration:            answers.duration  || null,
+        location:            answers.location  || null,
+        quality:             answers.quality   || null,
+        triggers:            answers.triggers  || null,
+        relieving_factors:   answers.relieving_factors || null,
+        associated_symptoms: answers.associated_symptoms || null,
+        notes:               answers.notes     || null,
+        details:             Object.keys(details).length ? details : {}
+      };
+    }
+
+    // ─── Fetch & render history ─────────────────────────────────────────────────
+    async function fetchLogs() {
+      try {
+        const res = await fetch(
+          SUPABASE_URL + '/rest/v1/symptom_logs?select=*&order=logged_at.desc&limit=' + HISTORY_FETCH_LIMIT,
+          { headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY } }
+        );
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        logs = await res.json();
+        setHistoryStatus('');
+        renderLogsTable();
+      } catch (err) {
+        setHistoryStatus('Could not load log history from Supabase.');
+        renderLogsTable();
+      }
+    }
+
+    function renderLogsTable(filterText) {
+      const body  = document.getElementById('logs-body');
+      const query = (filterText || '').toLowerCase().trim();
+      const filtered = query ? logs.filter(function(row) {
+        return (row.symptom_name || '').toLowerCase().includes(query) ||
+               (row.system_key   || '').toLowerCase().includes(query) ||
+               (row.notes        || '').toLowerCase().includes(query) ||
+               (row.presence     || '').toLowerCase().includes(query);
+      }) : logs;
+
+      if (!filtered.length) {
+        body.innerHTML = '<tr><td colspan="7" style="color:#64748b;">' +
+          (query ? 'No matching entries.' : 'No logged symptoms yet.') + '</td></tr>';
+        return;
+      }
+
+      body.innerHTML = filtered.map(function(row) {
+        const presClass = 'presence-badge presence-' + escapeHtml(row.presence || 'unsure');
+        const sevLabel  = row.severity   != null ? SEVERITY_LABELS[row.severity]   : '—';
+        const freqLabel = row.frequency  != null ? FREQUENCY_LABELS[row.frequency] : '—';
+        return (
+          '<tr>' +
+            '<td>' + escapeHtml(formatTimestamp(row.logged_at)) + '</td>' +
+            '<td>' + escapeHtml(row.symptom_name || '') + '</td>' +
+            '<td>' + escapeHtml(systemLabel(row.system_key)) + '</td>' +
+            '<td><span class="' + presClass + '">' + escapeHtml(row.presence || '') + '</span></td>' +
+            '<td>' + escapeHtml(sevLabel) + '</td>' +
+            '<td>' + escapeHtml(freqLabel) + '</td>' +
+            '<td>' + escapeHtml(row.notes || '') + '</td>' +
+          '</tr>'
+        );
+      }).join('');
+    }
+
+    // ─── Event listeners ────────────────────────────────────────────────────────
+    document.getElementById('system-filter').addEventListener('change', function() {
+      expandedId = null;
+      renderSymptomList();
+    });
+
+    document.getElementById('symptom-search').addEventListener('input', function() {
+      expandedId = null;
+      renderSymptomList();
+    });
+
+    document.getElementById('submit-btn').addEventListener('click', submitSession);
+
+    document.getElementById('clear-btn').addEventListener('click', function() {
+      session = [];
+      renderSession();
+      document.getElementById('success-box').style.display = 'none';
+      document.getElementById('error-box').style.display = 'none';
+    });
+
+    document.getElementById('log-search').addEventListener('input', function(e) {
+      renderLogsTable(e.target.value);
+    });
+
+    // ─── Init ───────────────────────────────────────────────────────────────────
+    (function init() {
+      loadSymptomLibrary();
+      fetchLogs();
+    })();
+  </script>
+</body>
+</html>
