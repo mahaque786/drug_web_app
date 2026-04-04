@@ -62,23 +62,18 @@
       text-align: center;
     }
     .section {
-      max-width: 1100px;
+      max-width: 860px;
       margin: 1.5rem auto 1rem;
-      padding: 1rem;
+      padding: 1.5rem;
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
     }
     .section h2 {
       font-size: 1.15rem;
       margin-bottom: 0.8rem;
       color: var(--primary);
-    }
-    .section h3 {
-      font-size: 1rem;
-      margin-bottom: 0.6rem;
-      color: var(--text);
     }
     .status {
       font-size: 0.9rem;
@@ -87,22 +82,7 @@
     }
     .status.success { color: var(--success-text); }
     .status.error { color: var(--danger); }
-    .filter-bar {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      margin-bottom: 1rem;
-      align-items: end;
-    }
-    .field label {
-      display: block;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--text-secondary);
-      margin-bottom: 0.25rem;
-      font-weight: 600;
-    }
+
     input[type="text"], input[type="number"], select, textarea {
       width: 100%;
       padding: 0.6rem 0.75rem;
@@ -112,157 +92,52 @@
       background: #fff;
       font-family: inherit;
     }
+    input[type="text"]:focus, select:focus, textarea:focus {
+      outline: 2px solid var(--primary);
+      outline-offset: 1px;
+    }
     textarea { resize: vertical; min-height: 60px; }
     button {
       background: var(--primary);
       color: #fff;
       border: none;
       border-radius: 6px;
-      padding: 0.62rem 0.9rem;
+      padding: 0.62rem 1.1rem;
       font-size: 0.92rem;
       cursor: pointer;
+      font-family: inherit;
     }
     button:hover { opacity: 0.9; }
     button.secondary { background: #475569; }
+    button.ghost {
+      background: none;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+    button.ghost:hover { background: var(--bg); color: var(--text); }
     button.danger-btn { background: var(--danger); }
     button.accent-btn { background: var(--accent); }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    button:disabled { opacity: 0.45; cursor: not-allowed; }
     .success-box {
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
       border: 1px solid #86efac;
       background: var(--success-bg);
       color: var(--success-text);
       border-radius: 8px;
-      padding: 0.65rem 0.9rem;
+      padding: 0.75rem 1rem;
       display: none;
       font-size: 0.9rem;
     }
     .error-box {
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
       border: 1px solid #fecaca;
       background: var(--danger-bg);
       color: var(--danger);
       border-radius: 8px;
-      padding: 0.65rem 0.9rem;
+      padding: 0.75rem 1rem;
       display: none;
       font-size: 0.9rem;
     }
-
-    /* Symptom list */
-    .symptom-list { display: flex; flex-direction: column; gap: 0.4rem; }
-    .symptom-item {
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .symptom-header {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.65rem 0.85rem;
-      cursor: pointer;
-      background: #fff;
-      user-select: none;
-    }
-    .symptom-header:hover { background: var(--primary-light); }
-    .symptom-header.expanded { background: var(--primary-light); }
-    .symptom-name { font-weight: 600; font-size: 0.95rem; flex: 1; }
-    .symptom-prompt { font-size: 0.82rem; color: var(--text-secondary); }
-    .system-badge {
-      font-size: 0.72rem;
-      background: var(--primary-light);
-      color: var(--primary);
-      border-radius: 4px;
-      padding: 0.15rem 0.45rem;
-      white-space: nowrap;
-      font-weight: 600;
-    }
-    .chevron {
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      transition: transform 0.15s;
-      margin-left: auto;
-    }
-    .symptom-header.expanded .chevron { transform: rotate(180deg); }
-    .symptom-form {
-      display: none;
-      padding: 0.85rem;
-      background: #f8fafc;
-      border-top: 1px solid var(--border);
-    }
-    .symptom-form.visible { display: block; }
-    .form-grid {
-      display: grid;
-      gap: 0.65rem;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      margin-bottom: 0.75rem;
-    }
-    .form-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
-    .form-validation-msg {
-      font-size: 0.82rem;
-      color: var(--danger);
-      display: none;
-    }
-    .no-results {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    .results-info {
-      font-size: 0.82rem;
-      color: var(--text-secondary);
-      margin-bottom: 0.5rem;
-    }
-
-    /* Session panel */
-    .session-panel {
-      margin-top: 1.5rem;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem;
-      background: #fff;
-    }
-    .session-panel h3 { color: var(--primary); margin-bottom: 0.6rem; }
-    .session-empty { font-size: 0.9rem; color: var(--text-secondary); }
-    .session-items { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
-    .session-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.75rem;
-      padding: 0.6rem 0.75rem;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      background: var(--bg);
-      font-size: 0.88rem;
-    }
-    .session-item-info { flex: 1; }
-    .session-item-name { font-weight: 600; }
-    .session-item-meta { color: var(--text-secondary); font-size: 0.82rem; margin-top: 0.15rem; }
-    .remove-btn {
-      background: none;
-      border: none;
-      color: var(--danger);
-      cursor: pointer;
-      font-size: 0.85rem;
-      padding: 0.1rem 0.3rem;
-      border-radius: 4px;
-      line-height: 1;
-    }
-    .remove-btn:hover { background: var(--danger-bg); }
-    .session-actions { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
-
-    /* History table */
-    .logs-table-wrap { margin-top: 0.8rem; overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-    th, td {
-      border-bottom: 1px solid var(--border);
-      text-align: left;
-      padding: 0.45rem;
-    }
-    th { color: var(--text-secondary); font-weight: 600; }
-    .log-search-wrap { margin-bottom: 0.5rem; }
-    .log-search-wrap input { max-width: 400px; }
     .presence-badge {
       display: inline-block;
       font-size: 0.75rem;
@@ -274,6 +149,213 @@
     .presence-absent { background: #e2e8f0; color: #475569; }
     .presence-unsure { background: #fef3c7; color: #92400e; }
 
+    /* ── Wizard progress bar ── */
+    .wizard-progress {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .wz-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+    .wz-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      width: 100%;
+      height: 2px;
+      background: var(--border);
+      z-index: 0;
+    }
+    .wz-step.done:not(:last-child)::after { background: var(--primary); }
+    .wz-circle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--border);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+      transition: background 0.2s, color 0.2s;
+    }
+    .wz-step.active .wz-circle { background: var(--primary); color: #fff; }
+    .wz-step.done .wz-circle { background: var(--accent); color: #fff; }
+    .wz-label {
+      font-size: 0.72rem;
+      margin-top: 0.3rem;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    .wz-step.active .wz-label { color: var(--primary); font-weight: 600; }
+    .wz-step.done .wz-label { color: var(--accent); }
+
+    /* ── Wizard steps ── */
+    .wizard-step { display: none; }
+    .wizard-step.active { display: block; }
+    .wizard-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+    .wizard-subtext {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Step 1: System cards ── */
+    .system-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .system-card {
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      padding: 0.75rem 0.6rem;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+      user-select: none;
+      background: #fff;
+    }
+    .system-card:hover { border-color: var(--primary); background: var(--primary-light); }
+    .system-card.selected { border-color: var(--primary); background: var(--primary-light); }
+    .system-card .sys-icon { font-size: 1.6rem; margin-bottom: 0.3rem; }
+    .system-card .sys-name { font-size: 0.8rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+    .system-card .sys-count { font-size: 0.72rem; color: var(--text-secondary); }
+
+    /* ── Step 2: Symptom chips ── */
+    .chip-search-wrap { margin-bottom: 0.85rem; }
+    .chip-search-wrap input { max-width: 380px; }
+    .chip-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      max-height: 360px;
+      overflow-y: auto;
+      padding: 0.25rem;
+    }
+    .symptom-chip {
+      border: 1.5px solid var(--border);
+      border-radius: 20px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      background: #fff;
+      transition: border-color 0.12s, background 0.12s;
+      user-select: none;
+      white-space: nowrap;
+    }
+    .symptom-chip:hover { border-color: var(--primary); background: var(--primary-light); }
+    .symptom-chip.selected { border-color: var(--primary); background: var(--primary); color: #fff; font-weight: 600; }
+    .chip-results-info { font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 0.4rem; }
+
+    /* ── Step 3: Symptom detail (one at a time) ── */
+    .symptom-progress-bar {
+      background: var(--border);
+      height: 6px;
+      border-radius: 3px;
+      margin-bottom: 0.4rem;
+      overflow: hidden;
+    }
+    .symptom-progress-fill {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      transition: width 0.3s ease;
+    }
+    .symptom-progress-label {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+    .detail-symptom-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .detail-symptom-prompt {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+    .detail-fields { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 1.5rem; }
+    .detail-field label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 0.3rem;
+    }
+    .detail-field label .req-star { color: var(--danger); }
+
+    /* ── Step 4: Review ── */
+    .review-list { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .review-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg);
+    }
+    .review-item-info { flex: 1; min-width: 0; }
+    .review-item-name { font-weight: 600; font-size: 0.95rem; }
+    .review-item-meta { font-size: 0.82rem; color: var(--text-secondary); margin-top: 0.2rem; }
+    .remove-btn {
+      background: none;
+      border: none;
+      color: var(--danger);
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .remove-btn:hover { background: var(--danger-bg); }
+
+    /* ── Wizard nav row ── */
+    .wizard-nav {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .wizard-nav .spacer { flex: 1; }
+
+    /* ── History table ── */
+    .logs-table-wrap { margin-top: 0.8rem; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+    th, td {
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      padding: 0.45rem;
+    }
+    th { color: var(--text-secondary); font-weight: 600; }
+    .log-search-wrap { margin-bottom: 0.5rem; }
+    .log-search-wrap input { max-width: 400px; }
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -284,8 +366,8 @@
     }
     @media (max-width: 600px) {
       header h1 { font-size: 1.3rem; }
-      .filter-bar { grid-template-columns: 1fr; }
-      .form-grid { grid-template-columns: 1fr; }
+      .system-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+      .wz-label { display: none; }
     }
   </style>
 </head>
@@ -302,39 +384,93 @@
   </nav>
   <div class="disclaimer" id="disclaimer"></div>
 
-  <section class="section">
-    <h2>Log Symptoms</h2>
+  <!-- ── Wizard section ───────────────────────────────────────────────────── -->
+  <section class="section" id="wizard-section">
     <div class="status" id="status">Loading symptom library…</div>
 
-    <div class="filter-bar">
-      <div class="field">
-        <label for="system-filter">Body System</label>
-        <select id="system-filter">
-          <option value="">All Systems</option>
-        </select>
+    <!-- Progress bar -->
+    <div class="wizard-progress" id="wizard-progress" style="display:none;">
+      <div class="wz-step" id="wz-step-1">
+        <div class="wz-circle">1</div>
+        <div class="wz-label">Systems</div>
       </div>
-      <div class="field">
-        <label for="symptom-search">Search Symptoms</label>
-        <input type="text" id="symptom-search" placeholder="Type symptom name or keyword…" autocomplete="off">
+      <div class="wz-step" id="wz-step-2">
+        <div class="wz-circle">2</div>
+        <div class="wz-label">Symptoms</div>
+      </div>
+      <div class="wz-step" id="wz-step-3">
+        <div class="wz-circle">3</div>
+        <div class="wz-label">Details</div>
+      </div>
+      <div class="wz-step" id="wz-step-4">
+        <div class="wz-circle">4</div>
+        <div class="wz-label">Review</div>
       </div>
     </div>
 
-    <div class="results-info" id="results-info"></div>
-    <div class="symptom-list" id="symptom-list"></div>
+    <!-- Step 1 — Select body systems -->
+    <div class="wizard-step" id="step-1">
+      <div class="wizard-heading">Which body systems are affected?</div>
+      <div class="wizard-subtext">Select all that apply. You can choose more than one, or skip straight to searching.</div>
+      <div class="system-grid" id="system-grid"></div>
+      <div class="wizard-nav">
+        <button type="button" class="ghost" id="s1-skip-btn">Skip — show all symptoms →</button>
+        <div class="spacer"></div>
+        <button type="button" id="s1-next-btn">Next →</button>
+      </div>
+    </div>
 
-    <div class="session-panel" id="session-panel">
-      <h3>Current Session — <span id="session-count">0</span> symptom(s) added</h3>
-      <div class="session-empty" id="session-empty">No symptoms added yet. Expand a symptom above to fill in details and add it to the session.</div>
-      <div class="session-items" id="session-items" style="display:none;"></div>
-      <div class="session-actions">
-        <button type="button" id="submit-btn" class="accent-btn" disabled>Submit Session</button>
-        <button type="button" id="clear-btn" class="secondary" style="display:none;">Clear Session</button>
+    <!-- Step 2 — Select symptoms -->
+    <div class="wizard-step" id="step-2">
+      <div class="wizard-heading">Which symptoms are you experiencing?</div>
+      <div class="wizard-subtext">Tap a symptom to select it. Tap again to deselect.</div>
+      <div class="chip-search-wrap">
+        <input type="text" id="chip-search" placeholder="Search symptoms…" autocomplete="off" aria-label="Search symptoms">
+      </div>
+      <div class="chip-results-info" id="chip-results-info"></div>
+      <div class="chip-grid" id="chip-grid"></div>
+      <div class="wizard-nav">
+        <button type="button" class="ghost" id="s2-back-btn">← Back</button>
+        <div class="spacer"></div>
+        <span id="s2-selected-count" style="font-size:0.85rem;color:var(--text-secondary);"></span>
+        <button type="button" id="s2-next-btn" disabled>Next →</button>
+      </div>
+    </div>
+
+    <!-- Step 3 — Detail each symptom one at a time -->
+    <div class="wizard-step" id="step-3">
+      <div class="symptom-progress-bar">
+        <div class="symptom-progress-fill" id="detail-progress-fill"></div>
+      </div>
+      <div class="symptom-progress-label" id="detail-progress-label"></div>
+      <div class="detail-symptom-name" id="detail-sym-name"></div>
+      <div class="detail-symptom-prompt" id="detail-sym-prompt"></div>
+      <div class="detail-fields" id="detail-fields"></div>
+      <div class="wizard-nav">
+        <button type="button" class="ghost" id="s3-back-btn">← Previous</button>
+        <div class="spacer"></div>
+        <button type="button" class="ghost" id="s3-skip-btn">Skip this symptom</button>
+        <button type="button" id="s3-next-btn">Save &amp; Continue →</button>
+      </div>
+    </div>
+
+    <!-- Step 4 — Review & submit -->
+    <div class="wizard-step" id="step-4">
+      <div class="wizard-heading">Review your symptom log</div>
+      <div class="wizard-subtext" id="review-subtext"></div>
+      <div class="review-list" id="review-list"></div>
+      <div class="wizard-nav">
+        <button type="button" class="ghost" id="s4-back-btn">← Back to Details</button>
+        <div class="spacer"></div>
+        <button type="button" class="ghost" id="s4-restart-btn">Start over</button>
+        <button type="button" class="accent-btn" id="submit-btn" disabled>Submit Session</button>
       </div>
       <div class="success-box" id="success-box"></div>
       <div class="error-box" id="error-box"></div>
     </div>
   </section>
 
+  <!-- ── History section ──────────────────────────────────────────────────── -->
   <section class="section">
     <h2>Symptom Log History</h2>
     <div class="status" id="history-status">Loading history…</div>
@@ -363,15 +499,39 @@
 
   <script>
     // ─── Constants ─────────────────────────────────────────────────────────────
-    const SUPABASE_URL = 'https://nbfowxkikrrlaxkeomcn.supabase.co';
+    const SUPABASE_URL      = 'https://nbfowxkikrrlaxkeomcn.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5iZm93eGtpa3JybGF4a2VvbWNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MTgxNjQsImV4cCI6MjA5MDI5NDE2NH0.BEmCznniskPWUCcXpJLY4yGsnwD7Y9hmhP82ZOggKo8';
 
-    const MAX_SHOWN           = 60;
     const HISTORY_FETCH_LIMIT = 50;
+    const MAX_CHIPS           = 120;
 
-    const SEVERITY_LABELS   = ['None', 'Mild', 'Moderate', 'Severe', 'Very severe'];
-    const FREQUENCY_LABELS  = ['Never', 'Rarely', 'Sometimes', 'Often', 'Constantly'];
-    const IMPACT_LABELS     = ['Not at all', 'A little', 'Somewhat', 'A lot', 'Extremely'];
+    const SEVERITY_LABELS  = ['None', 'Mild', 'Moderate', 'Severe', 'Very severe'];
+    const FREQUENCY_LABELS = ['Never', 'Rarely', 'Sometimes', 'Often', 'Constantly'];
+
+    const SYSTEM_ICONS = {
+      general_constitutional:              '🌡️',
+      pain:                                '⚡',
+      skin_hair_nails:                     '🩹',
+      eyes_vision:                         '👁️',
+      ears_hearing_balance:                '👂',
+      nose_sinuses_mouth_throat:           '👃',
+      respiratory:                         '🫁',
+      cardiovascular_peripheral_vascular:  '❤️',
+      gastrointestinal:                    '🫃',
+      liver_biliary_pancreatic:            '🫀',
+      urinary_renal:                       '💧',
+      reproductive_gynecologic_obstetric:  '🌸',
+      sexual_health_and_male_reproductive: '🔬',
+      breast:                              '🩺',
+      musculoskeletal:                     '🦴',
+      neurologic:                          '🧠',
+      cognitive_sleep:                     '😴',
+      psychiatric:                         '🧩',
+      endocrine_metabolic:                 '⚖️',
+      hematologic_immune_allergy:          '🩸',
+      autonomic:                           '🔄',
+      pediatric_developmental:             '👶'
+    };
 
     // ─── Field definitions ──────────────────────────────────────────────────────
     const FIELD_DEFS = {
@@ -388,86 +548,86 @@
         label: 'Severity (0–4)', type: 'select',
         options: [
           { value: '', label: 'Select…' },
-          { value: '0', label: '0 – None'       },
-          { value: '1', label: '1 – Mild'       },
-          { value: '2', label: '2 – Moderate'   },
-          { value: '3', label: '3 – Severe'     },
-          { value: '4', label: '4 – Very severe'}
+          { value: '0', label: '0 – None'        },
+          { value: '1', label: '1 – Mild'        },
+          { value: '2', label: '2 – Moderate'    },
+          { value: '3', label: '3 – Severe'      },
+          { value: '4', label: '4 – Very severe' }
         ]
       },
       frequency: {
         label: 'Frequency (0–4)', type: 'select',
         options: [
           { value: '', label: 'Select…' },
-          { value: '0', label: '0 – Never'     },
-          { value: '1', label: '1 – Rarely'    },
-          { value: '2', label: '2 – Sometimes' },
-          { value: '3', label: '3 – Often'     },
-          { value: '4', label: '4 – Constantly'}
+          { value: '0', label: '0 – Never'      },
+          { value: '1', label: '1 – Rarely'     },
+          { value: '2', label: '2 – Sometimes'  },
+          { value: '3', label: '3 – Often'      },
+          { value: '4', label: '4 – Constantly' }
         ]
       },
       functional_impact: {
         label: 'Functional Impact (0–4)', type: 'select',
         options: [
           { value: '', label: 'Select…' },
-          { value: '0', label: '0 – Not at all'},
-          { value: '1', label: '1 – A little'  },
-          { value: '2', label: '2 – Somewhat'  },
-          { value: '3', label: '3 – A lot'     },
-          { value: '4', label: '4 – Extremely' }
+          { value: '0', label: '0 – Not at all' },
+          { value: '1', label: '1 – A little'   },
+          { value: '2', label: '2 – Somewhat'   },
+          { value: '3', label: '3 – A lot'      },
+          { value: '4', label: '4 – Extremely'  }
         ]
       },
       onset: {
         label: 'Onset', type: 'select',
         options: [
           { value: '', label: 'Select…' },
-          { value: 'sudden',   label: 'Sudden'                   },
-          { value: 'gradual',  label: 'Gradual'                  },
+          { value: 'sudden',   label: 'Sudden'                    },
+          { value: 'gradual',  label: 'Gradual'                   },
           { value: 'episodic', label: 'Episodic / comes in attacks'},
-          { value: 'unknown',  label: 'Unsure'                   }
+          { value: 'unknown',  label: 'Unsure'                    }
         ]
       },
       laterality: {
         label: 'Side', type: 'select',
         options: [
           { value: '', label: 'Select…' },
-          { value: 'left',           label: 'Left'                        },
-          { value: 'right',          label: 'Right'                       },
-          { value: 'bilateral',      label: 'Both sides'                  },
-          { value: 'midline',        label: 'Midline / center'            },
-          { value: 'diffuse',        label: 'Diffuse / hard to localize'  },
-          { value: 'not_applicable', label: 'Not applicable'              }
+          { value: 'left',           label: 'Left'                       },
+          { value: 'right',          label: 'Right'                      },
+          { value: 'bilateral',      label: 'Both sides'                 },
+          { value: 'midline',        label: 'Midline / center'           },
+          { value: 'diffuse',        label: 'Diffuse / hard to localize' },
+          { value: 'not_applicable', label: 'Not applicable'             }
         ]
       },
-      duration:               { label: 'Duration',                type: 'text', placeholder: 'e.g. lasts 10 min, started 3 weeks ago' },
-      location:               { label: 'Location',                type: 'text', placeholder: 'e.g. left lower abdomen, center of chest' },
-      radiation:              { label: 'Radiation',               type: 'text', placeholder: 'Does it travel anywhere else?' },
-      quality:                { label: 'Quality',                 type: 'text', placeholder: 'e.g. sharp, dull, burning, throbbing' },
-      triggers:               { label: 'Triggers',                type: 'text', placeholder: 'e.g. movement, stress, meals' },
-      relieving_factors:      { label: 'Relieving Factors',       type: 'text', placeholder: 'e.g. rest, ice, medication' },
-      associated_symptoms:    { label: 'Associated Symptoms',     type: 'text', placeholder: 'Other symptoms at the same time' },
-      quantity:               { label: 'Quantity',                type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
-      medication_context:     { label: 'Medication Context',      type: 'text', placeholder: 'Related medications (e.g. blood thinners)' },
-      color:                  { label: 'Color',                   type: 'text', placeholder: 'e.g. clear, yellow, green, red' },
-      amount:                 { label: 'Amount',                  type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
-      odor:                   { label: 'Odor',                    type: 'text', placeholder: 'e.g. none, foul, sweet' },
-      timing:                 { label: 'Timing',                  type: 'text', placeholder: 'e.g. morning, after meals, at night' },
-      appearance:             { label: 'Appearance',              type: 'text', placeholder: 'e.g. flat, raised, blistering, scaly' },
-      spread_pattern:         { label: 'Spread Pattern',          type: 'text', placeholder: 'Staying in one place or spreading?' },
-      itch_or_pain:           { label: 'Itch or Pain',            type: 'text', placeholder: 'Itchy, painful, both, or neither?' },
-      trigger_context:        { label: 'Trigger Context',         type: 'text', placeholder: 'Position, activity, or stressor' },
-      exertional_context:     { label: 'Exertional Context',      type: 'text', placeholder: 'At rest, mild activity, or heavy activity?' },
-      positional_context:     { label: 'Positional Context',      type: 'text', placeholder: 'Does body position change the symptom?' },
-      time_pattern:           { label: 'Time Pattern',            type: 'text', placeholder: 'e.g. every morning, around menstrual cycle' },
-      safety_impact:          { label: 'Safety Impact',           type: 'text', placeholder: 'Any immediate safety concern?' },
-      meal_relation:          { label: 'Meal Relation',           type: 'text', placeholder: 'Before, during, or after meals?' },
-      stool_or_emesis_character: { label: 'Stool / Vomit Character', type: 'text', placeholder: 'Color, consistency, blood, mucus?' },
-      cycle_relation:         { label: 'Cycle Relation',          type: 'text', placeholder: 'Related to menstrual cycle?' },
-      pregnancy_context:      { label: 'Pregnancy Context',       type: 'text', placeholder: 'Is pregnancy relevant?' },
-      sexual_context:         { label: 'Sexual Context',          type: 'text', placeholder: 'Linked to sexual activity?' },
-      age_context:            { label: 'Age Context',             type: 'text', placeholder: "Child's age and expected development" },
-      feeding_context:        { label: 'Feeding Context',         type: 'text', placeholder: 'Intake, latch, vomiting, urine/stool output' },
-      developmental_context:  { label: 'Developmental Context',   type: 'text', placeholder: 'Which milestones are affected?' }
+      duration:                  { label: 'Duration',               type: 'text', placeholder: 'e.g. lasts 10 min, started 3 weeks ago' },
+      location:                  { label: 'Location',               type: 'text', placeholder: 'e.g. left lower abdomen, center of chest' },
+      radiation:                 { label: 'Radiation',              type: 'text', placeholder: 'Does it travel anywhere else?' },
+      quality:                   { label: 'Quality',                type: 'text', placeholder: 'e.g. sharp, dull, burning, throbbing' },
+      triggers:                  { label: 'Triggers',               type: 'text', placeholder: 'e.g. movement, stress, meals' },
+      relieving_factors:         { label: 'Relieving Factors',      type: 'text', placeholder: 'e.g. rest, ice, medication' },
+      associated_symptoms:       { label: 'Associated Symptoms',    type: 'text', placeholder: 'Other symptoms at the same time' },
+      quantity:                  { label: 'Quantity',               type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
+      medication_context:        { label: 'Medication Context',     type: 'text', placeholder: 'Related medications (e.g. blood thinners)' },
+      color:                     { label: 'Color',                  type: 'text', placeholder: 'e.g. clear, yellow, green, red' },
+      amount:                    { label: 'Amount',                 type: 'text', placeholder: 'e.g. trace, small, moderate, large' },
+      odor:                      { label: 'Odor',                   type: 'text', placeholder: 'e.g. none, foul, sweet' },
+      timing:                    { label: 'Timing',                 type: 'text', placeholder: 'e.g. morning, after meals, at night' },
+      appearance:                { label: 'Appearance',             type: 'text', placeholder: 'e.g. flat, raised, blistering, scaly' },
+      spread_pattern:            { label: 'Spread Pattern',         type: 'text', placeholder: 'Staying in one place or spreading?' },
+      itch_or_pain:              { label: 'Itch or Pain',           type: 'text', placeholder: 'Itchy, painful, both, or neither?' },
+      trigger_context:           { label: 'Trigger Context',        type: 'text', placeholder: 'Position, activity, or stressor' },
+      exertional_context:        { label: 'Exertional Context',     type: 'text', placeholder: 'At rest, mild activity, or heavy activity?' },
+      positional_context:        { label: 'Positional Context',     type: 'text', placeholder: 'Does body position change the symptom?' },
+      time_pattern:              { label: 'Time Pattern',           type: 'text', placeholder: 'e.g. every morning, around menstrual cycle' },
+      safety_impact:             { label: 'Safety Impact',          type: 'text', placeholder: 'Any immediate safety concern?' },
+      meal_relation:             { label: 'Meal Relation',          type: 'text', placeholder: 'Before, during, or after meals?' },
+      stool_or_emesis_character: { label: 'Stool / Vomit Character',type: 'text', placeholder: 'Color, consistency, blood, mucus?' },
+      cycle_relation:            { label: 'Cycle Relation',         type: 'text', placeholder: 'Related to menstrual cycle?' },
+      pregnancy_context:         { label: 'Pregnancy Context',      type: 'text', placeholder: 'Is pregnancy relevant?' },
+      sexual_context:            { label: 'Sexual Context',         type: 'text', placeholder: 'Linked to sexual activity?' },
+      age_context:               { label: 'Age Context',            type: 'text', placeholder: "Child's age and expected development" },
+      feeding_context:           { label: 'Feeding Context',        type: 'text', placeholder: 'Intake, latch, vomiting, urine/stool output' },
+      developmental_context:     { label: 'Developmental Context',  type: 'text', placeholder: 'Which milestones are affected?' }
     };
 
     // Fields stored as dedicated DB columns; everything else goes into `details`
@@ -478,12 +638,20 @@
     ]);
 
     // ─── App state ──────────────────────────────────────────────────────────────
-    let symptomMap  = {};   // symptom_id → symptom object
-    let systemMap   = {};   // system_key → { label, symptom_ids[] }
-    let allSymptoms = [];
-    let session     = [];   // array of { symptom, answers }
-    let logs        = [];
-    let expandedId  = null;
+    let symptomMap     = {};   // symptom_id → symptom object
+    let systemMap      = {};   // system_key → { label, symptom_ids[] }
+    let allSystems     = [];
+    let allSymptoms    = [];
+    let logs           = [];
+
+    // Wizard state
+    let currentStep          = 1;
+    let selectedSystems      = new Set();   // system keys chosen in step 1
+    let selectedSymptomIds   = [];          // ordered list of chosen symptom IDs (step 2)
+    let detailQueue          = [];          // symptom objects to detail (step 3)
+    let detailIndex          = 0;          // which symptom we're currently on in step 3
+    let wizardAnswers        = {};          // symptomId → answers obj (null = skipped)
+    let session              = [];          // finalised {symptom, answers} for step 4
 
     // ─── Utilities ──────────────────────────────────────────────────────────────
     function escapeHtml(str) {
@@ -525,257 +693,366 @@
         allSymptoms = data.symptoms || [];
         allSymptoms.forEach(function(s) { symptomMap[s.id] = s; });
 
-        (data.systems || []).forEach(function(sys) {
+        allSystems = data.systems || [];
+        allSystems.forEach(function(sys) {
           systemMap[sys.system_key] = { label: sys.label, symptom_ids: sys.symptom_ids };
         });
 
-        populateSystemFilter(data.systems || []);
-        setStatus(allSymptoms.length + ' symptoms loaded. Select a system or search to begin.', 'success');
-        renderSymptomList();
+        setStatus('');
+        document.getElementById('wizard-progress').style.display = 'flex';
+        renderStep1();
+        goToStep(1);
       } catch (err) {
         setStatus('Error loading symptom library: ' + err.message, 'error');
       }
     }
 
-    function populateSystemFilter(systems) {
-      const sel = document.getElementById('system-filter');
-      systems.forEach(function(sys) {
-        const opt = document.createElement('option');
-        opt.value = sys.system_key;
-        opt.textContent = sys.label + ' (' + sys.symptom_ids.length + ')';
-        sel.appendChild(opt);
+    // ─── Wizard navigation ───────────────────────────────────────────────────────
+    function goToStep(n) {
+      currentStep = n;
+      [1, 2, 3, 4].forEach(function(i) {
+        document.getElementById('step-' + i).classList.toggle('active', i === n);
+        const wz = document.getElementById('wz-step-' + i);
+        wz.classList.toggle('active', i === n);
+        wz.classList.toggle('done', i < n);
       });
+      document.getElementById('wizard-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    // ─── Symptom list rendering ─────────────────────────────────────────────────
-    function getFilteredSymptoms() {
-      const systemKey = document.getElementById('system-filter').value;
-      const query     = document.getElementById('symptom-search').value.toLowerCase().trim();
-
-      let subset = allSymptoms;
-      if (systemKey) {
-        const ids = new Set((systemMap[systemKey] || {}).symptom_ids || []);
-        subset = allSymptoms.filter(function(s) { return ids.has(s.id); });
-      }
-      if (query) {
-        subset = subset.filter(function(s) {
-          return s.display_name.toLowerCase().includes(query) ||
-                 s.canonical_name.toLowerCase().includes(query) ||
-                 (s.synonyms || []).some(function(syn) { return syn.toLowerCase().includes(query); }) ||
-                 (s.patient_prompt || '').toLowerCase().includes(query);
-        });
-      }
-      return subset;
-    }
-
-    function renderSymptomList() {
-      const filtered = getFilteredSymptoms();
-      const container = document.getElementById('symptom-list');
-      const info = document.getElementById('results-info');
-
-      if (!allSymptoms.length) { container.innerHTML = ''; info.textContent = ''; return; }
-
-      const shown = filtered.slice(0, MAX_SHOWN);
-
-      info.textContent = filtered.length === 0
-        ? ''
-        : 'Showing ' + shown.length + (filtered.length > MAX_SHOWN ? ' of ' + filtered.length : '') + ' symptom' + (shown.length !== 1 ? 's' : '');
-
-      if (!filtered.length) {
-        container.innerHTML = '<div class="no-results">No symptoms match your filter.</div>';
-        return;
-      }
-
-      container.innerHTML = shown.map(function(s) {
-        return buildSymptomCard(s);
-      }).join('');
-
-      // Re-attach expand listeners
-      container.querySelectorAll('.symptom-header').forEach(function(header) {
-        header.addEventListener('click', function() {
-          toggleExpand(header.dataset.id);
-        });
-      });
-
-      // Re-attach "Add to Session" buttons
-      container.querySelectorAll('.add-to-session-btn').forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          addToSession(btn.dataset.id);
-        });
-      });
-    }
-
-    function buildSymptomCard(symptom) {
-      const isExpanded = expandedId === symptom.id;
-      const sysLabel   = systemLabel(symptom.primary_system);
-
-      return (
-        '<div class="symptom-item" id="card-' + escapeHtml(symptom.id) + '">' +
-          '<div class="symptom-header' + (isExpanded ? ' expanded' : '') + '" data-id="' + escapeHtml(symptom.id) + '">' +
-            '<div>' +
-              '<div class="symptom-name">' + escapeHtml(symptom.display_name) + '</div>' +
-              '<div class="symptom-prompt">' + escapeHtml(symptom.patient_prompt || '') + '</div>' +
-            '</div>' +
-            '<span class="system-badge">' + escapeHtml(sysLabel) + '</span>' +
-            '<span class="chevron">▼</span>' +
-          '</div>' +
-          '<div class="symptom-form' + (isExpanded ? ' visible' : '') + '" id="form-' + escapeHtml(symptom.id) + '">' +
-            buildSymptomForm(symptom) +
-          '</div>' +
-        '</div>'
-      );
-    }
-
-    function buildSymptomForm(symptom) {
-      const fields = symptom.recommended_answer_fields || ['presence', 'severity', 'frequency'];
-      const formId = 'sf-' + symptom.id;
-
-      let html = '<form id="' + escapeHtml(formId) + '" novalidate><div class="form-grid">';
-      fields.forEach(function(fieldName) {
-        const def = FIELD_DEFS[fieldName];
-        if (!def) return;
-        html += '<div class="field">';
-        html += '<label for="' + escapeHtml(formId + '-' + fieldName) + '">' +
-                  escapeHtml(def.label) + (def.required ? ' *' : '') +
-                '</label>';
-        if (def.type === 'select') {
-          html += '<select id="' + escapeHtml(formId + '-' + fieldName) + '" name="' + escapeHtml(fieldName) + '"' +
-                  (def.required ? ' required' : '') + '>';
-          def.options.forEach(function(opt) {
-            html += '<option value="' + escapeHtml(opt.value) + '">' + escapeHtml(opt.label) + '</option>';
-          });
-          html += '</select>';
-        } else {
-          html += '<input type="text" id="' + escapeHtml(formId + '-' + fieldName) + '" name="' + escapeHtml(fieldName) + '" placeholder="' + escapeHtml(def.placeholder || '') + '">';
-        }
-        html += '</div>';
-      });
-      html += '</div>';
-
-      // Notes field always shown at the end
-      html += '<div class="field" style="grid-column:1/-1;margin-bottom:0.65rem;">' +
-                '<label for="' + escapeHtml(formId + '-notes') + '">Notes (optional)</label>' +
-                '<input type="text" id="' + escapeHtml(formId + '-notes') + '" name="notes" placeholder="Any additional observations…">' +
-              '</div>';
-
-      html += '<div class="form-actions">' +
-                '<button type="button" class="add-to-session-btn accent-btn" data-id="' + escapeHtml(symptom.id) + '">＋ Add to Session</button>' +
-                '<span class="form-validation-msg" id="val-' + escapeHtml(symptom.id) + '">Please select Presence before adding.</span>' +
-              '</div>';
-      html += '</form>';
-      return html;
-    }
-
-    function toggleExpand(symptomId) {
-      if (expandedId === symptomId) {
-        expandedId = null;
-      } else {
-        expandedId = symptomId;
-      }
-      renderSymptomList();
-    }
-
-    // ─── Session management ─────────────────────────────────────────────────────
-    function collectFormAnswers(symptomId) {
-      const formId = 'sf-' + symptomId;
-      const form   = document.getElementById(formId);
-      if (!form) return null;
-
-      const answers = {};
-      form.querySelectorAll('input[name], select[name]').forEach(function(el) {
-        if (el.value.trim() !== '') {
-          answers[el.name] = el.value.trim();
-        }
-      });
-      return answers;
-    }
-
-    function addToSession(symptomId) {
-      const answers = collectFormAnswers(symptomId);
-      if (!answers || !answers.presence) {
-        const valMsg = document.getElementById('val-' + symptomId);
-        if (valMsg) { valMsg.style.display = 'inline'; }
-        return;
-      }
-      const valMsg = document.getElementById('val-' + symptomId);
-      if (valMsg) { valMsg.style.display = 'none'; }
-
-      const symptom = symptomMap[symptomId];
-      // Replace existing entry for same symptom if re-added
-      const existing = session.findIndex(function(e) { return e.symptom.id === symptomId; });
-      if (existing >= 0) {
-        session[existing] = { symptom: symptom, answers: answers };
-      } else {
-        session.push({ symptom: symptom, answers: answers });
-      }
-      expandedId = null;
-      renderSymptomList();
-      renderSession();
-    }
-
-    function removeFromSession(index) {
-      session.splice(index, 1);
-      renderSession();
-    }
-
-    function renderSession() {
-      const countEl   = document.getElementById('session-count');
-      const emptyEl   = document.getElementById('session-empty');
-      const itemsEl   = document.getElementById('session-items');
-      const submitBtn = document.getElementById('submit-btn');
-      const clearBtn  = document.getElementById('clear-btn');
-
-      countEl.textContent = session.length;
-
-      if (session.length === 0) {
-        emptyEl.style.display = '';
-        itemsEl.style.display = 'none';
-        submitBtn.disabled = true;
-        clearBtn.style.display = 'none';
-        return;
-      }
-
-      emptyEl.style.display = 'none';
-      itemsEl.style.display = 'flex';
-      submitBtn.disabled = false;
-      clearBtn.style.display = '';
-
-      itemsEl.innerHTML = session.map(function(entry, i) {
-        const s  = entry.symptom;
-        const a  = entry.answers;
-        const presenceClass = 'presence-' + (a.presence || 'unsure');
-        const metaParts = [];
-        if (a.severity !== undefined && a.severity !== '') {
-          metaParts.push('Severity: ' + SEVERITY_LABELS[parseInt(a.severity, 10)]);
-        }
-        if (a.frequency !== undefined && a.frequency !== '') {
-          metaParts.push('Frequency: ' + FREQUENCY_LABELS[parseInt(a.frequency, 10)]);
-        }
-        if (a.duration) metaParts.push('Duration: ' + a.duration);
-
+    // ─── Step 1 — System selection ───────────────────────────────────────────────
+    function renderStep1() {
+      const grid = document.getElementById('system-grid');
+      grid.innerHTML = allSystems.map(function(sys) {
+        const icon  = SYSTEM_ICONS[sys.system_key] || '🔵';
+        const sel   = selectedSystems.has(sys.system_key);
         return (
-          '<div class="session-item">' +
-            '<div class="session-item-info">' +
-              '<div class="session-item-name">' + escapeHtml(s.display_name) + '</div>' +
-              '<div class="session-item-meta">' +
-                '<span class="presence-badge ' + escapeHtml(presenceClass) + '">' + escapeHtml(a.presence || '') + '</span>' +
-                (metaParts.length ? ' &nbsp;' + escapeHtml(metaParts.join(' · ')) : '') +
-              '</div>' +
-            '</div>' +
-            '<button type="button" class="remove-btn" data-index="' + i + '" aria-label="Remove ' + escapeHtml(s.display_name) + ' from session">✕</button>' +
+          '<div class="system-card' + (sel ? ' selected' : '') + '" data-key="' + escapeHtml(sys.system_key) + '">' +
+            '<div class="sys-icon">' + icon + '</div>' +
+            '<div class="sys-name">' + escapeHtml(sys.label) + '</div>' +
+            '<div class="sys-count">' + sys.symptom_ids.length + ' symptoms</div>' +
           '</div>'
         );
       }).join('');
 
-      itemsEl.querySelectorAll('.remove-btn').forEach(function(btn) {
-        btn.addEventListener('click', function() { removeFromSession(Number(btn.dataset.index)); });
+      grid.querySelectorAll('.system-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          const key = card.dataset.key;
+          if (selectedSystems.has(key)) {
+            selectedSystems.delete(key);
+            card.classList.remove('selected');
+          } else {
+            selectedSystems.add(key);
+            card.classList.add('selected');
+          }
+        });
       });
     }
 
-    // ─── Supabase submit ────────────────────────────────────────────────────────
-    async function submitSession() {
+    document.getElementById('s1-next-btn').addEventListener('click', function() {
+      proceedToStep2();
+    });
+
+    document.getElementById('s1-skip-btn').addEventListener('click', function() {
+      selectedSystems.clear();
+      document.querySelectorAll('.system-card').forEach(function(c) { c.classList.remove('selected'); });
+      proceedToStep2();
+    });
+
+    function proceedToStep2() {
+      renderChips();
+      goToStep(2);
+    }
+
+    // ─── Step 2 — Symptom chip selection ─────────────────────────────────────────
+    function getStep2Symptoms() {
+      const query = document.getElementById('chip-search').value.toLowerCase().trim();
+      let subset = allSymptoms;
+
+      if (selectedSystems.size > 0) {
+        const ids = new Set();
+        selectedSystems.forEach(function(key) {
+          ((systemMap[key] || {}).symptom_ids || []).forEach(function(id) { ids.add(id); });
+        });
+        subset = allSymptoms.filter(function(s) { return ids.has(s.id); });
+      }
+
+      if (query) {
+        subset = subset.filter(function(s) {
+          return s.display_name.toLowerCase().includes(query) ||
+                 s.canonical_name.toLowerCase().includes(query) ||
+                 (s.synonyms || []).some(function(syn) { return syn.toLowerCase().includes(query); });
+        });
+      }
+
+      return subset;
+    }
+
+    function renderChips() {
+      const subset  = getStep2Symptoms();
+      const shown   = subset.slice(0, MAX_CHIPS);
+      const info    = document.getElementById('chip-results-info');
+      const grid    = document.getElementById('chip-grid');
+
+      info.textContent = shown.length === 0
+        ? 'No symptoms found.'
+        : 'Showing ' + shown.length + (subset.length > MAX_CHIPS ? ' of ' + subset.length : '') + ' symptom' + (shown.length !== 1 ? 's' : '');
+
+      grid.innerHTML = shown.map(function(s) {
+        const sel = selectedSymptomIds.includes(s.id);
+        return '<div class="symptom-chip' + (sel ? ' selected' : '') + '" data-id="' + escapeHtml(s.id) + '">' + escapeHtml(s.display_name) + '</div>';
+      }).join('');
+
+      grid.querySelectorAll('.symptom-chip').forEach(function(chip) {
+        chip.addEventListener('click', function() {
+          const id  = chip.dataset.id;
+          const idx = selectedSymptomIds.indexOf(id);
+          if (idx >= 0) {
+            selectedSymptomIds.splice(idx, 1);
+            chip.classList.remove('selected');
+          } else {
+            selectedSymptomIds.push(id);
+            chip.classList.add('selected');
+          }
+          updateStep2Count();
+        });
+      });
+
+      updateStep2Count();
+    }
+
+    function updateStep2Count() {
+      const n = selectedSymptomIds.length;
+      document.getElementById('s2-selected-count').textContent = n > 0 ? n + ' selected' : '';
+      document.getElementById('s2-next-btn').disabled = n === 0;
+    }
+
+    document.getElementById('chip-search').addEventListener('input', renderChips);
+
+    document.getElementById('s2-back-btn').addEventListener('click', function() {
+      goToStep(1);
+    });
+
+    document.getElementById('s2-next-btn').addEventListener('click', function() {
+      detailQueue  = selectedSymptomIds.map(function(id) { return symptomMap[id]; }).filter(Boolean);
+      detailIndex  = 0;
+      wizardAnswers = {};
+      renderStep3();
+      goToStep(3);
+    });
+
+    // ─── Step 3 — Per-symptom detail ─────────────────────────────────────────────
+    function renderStep3() {
+      const total   = detailQueue.length;
+      const current = detailIndex + 1;
+      const symptom = detailQueue[detailIndex];
+
+      // Progress
+      document.getElementById('detail-progress-fill').style.width = Math.round((detailIndex / total) * 100) + '%';
+      document.getElementById('detail-progress-label').textContent = 'Symptom ' + current + ' of ' + total + ': ' + symptom.display_name;
+
+      document.getElementById('detail-sym-name').textContent   = symptom.display_name;
+      document.getElementById('detail-sym-prompt').textContent = symptom.patient_prompt || '';
+
+      // Build fields
+      const fields  = symptom.recommended_answer_fields || ['presence', 'severity', 'frequency'];
+      const saved   = wizardAnswers[symptom.id] || {};
+      const container = document.getElementById('detail-fields');
+      container.innerHTML = '';
+
+      fields.forEach(function(fieldName) {
+        const def = FIELD_DEFS[fieldName];
+        if (!def) return;
+        const wrap  = document.createElement('div');
+        wrap.className = 'detail-field';
+        const lbl   = document.createElement('label');
+        lbl.setAttribute('for', 'df-' + fieldName);
+        lbl.innerHTML = escapeHtml(def.label) + (def.required ? ' <span class="req-star">*</span>' : '');
+        wrap.appendChild(lbl);
+
+        let input;
+        if (def.type === 'select') {
+          input = document.createElement('select');
+          input.id   = 'df-' + fieldName;
+          input.name = fieldName;
+          def.options.forEach(function(opt) {
+            const o = document.createElement('option');
+            o.value       = opt.value;
+            o.textContent = opt.label;
+            if (saved[fieldName] !== undefined && saved[fieldName] === opt.value) o.selected = true;
+            input.appendChild(o);
+          });
+        } else {
+          input = document.createElement('input');
+          input.type        = 'text';
+          input.id          = 'df-' + fieldName;
+          input.name        = fieldName;
+          input.placeholder = def.placeholder || '';
+          input.value       = saved[fieldName] || '';
+        }
+        wrap.appendChild(input);
+        container.appendChild(wrap);
+      });
+
+      // Notes
+      const notesWrap = document.createElement('div');
+      notesWrap.className = 'detail-field';
+      const notesLbl  = document.createElement('label');
+      notesLbl.setAttribute('for', 'df-notes');
+      notesLbl.textContent = 'Notes (optional)';
+      const notesInput = document.createElement('input');
+      notesInput.type        = 'text';
+      notesInput.id          = 'df-notes';
+      notesInput.name        = 'notes';
+      notesInput.placeholder = 'Any additional observations…';
+      notesInput.value       = saved.notes || '';
+      notesWrap.appendChild(notesLbl);
+      notesWrap.appendChild(notesInput);
+      container.appendChild(notesWrap);
+
+      // Update button label for last symptom
+      document.getElementById('s3-next-btn').textContent = (current === total) ? 'Save & Review →' : 'Save & Continue →';
+      // Hide "previous" on the very first symptom
+      document.getElementById('s3-back-btn').style.visibility = (detailIndex === 0) ? 'hidden' : '';
+    }
+
+    function collectDetailAnswers() {
+      const answers = {};
+      document.getElementById('detail-fields').querySelectorAll('input[name], select[name]').forEach(function(el) {
+        if (el.value.trim() !== '') answers[el.name] = el.value.trim();
+      });
+      return answers;
+    }
+
+    document.getElementById('s3-next-btn').addEventListener('click', function() {
+      const answers = collectDetailAnswers();
+      if (!answers.presence) {
+        const presenceEl = document.getElementById('df-presence');
+        if (presenceEl) {
+          presenceEl.style.outline = '2px solid var(--danger)';
+          presenceEl.focus();
+        }
+        return;
+      }
+      if (document.getElementById('df-presence')) {
+        document.getElementById('df-presence').style.outline = '';
+      }
+      wizardAnswers[detailQueue[detailIndex].id] = answers;
+      advanceDetail();
+    });
+
+    document.getElementById('s3-skip-btn').addEventListener('click', function() {
+      wizardAnswers[detailQueue[detailIndex].id] = null;
+      advanceDetail();
+    });
+
+    document.getElementById('s3-back-btn').addEventListener('click', function() {
+      if (detailIndex > 0) {
+        // Save partial answers (presence not required here) so fields are pre-filled on return
+        wizardAnswers[detailQueue[detailIndex].id] = collectDetailAnswers();
+        detailIndex--;
+        renderStep3();
+      }
+    });
+
+    function advanceDetail() {
+      if (detailIndex < detailQueue.length - 1) {
+        detailIndex++;
+        renderStep3();
+      } else {
+        buildSession();
+        renderStep4();
+        goToStep(4);
+      }
+    }
+
+    // ─── Step 4 — Review & submit ─────────────────────────────────────────────────
+    function buildSession() {
+      session = [];
+      detailQueue.forEach(function(sym) {
+        const answers = wizardAnswers[sym.id];
+        if (answers !== null && answers !== undefined) {
+          session.push({ symptom: sym, answers: answers });
+        }
+      });
+    }
+
+    function renderStep4() {
+      const list = document.getElementById('review-list');
+      const subtext = document.getElementById('review-subtext');
       const submitBtn = document.getElementById('submit-btn');
+
+      if (session.length === 0) {
+        subtext.textContent = 'No symptoms were saved (all were skipped).';
+        list.innerHTML = '';
+        submitBtn.disabled = true;
+        return;
+      }
+
+      subtext.textContent = session.length + ' symptom' + (session.length !== 1 ? 's' : '') + ' ready to log. Remove any you want to discard before submitting.';
+      submitBtn.disabled = false;
+
+      list.innerHTML = session.map(function(entry, i) {
+        const s  = entry.symptom;
+        const a  = entry.answers;
+        const presenceClass = 'presence-' + (a.presence || 'unsure');
+        const metaParts = [];
+        if (a.severity !== undefined && a.severity !== '') metaParts.push('Severity: ' + SEVERITY_LABELS[parseInt(a.severity, 10)]);
+        if (a.frequency !== undefined && a.frequency !== '') metaParts.push('Freq: ' + FREQUENCY_LABELS[parseInt(a.frequency, 10)]);
+        if (a.duration) metaParts.push(a.duration);
+
+        return (
+          '<div class="review-item">' +
+            '<div class="review-item-info">' +
+              '<div class="review-item-name">' + escapeHtml(s.display_name) + '</div>' +
+              '<div class="review-item-meta">' +
+                '<span class="presence-badge ' + escapeHtml(presenceClass) + '">' + escapeHtml(a.presence || '') + '</span>' +
+                (metaParts.length ? '&nbsp; ' + escapeHtml(metaParts.join(' · ')) : '') +
+                (a.notes ? ' — ' + escapeHtml(a.notes) : '') +
+              '</div>' +
+            '</div>' +
+            '<button type="button" class="remove-btn" data-index="' + i + '" aria-label="Remove ' + escapeHtml(s.display_name) + '">✕</button>' +
+          '</div>'
+        );
+      }).join('');
+
+      list.querySelectorAll('.remove-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          session.splice(Number(btn.dataset.index), 1);
+          renderStep4();
+        });
+      });
+    }
+
+    document.getElementById('s4-back-btn').addEventListener('click', function() {
+      // Go back to the last symptom in step 3
+      detailIndex = detailQueue.length - 1;
+      renderStep3();
+      goToStep(3);
+    });
+
+    document.getElementById('s4-restart-btn').addEventListener('click', function() {
+      resetWizard();
+    });
+
+    function resetWizard() {
+      selectedSystems.clear();
+      selectedSymptomIds = [];
+      detailQueue        = [];
+      detailIndex        = 0;
+      wizardAnswers      = {};
+      session            = [];
+      document.getElementById('chip-search').value = '';
+      document.getElementById('success-box').style.display = 'none';
+      document.getElementById('error-box').style.display   = 'none';
+      renderStep1();
+      goToStep(1);
+    }
+
+    // ─── Supabase submit ────────────────────────────────────────────────────────
+    document.getElementById('submit-btn').addEventListener('click', submitSession);
+
+    async function submitSession() {
+      const submitBtn  = document.getElementById('submit-btn');
       const successBox = document.getElementById('success-box');
       const errorBox   = document.getElementById('error-box');
       successBox.style.display = 'none';
@@ -803,27 +1080,30 @@
           throw new Error('Supabase error ' + res.status + ': ' + text);
         }
         const count = session.length;
-        session = [];
-        renderSession();
         successBox.textContent = count + ' symptom' + (count !== 1 ? 's' : '') + ' logged successfully.';
         successBox.style.display = 'block';
         await fetchLogs();
+        // Offer restart after success; use { once: true } so the listener cleans itself up
+        submitBtn.textContent = 'Log another session';
+        submitBtn.disabled = false;
+        submitBtn.removeEventListener('click', submitSession);
+        submitBtn.addEventListener('click', function() {
+          resetWizard();
+          submitBtn.addEventListener('click', submitSession);
+        }, { once: true });
       } catch (err) {
         errorBox.textContent = 'Failed to submit: ' + err.message;
         errorBox.style.display = 'block';
         submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit Session';
       }
-      submitBtn.textContent = 'Submit Session';
     }
 
     function buildRow(symptom, answers) {
       const details = {};
       Object.keys(answers).forEach(function(key) {
-        if (!STRUCTURED_FIELDS.has(key)) {
-          details[key] = answers[key];
-        }
+        if (!STRUCTURED_FIELDS.has(key)) details[key] = answers[key];
       });
-
       return {
         symptom_id:          symptom.id,
         symptom_name:        symptom.display_name,
@@ -832,15 +1112,15 @@
         severity:            (function() { var v = parseInt(answers.severity, 10); return !isNaN(v) ? v : null; }()),
         frequency:           (function() { var v = parseInt(answers.frequency, 10); return !isNaN(v) ? v : null; }()),
         functional_impact:   (function() { var v = parseInt(answers.functional_impact, 10); return !isNaN(v) ? v : null; }()),
-        onset:               answers.onset     || null,
-        laterality:          answers.laterality || null,
-        duration:            answers.duration  || null,
-        location:            answers.location  || null,
-        quality:             answers.quality   || null,
-        triggers:            answers.triggers  || null,
-        relieving_factors:   answers.relieving_factors || null,
-        associated_symptoms: answers.associated_symptoms || null,
-        notes:               answers.notes     || null,
+        onset:               answers.onset              || null,
+        laterality:          answers.laterality         || null,
+        duration:            answers.duration           || null,
+        location:            answers.location           || null,
+        quality:             answers.quality            || null,
+        triggers:            answers.triggers           || null,
+        relieving_factors:   answers.relieving_factors  || null,
+        associated_symptoms: answers.associated_symptoms|| null,
+        notes:               answers.notes              || null,
         details:             Object.keys(details).length ? details : {}
       };
     }
@@ -863,8 +1143,8 @@
     }
 
     function renderLogsTable(filterText) {
-      const body  = document.getElementById('logs-body');
-      const query = (filterText || '').toLowerCase().trim();
+      const body     = document.getElementById('logs-body');
+      const query    = (filterText || '').toLowerCase().trim();
       const filtered = query ? logs.filter(function(row) {
         return (row.symptom_name || '').toLowerCase().includes(query) ||
                (row.system_key   || '').toLowerCase().includes(query) ||
@@ -880,8 +1160,8 @@
 
       body.innerHTML = filtered.map(function(row) {
         const presClass = 'presence-badge presence-' + escapeHtml(row.presence || 'unsure');
-        const sevLabel  = row.severity   != null ? SEVERITY_LABELS[row.severity]   : '—';
-        const freqLabel = row.frequency  != null ? FREQUENCY_LABELS[row.frequency] : '—';
+        const sevLabel  = row.severity  != null ? SEVERITY_LABELS[row.severity]  : '—';
+        const freqLabel = row.frequency != null ? FREQUENCY_LABELS[row.frequency]: '—';
         return (
           '<tr>' +
             '<td>' + escapeHtml(formatTimestamp(row.logged_at)) + '</td>' +
@@ -895,26 +1175,6 @@
         );
       }).join('');
     }
-
-    // ─── Event listeners ────────────────────────────────────────────────────────
-    document.getElementById('system-filter').addEventListener('change', function() {
-      expandedId = null;
-      renderSymptomList();
-    });
-
-    document.getElementById('symptom-search').addEventListener('input', function() {
-      expandedId = null;
-      renderSymptomList();
-    });
-
-    document.getElementById('submit-btn').addEventListener('click', submitSession);
-
-    document.getElementById('clear-btn').addEventListener('click', function() {
-      session = [];
-      renderSession();
-      document.getElementById('success-box').style.display = 'none';
-      document.getElementById('error-box').style.display = 'none';
-    });
 
     document.getElementById('log-search').addEventListener('input', function(e) {
       renderLogsTable(e.target.value);
