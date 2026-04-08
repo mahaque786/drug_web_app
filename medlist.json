@@ -477,6 +477,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression possible. Buspirone does not enhance benzodiazepine effects at GABA-A receptors, but additive sedative effects may occur.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression possible. Conversion from benzodiazepine to buspirone therapy may require treatment overlap, but the combination can produce additive sedative effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -610,6 +615,11 @@
         {
           "drug": "Temazepam",
           "interaction": "Bupropion lowers the seizure threshold; benzodiazepines have anticonvulsant properties that may partially offset this. Monitor for CNS effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Bupropion is contraindicated in patients undergoing abrupt benzodiazepine withdrawal due to increased seizure risk. Benzodiazepines have anticonvulsant properties that may partially offset bupropion's seizure threshold-lowering effect. Monitor for CNS effects.",
           "severity": "mild"
         }
       ],
@@ -918,6 +928,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1074,6 +1089,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression possible. Monitor for increased sedation when combined.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Possible pharmacokinetic interaction. In vitro data suggest sertraline may inhibit CYP3A4-mediated metabolism of triazolam. Additive CNS depression possible. Monitor for increased sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1220,6 +1240,11 @@
           "drug": "Aspirin (Acetylsalicylic Acid)",
           "interaction": "Trazodone has serotonergic activity that may impair platelet function. Combined with aspirin's irreversible antiplatelet effect, there is a modestly increased risk of bleeding.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -1302,6 +1327,11 @@
           "drug": "Aspirin (Acetylsalicylic Acid)",
           "interaction": "PPI provides gastroprotection during aspirin therapy. Beneficial combination to reduce risk of aspirin-induced GI bleeding, especially in patients on long-term aspirin for cardiovascular prophylaxis.",
           "severity": "info"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Esomeprazole inhibits CYP2C19 and weakly inhibits CYP3A4. Case reports describe interactions between PPIs and CYP3A4-metabolized benzodiazepines. Clinical significance is generally low but monitor for increased triazolam effects.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -1736,6 +1766,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression. Hydroxyzine's antihistaminergic/sedative properties compound the CNS depressant effects of temazepam.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression. Hydroxyzine's antihistaminergic and sedative properties compound the CNS depressant effects of triazolam.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2118,6 +2153,11 @@
           "drug": "Temazepam",
           "interaction": "Additive sedation. Combining a melatonin receptor agonist with a benzodiazepine for sleep is generally redundant and may cause excessive sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive sedation. Combining a benzodiazepine with a melatonin receptor agonist for sleep is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -2233,6 +2273,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) is not recommended; increases risk of excessive sedation.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) increases risk of excessive sedation and respiratory depression. Not recommended.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -2316,6 +2361,11 @@
         {
           "drug": "Aspirin (Acetylsalicylic Acid)",
           "interaction": "H2 blocker provides partial gastroprotection during aspirin use. Less effective than PPIs for preventing NSAID/aspirin-induced ulcers but may reduce GI symptoms.",
+          "severity": "info"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Unlike cimetidine, famotidine does not significantly inhibit CYP enzymes. Minimal pharmacokinetic interaction expected with triazolam.",
           "severity": "info"
         }
       ],
@@ -2955,6 +3005,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -3321,6 +3376,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression possible.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression possible.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3446,6 +3506,11 @@
         },
         {
           "drug": "Temazepam",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
           "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
           "severity": "moderate"
         }
@@ -3661,6 +3726,11 @@
           "drug": "Aspirin (Acetylsalicylic Acid)",
           "interaction": "Caffeine enhances aspirin's analgesic effect (adjuvant analgesic). This is a well-established beneficial combination commonly found in OTC pain products (e.g., Excedrin).",
           "severity": "info"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the sedative and hypnotic effects of triazolam.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -3793,6 +3863,11 @@
           "drug": "Aspirin (Acetylsalicylic Acid)",
           "interaction": "Cimetidine may increase salicylate levels by reducing renal clearance and inhibiting hepatic metabolism. Monitor for signs of salicylate toxicity (tinnitus, nausea) with concurrent use.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Significant pharmacokinetic interaction. Cimetidine inhibits CYP3A4, the primary metabolic pathway for triazolam. Coadministration increased triazolam Cmax by 51%, decreased clearance by 55%, and increased half-life by 68%. Monitor for increased sedation.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -3881,6 +3956,11 @@
         {
           "drug": "Temazepam",
           "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of temazepam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of triazolam.",
           "severity": "mild"
         }
       ],
@@ -4025,6 +4105,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
         }
       ],
       "citations": [
@@ -4164,6 +4249,11 @@
         },
         {
           "drug": "Temazepam",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
           "interaction": "Additive CNS depression and sedation.",
           "severity": "mild"
         }
@@ -4325,6 +4415,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression and sedation. First-generation antihistamines compound the sedative effects of benzodiazepines.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -4479,6 +4574,11 @@
           "drug": "Temazepam",
           "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) significantly increases risk of excessive sedation and respiratory depression. Not recommended.",
           "severity": "moderate"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Additive CNS depression. Combining a non-benzodiazepine Z-drug with a benzodiazepine (both GABA-A modulators) significantly increases risk of excessive sedation, respiratory depression, and next-day impairment. Not recommended.",
+          "severity": "moderate"
         }
       ],
       "citations": [
@@ -4630,6 +4730,11 @@
           "drug": "Ephedrine Sulfate",
           "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of lorazepam.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases the risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
         }
       ],
       "citations": [
@@ -4879,6 +4984,11 @@
           "drug": "Ephedrine Sulfate",
           "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of temazepam.",
           "severity": "mild"
+        },
+        {
+          "drug": "Triazolam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
         }
       ],
       "citations": [
@@ -5028,6 +5138,163 @@
         }
       ],
       "administration": "Take with food, milk, or a full glass of water to reduce GI upset. Enteric-coated or buffered formulations may reduce stomach irritation. Do not crush or chew enteric-coated tablets. Chewable, non-enteric coated tablets are preferred when rapid onset is required (e.g., acute coronary syndrome). For cardiovascular prophylaxis, take at the same time each day."
+    },
+    {
+      "generic_name": "Triazolam",
+      "brand_names": [
+        "Halcion"
+      ],
+      "indication": {
+        "on_label": [
+          "Short-term treatment of insomnia (generally 7 to 10 days) in adults"
+        ],
+        "off_label": [
+          "Preoperative anxiolysis and sedation (dental and minor surgical procedures)",
+          "Insomnia related to jet lag or shift work (short-term use)",
+          "Acute anxiety or panic disorder (interim, short-term use)"
+        ]
+      },
+      "doses": [
+        0.125,
+        0.25,
+        0.5
+      ],
+      "dose_unit": "mg",
+      "maximum_daily_dosage": "0.5 mg/night; 0.125-0.25 mg recommended for elderly or debilitated patients",
+      "time_required_between_doses": "Once nightly at bedtime; do not redose during the same night",
+      "mechanism_of_action": "Benzodiazepine hypnotic. Classified as a positive allosteric modulator of GABA-A receptors (GABA-PAM), with particular affinity for BNZ1 receptors which mediate sleep. Binds to benzodiazepine receptors on GABA-A chloride channel complexes in the CNS (limbic, thalamic, and hypothalamic regions), enhancing GABAergic inhibition by increasing chloride ion influx frequency. This leads to CNS depression, producing sedation, hypnosis, and decreased sleep latency. Metabolized primarily via CYP3A4-mediated hydroxylation to form 1-hydroxytriazolam and 4-hydroxytriazolam, which are subsequently conjugated to inactive glucuronides.",
+      "time_to_max_concentration": "Within 2 hours (oral); onset of action within 15-30 minutes",
+      "half_life": "1.5-5.5 hours (mean plasma elimination half-life)",
+      "duration_of_action": "6-7 hours (hypnotic effect; relatively short-acting compared to other benzodiazepines)",
+      "active_metabolites": "None — 1-hydroxytriazolam and 4-hydroxytriazolam are formed but are conjugated to pharmacologically inactive glucuronides and excreted primarily in urine",
+      "half_life_of_active_metabolites": "Not clinically relevant (metabolites are inactive)",
+      "interactions_with_other_drugs_on_this_list": [
+        {
+          "drug": "Lorazepam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
+        },
+        {
+          "drug": "Temazepam",
+          "interaction": "Duplicate benzodiazepine therapy. Concurrent use of two benzodiazepines significantly increases risk of profound CNS depression, respiratory depression, coma, and death. This combination should be avoided.",
+          "severity": "severe"
+        },
+        {
+          "drug": "Cimetidine",
+          "interaction": "Significant pharmacokinetic interaction. Cimetidine inhibits CYP3A4, the primary metabolic pathway for triazolam. Coadministration increased triazolam Cmax by 51%, decreased clearance by 55%, and increased half-life by 68%. Monitor for increased sedation and consider triazolam dose reduction.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zolpidem Tartrate",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) significantly increases risk of excessive sedation, respiratory depression, and next-day impairment. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Zaleplon",
+          "interaction": "Additive CNS depression. Combining a benzodiazepine with a non-benzodiazepine Z-drug (both GABA-A modulators) increases risk of excessive sedation and respiratory depression. Not recommended.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Trazodone HCl",
+          "interaction": "Additive CNS depression and sedation. Both agents depress the CNS; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Hydroxyzine HCl",
+          "interaction": "Additive CNS depression. Hydroxyzine's antihistaminergic and sedative properties compound the CNS depressant effects of triazolam.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Diphenhydramine HCl",
+          "interaction": "Additive CNS depression. Both agents cause sedation; concurrent use increases risk of excessive sedation and respiratory depression.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Doxylamine Succinate",
+          "interaction": "Additive CNS depression. Both are sedating agents; combination increases risk of excessive sedation.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Chlorpheniramine Maleate",
+          "interaction": "Additive CNS depression. First-generation antihistamines compound the sedative effects of benzodiazepines.",
+          "severity": "moderate"
+        },
+        {
+          "drug": "Sertraline HCl",
+          "interaction": "Possible pharmacokinetic interaction. In vitro data suggest sertraline may inhibit CYP3A4-mediated metabolism of triazolam. Additive CNS depression possible. Monitor for increased sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Bupropion HCl (Extended-Release)",
+          "interaction": "Bupropion is contraindicated in patients undergoing abrupt benzodiazepine withdrawal due to increased seizure risk. Benzodiazepines have anticonvulsant properties that may partially offset bupropion's seizure threshold-lowering effect. Monitor for CNS effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Buspirone HCl",
+          "interaction": "Additive CNS depression possible. Conversion from benzodiazepine to buspirone therapy may require treatment overlap, but the combination can produce additive sedative effects. Buspirone does not enhance benzodiazepine effects at GABA-A receptors.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Propranolol HCl",
+          "interaction": "Additive CNS depression possible at higher doses. Generally minimal interaction at standard doses.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ramelteon",
+          "interaction": "Additive sedation. Combining a benzodiazepine with a melatonin receptor agonist for sleep is generally redundant and may cause excessive sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Meclizine HCl",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dimenhydrinate",
+          "interaction": "Additive CNS depression and sedation.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Dextromethorphan HBr",
+          "interaction": "Additive CNS depression possible.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Caffeine",
+          "interaction": "Caffeine's CNS stimulant effects may partially antagonize the sedative and hypnotic effects of triazolam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Ephedrine Sulfate",
+          "interaction": "Ephedrine's sympathomimetic and stimulant effects may partially counteract the CNS depressant effects of triazolam.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Esomeprazole Magnesium",
+          "interaction": "Esomeprazole inhibits CYP2C19 and weakly inhibits CYP3A4. Case reports describe interactions between PPIs and CYP3A4-metabolized benzodiazepines. Clinical significance is generally low but monitor for increased triazolam effects.",
+          "severity": "mild"
+        },
+        {
+          "drug": "Famotidine",
+          "interaction": "Unlike cimetidine, famotidine does not significantly inhibit CYP enzymes. Minimal pharmacokinetic interaction expected with triazolam.",
+          "severity": "info"
+        }
+      ],
+      "citations": [
+        {
+          "type": "Drug Label",
+          "title": "Triazolam Tablets USP (Zydus Pharmaceuticals USA Inc.)"
+        },
+        {
+          "type": "Drug Reference",
+          "title": "Triazolam — Drug Information, Merck Manual Professional Edition"
+        },
+        {
+          "type": "DailyMed",
+          "title": "Triazolam — DailyMed Drug Label (NIH)"
+        }
+      ],
+      "administration": "Take immediately before bedtime. May be taken without regard to food, but avoid grapefruit or grapefruit juice during treatment. Use the lowest effective dose. Do not use for more than 7 to 10 days without reassessment. Do not abruptly discontinue; taper dose gradually to avoid withdrawal. Prescriptions should not exceed a 1-month supply. Schedule IV controlled substance."
     }
   ]
 }
