@@ -451,7 +451,7 @@
     async function fetchLogs() {
   try {
     const response = await fetch(
-      SUPABASE_URL + '/rest/v1/medication_logs?select=*&order=timestamp.desc',
+      SUPABASE_URL + '/rest/v1/medication_logs?select=*&hide=eq.false&order=timestamp.desc',
       { headers: { 'apikey': SUPABASE_ANON_KEY, 'Authorization': 'Bearer ' + SUPABASE_ANON_KEY } }
     );
     const rows = await response.json();
