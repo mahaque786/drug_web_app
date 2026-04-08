@@ -480,7 +480,7 @@
         },
         {
           "drug": "Triazolam",
-          "interaction": "Additive CNS depression possible. Conversion from benzodiazepine to buspirone therapy may require treatment overlap, but the combination can produce additive sedative effects.",
+          "interaction": "Additive CNS depression possible. Conversion from benzodiazepine to buspirone therapy may require treatment overlap, but the combination can produce additive sedative effects. Buspirone does not enhance benzodiazepine effects at GABA-A receptors.",
           "severity": "mild"
         }
       ],
